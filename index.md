@@ -1,6 +1,9 @@
 ---
 layout: page
 ---
+
+<img src= "/img/logos/logo_ave.jpg" style="height: 150px" />
+
 **Learning the Value of Education in the Dominican Republic (AVE-RD)** is a pilot project of public policy that seeks to evaluate the effectiveness of an information campaign in deciding the number of years of schooling of Dominican students.
 
 AVE-RD is implemented by the Orientation and Psychology Department of the Ministry of Education of the Dominican Republic (MINERD) and evaluated by the Dominican Institute for Evaluation and Research of Educational Quality (IDEICE), and the Abdul Latif Jameel Poverty research center Action Lab (J-PAL). The project was funded by the United States Agency for International Development (USAID) and the MINERD.

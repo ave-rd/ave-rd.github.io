@@ -8,8 +8,8 @@ url: "https://ave-rd.github.io"
 
 # Secondary Parameters
 baseurl: ""
-header-img: /img/averd.jpg
-headercolor: "#000000"
+header-img: img/averd.jpg
+headercolor: "#0099FF"
 logo: /img/logos/logo_ave.jpg
 
 # Tertiary Parameters
@@ -33,7 +33,7 @@ defaults:
       type: "pages"
     values:
       layout: "project"
-      header-img: "/img/averd.jpg"
+      header-img: "img/averd.jpg"
 
 # Prose Settings
 prose:

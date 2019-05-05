@@ -4,7 +4,9 @@ date: 2017-08-25T14:16:56+00:00
 author: Gonzalo Oyanedel
 layout: page
 ---
-<img class="alignnone size-full wp-image-269" src="/wp-content/uploads/2017/08/31060892135_b848fd0ace_h.jpg" alt="" width="1600" height="623" srcset="/wp-content/uploads/2017/08/31060892135_b848fd0ace_h.jpg 1600w, /wp-content/uploads/2017/08/31060892135_b848fd0ace_h-300x117.jpg 300w, /wp-content/uploads/2017/08/31060892135_b848fd0ace_h-768x299.jpg 768w, /wp-content/uploads/2017/08/31060892135_b848fd0ace_h-1024x399.jpg 1024w, /wp-content/uploads/2017/08/31060892135_b848fd0ace_h-676x263.jpg 676w" sizes="(max-width: 1600px) 100vw, 1600px" />
+
+<img src= "/img/logos/logo_ave.jpg" style="height: 150px" />
+
 
 **Learning the Value of Education in the Dominican Republic (AVE-RD)** is a pilot project of public policy that seeks to evaluate the effectiveness of an information campaign in deciding the number of years of schooling of Dominican students.
 
