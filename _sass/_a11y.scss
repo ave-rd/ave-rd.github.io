@@ -1,0 +1,38 @@
+// ============================================================
+// Accessibility + motion
+// Skip link, focus rings, reduced-motion
+// ============================================================
+
+// Visible :focus-visible outline for interactive elements that
+// Bootstrap 3 stripped of focus styles.
+a:focus-visible,
+.navbar-custom .nav li a:focus-visible,
+.navbar-custom .navbar-brand:focus-visible,
+.partner-card__link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+// Skip-to-content link
+.sr-only-focusable:focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  padding: $space-2 $space-3;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-family: $font-ui;
+  font-weight: $weight-semibold;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

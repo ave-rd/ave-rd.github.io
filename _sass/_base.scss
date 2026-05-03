@@ -1,0 +1,61 @@
+// ============================================================
+// Base / typography
+// Body, prose, headings, links, blockquote, hr
+// ============================================================
+
+body {
+  font-family: $font-body;
+  font-size: $text-md;
+  line-height: $leading-normal;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-tap-highlight-color: var(--accent-soft);
+}
+
+p {
+  line-height: $leading-snug + 0.1; // 1.5
+  margin: $space-4 0;
+}
+p a { text-decoration: underline; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-ui;
+  font-weight: $weight-bold;
+  color: var(--ink);
+}
+
+a {
+  color: var(--ink);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+
+blockquote {
+  color: var(--muted);
+  font-style: italic;
+  border-left: 4px solid var(--accent-soft);
+  padding-left: $space-3;
+  margin: $space-4 0;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: #fff;
+}
+
+// Selection
+::selection,
+::-moz-selection {
+  color: #fff;
+  text-shadow: none;
+  background: var(--accent);
+}
+img::selection,
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}

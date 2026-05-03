@@ -1,0 +1,28 @@
+// ============================================================
+// Print
+// ============================================================
+
+@media print {
+  .navbar-custom,
+  .intro-header::before,
+  footer ul.list-inline {
+    display: none !important;
+  }
+  .intro-header {
+    background: none !important;
+    color: var(--ink) !important;
+  }
+  .intro-header .site-heading,
+  .intro-header .page-heading {
+    color: var(--ink) !important;
+    text-shadow: none !important;
+  }
+  body {
+    color: #000;
+    font-size: 12pt;
+  }
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+}

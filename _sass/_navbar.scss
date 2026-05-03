@@ -1,0 +1,76 @@
+// ============================================================
+// Navbar (Bootstrap 3 .navbar-default + custom skin)
+// ------------------------------------------------------------
+// Three states stack up:
+//   - small viewport: solid white, normal flow
+//   - >= 768px:       transparent over hero, white text
+//   - >= 1170px:      scroll-aware (.is-fixed / .is-visible)
+// ============================================================
+
+.navbar-custom {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  font-family: $font-ui;
+
+  .navbar-brand {
+    font-weight: $weight-bold;
+  }
+
+  .nav li a {
+    text-transform: uppercase;
+    font-size: $text-xs;
+    font-weight: $weight-bold;
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (min-width: $bp-sm) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+
+    .navbar-brand {
+      color: #fff;
+      padding: $space-3;
+      &:hover,
+      &:focus { color: rgba(255, 255, 255, 0.85); }
+    }
+    .nav li a {
+      color: #fff;
+      padding: $space-3;
+      &:hover,
+      &:focus { color: rgba(255, 255, 255, 0.85); }
+    }
+  }
+}
+
+@media only screen and (min-width: $bp-lg) {
+  .navbar-custom {
+    transition: background-color 0.3s, transform 0.3s;
+
+    &.is-fixed {
+      position: fixed;
+      top: -61px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-bottom: 1px solid var(--border);
+
+      .navbar-brand,
+      .nav li a {
+        color: var(--ink);
+      }
+      .navbar-brand:hover,
+      .navbar-brand:focus,
+      .nav li a:hover,
+      .nav li a:focus {
+        color: var(--accent);
+      }
+    }
+    &.is-visible {
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+}

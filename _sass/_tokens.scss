@@ -1,0 +1,92 @@
+// ============================================================
+// Design tokens
+// ------------------------------------------------------------
+// Colors, shadows and radii are exposed as CSS custom properties
+// on :root so prefers-color-scheme: dark can flip them and any
+// future plain-CSS file can reference them via var().
+// Type, spacing and font stacks live as SCSS variables — they
+// don't change between themes and are useful at compile time.
+// ============================================================
+
+// Source of truth for the brand color comes from _config.yml
+// via a Liquid interpolation in the top-level colorscheme.scss.
+
+// ----- Spacing scale (8 px-based) -----
+$space-1: 4px;
+$space-2: 8px;
+$space-3: 16px;
+$space-4: 24px;
+$space-5: 32px;
+$space-6: 48px;
+$space-7: 64px;
+$space-8: 96px;
+
+// ----- Type scale -----
+// Sizes used across the site, named so layout intent is obvious
+// at the call site instead of "37px" appearing somewhere unique.
+$text-xs:    12px;   // navbar uppercase labels
+$text-sm:    14px;   // partner-card link, footer copyright
+$text-base:  18px;   // tables, smaller UI text
+$text-md:    20px;   // body prose (Lora at this size)
+$text-lg:    24px;   // hero subheading
+$text-xl:    36px;   // section heading (currently unused)
+$text-2xl:   50px;   // hero h1 baseline
+$text-3xl:   80px;   // hero h1 ≥ 768 px
+
+// ----- Line-heights -----
+$leading-tight:   1.1;
+$leading-snug:    1.4;
+$leading-normal:  1.55;
+$leading-relaxed: 1.6;
+
+// ----- Weights -----
+$weight-light:    300;
+$weight-medium:   600;
+$weight-semibold: 700;
+$weight-bold:     800;
+
+// ----- Font stacks -----
+$font-body: 'Lora', 'Times New Roman', Georgia, serif;
+$font-ui:   'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// ----- Breakpoints (Bootstrap 3-aligned) -----
+$bp-sm: 768px;
+$bp-md: 992px;
+$bp-lg: 1170px;
+
+// ----- Color tokens (CSS custom properties) -----
+:root {
+  --accent:        #{$header-color};
+  --accent-strong: #{darken($header-color, 12%)};
+  --accent-soft:   #{rgba($header-color, 0.10)};
+
+  --ink:    #404040;   // body text + default link
+  --muted:  #6b6b6b;   // meta / secondary
+  --bg:     #ffffff;
+  --bg-alt: #f7f9fb;   // partner-card logo well, table row hover
+  --border: #e5e7eb;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  --radius:    6px;
+  --radius-lg: 12px;
+}
+
+// Dark-mode overrides; flip just the color/shadow tokens.
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent:        #{lighten($header-color, 8%)};
+    --accent-strong: #{lighten($header-color, 18%)};
+    --accent-soft:   #{rgba($header-color, 0.18)};
+
+    --ink:    #e8e8e8;
+    --muted:  #9aa0a6;
+    --bg:     #121417;
+    --bg-alt: #1a1d22;
+    --border: #2a2e35;
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.55);
+  }
+}
