@@ -11,3 +11,14 @@ $header-color: {{ site.headercolor }};
 hr.small {
   border-color: $header-color;
 }
+
+.sr-only-focusable:focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  padding: 8px 16px;
+  background: $header-color;
+  color: #fff;
+  text-decoration: none;
+}

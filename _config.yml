@@ -10,12 +10,17 @@ header-img: img/averd.jpg
 headercolor: "#0099FF"
 logo: /img/logos/logo_ave.jpg
 
+# Default share image for jekyll-seo-tag
+image: /img/averd.jpg
+
 # Repository (used by footer GitHub link)
 github_username: ave-rd
 project_repository: ave-rd.github.io
 
 # Build settings
-plugins: []
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
@@ -24,6 +29,8 @@ exclude:
   - README.md
   - LICENSE.md
   - vendor
+  - Gemfile
+  - Gemfile.lock
 
 defaults:
   - scope:
