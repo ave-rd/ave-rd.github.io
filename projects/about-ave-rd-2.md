@@ -1,11 +1,13 @@
 ---
-title: About AVE-RD
+title: About
+description: "Background, partners and results of the AVE-RD pilot"
 date: 2017-08-25T14:16:56+00:00
 author: Gonzalo Oyanedel
 layout: page
+order: 2
 ---
 
-<img src= "/img/logos/logo_ave.jpg" style="height: 150px" />
+<img src="/img/logos/logo_ave.jpg" alt="AVE-RD logo" style="height: 150px" loading="lazy" />
 
 
 **Learning the Value of Education in the Dominican Republic (AVE-RD)** is a pilot project of public policy that seeks to evaluate the effectiveness of an information campaign in deciding the number of years of schooling of Dominican students.
@@ -28,11 +30,11 @@ Preliminary results indicate that students tend to undervalue the benefit of mor
   * The program was implemented in two batches: May 2015 and April 2016.
   * All schools that participated in the 2015 batch again did so in 2016
 
-<img class="alignnone wp-image-253" src="/wp-content/uploads/2017/08/ave.jpg" alt="" width="365" height="154" srcset="/wp-content/uploads/2017/08/ave.jpg 688w, /wp-content/uploads/2017/08/ave-300x126.jpg 300w, /wp-content/uploads/2017/08/ave-676x285.jpg 676w" sizes="(max-width: 365px) 100vw, 365px" /> 
+<img class="alignnone wp-image-253" src="/wp-content/uploads/2017/08/ave.jpg" alt="AVE-RD program implementation diagram" width="365" height="154" srcset="/wp-content/uploads/2017/08/ave.jpg 688w, /wp-content/uploads/2017/08/ave-300x126.jpg 300w, /wp-content/uploads/2017/08/ave-676x285.jpg 676w" sizes="(max-width: 365px) 100vw, 365px" loading="lazy" />
 
 ##### **Timeline**
 
-<img class="alignnone  wp-image-285" src="/wp-content/uploads/2017/08/timeline.jpg" alt="" width="596" height="315" /> 
+<img class="alignnone wp-image-285" src="/wp-content/uploads/2017/08/timeline.jpg" alt="AVE-RD project timeline" width="596" height="315" loading="lazy" />
 
 ##### **Implementation Logistics**
 

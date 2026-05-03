@@ -1,28 +1,25 @@
-# Project Pages
+# AVE-RD
 
-Project Pages is Jekyll Template specifically geared towards collaborative science. For more information, click [here](https://github.com/projectpages/project-pages/wiki/).
+**Learning the Value of Education in the Dominican Republic (AVE-RD)** is a
+pilot public-policy project that evaluates the effect of a video-based
+information campaign on the schooling decisions of Dominican students in
+grades 7–12.
 
-# Nav Bar Jumbles
+The pilot is implemented by the Department of Orientation and Psychology of
+the Ministry of Education of the Dominican Republic (MINERD) and evaluated by
+the Dominican Institute for Evaluation and Research of Educational Quality
+(IDEICE) and J-PAL LAC. Funding came from USAID and MINERD.
 
-If you have seemingly random pages popping up on your Nav Bar recently, this is due to the fact that GitHub/Jekyll changed a fundemental rule they used to render pages. 
+This repository hosts the project's static website at
+<https://ave-rd.github.io>. The site is built with [Jekyll](https://jekyllrb.com/)
+and served by GitHub Pages.
 
-## CAUSE:
-It used to be that if a markdown file didn't have `---` frontmatter at the beginning, it wasn't rendered as a page. This was changed very recently (like in the last 2 days) so that every markdown file anywhere no matter what gets rendered as a page.  
+## Local development
 
-## FIX:
+```sh
+bundle install
+bundle exec jekyll serve
+```
 
-1) Go to:
-
-`project-pages/plugin/projector/` or `yourreponame/plugin/projector/` and delete the `README.md` file. This can be done graphically for the non-Git-savvy by simply going to your:
-
-GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Plugin -> projector 
-
-and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
-
-2) Go to:
-
-`project-pages/css/theme/` or `yourreponame/css/theme/` and delete the `README.md` file. This can be done graphically for the non-Git-savvy by simply going to your:
-
-GitHub account -> Your Profile -> Repositories -> Project-Pages/Your Repo -> Plugin -> projector 
-
-and clicking on the files, then clicking on the "thrash can / delete this file" icon on the top right corner of the file.
+The site will be available at <http://localhost:4000>. Top-navigation order
+is controlled by the `order:` front-matter key on each page in `projects/`.

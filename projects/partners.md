@@ -1,28 +1,30 @@
 ---
 title: Partners
+description: "Institutions that designed, funded and evaluated the AVE-RD pilot"
 date: 2017-09-14T14:23:53+00:00
 author: Gonzalo Oyanedel
 layout: page
+order: 3
 ---
-<img class="alignnone wp-image-236" src="/wp-content/uploads/2017/09/24685266591_cdb72f7120-300x89.jpg" alt="" width="257" height="80" />
+<img class="alignnone wp-image-236" src="/wp-content/uploads/2017/09/24685266591_cdb72f7120-300x89.jpg" alt="J-PAL Latin America and the Caribbean logo" width="257" height="80" loading="lazy" />
 
 J-PAL LAC is a non-profit research center that seeks to reduce poverty and improve people&#8217;s quality of life by creating and disseminating rigorous evidence on what public policies and social programs really work. This is done through research, incidents in public policies and training.
 
 [Web Page](https://www.povertyactionlab.org/lac)
 
-<img class="alignnone wp-image-237" src="/wp-content/uploads/2017/09/download.png" alt="" width="144" height="104" /> 
+<img class="alignnone wp-image-237" src="/wp-content/uploads/2017/09/download.png" alt="Ministry of Education of the Dominican Republic (MINERD) logo" width="144" height="104" loading="lazy" />
 
 The Ministry of Education of the Dominican Republic is the state agency responsible for planning, management, administration and development of the Dominican education model, administration of public schools and supervision of private schools.
 
 [Web Page](http://ministeriodeeducacion.gob.do/)
 
-<img class="alignnone wp-image-238" src="/wp-content/uploads/2017/09/ideice-logo.png" alt="" width="193" height="79" /> 
+<img class="alignnone wp-image-238" src="/wp-content/uploads/2017/09/ideice-logo.png" alt="IDEICE logo" width="193" height="79" loading="lazy" />
 
 The Dominican Institute of Evaluation and Investigation of Educational Quality is a public, decentralized agency, attached to the Ministry of Education, of a technical nature, whose actions are concentrated in the field of research and evaluation of the educational area.
 
 [Web Page](http://www.ideice.gob.do/index.php)
 
-<img class="alignnone wp-image-239" src="/wp-content/uploads/2017/09/usaid-logo-web-300x158.jpg" alt="" width="189" height="102" /> 
+<img class="alignnone wp-image-239" src="/wp-content/uploads/2017/09/usaid-logo-web-300x158.jpg" alt="USAID logo" width="189" height="102" loading="lazy" />
 
 The United States Agency for International Development, USAID, is the US institution responsible for distributing most of the non-military foreign aid. It is an independent body although it receives strategic guidelines from the State Department.
 
