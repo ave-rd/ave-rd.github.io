@@ -7,7 +7,7 @@ layout: page
 order: 2
 ---
 
-<img src="/img/logos/logo_ave.jpg" alt="AVE-RD logo" style="height: 150px" loading="lazy" />
+<img class="brand-logo" src="/img/logos/logo_ave.jpg" alt="AVE-RD logo" loading="lazy" />
 
 
 **Learning the Value of Education in the Dominican Republic (AVE-RD)** is a pilot project of public policy that seeks to evaluate the effectiveness of an information campaign in deciding the number of years of schooling of Dominican students.

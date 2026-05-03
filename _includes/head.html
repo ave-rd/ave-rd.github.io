@@ -25,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:300,600,700,800&display=swap" rel="stylesheet" type="text/css">
 
     <!-- jQuery (last 1.x; required by Bootstrap 3 plugins) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -33,8 +33,8 @@
     <!-- Bootstrap 3 JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="{{ "/js/clean-blog.min.js" | prepend: site.baseurl | prepend: site.url }}"></script>
+    <!-- Site JavaScript -->
+    <script defer src="{{ "/js/site.js" | prepend: site.baseurl | prepend: site.url }}"></script>
 
     {% include analytics.html %}
 
