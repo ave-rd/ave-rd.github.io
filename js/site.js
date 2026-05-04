@@ -1,19 +1,40 @@
 // AVE-RD site script
-// Two behaviors:
+// Three behaviors:
 //   1. Make every <img> responsive (legacy markup ships fixed widths)
-//   2. Show/hide the navbar on scroll-up vs scroll-down at >=1170px
-// Honors prefers-reduced-motion: skips the scroll handler entirely.
+//   2. Reveal-on-scroll for elements with .reveal
+//   3. Show/hide the navbar on scroll-up vs scroll-down at >=1170px
+// Honors prefers-reduced-motion: skips the scroll handler and reveals
+// elements immediately.
 
 (function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
   // ----- Responsive images -----
   document.querySelectorAll('img').forEach(function (img) {
     img.classList.add('img-responsive');
   });
 
+  // ----- Reveal-on-scroll -----
+  var revealEls = document.querySelectorAll('.reveal');
+  if (revealEls.length) {
+    if (reduce || !('IntersectionObserver' in window)) {
+      revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+    } else {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
+      revealEls.forEach(function (el) { io.observe(el); });
+    }
+  }
+
   // ----- Scroll-aware navbar (desktop only) -----
   var DESKTOP = 1170;
-  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (prefersReducedMotion || window.innerWidth < DESKTOP) return;
+  if (reduce || window.innerWidth < DESKTOP) return;
 
   var nav = document.querySelector('.navbar-custom');
   if (!nav) return;
@@ -25,14 +46,12 @@
   function update() {
     var top = window.pageYOffset || document.documentElement.scrollTop;
     if (top < lastTop) {
-      // scrolling up
       if (top > 0 && nav.classList.contains('is-fixed')) {
         nav.classList.add('is-visible');
       } else {
         nav.classList.remove('is-visible', 'is-fixed');
       }
     } else {
-      // scrolling down
       nav.classList.remove('is-visible');
       if (top > headerHeight && !nav.classList.contains('is-fixed')) {
         nav.classList.add('is-fixed');

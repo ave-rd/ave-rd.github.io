@@ -1,29 +1,44 @@
 ---
-title: Welcome
-description: "Materials, surveys and project information for AVE-RD participants"
+title: The reading room
+description: "Materials, surveys and project information for AVE-RD participants."
+eyebrow: "Welcome"
 date: 2017-08-25T14:07:29+00:00
 author: Gonzalo Oyanedel
 layout: page
 order: 1
 ---
-This site is for counselors, teachers, directors, technicians of the MINERD, as well as for parents, students and others interested in the AVE-RD project. By this means, you can download the material to be presented to students, upload evidence of implementation, fill out opinion surveys, follow up on implementation and obtain information about the project&#8217;s objectives, scope and methodology.
 
-### **What are you looking for?**
+<p class="dropcap">
+  This site is the working reference for everyone touched by the AVE-RD
+  project &mdash; counselors, teachers, school directors, MINERD technicians,
+  and the parents and students who participated. Use it to download materials,
+  upload implementation evidence, complete opinion surveys, and follow the
+  pilot&rsquo;s progress.
+</p>
 
-#### **General**: **Directors, Parents, Students and Others**
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">For directors, parents and students</div>
+  <h2>Understand the project</h2>
+</div>
 
-  * Know about the project
-  * Know the participating centers
+* Read the [project background](/projects/about-ave-rd-2/) and the four findings.
+* See the [list of partner institutions](/projects/partners/) behind the pilot.
+* Browse the [implementation photo archive](/projects/gallery/).
 
-#### Advisors and Teachers
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">For counselors and teachers</div>
+  <h2>Run the program in your school</h2>
+</div>
 
-  * Download Deployment Material
-  * Upload or load deployment evidence
-  * Complete opinion poll
+* [Request the deployment package](/projects/download-videos-2/) for grades 7&ndash;12.
+* Submit implementation evidence and the post-screening opinion survey.
+* Coordinate with your DOP regional contact for scheduling.
 
-#### **DOP technicians**
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">For DOP technicians</div>
+  <h2>Follow the cohort</h2>
+</div>
 
-  * Follow-up to centers
-  * Complete opinion poll for technicians
-
-&nbsp;
+* Visit participating schools to collect implementation evidence.
+* Complete the technician opinion survey for each visit.
+* Reach the project office at the [contact details](/projects/contact/).

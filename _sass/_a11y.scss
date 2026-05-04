@@ -1,30 +1,33 @@
 // ============================================================
 // Accessibility + motion
-// Skip link, focus rings, reduced-motion
 // ============================================================
 
-// Visible :focus-visible outline for interactive elements that
-// Bootstrap 3 stripped of focus styles.
 a:focus-visible,
+button:focus-visible,
 .navbar-custom .nav li a:focus-visible,
 .navbar-custom .navbar-brand:focus-visible,
-.partner-card__link:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
+.partner-card__link:focus-visible,
+.photo-gallery a:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
-// Skip-to-content link
 .sr-only-focusable:focus {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1100;
-  padding: $space-2 $space-3;
-  background: var(--accent);
-  color: #fff;
+  padding: $space-3 $space-5;
+  background: var(--primary);
+  color: var(--primary-foreground);
   text-decoration: none;
-  font-family: $font-ui;
-  font-weight: $weight-semibold;
+  font-family: $font-sans;
+  font-weight: $weight-medium;
+  font-size: $text-xs;
+  text-transform: uppercase;
+  letter-spacing: $track-eyebrow;
+  border-radius: 0 0 var(--radius-md) 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -35,4 +38,6 @@ a:focus-visible,
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+  // Reveal-on-scroll: show immediately
+  .reveal { opacity: 1 !important; transform: none !important; }
 }

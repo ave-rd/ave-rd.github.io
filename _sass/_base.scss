@@ -1,61 +1,184 @@
 // ============================================================
-// Base / typography
-// Body, prose, headings, links, blockquote, hr
+// Base typography — Iznik
+// Two voices, strict separation:
+//   font-serif (Newsreader)        → names, dissertations, headings, ledes
+//   default sans (Instrument Sans) → body, controls, metadata, chrome
+// Two weights only: 400 regular and 500 medium. Never 600+.
 // ============================================================
 
-body {
-  font-family: $font-body;
-  font-size: $text-md;
-  line-height: $leading-normal;
-  color: var(--ink);
-  background: var(--bg);
-  -webkit-tap-highlight-color: var(--accent-soft);
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
+
+body {
+  font-family: $font-sans;
+  font-size:   $text-md;
+  font-weight: $weight-regular;
+  line-height: $leading-normal;
+  color:       var(--foreground);
+  background:  var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// Headings carry the serif. Always.
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-serif;
+  font-weight: $weight-medium;
+  letter-spacing: $track-tight;
+  color: var(--display);
+}
+h1 { font-size: $text-3xl; line-height: $leading-tight; letter-spacing: $track-display; }
+h2 { font-size: $text-2xl; line-height: $leading-tight; }
+h3 { font-size: $text-xl;  line-height: $leading-snug;  }
+h4 { font-size: $text-lg;  line-height: $leading-snug;  }
 
 p {
-  line-height: $leading-snug + 0.1; // 1.5
-  margin: $space-4 0;
+  margin: 0 0 $space-6;
+  line-height: $leading-relaxed;
 }
-p a { text-decoration: underline; }
+p a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border-strong);
+  transition: text-decoration-color var(--duration-fast) var(--ease-out),
+              color var(--duration-fast) var(--ease-out);
+}
+p a:hover,
+p a:focus {
+  color: var(--primary);
+  text-decoration-color: currentColor;
+}
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-ui;
-  font-weight: $weight-bold;
-  color: var(--ink);
-}
+a { color: var(--foreground); }
+a:hover, a:focus { color: var(--primary); }
 
-a {
-  color: var(--ink);
-  &:hover,
-  &:focus {
-    color: var(--accent);
-  }
-}
+strong { font-weight: $weight-medium; }
+em { font-style: italic; }
 
 blockquote {
-  color: var(--muted);
+  margin: $space-7 0;
+  padding-left: $space-6;
+  border-left: 3px solid var(--accent-editorial);
+  color: var(--muted-foreground);
+  font-family: $font-serif;
   font-style: italic;
-  border-left: 4px solid var(--accent-soft);
-  padding-left: $space-3;
-  margin: $space-4 0;
+  font-size: $text-lg;
+  line-height: $leading-relaxed;
 }
 
+code {
+  font-family: $font-mono;
+  font-size: 0.92em;
+  background: var(--bg-alt);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  color: var(--foreground);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: $space-8 0;
+}
 hr.small {
-  max-width: 100px;
-  margin: 15px auto;
-  border-width: 4px;
-  border-color: #fff;
+  max-width: 64px;
+  margin: $space-5 auto;
+  border-top-width: 2px;
+  border-color: var(--accent-editorial);
 }
 
-// Selection
-::selection,
+::selection {
+  color: #fff;
+  background: var(--primary);
+}
 ::-moz-selection {
   color: #fff;
-  text-shadow: none;
-  background: var(--accent);
+  background: var(--primary);
 }
-img::selection,
-img::-moz-selection {
-  color: #fff;
-  background: transparent;
+
+// ============================================================
+// Editorial utility classes
+// ============================================================
+
+// Eyebrow — the Iznik signature. Every section opens with one.
+.eyebrow {
+  display: inline-block;
+  font-family: $font-sans;
+  font-size: $text-xs;
+  font-weight: $weight-medium;
+  text-transform: uppercase;
+  letter-spacing: $track-eyebrow;
+  color: var(--accent-editorial);
+}
+// Eyebrow with a leading rule
+.eyebrow--rule {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-3;
+}
+.eyebrow--rule::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--accent-editorial);
+}
+
+// Italic Newsreader lede
+.lede {
+  font-family: $font-serif;
+  font-style: italic;
+  font-size: $text-lg;
+  line-height: $leading-normal;
+  color: var(--muted-foreground);
+  max-width: 56ch;
+  margin: $space-5 0 0;
+}
+
+// Old-style figures — for years and stats inline with prose
+.font-osf {
+  font-feature-settings: 'onum' 1;
+  font-variant-numeric: oldstyle-nums;
+}
+
+// Tabular figures — for columns of numbers
+.font-tnum {
+  font-feature-settings: 'tnum' 1, 'lnum' 1;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+// True small caps with letterspacing
+.font-smcp {
+  font-feature-settings: 'smcp' 1;
+  font-variant-caps: small-caps;
+  letter-spacing: 0.06em;
+}
+
+// Drop-cap — opens an editorial section
+.dropcap::first-letter {
+  font-family: $font-serif;
+  font-weight: $weight-regular;
+  font-size: 4.5em;
+  float: left;
+  line-height: 0.85;
+  margin: 0.05em 0.08em 0 -0.04em;
+  color: var(--accent-editorial);
+}
+
+// Display heading helpers
+.display {
+  font-family: $font-serif;
+  font-weight: $weight-medium;
+  letter-spacing: $track-display;
+  line-height: $leading-tight;
+  color: var(--display);
+}
+.display--italic-accent em {
+  font-style: italic;
+  color: var(--primary);
 }

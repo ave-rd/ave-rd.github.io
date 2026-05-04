@@ -1,70 +1,92 @@
 // ============================================================
-// Page hero (.intro-header)
+// Editorial hero
+// Parchment-card surface with three soft radial gradients
+// (turquoise top-left, bole top-right, cobalt bottom-center).
+// Eyebrow → serif title → italic lede.
 // ============================================================
 
-.intro-header {
+.hero {
   position: relative;
-  background-color: var(--muted);
-  background: no-repeat center center;
-  background-size: cover;
-  margin-bottom: $space-3;
+  overflow: hidden;
+  margin: $space-7 0 $space-8;
+  padding: $space-9 $space-6;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-hero);
+  box-shadow: var(--shadow-sm);
 
-  // Darkening scrim for white text legibility over any photo
   &::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.35) 0%,
-      rgba(0, 0, 0, 0.55) 100%
-    );
     pointer-events: none;
-    z-index: 1;
+    opacity: 0.55;
+    background:
+      radial-gradient(circle at 12% 20%, #{rgba($turquoise-500, 0.18)}, transparent 45%),
+      radial-gradient(circle at 88% 12%, #{rgba($bole-500, 0.12)},      transparent 45%),
+      radial-gradient(circle at 50% 100%, #{rgba($cobalt-500, 0.10)},    transparent 60%);
   }
-  > .container {
+
+  > .container,
+  > .hero__inner {
     position: relative;
-    z-index: 2;
-  }
-
-  .site-heading,
-  .post-heading,
-  .page-heading {
-    color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-    padding: $space-8 0 $space-6;
-  }
-
-  .site-heading,
-  .page-heading {
-    text-align: center;
-
-    h1 {
-      margin-top: 0;
-      font-size: $text-2xl;
-      color: #fff;
-    }
-    .subheading {
-      font-size: $text-lg;
-      line-height: $leading-tight;
-      display: block;
-      font-family: $font-ui;
-      font-weight: $weight-light;
-      margin: $space-2 0 0;
-    }
+    z-index: 1;
+    max-width: 880px;
   }
 }
 
-@media only screen and (min-width: $bp-sm) {
-  .intro-header {
-    .site-heading,
-    .post-heading,
-    .page-heading {
-      padding: 150px 0;
-    }
-    .site-heading h1,
-    .page-heading h1 {
-      font-size: $text-3xl;
-    }
+@media (min-width: $bp-sm) {
+  .hero {
+    padding: $space-10 $space-9;
   }
+}
+
+.hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-3;
+  font-family: $font-sans;
+  font-size: $text-xs;
+  font-weight: $weight-medium;
+  text-transform: uppercase;
+  letter-spacing: $track-eyebrow;
+  color: var(--accent-editorial);
+}
+.hero__eyebrow::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--accent-editorial);
+}
+
+.hero__title {
+  margin: $space-6 0 0;
+  font-family: $font-serif;
+  font-weight: $weight-medium;
+  font-size: $text-4xl;
+  line-height: $leading-tight;
+  letter-spacing: $track-display;
+  color: var(--display);
+
+  em {
+    font-style: italic;
+    color: var(--primary);
+  }
+}
+@media (min-width: $bp-sm) {
+  .hero__title { font-size: $text-5xl; }
+}
+
+.hero__lede {
+  margin: $space-6 0 0;
+  max-width: 60ch;
+  font-family: $font-serif;
+  font-style: italic;
+  font-size: $text-lg;
+  line-height: $leading-normal;
+  color: var(--muted-foreground);
+}
+@media (min-width: $bp-sm) {
+  .hero__lede { font-size: $text-xl; }
 }

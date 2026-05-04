@@ -1,28 +1,24 @@
-// ============================================================
-// Print
-// ============================================================
-
 @media print {
   .navbar-custom,
-  .intro-header::before,
-  footer ul.list-inline {
+  footer ul.list-inline,
+  .hero::before {
     display: none !important;
   }
-  .intro-header {
-    background: none !important;
-    color: var(--ink) !important;
-  }
-  .intro-header .site-heading,
-  .intro-header .page-heading {
-    color: var(--ink) !important;
-    text-shadow: none !important;
-  }
   body {
-    color: #000;
+    background: #fff !important;
+    color: #000 !important;
     font-size: 12pt;
   }
-  a {
-    color: #000;
-    text-decoration: underline;
+  .hero {
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 0 24pt !important;
+  }
+  a { color: #000 !important; text-decoration: underline; }
+  .partner-card,
+  .numbered-list > li,
+  .signal-panel {
+    box-shadow: none !important;
+    page-break-inside: avoid;
   }
 }

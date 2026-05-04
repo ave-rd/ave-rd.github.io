@@ -1,12 +1,20 @@
 ---
-title: Gallery
-description: "Photos from AVE-RD program implementation in schools across the Dominican Republic"
+title: From the field
+description: "Photos from AVE-RD program implementation in schools across the Dominican Republic."
+eyebrow: "Gallery · 24 photographs"
 date: 2017-09-15T15:32:27+00:00
 author: Gonzalo Oyanedel
 layout: page
 order: 4
 ---
-<ul class="photo-gallery">
+
+<p>
+  Twenty-four photographs from the <span class="font-osf">2015</span> and
+  <span class="font-osf">2016</span> implementation rounds. Click any image
+  to view at full size.
+</p>
+
+<ul class="photo-gallery reveal">
   <li>
     <a href="/wp-content/uploads/2017/09/30890738422_6f6579e483_z.jpg">
       <img src="/wp-content/uploads/2017/09/30890738422_6f6579e483_z-300x200.jpg" alt="AVE-RD program photo" loading="lazy" />

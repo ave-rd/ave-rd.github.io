@@ -1,14 +1,14 @@
 ---
 ---
 // AVE-RD design system entry point.
-// Brand color comes from _config.yml (site.headercolor) and is the
-// only Liquid interpolation in the Sass tree.
-$header-color: {{ site.headercolor }};
+// Iznik palette baked in via _sass/_tokens.scss.
 
-@import "tokens";       // colors, type, spacing, dark mode
-@import "base";         // body, prose, headings, links
-@import "navbar";       // .navbar-custom states
-@import "hero";         // .intro-header + scrim
-@import "components";   // brand-logo, table, partner-card, photo-gallery, footer
+@import "tokens";       // palette ramps, semantic tokens, motion
+@import "base";         // typography, eyebrows, dropcap, OSF utils
+@import "navbar";       // .navbar-custom (parchment chrome)
+@import "hero";         // editorial hero (.hero)
+@import "components";   // section-header, partner-card, photo-gallery,
+                        // stat-strip, numbered-list, badge, signal-panel,
+                        // table, footer, reveal
 @import "a11y";         // skip link, :focus-visible, reduced-motion
 @import "print";        // print stylesheet

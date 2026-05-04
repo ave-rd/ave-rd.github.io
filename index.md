@@ -1,48 +1,125 @@
 ---
 layout: page
+title: Learning the value of education
+description: "A pilot information campaign for Dominican students in grades 7–12 — the AVE-RD project."
+eyebrow: "Field study · Dominican Republic"
 ---
 
-<img class="brand-logo" src="/img/logos/logo_ave.jpg" alt="AVE-RD logo" loading="lazy" />
+<p class="dropcap">
+  AVE-RD &mdash; <em>Aprendiendo el Valor de la Educación en la República Dominicana</em> &mdash;
+  is a public-policy pilot that asks a simple question: if students could see
+  the returns to schooling clearly, would they stay in school longer? It tested
+  the answer at scale, with the Dominican Ministry of Education, in two annual
+  batches reaching <span class="font-osf">200,000</span> students.
+</p>
 
-**Learning the Value of Education in the Dominican Republic (AVE-RD)** is a pilot project of public policy that seeks to evaluate the effectiveness of an information campaign in deciding the number of years of schooling of Dominican students.
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">The intervention</div>
+  <h2>Two voices, one campaign</h2>
+  <p class="lede">
+    Short videos, in TV-series format, shown to students in 7th through 12th grade.
+    Two variants: an <em>informative</em> arm and a <em>persuasive</em> arm.
+  </p>
+</div>
 
-AVE-RD is implemented by the Orientation and Psychology Department of the Ministry of Education of the Dominican Republic (MINERD) and evaluated by the Dominican Institute for Evaluation and Research of Educational Quality (IDEICE), and the Abdul Latif Jameel Poverty research center Action Lab (J-PAL). The project was funded by the United States Agency for International Development (USAID) and the MINERD.
+<p>
+  The program was designed and implemented by the Department of Orientation and
+  Psychology of the Ministry of Education (MINERD) and evaluated by IDEICE and
+  J-PAL LAC. Funding came from <abbr title="United States Agency for International Development">USAID</abbr>
+  and MINERD.
+</p>
 
-The program consists of showing videos about the value of education, in series TV format, to students between 7th and 12th grade.
+<p>
+  Preliminary results suggest that students systematically <em>undervalue</em>
+  the benefits of more education while overvaluing the alternative — leaving
+  school early to work. Where that information gap exists, the campaign closes
+  it; where it doesn&rsquo;t, the videos do little.
+</p>
 
-The videos emphasize the value of education, and there were two variations:
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">By the numbers</div>
+  <h2>Implementation at scale</h2>
+</div>
 
-  * **Informative**
-  * **Persuasive**
+<dl class="stat-strip reveal">
+  <div class="stat-strip__item">
+    <dd class="stat-strip__value">200,000</dd>
+    <dt class="stat-strip__label">Students reached</dt>
+  </div>
+  <div class="stat-strip__item">
+    <dd class="stat-strip__value">300,000</dd>
+    <dt class="stat-strip__label">Surveys collected</dt>
+  </div>
+  <div class="stat-strip__item">
+    <dd class="stat-strip__value">2,700</dd>
+    <dt class="stat-strip__label">Officials mobilized</dt>
+  </div>
+  <div class="stat-strip__item">
+    <dd class="stat-strip__value">2</dd>
+    <dt class="stat-strip__label">Annual batches (2015, 2016)</dt>
+  </div>
+</dl>
 
-The goal of the program is to reduce information gaps with respect to the benefits of receiving more education. This will only be effective to the extent that such a gap exists.
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">Findings</div>
+  <h2>What the program changed</h2>
+  <p class="lede">
+    Four effects emerged across the treated cohort, each reported in the
+    follow-up surveys and verified against National Test scores.
+  </p>
+</div>
 
-Preliminary results indicate that students tend to undervalue the benefit of more education, while over-valuing the benefit of having less education.
+<ol class="numbered-list reveal">
+  <li>
+    <div>
+      <h3>Less willingness to leave school early</h3>
+      <p>
+        Treated students reported lower intent to drop out for work, were more
+        likely to graduate from secondary school, and reported a higher
+        probability of obtaining a college degree.
+      </p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <h3>Reduced dropout rate</h3>
+      <p>
+        The campaign produced a measurable, statistically significant reduction
+        in dropout rates across grades 7&ndash;12.
+      </p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <h3>Higher National Test scores</h3>
+      <p>
+        Students treated by the program scored, on average, higher on the
+        Pruebas Nacionales than untreated peers in the same school.
+      </p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <h3>Behavior shifts beyond the returns story</h3>
+      <p>
+        Effects were larger than a pure-information model would predict,
+        suggesting the videos also moved students through other channels &mdash;
+        identity, aspiration, peer perception.
+      </p>
+    </div>
+  </li>
+</ol>
 
-##### **Implementation of the Program**
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">Materials</div>
+  <h2>The program timeline</h2>
+</div>
 
-  * The program was implemented in two batches: May 2015 and April 2016.
-  * All schools that participated in the 2015 batch again did so in 2016
+<p>
+  <img src="/wp-content/uploads/2017/08/timeline.jpg" alt="AVE-RD project timeline showing 2015 and 2016 batches" loading="lazy" />
+</p>
 
-<img src="/wp-content/uploads/2017/08/ave.jpg" alt="AVE-RD program implementation diagram" width="365" height="154" srcset="/wp-content/uploads/2017/08/ave.jpg 688w, /wp-content/uploads/2017/08/ave-300x126.jpg 300w, /wp-content/uploads/2017/08/ave-676x285.jpg 676w" sizes="(max-width: 365px) 100vw, 365px" loading="lazy" />
-
-##### **Timeline**
-
-<img src="/wp-content/uploads/2017/08/timeline.jpg" alt="AVE-RD project timeline" width="596" height="315" loading="lazy" />
-
-##### **Implementation Logistics**
-
-  * AVE-RD videos were viewed by more than 200,000 students from the Dominican Republic between 2015 and 2016.
-  * The AVE-RD project has collected more than 300,000 surveys, including information on students, teachers and parents.
-  * As a logistical challenge, the AVE-RD project has mobilized more than 2,700 officials who have collaborated in different stages of the project, especially by the Department of Orientation and Psychology.
-  * The AVE-RD project has trained hundreds of people in modern methods of fieldwork, call center and logistics.
-
-##### **Effects**
-
-  * Students affected by the program report less willingness to leave school to work, more likely to graduate from high school, and a better chance of obtaining a college degree.
-  * The program had a significant effect on reducing the school dropout rate of students of varying degrees.
-  * There are significant effects on increasing the average National Test scores of the students who were treated by the program.
-  * The results suggest that behavioral change is driven not only by higher returns but by other aspects of the value of education.
-
-&nbsp;
-
+<p>
+  For partners, contact details, and the full set of implementation photos,
+  see the rest of the directory.
+</p>

@@ -1,92 +1,228 @@
 // ============================================================
-// Design tokens
+// Design tokens — Iznik
 // ------------------------------------------------------------
-// Colors, shadows and radii are exposed as CSS custom properties
-// on :root so prefers-color-scheme: dark can flip them and any
-// future plain-CSS file can reference them via var().
-// Type, spacing and font stacks live as SCSS variables — they
-// don't change between themes and are useful at compile time.
+// Five color families (bole, cobalt, turquoise, parchment, ink),
+// each with a 50…900 ramp, sampled from the Iznik design system.
+// Surfaced as both SCSS variables (for compile-time math) and
+// CSS custom properties on :root (so dark mode and any future
+// CSS file can flip / consume them).
 // ============================================================
 
-// Source of truth for the brand color comes from _config.yml
-// via a Liquid interpolation in the top-level colorscheme.scss.
-
-// ----- Spacing scale (8 px-based) -----
+// ----- Spacing scale (4 px grid) -----
 $space-1: 4px;
 $space-2: 8px;
-$space-3: 16px;
-$space-4: 24px;
-$space-5: 32px;
-$space-6: 48px;
-$space-7: 64px;
-$space-8: 96px;
+$space-3: 12px;
+$space-4: 16px;
+$space-5: 20px;
+$space-6: 24px;
+$space-7: 32px;
+$space-8: 48px;
+$space-9: 64px;
+$space-10: 96px;
 
 // ----- Type scale -----
-// Sizes used across the site, named so layout intent is obvious
-// at the call site instead of "37px" appearing somewhere unique.
-$text-xs:    12px;   // navbar uppercase labels
-$text-sm:    14px;   // partner-card link, footer copyright
-$text-base:  18px;   // tables, smaller UI text
-$text-md:    20px;   // body prose (Lora at this size)
-$text-lg:    24px;   // hero subheading
-$text-xl:    36px;   // section heading (currently unused)
-$text-2xl:   50px;   // hero h1 baseline
-$text-3xl:   80px;   // hero h1 ≥ 768 px
+$text-xs:    11px;   // eyebrows
+$text-sm:    13px;   // small chrome
+$text-base:  15px;   // controls / metadata
+$text-md:    17px;   // body prose (Newsreader at this size)
+$text-lg:    20px;   // lede / lift
+$text-xl:    28px;   // h3 card title
+$text-2xl:   34px;   // h2 section title
+$text-3xl:   44px;   // h1 page title
+$text-4xl:   60px;   // hero h1 ≥ md
+$text-5xl:   76px;   // hero h1 ≥ lg
 
-// ----- Line-heights -----
-$leading-tight:   1.1;
-$leading-snug:    1.4;
-$leading-normal:  1.55;
-$leading-relaxed: 1.6;
+// Line heights
+$leading-tight:   1.05;
+$leading-snug:    1.2;
+$leading-normal:  1.5;
+$leading-relaxed: 1.7;
 
-// ----- Weights -----
-$weight-light:    300;
-$weight-medium:   600;
-$weight-semibold: 700;
-$weight-bold:     800;
+// Weights — Iznik uses only two
+$weight-regular: 400;
+$weight-medium:  500;
 
-// ----- Font stacks -----
-$font-body: 'Lora', 'Times New Roman', Georgia, serif;
-$font-ui:   'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+// Font stacks
+$font-serif: 'Newsreader', 'Iowan Old Style', 'Georgia', serif;
+$font-sans:  'Instrument Sans', 'Helvetica Neue', Arial, sans-serif;
+$font-mono:  ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
 
-// ----- Breakpoints (Bootstrap 3-aligned) -----
+// Tracking
+$track-eyebrow:    0.22em;
+$track-tight:     -0.01em;
+$track-display:   -0.015em;
+
+// Breakpoints (Bootstrap 3-aligned)
 $bp-sm: 768px;
 $bp-md: 992px;
 $bp-lg: 1170px;
 
-// ----- Color tokens (CSS custom properties) -----
+// ============================================================
+// Iznik palette ramps
+// ============================================================
+
+// Bole — iron-rich red, editorial accent
+$bole-50:  #FBF1ED;
+$bole-100: #F4DCD2;
+$bole-200: #E5B5A4;
+$bole-300: #D38C71;
+$bole-400: #C0734F;
+$bole-500: #AD593C;
+$bole-600: #964A30;
+$bole-700: #7B3C28;
+$bole-800: #5F2E1F;
+$bole-900: #432014;
+
+// Cobalt — deep saturated blue, primary action
+$cobalt-50:  #EFEEF6;
+$cobalt-100: #D8D5E8;
+$cobalt-200: #B1ABCC;
+$cobalt-300: #8A82B1;
+$cobalt-400: #696295;
+$cobalt-500: #49457A;
+$cobalt-600: #3D3A66;
+$cobalt-700: #312E54;
+$cobalt-800: #25234A;
+$cobalt-900: #18173A;
+
+// Turquoise — copper-green, research / success
+$turquoise-50:  #EDF7F5;
+$turquoise-100: #D7EDE9;
+$turquoise-200: #ACDAD2;
+$turquoise-300: #82C7BB;
+$turquoise-400: #6FB4A8;
+$turquoise-500: #5D9E94;
+$turquoise-600: #4D857C;
+$turquoise-700: #3F6D65;
+$turquoise-800: #325650;
+$turquoise-900: #1F3833;
+
+// Parchment — warm library-paper neutral (page surface)
+$parchment-50:  #FAF6EC;
+$parchment-100: #F2EBD9;
+$parchment-200: #E5D8B8;
+$parchment-300: #D2BE92;
+$parchment-400: #B59E68;
+
+// Ink — warm dark neutral (text)
+$ink-500: #6B5C44;
+$ink-600: #5A4D38;
+$ink-700: #4A3F2E;
+$ink-800: #3A3024;
+$ink-900: #2A2118;
+
+// ============================================================
+// CSS custom properties
+// ============================================================
+
 :root {
-  --accent:        #{$header-color};
-  --accent-strong: #{darken($header-color, 12%)};
-  --accent-soft:   #{rgba($header-color, 0.10)};
+  // Palette ramps (selected stops only — keep the surface tight)
+  --bole-50:    #{$bole-50};
+  --bole-100:   #{$bole-100};
+  --bole-300:   #{$bole-300};
+  --bole-500:   #{$bole-500};
+  --bole-600:   #{$bole-600};
+  --bole-700:   #{$bole-700};
 
-  --ink:    #404040;   // body text + default link
-  --muted:  #6b6b6b;   // meta / secondary
-  --bg:     #ffffff;
-  --bg-alt: #f7f9fb;   // partner-card logo well, table row hover
-  --border: #e5e7eb;
+  --cobalt-50:  #{$cobalt-50};
+  --cobalt-100: #{$cobalt-100};
+  --cobalt-300: #{$cobalt-300};
+  --cobalt-500: #{$cobalt-500};
+  --cobalt-600: #{$cobalt-600};
+  --cobalt-700: #{$cobalt-700};
 
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --turquoise-50:  #{$turquoise-50};
+  --turquoise-100: #{$turquoise-100};
+  --turquoise-300: #{$turquoise-300};
+  --turquoise-500: #{$turquoise-500};
+  --turquoise-600: #{$turquoise-600};
+  --turquoise-700: #{$turquoise-700};
 
-  --radius:    6px;
-  --radius-lg: 12px;
+  --parchment-50:  #{$parchment-50};
+  --parchment-100: #{$parchment-100};
+  --parchment-200: #{$parchment-200};
+  --parchment-300: #{$parchment-300};
+
+  --ink-500: #{$ink-500};
+  --ink-700: #{$ink-700};
+  --ink-800: #{$ink-800};
+  --ink-900: #{$ink-900};
+
+  // Semantic tokens — what components compose against
+  --bg:                #{$parchment-50};   // page surface
+  --bg-card:           #ffffff;            // raised card
+  --bg-alt:            #{$parchment-100};  // soft inset / row hover
+  --foreground:        #{$ink-800};        // body text
+  --muted-foreground:  #{$ink-500};        // secondary text
+  --display:           #{$ink-900};        // headings / display
+  --border:            #{rgba($ink-700, 0.12)};
+  --border-strong:     #{rgba($ink-700, 0.22)};
+
+  // Action / accent affordances
+  --primary:           #{$cobalt-500};
+  --primary-strong:    #{$cobalt-700};
+  --primary-foreground:#ffffff;
+  --accent-editorial:  #{$bole-600};       // eyebrows, numerals, emphasis
+  --accent-research:   #{$turquoise-600};
+
+  // Focus
+  --ring:              #{$cobalt-500};
+
+  // Status
+  --success:           #{$turquoise-600};
+  --success-foreground:#ffffff;
+  --warning:           #{$bole-500};
+  --warning-foreground:#ffffff;
+  --destructive:       #{$bole-700};
+  --destructive-foreground: #ffffff;
+
+  // Radii
+  --radius-sm:    12px;
+  --radius-md:    16px;
+  --radius-tile:  20px;
+  --radius-card:  24px;
+  --radius-hero:  28px;
+
+  // Shadows — warm, tinted with ink-800 alpha
+  --shadow-sm: 0 1px 2px #{rgba($ink-800, 0.06)};
+  --shadow-md: 0 4px 14px #{rgba($ink-800, 0.10)}, 0 1px 2px #{rgba($ink-800, 0.06)};
+  --shadow-lg: 0 12px 32px #{rgba($ink-800, 0.16)}, 0 2px 6px #{rgba($ink-800, 0.08)};
+
+  // Motion
+  --duration-fast:   120ms;
+  --duration-normal: 220ms;
+  --duration-slow:   320ms;
+  --ease-out:    cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in:     cubic-bezier(0.4, 0, 1, 1);
 }
 
-// Dark-mode overrides; flip just the color/shadow tokens.
+// Dark mode — flip the semantic tokens. Palette ramps stay; this
+// is intentional — it preserves the editorial signature.
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent:        #{lighten($header-color, 8%)};
-    --accent-strong: #{lighten($header-color, 18%)};
-    --accent-soft:   #{rgba($header-color, 0.18)};
+    --bg:                #14110C;
+    --bg-card:           #1B1813;
+    --bg-alt:            #221E16;
+    --foreground:        #{$parchment-50};
+    --muted-foreground:  #{$parchment-300};
+    --display:           #{$parchment-50};
+    --border:            #{rgba($parchment-300, 0.15)};
+    --border-strong:     #{rgba($parchment-300, 0.28)};
 
-    --ink:    #e8e8e8;
-    --muted:  #9aa0a6;
-    --bg:     #121417;
-    --bg-alt: #1a1d22;
-    --border: #2a2e35;
+    --primary:           #{$cobalt-300};
+    --primary-strong:    #{$cobalt-100};
+    --primary-foreground:#14110C;
+    --accent-editorial:  #{$bole-300};
+    --accent-research:   #{$turquoise-300};
+    --ring:              #{$cobalt-300};
 
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.55);
+    --success:           #{$turquoise-300};
+    --warning:           #{$bole-300};
+    --destructive:       #{$bole-300};
+
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.6);
+    --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.55), 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.55), 0 2px 6px rgba(0, 0, 0, 0.4);
   }
 }

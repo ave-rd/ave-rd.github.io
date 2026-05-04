@@ -1,66 +1,94 @@
 // ============================================================
-// Reusable components
+// Components — Iznik
 // ============================================================
 
-// ----- Brand logo (homepage / About) -----
+// ----- Brand logo -----
 img.brand-logo {
   height: clamp(96px, 12vw, 150px);
   width: auto;
-  margin-bottom: $space-4;
+  margin: 0 0 $space-6;
   display: block;
 }
 
-// ----- Prose tables -----
+// ----- Section header (eyebrow → serif title → italic lede) -----
+.section-header {
+  margin: $space-9 0 $space-6;
+
+  .eyebrow {
+    margin-bottom: $space-3;
+  }
+  h2, .section-header__title {
+    margin: 0;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-2xl;
+    line-height: $leading-tight;
+    letter-spacing: $track-tight;
+    color: var(--display);
+  }
+  .lede {
+    margin-top: $space-3;
+  }
+}
+
+// ----- Tables -----
 table {
   width: 100%;
-  margin: $space-4 0;
+  margin: $space-6 0;
   border-collapse: collapse;
-  font-family: $font-ui;
+  font-family: $font-sans;
   font-size: $text-base;
 }
-th,
-td {
-  padding: $space-2 $space-3;
+th, td {
+  padding: $space-3 $space-4;
   text-align: left;
 }
 th {
-  border-bottom: 2px solid var(--ink);
-  font-weight: $weight-semibold;
+  border-bottom: 2px solid var(--ink-700);
+  font-weight: $weight-medium;
+  font-size: $text-xs;
+  text-transform: uppercase;
+  letter-spacing: $track-eyebrow;
+  color: var(--accent-editorial);
 }
 td {
   border-bottom: 1px solid var(--border);
+  color: var(--foreground);
 }
-tbody tr:hover {
-  background: var(--bg-alt);
+tbody tr {
+  transition: background var(--duration-fast) var(--ease-out);
+  &:hover { background: var(--bg-alt); }
 }
 
 // ----- Prose lists -----
 main ul,
 main ol {
-  padding-left: $space-4;
+  padding-left: $space-6;
   line-height: $leading-relaxed;
+  color: var(--foreground);
 }
-main li + li {
-  margin-top: $space-2;
-}
+main li + li { margin-top: $space-3; }
 
 // ----- Partner card -----
 .partner-card {
   display: grid;
   grid-template-columns: 200px 1fr;
-  gap: $space-4;
+  gap: $space-6;
   align-items: start;
-  padding: $space-4;
-  margin: $space-4 0;
-  background: var(--bg);
+  padding: $space-6;
+  margin: $space-5 0;
+  background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-card);
   box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition: box-shadow var(--duration-normal) var(--ease-out),
+              transform var(--duration-normal) var(--ease-out),
+              border-color var(--duration-normal) var(--ease-out);
 
   &:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-2px);
+    border-color: var(--cobalt-300);
   }
 
   &__logo {
@@ -68,9 +96,9 @@ main li + li {
     align-items: center;
     justify-content: center;
     background: var(--bg-alt);
-    border-radius: var(--radius);
-    padding: $space-3;
-    min-height: 100px;
+    border-radius: var(--radius-tile);
+    padding: $space-5;
+    min-height: 110px;
 
     img {
       max-width: 100%;
@@ -81,46 +109,47 @@ main li + li {
   }
 
   &__body {
-    font-family: $font-body;
-    line-height: $leading-normal;
+    font-family: $font-sans;
+    line-height: $leading-relaxed;
+    color: var(--foreground);
 
     p {
-      margin: 0 0 $space-3;
+      margin: 0 0 $space-4;
+      font-size: $text-base;
     }
   }
 
   &__link {
     display: inline-block;
-    font-family: $font-ui;
-    font-weight: $weight-bold;
-    color: var(--accent);
+    font-family: $font-sans;
+    font-weight: $weight-medium;
+    color: var(--primary);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: $text-sm;
-    letter-spacing: 0.5px;
+    font-size: $text-xs;
+    letter-spacing: $track-eyebrow;
 
     &::after { content: " \2192"; }
 
     &:hover,
     &:focus {
-      color: var(--accent-strong);
+      color: var(--primary-strong);
       text-decoration: underline;
+      text-underline-offset: 4px;
     }
   }
 }
 
 @media (max-width: 600px) {
-  .partner-card {
-    grid-template-columns: 1fr;
-  }
+  .partner-card { grid-template-columns: 1fr; }
 }
 
 // ----- Photo gallery (CSS grid) -----
 .photo-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: $space-3;
-  margin: $space-5 0;
+  gap: $space-4;
+  margin: $space-7 0;
   padding: 0;
   list-style: none;
 
@@ -130,8 +159,13 @@ main li + li {
     display: block;
     aspect-ratio: 3 / 2;
     overflow: hidden;
-    border-radius: var(--radius);
+    border-radius: var(--radius-tile);
     background: var(--bg-alt);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--duration-normal) var(--ease-out);
+
+    &:hover,
+    &:focus { box-shadow: var(--shadow-md); }
   }
 
   img {
@@ -139,27 +173,203 @@ main li + li {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s var(--ease-out);
   }
 
   a:hover img,
-  a:focus img {
-    transform: scale(1.04);
+  a:focus img { transform: scale(1.04); }
+}
+
+// ----- Stat strip -----
+.stat-strip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $space-7 $space-8;
+  margin: $space-8 0;
+  padding: 0;
+
+  &__item {
+    margin: 0;
+  }
+  &__value {
+    display: block;
+    font-family: $font-serif;
+    font-feature-settings: 'onum' 1;
+    font-variant-numeric: oldstyle-nums;
+    font-weight: $weight-medium;
+    font-size: $text-3xl;
+    line-height: $leading-tight;
+    letter-spacing: $track-tight;
+    color: var(--display);
+    margin: 0;
+  }
+  &__label {
+    display: block;
+    margin-top: $space-2;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--muted-foreground);
+  }
+}
+@media (min-width: $bp-sm) {
+  .stat-strip {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .stat-strip__value { font-size: $text-4xl; }
+}
+
+// ----- Numbered editorial list -----
+.numbered-list {
+  list-style: none;
+  margin: $space-7 0;
+  padding: 0;
+  counter-reset: numlist;
+}
+.numbered-list > li {
+  counter-increment: numlist;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: $space-5;
+  align-items: start;
+  padding: $space-5 $space-6;
+  margin: 0 0 $space-3;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-tile);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--duration-normal) var(--ease-out),
+              box-shadow var(--duration-normal) var(--ease-out);
+
+  &::before {
+    content: counter(numlist, decimal-leading-zero);
+    font-family: $font-serif;
+    font-feature-settings: 'onum' 1;
+    font-variant-numeric: oldstyle-nums;
+    font-size: $text-xl;
+    line-height: $leading-tight;
+    color: var(--accent-editorial);
+  }
+
+  &:hover {
+    border-color: var(--cobalt-300);
+    box-shadow: var(--shadow-md);
+  }
+
+  > * { margin: 0; }
+}
+
+// ----- Badges (Iznik tag vocabulary) -----
+.badge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  padding: 4px 12px;
+  font-family: $font-sans;
+  font-size: $text-xs;
+  font-weight: $weight-medium;
+  letter-spacing: $track-eyebrow;
+  text-transform: uppercase;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+
+  &--cohort     { background: #{rgba($bole-500, 0.10)};      color: var(--bole-700);      border-color: #{rgba($bole-500, 0.20)};      }
+  &--research   { background: #{rgba($turquoise-500, 0.12)}; color: var(--turquoise-700); border-color: #{rgba($turquoise-500, 0.22)}; }
+  &--department { background: #{rgba($cobalt-500, 0.10)};    color: var(--cobalt-700);    border-color: #{rgba($cobalt-500, 0.22)};    }
+  &--status     { background: var(--turquoise-700);          color: #fff;                 border-color: transparent;                  }
+  &--emeritus   { background: transparent;                   color: var(--turquoise-700); border-color: var(--turquoise-300);          }
+  &--info       { background: var(--cobalt-50);              color: var(--cobalt-700);    border-color: var(--cobalt-300);             }
+  &--success    { background: var(--turquoise-50);           color: var(--turquoise-700); border-color: var(--turquoise-300);          }
+  &--warning    { background: var(--bole-50);                color: var(--bole-700);      border-color: var(--bole-300);               }
+  &--neutral    { background: var(--bg-alt);                 color: var(--muted-foreground); border-color: var(--border);              }
+
+  .font-osf { font-size: 1em; }
+}
+
+// ----- Citation / signal panel -----
+.signal-panel {
+  margin: $space-7 0;
+  padding: $space-6;
+  background: var(--parchment-50);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-tile);
+  box-shadow: var(--shadow-sm);
+
+  .eyebrow { margin-bottom: $space-3; }
+
+  pre, code {
+    font-family: $font-mono;
+    font-size: $text-sm;
+    line-height: $leading-relaxed;
+  }
+  pre {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    overflow-x: auto;
+    color: var(--foreground);
+  }
+}
+
+// ----- Reveal-on-scroll wrapper -----
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity var(--duration-slow) var(--ease-out),
+              transform var(--duration-slow) var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+
+  &.is-visible {
+    opacity: 1;
+    transform: none;
   }
 }
 
 // ----- Footer -----
 footer {
-  padding: $space-6 0 $space-7;
+  margin-top: $space-10;
+  padding: $space-9 0 $space-10;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+  text-align: center;
 
-  .list-inline {
-    margin: 0;
+  .footer-links {
+    list-style: none;
+    margin: 0 0 $space-5;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $space-3 $space-6;
+  }
+  .footer-links a {
+    font-family: $font-sans;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--muted-foreground);
+    text-decoration: none;
+    transition: color var(--duration-fast) var(--ease-out);
+
+    &:hover,
+    &:focus { color: var(--primary); }
   }
   .copyright {
-    font-size: $text-sm;
-    text-align: center;
-    margin-bottom: 0;
-    color: var(--muted);
+    font-family: $font-sans;
+    font-size: $text-xs;
+    color: var(--muted-foreground);
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    margin: 0;
   }
+}
+
+// ----- Container width refinement -----
+.container, .container-fluid {
+  position: relative;
 }
