@@ -5,7 +5,7 @@ eyebrow: "Contact"
 date: 2017-08-25T14:20:05+00:00
 author: Gonzalo Oyanedel
 layout: page
-order: 6
+order: 7
 ---
 
 <div class="signal-panel reveal">

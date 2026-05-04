@@ -5,7 +5,7 @@ eyebrow: "Gallery · 24 photographs"
 date: 2017-09-15T15:32:27+00:00
 author: Gonzalo Oyanedel
 layout: page
-order: 4
+order: 6
 ---
 
 <p>

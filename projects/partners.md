@@ -5,7 +5,7 @@ eyebrow: "Partners · 4 institutions"
 date: 2017-09-14T14:23:53+00:00
 author: Gonzalo Oyanedel
 layout: page
-order: 3
+order: 5
 ---
 
 <p class="dropcap">

@@ -5,7 +5,7 @@ eyebrow: "About"
 date: 2017-08-25T14:16:56+00:00
 author: Gonzalo Oyanedel
 layout: page
-order: 2
+order: 1
 ---
 
 <p class="dropcap">

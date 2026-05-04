@@ -1,0 +1,41 @@
+# AVE-RD intervention videos
+# ---------------------------
+# Edit the title / description / arm / episode fields with the real values
+# from your records. The id and playlist fields are taken from the URLs you
+# shared; everything else is a placeholder waiting for editorial.
+
+playlist: "PLoHTHS27BGgzGvx9PpKYiweKnyXZV95dd"
+playlist_url: "https://www.youtube.com/playlist?list=PLoHTHS27BGgzGvx9PpKYiweKnyXZV95dd"
+
+videos:
+  - id: "1G-2CeXbr7I"
+    episode: 1
+    title: "Episode 1 — title to fill in"
+    description: "One-line description of what this episode covers. Edit me."
+    arm: "persuasive"
+    duration: "15:00"
+    language: "es"
+
+  - id: "5kV64q9nr_0"
+    episode: 2
+    title: "Episode 2 — title to fill in"
+    description: "One-line description. Edit me."
+    arm: "persuasive"
+    duration: "15:00"
+    language: "es"
+
+  - id: "IebQH6CvAx8"
+    episode: 3
+    title: "Episode 3 — title to fill in"
+    description: "One-line description. Edit me."
+    arm: "persuasive"
+    duration: "15:00"
+    language: "es"
+
+  - id: "y5ESPUW_TvU"
+    episode: 4
+    title: "Episode 4 — title to fill in"
+    description: "One-line description. Edit me."
+    arm: "persuasive"
+    duration: "15:00"
+    language: "es"

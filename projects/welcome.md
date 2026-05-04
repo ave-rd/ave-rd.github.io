@@ -1,11 +1,11 @@
 ---
-title: The reading room
-description: "Materials, surveys and project information for AVE-RD participants."
-eyebrow: "Welcome"
+title: For participants
+description: "Pointers for counselors, teachers, parents, students and DOP technicians involved in the AVE-RD program."
+eyebrow: "Reading room"
 date: 2017-08-25T14:07:29+00:00
 author: Gonzalo Oyanedel
 layout: page
-order: 1
+sitemap: false
 ---
 
 <p class="dropcap">

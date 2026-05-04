@@ -1,31 +1,121 @@
 ---
-title: Request the videos
-description: "How counselors, teachers and researchers can obtain the AVE-RD video series."
+title: Replication kit
+description: "Working papers, survey instruments, analysis code, data and the procedure for requesting the AVE-RD videos."
 eyebrow: "Materials"
 date: 2017-08-25T14:23:03+00:00
 author: Gonzalo Oyanedel
 layout: page
-order: 5
+order: 4
 ---
 
 <p class="dropcap">
-  The AVE-RD video series &mdash; both the <em>informative</em> and
-  <em>persuasive</em> arms &mdash; is distributed to participating schools
-  through the Department of Orientation and Psychology of the Ministry of
-  Education. There is no public download. Material is provided to verified
-  participants and to researchers under a use agreement.
+  AVE-RD is designed to be replicable. Researchers and policy makers in
+  other countries can adapt the intervention, the survey panel, and the
+  analysis pipeline. The materials below are the kit. The papers and
+  instruments are openly downloadable; the videos and the de-identified
+  panel data are released under a use agreement.
 </p>
 
 <div class="section-header reveal">
-  <div class="eyebrow eyebrow--rule">Counselors, teachers and DOP staff</div>
-  <h2>Three steps to access the deployment package</h2>
+  <div class="eyebrow eyebrow--rule">Working papers</div>
+  <h2>Read the analysis</h2>
 </div>
 
 <ol class="numbered-list reveal">
   <li>
     <div>
+      <h3>Information and Dynamic Human Capital Accumulation</h3>
+      <p>
+        Berry, Coffman, Morales &amp; Neilson. The most current draft.
+        Estimates the dropout, test-score and belief-shift effects from
+        the 2015&ndash;2016 batches and discusses the mechanism through
+        which information shifts schooling decisions.
+      </p>
+      <p>
+        <a class="partner-card__link" href="/papers/AVE_working_paper_2025.pdf">Download (PDF)</a>
+      </p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <h3>Subjective Beliefs and Dynamic Human Capital Investment Decisions in the Dominican Republic</h3>
+      <p>
+        Berry, Coffman, Morales &amp; Neilson, <span class="font-osf">2014</span>.
+        The earlier methodological paper on the role of subjective beliefs
+        in schooling investment decisions.
+      </p>
+      <p>
+        <a class="partner-card__link" href="/papers/AVE_Subjective_Beliefs_2014.pdf">Download (PDF)</a>
+      </p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <h3>USAID Endline Report (Milestone 13)</h3>
+      <p>
+        The full implementation and results report submitted to USAID at
+        the end of the funded period. Includes effect tables and the
+        operational logistics narrative.
+      </p>
+      <p>
+        <a class="partner-card__link" href="/papers/AVE_USAID_EndlineReport.pdf">Download (PDF)</a>
+      </p>
+    </div>
+  </li>
+</ol>
+
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">Survey instruments</div>
+  <h2>Adapt the questionnaires</h2>
+  <p class="lede">
+    Spanish-first, with English translations where they exist. Released
+    under CC-BY-4.0; please cite the AVE-RD project when adapting.
+  </p>
+</div>
+
+<p>
+  The instruments are organized by wave (baseline 2015, endline 2016, and
+  the 2025&ndash;2027 follow-up wave) and by respondent (student, parent,
+  teacher, principal). The full inventory is in the
+  <a href="https://github.com/ave-rd/ave-rd.github.io/tree/master/instruments"><code>instruments/</code> directory</a>
+  of this site's repository.
+</p>
+
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">Code &amp; data</div>
+  <h2>Reproduce the analysis</h2>
+</div>
+
+<p>
+  The analysis pipeline (Stata) and the de-identified panel data
+  (student-by-wave) are available to research and evaluation institutions
+  under a use agreement. The agreement covers responsible-use commitments
+  around student PII and IRB-required handling.
+</p>
+
+<p>
+  To request access, write to the project team with your institution
+  affiliation, IRB approval (or exempt determination), and a one-paragraph
+  description of intended use. See <a href="/projects/contact/">Contact</a>.
+</p>
+
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">Videos for classrooms</div>
+  <h2>Use the videos in your school</h2>
+</div>
+
+<p>
+  Counselors, teachers, and DOP technicians running the program in
+  Dominican schools can access the deployment package through the
+  Department of Orientation and Psychology of the Ministry of Education.
+  Three steps:
+</p>
+
+<ol class="numbered-list reveal">
+  <li>
+    <div>
       <h3>Confirm school participation</h3>
-      <p>Reach your DOP regional coordinator and confirm your school is part of the AVE-RD pilot.</p>
+      <p>Reach your DOP regional coordinator and confirm your school is part of the current AVE-RD wave.</p>
     </div>
   </li>
   <li>
@@ -37,19 +127,11 @@ order: 5
   <li>
     <div>
       <h3>Receive the link and the implementation guide</h3>
-      <p>The team will send a download link, the implementation guide for the relevant grade levels, and the post-screening survey instrument.</p>
+      <p>The team will send the download link, the implementation guide for the relevant grade levels, and the post-screening survey instrument.</p>
     </div>
   </li>
 </ol>
 
-<div class="section-header reveal">
-  <div class="eyebrow eyebrow--rule">Researchers and partners</div>
-  <h2>Use under agreement</h2>
-</div>
-
 <p>
-  If you want to use AVE-RD materials for evaluation, replication, or related
-  research, write to the project team and describe your intended use. We
-  share the videos and the survey instruments under a standard use agreement
-  with research and evaluation institutions.
+  For a public preview of the intervention, see <a href="/projects/videos/">The intervention</a>.
 </p>

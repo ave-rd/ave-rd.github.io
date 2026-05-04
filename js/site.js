@@ -14,6 +14,24 @@
     img.classList.add('img-responsive');
   });
 
+  // ----- Lazy YouTube embed -----
+  // Click on a .video-card__media swaps the thumbnail for a real iframe.
+  // Saves third-party JS / cookies until the user actually wants the video.
+  document.querySelectorAll('.video-card__media[data-video-id]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-video-id');
+      var iframe = document.createElement('iframe');
+      iframe.setAttribute('src', 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0');
+      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.setAttribute('title', btn.getAttribute('aria-label') || 'YouTube video');
+      btn.innerHTML = '';
+      btn.appendChild(iframe);
+      // Replace the button with a div now that there's no thumbnail to click.
+      btn.style.cursor = 'default';
+    });
+  });
+
   // ----- Reveal-on-scroll -----
   var revealEls = document.querySelectorAll('.reveal');
   if (revealEls.length) {
