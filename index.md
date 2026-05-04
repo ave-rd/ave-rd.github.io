@@ -3,6 +3,7 @@ layout: page
 title: Learning the value of education
 description: "A school-randomized RCT testing how short videos shift Dominican students' beliefs about the returns to education — and their schooling decisions."
 eyebrow: "AVE · Dominican Republic"
+hero-style: painted
 ---
 
 <p class="dropcap">
@@ -152,7 +153,7 @@ eyebrow: "AVE · Dominican Republic"
   </p>
 </div>
 
-<div class="signal-panel reveal">
+<div class="signal-panel signal-panel--research reveal">
   <div class="eyebrow">In the field</div>
   <p>
     <strong>Research questions.</strong>

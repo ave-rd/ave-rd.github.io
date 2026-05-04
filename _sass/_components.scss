@@ -88,14 +88,14 @@ main li + li { margin-top: $space-3; }
   &:hover {
     box-shadow: var(--shadow-md);
     transform: translateY(-2px);
-    border-color: var(--cobalt-300);
+    border-color: var(--turquoise-300);
   }
 
   &__logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--bg-alt);
+    background: var(--turquoise-50);
     border-radius: var(--radius-tile);
     padding: $space-5;
     min-height: 110px;
@@ -302,6 +302,10 @@ main li + li { margin-top: $space-3; }
 }
 
 // ----- Photo gallery (CSS grid) -----
+// Archival treatment: photos render in black-and-white with a faint
+// turquoise duotone tint by default. On hover/focus, color returns and
+// the tile lifts. Gives 24 disparate photographs a single coherent
+// visual key without losing the documentary feel.
 .photo-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -314,15 +318,35 @@ main li + li { margin-top: $space-3; }
 
   a {
     display: block;
+    position: relative;
     aspect-ratio: 3 / 2;
     overflow: hidden;
     border-radius: var(--radius-tile);
-    background: var(--bg-alt);
+    background: var(--turquoise-50);
     box-shadow: var(--shadow-sm);
     transition: box-shadow var(--duration-normal) var(--ease-out);
 
     &:hover,
     &:focus { box-shadow: var(--shadow-md); }
+
+    // Soft turquoise scrim that sits on top of the desaturated image.
+    // Recedes on hover so the full color and detail come through.
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(
+        180deg,
+        #{rgba($turquoise-700, 0.10)} 0%,
+        #{rgba($ink-800, 0.18)} 100%
+      );
+      mix-blend-mode: multiply;
+      opacity: 1;
+      transition: opacity var(--duration-normal) var(--ease-out);
+    }
+    &:hover::after,
+    &:focus::after { opacity: 0; }
   }
 
   img {
@@ -330,11 +354,16 @@ main li + li { margin-top: $space-3; }
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.5s var(--ease-out);
+    filter: grayscale(1) contrast(1.04) brightness(0.98);
+    transition: transform 0.5s var(--ease-out),
+                filter var(--duration-normal) var(--ease-out);
   }
 
   a:hover img,
-  a:focus img { transform: scale(1.04); }
+  a:focus img {
+    transform: scale(1.04);
+    filter: grayscale(0) contrast(1) brightness(1);
+  }
 }
 
 // ----- Stat strip -----
@@ -411,7 +440,7 @@ main li + li { margin-top: $space-3; }
   }
 
   &:hover {
-    border-color: var(--cobalt-300);
+    border-color: var(--turquoise-300);
     box-shadow: var(--shadow-md);
   }
 
@@ -470,6 +499,17 @@ main li + li { margin-top: $space-3; }
     border: 0;
     overflow-x: auto;
     color: var(--foreground);
+  }
+}
+
+// Research / forward-looking variant — turquoise left rule, soft turquoise surface
+.signal-panel--research {
+  background: var(--turquoise-50);
+  border-color: var(--turquoise-300);
+  border-left-color: var(--accent-research);
+
+  .eyebrow {
+    color: var(--turquoise-700);
   }
 }
 

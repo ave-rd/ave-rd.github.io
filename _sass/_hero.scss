@@ -1,8 +1,15 @@
 // ============================================================
 // Editorial hero
-// Parchment-card surface with three soft radial gradients
-// (turquoise top-left, bole top-right, cobalt bottom-center).
-// Eyebrow → serif title → italic lede.
+//
+// Two variants:
+//   .hero            Parchment-card with three soft radial
+//                    gradients. Default for content pages.
+//   .hero--painted   Painted backdrop (e.g. Caribbean oil) with
+//                    a soft scrim. Used on the homepage when
+//                    img/hero-painting.jpg is present.
+//
+// Both wrap an .hero__inner (or .container) with eyebrow → serif
+// title → italic lede.
 // ============================================================
 
 .hero {
@@ -20,11 +27,14 @@
     position: absolute;
     inset: 0;
     pointer-events: none;
-    opacity: 0.55;
+    opacity: 0.7;
     background:
-      radial-gradient(circle at 12% 20%, #{rgba($turquoise-500, 0.18)}, transparent 45%),
-      radial-gradient(circle at 88% 12%, #{rgba($bole-500, 0.12)},      transparent 45%),
-      radial-gradient(circle at 50% 100%, #{rgba($cobalt-500, 0.10)},    transparent 60%);
+      // Turquoise leads — Caribbean sea + Iznik turquoise
+      radial-gradient(circle at 14% 22%, #{rgba($turquoise-500, 0.28)}, transparent 50%),
+      radial-gradient(circle at 92% 14%, #{rgba($turquoise-300, 0.22)}, transparent 50%),
+      // Bole + cobalt stay as supporting accents
+      radial-gradient(circle at 84% 88%, #{rgba($bole-500, 0.14)},      transparent 45%),
+      radial-gradient(circle at 18% 92%, #{rgba($cobalt-500, 0.10)},     transparent 55%);
   }
 
   > .container,
@@ -35,6 +45,51 @@
   }
 }
 
+// ----- Painted hero (uses img/hero-painting.jpg when present) -----
+.hero--painted {
+  min-height: 360px;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.40) 90%),
+    url('/img/hero-painting.jpg') center / cover no-repeat;
+  border-color: var(--turquoise-300);
+
+  // Replace the radial wash with a turquoise-tinted scrim that
+  // keeps the palette consistent over the painting.
+  &::before {
+    opacity: 0.6;
+    background:
+      radial-gradient(circle at 14% 28%, #{rgba($turquoise-700, 0.40)}, transparent 55%),
+      radial-gradient(circle at 86% 80%, #{rgba($ink-900, 0.35)},        transparent 60%);
+  }
+
+  // Text reads white over the painting, with a soft drop-shadow
+  // for legibility against any palette region.
+  .hero__eyebrow {
+    color: var(--turquoise-100);
+    &::before { background: var(--turquoise-100); }
+  }
+  .hero__title {
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+
+    em {
+      color: var(--turquoise-100);
+      font-style: italic;
+    }
+  }
+  .hero__lede {
+    color: rgba(255, 255, 255, 0.92);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+@media (min-width: $bp-sm) {
+  .hero--painted { min-height: 480px; }
+}
+@media (min-width: $bp-md) {
+  .hero--painted { min-height: 540px; }
+}
+
+// ----- Hero pieces -----
 @media (min-width: $bp-sm) {
   .hero {
     padding: $space-10 $space-9;
@@ -71,7 +126,7 @@
 
   em {
     font-style: italic;
-    color: var(--primary);
+    color: var(--accent-research);
   }
 }
 @media (min-width: $bp-sm) {
