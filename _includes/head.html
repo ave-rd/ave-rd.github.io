@@ -9,8 +9,11 @@
     <link rel='shortcut icon' type='image/png' href='{{ site.baseurl }}/favicon.png' />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 
-    <!-- Bootstrap 3 CSS (matches the JS version below) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap 3 CSS (vendored, matches JS below) -->
+    <link rel="stylesheet" href="{{ "/css/vendor/bootstrap.min.css" | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Vendored Newsreader + Instrument Sans (Iznik) -->
+    <link rel="stylesheet" href="{{ "/assets/fonts/fonts.css" | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Site styles (compiled from _sass/) -->
     <link rel="stylesheet" href="{{ "/colorscheme.css" | prepend: site.baseurl | prepend: site.url }}">
@@ -18,16 +21,11 @@
     <!-- Code highlighter -->
     <link rel="stylesheet" href="{{ "/css/syntax.css" | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- Custom Fonts (Iznik): Newsreader + Instrument Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+    <!-- jQuery (vendored; required by Bootstrap 3 plugins) -->
+    <script src="{{ "/js/vendor/jquery.min.js" | prepend: site.baseurl | prepend: site.url }}"></script>
 
-    <!-- jQuery (last 1.x; required by Bootstrap 3 plugins) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-    <!-- Bootstrap 3 JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap 3 JavaScript (vendored) -->
+    <script src="{{ "/js/vendor/bootstrap.min.js" | prepend: site.baseurl | prepend: site.url }}"></script>
 
     <!-- Site JavaScript -->
     <script defer src="{{ "/js/site.js" | prepend: site.baseurl | prepend: site.url }}"></script>

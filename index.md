@@ -3,7 +3,8 @@ layout: page
 title: Learning the value of education
 description: "A school-randomized RCT testing how short videos shift Dominican students' beliefs about the returns to education — and their schooling decisions."
 eyebrow: "AVE · Dominican Republic"
-hero-style: painted
+hero-style: map
+hero-image: /img/hero-map.jpg
 ---
 
 <p class="dropcap">

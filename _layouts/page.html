@@ -7,7 +7,10 @@ layout: default
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
             {% if page.title %}
-            <header class="hero{% if page.hero-style %} hero--{{ page.hero-style }}{% endif %}">
+            <header
+                class="hero{% if page.hero-style %} hero--{{ page.hero-style }}{% endif %}"
+                {% if page.hero-image %}style="--hero-image: url('{{ page.hero-image }}');"{% endif %}
+            >
                 <div class="hero__inner">
                     <div class="hero__eyebrow">{% if page.eyebrow %}{{ page.eyebrow }}{% else %}AVE-RD{% endif %}</div>
                     <h1 class="hero__title">{{ page.title }}</h1>

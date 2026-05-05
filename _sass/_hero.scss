@@ -1,15 +1,18 @@
 // ============================================================
 // Editorial hero
 //
-// Two variants:
-//   .hero            Parchment-card with three soft radial
-//                    gradients. Default for content pages.
-//   .hero--painted   Painted backdrop (e.g. Caribbean oil) with
-//                    a soft scrim. Used on the homepage when
-//                    img/hero-painting.jpg is present.
+// Variants:
+//   .hero               Parchment-card with three soft radial gradients.
+//                       Default for content pages.
+//   .hero--map          Cartographic backdrop (cobalt watercolor on cream).
+//                       Dark display text on the right; subtle parchment fade.
+//   .hero--townscape    Painterly Caribbean backdrop. White display text
+//                       over a turquoise + ink scrim.
 //
-// Both wrap an .hero__inner (or .container) with eyebrow → serif
-// title → italic lede.
+// Each image variant pulls its background from the inline custom property
+// --hero-image set in the page layout's <header>:
+//
+//   <header class="hero hero--map" style="--hero-image: url('/img/hero-map.jpg');">
 // ============================================================
 
 .hero {
@@ -29,10 +32,8 @@
     pointer-events: none;
     opacity: 0.7;
     background:
-      // Turquoise leads — Caribbean sea + Iznik turquoise
       radial-gradient(circle at 14% 22%, #{rgba($turquoise-500, 0.28)}, transparent 50%),
       radial-gradient(circle at 92% 14%, #{rgba($turquoise-300, 0.22)}, transparent 50%),
-      // Bole + cobalt stay as supporting accents
       radial-gradient(circle at 84% 88%, #{rgba($bole-500, 0.14)},      transparent 45%),
       radial-gradient(circle at 18% 92%, #{rgba($cobalt-500, 0.10)},     transparent 55%);
   }
@@ -45,25 +46,87 @@
   }
 }
 
-// ----- Painted hero (uses img/hero-painting.jpg when present) -----
-.hero--painted {
+// ----- Cartographic hero (map) -----
+// The watercolor map has cream as its dominant value; we lay text in
+// dark ink and use a soft right-side parchment fade so the eyebrow,
+// serif title and italic lede stay legible no matter where the viewport
+// is. Image is loaded via the inline --hero-image custom property.
+.hero--map {
   min-height: 360px;
-  background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.40) 90%),
-    url('/img/hero-painting.jpg') center / cover no-repeat;
+  background-color: var(--parchment-50);
+  background-image: var(--hero-image, url('/img/hero-map.jpg'));
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  border-color: var(--cobalt-300);
+
+  &::before {
+    opacity: 1;
+    background:
+      // Right-side parchment fade so text reads cleanly
+      linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 35%,
+        #{rgba($parchment-50, 0.65)} 55%,
+        #{rgba($parchment-50, 0.92)} 78%
+      ),
+      // Subtle cobalt vignette in the bottom-left to deepen the map
+      radial-gradient(circle at 8% 90%, #{rgba($cobalt-700, 0.18)}, transparent 55%);
+  }
+
+  .hero__inner {
+    margin-left: auto;          // push text into the cream side
+    max-width: 540px;
+    padding-left: $space-5;
+  }
+
+  // Text colors for cream-on-light
+  .hero__eyebrow {
+    color: var(--cobalt-700);
+    &::before { background: var(--cobalt-700); }
+  }
+  .hero__title {
+    color: var(--ink-900);
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+
+    em {
+      color: var(--cobalt-700);
+      font-style: italic;
+    }
+  }
+  .hero__lede {
+    color: var(--ink-700);
+  }
+}
+@media (min-width: $bp-sm) {
+  .hero--map { min-height: 480px; }
+}
+@media (min-width: $bp-md) {
+  .hero--map { min-height: 540px; }
+}
+
+// ----- Painterly hero (townscape) -----
+// Brighter, more saturated backdrop with sky + roof palette. White
+// display text rides over a turquoise+ink scrim; works for any image
+// that has dark or saturated regions.
+.hero--townscape {
+  min-height: 360px;
+  background-color: var(--ink-800);
+  background-image: var(--hero-image, url('/img/hero-santo-domingo.jpg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-color: var(--turquoise-300);
 
-  // Replace the radial wash with a turquoise-tinted scrim that
-  // keeps the palette consistent over the painting.
   &::before {
     opacity: 0.6;
     background:
-      radial-gradient(circle at 14% 28%, #{rgba($turquoise-700, 0.40)}, transparent 55%),
-      radial-gradient(circle at 86% 80%, #{rgba($ink-900, 0.35)},        transparent 60%);
+      linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.45) 100%),
+      radial-gradient(circle at 14% 28%, #{rgba($turquoise-700, 0.30)}, transparent 55%),
+      radial-gradient(circle at 86% 80%, #{rgba($ink-900, 0.30)},        transparent 60%);
   }
 
-  // Text reads white over the painting, with a soft drop-shadow
-  // for legibility against any palette region.
   .hero__eyebrow {
     color: var(--turquoise-100);
     &::before { background: var(--turquoise-100); }
@@ -83,10 +146,15 @@
   }
 }
 @media (min-width: $bp-sm) {
-  .hero--painted { min-height: 480px; }
+  .hero--townscape { min-height: 480px; }
 }
 @media (min-width: $bp-md) {
-  .hero--painted { min-height: 540px; }
+  .hero--townscape { min-height: 540px; }
+}
+
+// Backwards-compatibility alias: .hero--painted maps to .hero--townscape
+.hero--painted {
+  @extend .hero--townscape;
 }
 
 // ----- Hero pieces -----
