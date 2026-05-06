@@ -47,51 +47,77 @@
 }
 
 // ----- Cartographic hero (map) -----
-// The watercolor map has cream as its dominant value; we lay text in
-// dark ink and use a soft right-side parchment fade so the eyebrow,
-// serif title and italic lede stay legible no matter where the viewport
-// is. Image is loaded via the inline --hero-image custom property.
+// Inline SVG of the Dominican Republic as the hero backdrop. The SVG
+// is positioned absolutely behind the text on the left half; on the
+// right half a soft parchment fade keeps the eyebrow + serif title +
+// italic lede legible. No raster image needed.
 .hero--map {
   min-height: 360px;
-  background-color: var(--parchment-50);
-  background-image: var(--hero-image, url('/img/hero-map.jpg'));
-  background-size: cover;
-  background-position: left center;
-  background-repeat: no-repeat;
-  border-color: var(--cobalt-300);
+  background: var(--parchment-50);
+  border-color: var(--turquoise-300);
+  padding-right: $space-6;
+
+  // The SVG itself is rendered inside .hero--map > .map-figure
+  .map-figure {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    display: block;
+    overflow: hidden;
+  }
+  .map-figure svg {
+    position: absolute;
+    top: 50%;
+    left: -4%;
+    width: 85%;
+    height: auto;
+    transform: translateY(-50%);
+  }
+  // Iznik styling for the inline SVG primitives
+  .map-country {
+    fill: var(--accent-cobalt);
+    fill-opacity: 0.18;
+    stroke: var(--accent-cobalt);
+    stroke-width: 1.6;
+    stroke-opacity: 0.95;
+    stroke-linejoin: round;
+  }
+  .map-pin {
+    fill: var(--turquoise-500);
+    stroke: #fff;
+    stroke-width: 2;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.25));
+    transition: r var(--duration-normal) var(--ease-out),
+                fill var(--duration-fast) var(--ease-out);
+  }
 
   &::before {
     opacity: 1;
     background:
-      // Right-side parchment fade so text reads cleanly
       linear-gradient(
         90deg,
         transparent 0%,
-        transparent 35%,
-        #{rgba($parchment-50, 0.65)} 55%,
-        #{rgba($parchment-50, 0.92)} 78%
-      ),
-      // Subtle cobalt vignette in the bottom-left to deepen the map
-      radial-gradient(circle at 8% 90%, #{rgba($cobalt-700, 0.18)}, transparent 55%);
+        transparent 48%,
+        #{rgba($parchment-50, 0.70)} 60%,
+        #{rgba($parchment-50, 0.96)} 80%
+      );
   }
 
   .hero__inner {
-    margin-left: auto;          // push text into the cream side
-    max-width: 540px;
-    padding-left: $space-5;
+    margin-left: auto;
+    max-width: 460px;
   }
 
-  // Text colors for cream-on-light
   .hero__eyebrow {
-    color: var(--cobalt-700);
-    &::before { background: var(--cobalt-700); }
+    color: var(--turquoise-700);
+    &::before { background: var(--turquoise-700); }
   }
   .hero__title {
     color: var(--ink-900);
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
-
     em {
-      color: var(--cobalt-700);
+      color: var(--turquoise-700);
       font-style: italic;
     }
   }
@@ -101,6 +127,7 @@
 }
 @media (min-width: $bp-sm) {
   .hero--map { min-height: 480px; }
+  .hero--map .map-figure svg { width: 60%; }
 }
 @media (min-width: $bp-md) {
   .hero--map { min-height: 540px; }

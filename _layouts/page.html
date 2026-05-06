@@ -11,6 +11,12 @@ layout: default
                 class="hero{% if page.hero-style %} hero--{{ page.hero-style }}{% endif %}"
                 {% if page.hero-image %}style="--hero-image: url('{{ page.hero-image }}');"{% endif %}
             >
+                {% if page.hero-style == 'map' %}
+                <div class="map-figure" aria-hidden="true">
+                    {% include dr-map.svg %}
+                </div>
+                {% endif %}
+
                 <div class="hero__inner">
                     <div class="hero__eyebrow">{% if page.eyebrow %}{{ page.eyebrow }}{% else %}AVE-RD{% endif %}</div>
                     <h1 class="hero__title">{{ page.title }}</h1>

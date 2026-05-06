@@ -163,7 +163,7 @@ main li + li { margin-top: $space-3; }
   &:focus-within {
     box-shadow: var(--shadow-md);
     transform: translateY(-2px);
-    border-color: var(--cobalt-300);
+    border-color: var(--turquoise-300);
   }
 
   &__media {

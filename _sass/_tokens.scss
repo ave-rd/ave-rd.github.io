@@ -159,14 +159,19 @@ $ink-900: #2A2118;
   --border-strong:     #{rgba($ink-700, 0.22)};
 
   // Action / accent affordances
-  --primary:           #{$cobalt-500};
-  --primary-strong:    #{$cobalt-700};
+  // Turquoise is the primary affordance — links, buttons, focus rings.
+  // Cobalt is preserved as a structural accent (used in chrome and
+  // the inline SVG map) but no longer the click color.
+  --primary:           #{$turquoise-600};
+  --primary-strong:    #{$turquoise-700};
+  --primary-soft:      #{rgba($turquoise-500, 0.10)};
   --primary-foreground:#ffffff;
   --accent-editorial:  #{$bole-600};       // eyebrows, numerals, emphasis
   --accent-research:   #{$turquoise-600};
+  --accent-cobalt:     #{$cobalt-600};     // map fills, structural accent
 
   // Focus
-  --ring:              #{$cobalt-500};
+  --ring:              #{$turquoise-500};
 
   // Status
   --success:           #{$turquoise-600};
@@ -210,12 +215,14 @@ $ink-900: #2A2118;
     --border:            #{rgba($parchment-300, 0.15)};
     --border-strong:     #{rgba($parchment-300, 0.28)};
 
-    --primary:           #{$cobalt-300};
-    --primary-strong:    #{$cobalt-100};
+    --primary:           #{$turquoise-300};
+    --primary-strong:    #{$turquoise-100};
+    --primary-soft:      #{rgba($turquoise-500, 0.20)};
     --primary-foreground:#14110C;
     --accent-editorial:  #{$bole-300};
     --accent-research:   #{$turquoise-300};
-    --ring:              #{$cobalt-300};
+    --accent-cobalt:     #{$cobalt-300};
+    --ring:              #{$turquoise-300};
 
     --success:           #{$turquoise-300};
     --warning:           #{$bole-300};
