@@ -69,19 +69,35 @@
   .map-figure svg {
     position: absolute;
     top: 50%;
-    left: -4%;
-    width: 85%;
+    left: -6%;
+    width: 92%;
     height: auto;
     transform: translateY(-50%);
   }
-  // Iznik styling for the inline SVG primitives
+
+  // ----- Country shape -----
+  // A soft turquoise watercolor wash sits under a clean cobalt
+  // outline. The watercolor filter is applied to the shape on the
+  // SVG (filter="url(#watercolor)") which gives organic edges.
   .map-country {
     fill: var(--accent-cobalt);
-    fill-opacity: 0.18;
+    fill-opacity: 0.14;
     stroke: var(--accent-cobalt);
-    stroke-width: 1.6;
-    stroke-opacity: 0.95;
+    stroke-width: 1.4;
+    stroke-opacity: 0.85;
     stroke-linejoin: round;
+  }
+
+  // ----- Standard pins -----
+  .map-pin-group {
+    opacity: 0;
+    animation: pin-fade-in 600ms var(--ease-out) forwards;
+    animation-delay: var(--pin-delay, 0ms);
+  }
+  .map-pin-halo {
+    fill: var(--turquoise-500);
+    fill-opacity: 0.35;
+    filter: url(#pin-halo);
   }
   .map-pin {
     fill: var(--turquoise-500);
@@ -92,6 +108,74 @@
                 fill var(--duration-fast) var(--ease-out);
   }
 
+  // ----- Capital marker -----
+  // Larger, two concentric rings — Santo Domingo as the project HQ.
+  .map-pin-capital {
+    opacity: 0;
+    animation: pin-fade-in 800ms var(--ease-out) forwards;
+    animation-delay: var(--pin-delay, 0ms);
+  }
+  .map-pin-capital-halo {
+    fill: var(--turquoise-500);
+    fill-opacity: 0.18;
+    filter: url(#pin-halo);
+  }
+  .map-pin-capital-ring {
+    fill: none;
+    stroke: var(--accent-cobalt);
+    stroke-width: 2;
+    stroke-opacity: 0.7;
+  }
+  .map-pin-capital-dot {
+    fill: var(--accent-cobalt);
+    stroke: #fff;
+    stroke-width: 2;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
+  }
+
+  @keyframes pin-fade-in {
+    from { opacity: 0; transform: translateY(4px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .map-pin-group,
+    .map-pin-capital {
+      opacity: 1 !important;
+      animation: none !important;
+    }
+  }
+
+  // ----- Caption pinned to the bottom-right of the hero -----
+  .map-caption {
+    position: absolute;
+    right: $space-7;
+    bottom: $space-6;
+    z-index: 2;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--turquoise-700);
+    text-align: right;
+    opacity: 0.85;
+
+    strong {
+      display: block;
+      font-family: $font-serif;
+      font-style: italic;
+      font-weight: $weight-regular;
+      font-size: $text-base;
+      letter-spacing: $track-tight;
+      text-transform: none;
+      color: var(--ink-900);
+      margin-top: 2px;
+    }
+  }
+  @media (max-width: $bp-sm) {
+    .map-caption { display: none; }
+  }
+
+  // ----- Right-side parchment fade -----
   &::before {
     opacity: 1;
     background:
