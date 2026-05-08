@@ -17,9 +17,11 @@ hero-image: /img/hero-map.jpg
   classroom &mdash; can shift students&rsquo; beliefs about the returns
   to education and, with them, the choice to stay in school. The first
   wave reached <span class="font-osf">600</span> public schools and
-  <span class="font-osf">43,000</span> students. A
-  <span class="font-osf">2025&ndash;2027</span> follow-up wave links the
-  same cohort to administrative earnings records.
+  <span class="font-osf">43,000</span> students. Following the
+  evaluation, the intervention was adopted as government policy and is
+  now implemented in <strong>every public school in the country</strong>.
+  A <span class="font-osf">2025&ndash;2027</span> follow-up wave links
+  the original cohort to administrative earnings records.
 </p>
 
 <dl class="stat-strip reveal">
@@ -40,6 +42,15 @@ hero-image: /img/hero-map.jpg
     <dt class="stat-strip__label">Students in panel</dt>
   </div>
 </dl>
+
+<div class="signal-panel signal-panel--research reveal" style="display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;">
+  <span class="badge badge--status">Now national policy</span>
+  <p style="margin:0;flex:1;min-width:240px;font-family:var(--font-serif, Newsreader, Georgia, serif);font-style:italic;font-size:17px;line-height:1.5;color:var(--display);">
+    Following the evaluation, MINERD adopted the AVE intervention as
+    standing policy. The four videos and the classroom protocol are now
+    delivered in <strong>every public school in the Dominican Republic</strong>.
+  </p>
+</div>
 
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Watch the intervention</div>

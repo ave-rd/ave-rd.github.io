@@ -1,43 +1,55 @@
 # AVE-RD principal investigators and project staff.
 # ---------------------------------------------------------------
-# Bios below are drafts. Names + affiliation framing follow the
-# BibTeX entry on the homepage; lines marked  # TODO: verify
-# need a quick read-through before publication.
+# Affiliations and links updated against public faculty pages and
+# academic profile sites in May 2026. Lines marked  # TODO: verify
+# still need a quick read-through before publication.
+#
+# To add a portrait: download the JPG from the URL listed under the
+# `photo_source` comment, save it as /img/people/<id>.jpg at roughly
+# 600x750 pixels, and set `photo:` to that path. The page renders a
+# styled initials fallback until then.
 
 pis:
   - id: berry
     name: "James Berry"
     role: "Co-Principal Investigator"
-    affiliation: "Department of Economics, University of Delaware"   # TODO: verify
-    affiliation_url: "https://www.lerner.udel.edu/faculty-staff/james-berry/"  # TODO: verify
-    photo: ""                       # /img/people/berry.jpg — supply 600x750 portrait
+    affiliation: "John Munro Godfrey, Sr. Department of Economics, Terry College of Business, University of Georgia"
+    affiliation_url: "https://www.terry.uga.edu/directory/jim-berry/"
+    # photo_source: https://www.terry.uga.edu/directory/jim-berry/ (faculty headshot)
+    photo: ""
     initials: "JB"
     fields:
       - "Development economics"
       - "Education"
-      - "Behavioral economics"
+      - "Field experiments"
     bio: >-
-      Berry studies how households in low- and middle-income countries make
-      schooling and learning investments under uncertainty. With co-authors,
-      he designed AVE-RD's belief-elicitation instrument and the
+      Berry is an associate professor at the Terry College of Business
+      at the University of Georgia. His research is in development
+      economics, with an emphasis on microeconomic issues in education
+      and health, primarily through field experiments. Inside AVE-RD he
+      led the design of the belief-elicitation instrument and the
       identification strategy linking subjective wage expectations to
-      enrolment decisions. His broader research portfolio covers parental
-      investment, technology adoption, and the diffusion of information about
-      returns to schooling across South Asia, Sub-Saharan Africa, and the
-      Caribbean.
+      enrolment decisions. Berry was at the University of Delaware's
+      Lerner College from 2017–2022, where the original AVE-RD pilot
+      analysis was completed.
     links:
+      - label: "Faculty page"
+        url: "https://www.terry.uga.edu/directory/jim-berry/"
       - label: "Personal site"
-        url: "https://sites.google.com/site/jamesnberry/"   # TODO: verify
+        url: "https://sites.google.com/site/econjimberry/"
+      - label: "J-PAL profile"
+        url: "https://www.povertyactionlab.org/person/berry"
+      - label: "NBER"
+        url: "https://www.nber.org/people/james_berry"
       - label: "Google Scholar"
-        url: "https://scholar.google.com/citations?user=NQNqUhgAAAAJ"  # TODO: verify
-      - label: "ORCID"
-        url: "https://orcid.org/0000-0000-0000-0000"        # TODO: replace with real ORCID
+        url: "https://scholar.google.com/citations?user=-5Mt-EYAAAAJ"
 
   - id: coffman
     name: "Lucas C. Coffman"
     role: "Co-Principal Investigator"
-    affiliation: "Department of Economics, Boston College"   # TODO: verify
-    affiliation_url: "https://www.bc.edu/bc-web/schools/morrissey/departments/economics.html"
+    affiliation: "Department of Economics, Morrissey College of Arts & Sciences, Boston College"
+    affiliation_url: "https://www.bc.edu/bc-web/schools/morrissey/departments/economics/people/faculty-directory/lucas-coffman.html"
+    # photo_source: https://www.bc.edu/bc-web/schools/morrissey/departments/economics/people/faculty-directory/lucas-coffman.html
     photo: ""
     initials: "LC"
     fields:
@@ -45,73 +57,89 @@ pis:
       - "Field experiments"
       - "Beliefs and persuasion"
     bio: >-
-      Coffman's work asks how individuals form, update, and act on beliefs
-      — particularly when those beliefs touch on identity, social
-      perception, or moral judgement. Inside AVE-RD he led the design of the
-      persuasive arm: a video catalogue that frames the schooling decision
-      through eighth-grade characters rather than bare statistics, allowing a
-      direct test of whether persuasion above and beyond information shifts
-      behaviour. He has published on related topics in the
-      <em>QJE</em>, <em>AER</em>, and <em>Journal of Public Economics</em>.
+      Coffman is an associate professor in the Boston College Department
+      of Economics. His research is in experimental and behavioural
+      economics — how individuals form, update, and act on beliefs,
+      especially when those beliefs touch on identity, social perception,
+      or moral judgement. Inside AVE-RD he led the design of the
+      persuasive arm: a video catalogue that frames the schooling
+      decision through eighth-grade characters rather than bare
+      statistics, allowing a direct test of whether persuasion above
+      and beyond information shifts behaviour.
     links:
       - label: "Faculty page"
-        url: "https://www.bc.edu/bc-web/schools/morrissey/departments/economics/people/faculty-directory/lucas-coffman.html"  # TODO: verify
+        url: "https://www.bc.edu/bc-web/schools/morrissey/departments/economics/people/faculty-directory/lucas-coffman.html"
+      - label: "Personal site"
+        url: "https://sites.google.com/site/lucascoffman/"
+      - label: "NBER"
+        url: "https://www.nber.org/people/lucas_coffman"
       - label: "Google Scholar"
-        url: "https://scholar.google.com/citations?user=lU2OGDcAAAAJ"  # TODO: verify
-      - label: "Working papers"
-        url: "https://lucascoffman.com/research"  # TODO: verify
+        url: "https://scholar.google.com/citations?user=WPhQL8EAAAAJ"
 
   - id: morales
     name: "Daniel Morales"
     role: "Co-Principal Investigator · Country lead"
-    affiliation: "J-PAL Latin America & the Caribbean"   # TODO: verify role / affiliation
-    affiliation_url: "https://www.povertyactionlab.org/lac"
+    affiliation: "Tecnológico de Monterrey, EGADE Business School"   # TODO: confirm school within Tec
+    affiliation_url: "https://egade.tec.mx/en/faculty"               # TODO: replace with direct faculty page if available
+    # photo_source: Tec de Monterrey / EGADE faculty directory portrait
     photo: ""
     initials: "DM"
     fields:
+      - "Impact measurement and evaluation"
       - "Education policy"
-      - "Impact evaluation"
       - "Public-sector partnerships"
     bio: >-
       Morales is the project's country lead and the bridge between the
-      academic team and the Dominican Ministry of Education. He coordinated
-      the 600-school randomization, the 2015–2016 fieldwork, and the
-      ongoing 2025–2027 follow-up wave that links the original cohort
-      to administrative earnings records. His research focuses on how
-      ministries of education in Latin America can adopt evidence-based
-      practice without losing the operational realism their schools require.
+      academic team and the Dominican Ministry of Education. He
+      coordinated the 600-school randomization, the 2015–2016
+      fieldwork, and the ongoing 2025–2027 follow-up wave that links
+      the original cohort to administrative earnings records. His
+      research at Tecnológico de Monterrey focuses on impact
+      measurement, data analytics, and the operational adoption of
+      evidence-based practice by ministries of education across Latin
+      America.
     links:
-      - label: "J-PAL profile"
-        url: "https://www.povertyactionlab.org/person/morales"  # TODO: verify
+      - label: "Google Scholar"
+        url: "https://scholar.google.com/citations?user=_jBP0aUAAAAJ"   # TODO: confirm this is the right Daniel Morales
+      - label: "Tec de Monterrey faculty"
+        url: "https://tec.mx/en/our-faculty/en"
       - label: "Email"
         url: "mailto:proyecto.ave.rd@gmail.com"
 
   - id: neilson
     name: "Christopher A. Neilson"
     role: "Co-Principal Investigator"
-    affiliation: "Department of Economics, Yale University"   # TODO: verify (Yale or Princeton?)
-    affiliation_url: "https://economics.yale.edu/people/christopher-neilson"   # TODO: verify
+    affiliation: "Department of Economics & Jackson School of Global Affairs, Yale University"
+    affiliation_url: "https://jackson.yale.edu/person/christopher-neilson/"
+    # photo_source: https://jackson.yale.edu/person/christopher-neilson/ (Yale faculty headshot)
     photo: ""
     initials: "CN"
     fields:
       - "Education economics"
       - "Information and choice"
-      - "Labor markets"
+      - "Education markets"
     bio: >-
-      Neilson studies how families and students choose schools and careers
-      under information frictions, and how policy can re-balance those
-      choices. He led the linkage between AVE-RD's panel survey and the
-      Tesorería de la Seguridad Social earnings records that anchor
-      the long-run follow-up. His prior work on information disclosure in
-      Chile (the <em>Mineduc Cartillas</em>) supplied the methodological
-      template for AVE-RD's informative arm.
+      Neilson is Professor of Economics and Global Affairs at Yale
+      University, with appointments at the Department of Economics and
+      the Jackson School of Global Affairs. He returned to Yale in
+      2022 after seven years on the Princeton economics faculty. His
+      research is in education markets and the role of information in
+      household human-capital investment, with policy collaborations in
+      Chile, Peru, Ecuador, Colombia, Brazil, and the Dominican
+      Republic. Inside AVE-RD he led the linkage between the panel
+      survey and the Tesorería de la Seguridad Social earnings records
+      that anchor the long-run follow-up.
     links:
-      - label: "Faculty page"
-        url: "https://economics.yale.edu/people/christopher-neilson"   # TODO: verify
-      - label: "Google Scholar"
-        url: "https://scholar.google.com/citations?user=Sa3-HhYAAAAJ"  # TODO: verify
+      - label: "Yale faculty page"
+        url: "https://jackson.yale.edu/person/christopher-neilson/"
       - label: "Personal site"
-        url: "https://christopherneilson.github.io"             # TODO: verify
+        url: "https://www.christopher-neilson.com/"
+      - label: "AVE portfolio (Neilson site)"
+        url: "https://christopherneilson.github.io/portfolio-AVE.html"
+      - label: "J-PAL profile"
+        url: "https://www.povertyactionlab.org/person/neilson"
+      - label: "NBER"
+        url: "https://www.nber.org/people/christopher_neilson"
 
 # Project staff and country team — short profiles, no photos required.
 staff:

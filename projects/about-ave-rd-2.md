@@ -70,6 +70,20 @@ hero-image: /img/hero-santo-domingo.jpg
   operations, and logistics &mdash; capability that has outlived the pilot.
 </p>
 
+<div class="signal-panel signal-panel--research reveal">
+  <div class="eyebrow">Beyond the pilot</div>
+  <p>
+    Following the evaluation, MINERD adopted AVE as standing policy. The
+    four videos and the classroom protocol are now delivered in
+    <strong>every public school in the Dominican Republic</strong>. The
+    <span class="font-osf">2025&ndash;2027</span> follow-up wave operates
+    on top of that policy backdrop &mdash; the original cohort is now
+    <span class="font-osf">23&ndash;26</span> years old and reachable
+    through MINERD enrolment records and the Tesorer&iacute;a de la
+    Seguridad Social earnings panel.
+  </p>
+</div>
+
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Findings</div>
   <h2>Four effects across the treated cohort</h2>
