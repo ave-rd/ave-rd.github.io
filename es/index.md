@@ -154,6 +154,6 @@ hero-image: /img/hero-map.jpg
   <li><a href="/projects/researchers/">Equipo de investigaci&oacute;n</a> &mdash; investigadores principales y equipo en el pa&iacute;s.</li>
   <li><a href="/projects/videos/">La intervenci&oacute;n</a> &mdash; los cuatro videos.</li>
   <li><a href="/es/briefs/">Res&uacute;menes de pol&iacute;tica</a> &mdash; tres res&uacute;menes de dos p&aacute;ginas.</li>
-  <li><a href="/es/partners/">Socios</a> &mdash; J-PAL LAC, MINERD, IDEICE, USAID.</li>
+  <li><a href="/es/partners/">Socios</a> &mdash; J-PAL LAC, MINERD, IDEICE, INICIA Educaci&oacute;n, USAID.</li>
   <li><a href="/es/follow-up/">Apoyar el seguimiento</a> &mdash; presupuesto, contactos y modelo de alianza.</li>
 </ul>

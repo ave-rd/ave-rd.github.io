@@ -2,10 +2,10 @@
 title: For participants
 description: "Pointers for counselors, teachers, parents, students and DOP technicians involved in the AVE-RD program."
 eyebrow: "Reading room"
-date: 2017-08-25T14:07:29+00:00
-author: Gonzalo Oyanedel
 layout: page
 sitemap: false
+seo:
+  type: WebPage
 ---
 
 <p class="dropcap">

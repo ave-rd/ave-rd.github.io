@@ -15,6 +15,11 @@ hero-style: gradient
   partner channels listed at the bottom of the page.
 </p>
 
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">Latest field updates</div>
+  <h2>Posts, sorted newest first</h2>
+</div>
+
 <ul class="news-grid reveal">
   {% assign sorted_news = site.news | sort: 'date' | reverse %}
   {% for post in sorted_news %}

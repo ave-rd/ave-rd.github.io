@@ -2,10 +2,10 @@
 title: Reach the project team
 description: "Office, telephones and e-mail for the AVE-RD pilot."
 eyebrow: "Contact"
-date: 2017-08-25T14:20:05+00:00
-author: Gonzalo Oyanedel
 layout: page
 order: 7
+seo:
+  type: ContactPage
 ---
 
 <div class="signal-panel reveal">

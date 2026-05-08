@@ -2,10 +2,10 @@
 title: Replication kit
 description: "Working papers, survey instruments, analysis code, data and the procedure for requesting the AVE-RD videos."
 eyebrow: "Materials"
-date: 2017-08-25T14:23:03+00:00
-author: Gonzalo Oyanedel
 layout: page
 order: 4
+seo:
+  type: WebPage
 ---
 
 <p class="dropcap">

@@ -2,12 +2,12 @@
 title: About the project
 description: "Background, partners and results of the AVE-RD pilot in the Dominican Republic."
 eyebrow: "About"
-date: 2017-08-25T14:16:56+00:00
-author: Gonzalo Oyanedel
 layout: page
 order: 1
 hero-style: townscape
 hero-image: /img/hero-santo-domingo.jpg
+seo:
+  type: WebPage
 ---
 
 <p class="dropcap">

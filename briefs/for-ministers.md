@@ -55,32 +55,32 @@ brief_pdf_ready: false
 
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Cost order</div>
-  <h2>What a country-scale adaptation costs</h2>
+  <h2>What a country-scale adaptation involves</h2>
 </div>
 
 <dl class="stat-strip reveal">
   <div class="stat-strip__item">
-    <dt class="stat-strip__label">Re-shoot &amp; localize videos</dt>
-    <dd class="stat-strip__value">$TBD</dd>
+    <dt class="stat-strip__label">Re-shoot &amp; localize</dt>
+    <dd class="stat-strip__value">Videos</dd>
   </div>
   <div class="stat-strip__item">
-    <dt class="stat-strip__label">Field operation · per 100 schools</dt>
-    <dd class="stat-strip__value">$TBD</dd>
+    <dt class="stat-strip__label">Per 100 schools</dt>
+    <dd class="stat-strip__value">Field op</dd>
   </div>
   <div class="stat-strip__item">
-    <dt class="stat-strip__label">Survey panel · per cohort wave</dt>
-    <dd class="stat-strip__value">$TBD</dd>
+    <dt class="stat-strip__label">Per cohort wave</dt>
+    <dd class="stat-strip__value">Survey</dd>
   </div>
   <div class="stat-strip__item">
-    <dt class="stat-strip__label">Adminstrative-data linkage</dt>
-    <dd class="stat-strip__value">$TBD</dd>
+    <dt class="stat-strip__label">Administrative data</dt>
+    <dd class="stat-strip__value">Linkage</dd>
   </div>
 </dl>
 
 <p style="font-size: 13px; color: var(--muted-foreground); margin-top: -8px;">
-  Cost ranges are placeholders pending the 2025 budget refresh. Contact
-  the project office for current figures benchmarked against the
-  Dominican implementation.
+  Four cost lines structure the budget. We share current dollar
+  figures, benchmarked against the Dominican implementation, with
+  ministries on request. Contact the project office.
 </p>
 
 <div class="section-header reveal">
@@ -154,6 +154,7 @@ brief_pdf_ready: false
   <a class="btn-cta" href="/projects/contact/" style="margin-left: 12px;">Talk to the team</a>
   {% else %}
   <a class="btn-cta" href="/projects/contact/">Talk to the team</a>
+  <span class="badge badge--neutral" style="margin-left: 12px; font-size: 13px; padding: 8px 14px;">PDF forthcoming</span>
   {% endif %}
 </p>
 
@@ -174,11 +175,13 @@ brief_pdf_ready: false
   "isAccessibleForFree": true,
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "url": "{{ site.url }}{{ page.url }}",
+  {% if page.brief_pdf_ready %}
   "encoding": {
     "@type": "MediaObject",
     "encodingFormat": "application/pdf",
     "contentUrl": "{{ site.url }}{{ page.brief_pdf }}"
   },
+  {% endif %}
   "isPartOf": {
     "@type": "ResearchProject",
     "@id": "{{ site.url }}/#project",

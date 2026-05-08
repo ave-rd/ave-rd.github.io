@@ -2,10 +2,10 @@
 title: From the field
 description: "Photos from AVE-RD program implementation in schools across the Dominican Republic."
 eyebrow: "Gallery · 24 photographs"
-date: 2017-09-15T15:32:27+00:00
-author: Gonzalo Oyanedel
 layout: page
 order: 6
+seo:
+  type: ImageGallery
 ---
 
 <p>

@@ -132,6 +132,8 @@ brief_pdf_ready: false
   <a class="btn-cta" href="/projects/follow-up/">See the follow-up plan</a>
   {% if page.brief_pdf_ready %}
   <a class="btn-cta" href="{{ page.brief_pdf }}" style="margin-left: 12px;">Download brief (PDF)</a>
+  {% else %}
+  <span class="badge badge--neutral" style="margin-left: 12px; font-size: 13px; padding: 8px 14px;">PDF forthcoming &mdash; HTML version above is canonical for now</span>
   {% endif %}
 </p>
 
@@ -152,11 +154,13 @@ brief_pdf_ready: false
   "isAccessibleForFree": true,
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "url": "{{ site.url }}{{ page.url }}",
+  {% if page.brief_pdf_ready %}
   "encoding": {
     "@type": "MediaObject",
     "encodingFormat": "application/pdf",
     "contentUrl": "{{ site.url }}{{ page.brief_pdf }}"
   },
+  {% endif %}
   "isPartOf": {
     "@type": "ResearchProject",
     "@id": "{{ site.url }}/#project",

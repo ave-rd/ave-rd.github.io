@@ -173,11 +173,13 @@ brief_pdf_ready: false
   "isAccessibleForFree": true,
   "license": "https://creativecommons.org/licenses/by/4.0/",
   "url": "{{ site.url }}{{ page.url }}",
+  {% if page.brief_pdf_ready %}
   "encoding": {
     "@type": "MediaObject",
     "encodingFormat": "application/pdf",
     "contentUrl": "{{ site.url }}{{ page.brief_pdf }}"
   },
+  {% endif %}
   "isPartOf": {
     "@type": "ResearchProject",
     "@id": "{{ site.url }}/#project",
