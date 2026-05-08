@@ -72,7 +72,7 @@ order: 4
         which information shifts schooling decisions.
       </p>
       <p>
-        <a class="partner-card__link" href="/papers/AVE_working_paper_2025.pdf">Download (PDF)</a>
+        <span class="badge badge--neutral">PDF forthcoming</span> &middot; <a class="partner-card__link" href="/projects/contact/">Request the draft</a>
       </p>
     </div>
   </li>
@@ -85,7 +85,7 @@ order: 4
         in schooling investment decisions.
       </p>
       <p>
-        <a class="partner-card__link" href="/papers/AVE_Subjective_Beliefs_2014.pdf">Download (PDF)</a>
+        <span class="badge badge--neutral">PDF forthcoming</span> &middot; <a class="partner-card__link" href="/projects/contact/">Request the draft</a>
       </p>
     </div>
   </li>
@@ -100,7 +100,7 @@ order: 4
         agreement.
       </p>
       <p>
-        <a class="partner-card__link" href="/papers/AVE_USAID_EndlineReport.pdf">Download (PDF)</a>
+        <span class="badge badge--neutral">PDF forthcoming</span> &middot; <a class="partner-card__link" href="/projects/contact/">Request the draft</a>
       </p>
     </div>
   </li>

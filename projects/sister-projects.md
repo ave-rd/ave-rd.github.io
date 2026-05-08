@@ -24,20 +24,20 @@ hero-style: gradient
 
 <dl class="stat-strip reveal">
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">4</dd>
     <dt class="stat-strip__label">Countries with an implementation</dt>
+    <dd class="stat-strip__value">4</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">2</dd>
     <dt class="stat-strip__label">At national-policy scale</dt>
+    <dd class="stat-strip__value">2</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">3</dd>
     <dt class="stat-strip__label">Research institutions (J-PAL, IPA, ConsiliumBots)</dt>
+    <dd class="stat-strip__value">3</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">$0.05</dd>
     <dt class="stat-strip__label">Marginal cost per student (DFM Per&uacute;)</dt>
+    <dd class="stat-strip__value">$0.05</dd>
   </div>
 </dl>
 
@@ -79,8 +79,8 @@ hero-style: gradient
   <dl class="stat-strip" style="margin: 16px 0;">
     {% for r in s.headline_results %}
     <div class="stat-strip__item">
-      <dd class="stat-strip__value">{{ r.figure }}</dd>
       <dt class="stat-strip__label">{{ r.label }}</dt>
+      <dd class="stat-strip__value">{{ r.figure }}</dd>
     </div>
     {% endfor %}
   </dl>

@@ -139,7 +139,7 @@ hero-image: /img/hero-santo-domingo.jpg
   around <strong>thirteen milestones</strong> covering instrument
   design, school-level randomization, two waves of fieldwork, the
   Pruebas Nacionales linkage, and a final endline report. The
-  <a href="/papers/AVE_USAID_EndlineReport.pdf">endline report at
+  <a href="/projects/download-videos-2/">endline report at
   Milestone <span class="font-osf">13</span></a> documented the
   dropout, test-score, and belief-update effects that subsequently
   drove the policy-adoption decision at MINERD.
@@ -198,20 +198,20 @@ hero-image: /img/hero-santo-domingo.jpg
 
 <dl class="stat-strip reveal">
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">200,000</dd>
     <dt class="stat-strip__label">Students reached</dt>
+    <dd class="stat-strip__value">200,000</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">300,000</dd>
     <dt class="stat-strip__label">Surveys collected</dt>
+    <dd class="stat-strip__value">300,000</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">2,700</dd>
     <dt class="stat-strip__label">Officials mobilized</dt>
+    <dd class="stat-strip__value">2,700</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">2</dd>
     <dt class="stat-strip__label">Annual batches</dt>
+    <dd class="stat-strip__value">2</dd>
   </div>
 </dl>
 

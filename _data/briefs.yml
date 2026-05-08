@@ -10,6 +10,7 @@ briefs:
     pages: 2
     date: "2025-09-01"
     pdf: "/briefs/AVE-RD_brief_what-worked.pdf"   # TODO: add the PDF
+    pdf_ready: false
     lede: >-
       A two-page summary of the four headline effects from the
       2015–2016 wave: dropout, test scores, belief shifts, and
@@ -29,6 +30,7 @@ briefs:
     pages: 2
     date: "2025-10-15"
     pdf: "/briefs/AVE-RD_brief_why-follow-up.pdf"  # TODO: add the PDF
+    pdf_ready: false
     lede: >-
       The economic case for tracking the original cohort ten years on:
       what a one-percentage-point change in dropout buys in lifetime
@@ -48,6 +50,7 @@ briefs:
     pages: 2
     date: "2025-11-30"
     pdf: "/briefs/AVE-RD_brief_for-ministers.pdf"  # TODO: add the PDF
+    pdf_ready: false
     lede: >-
       How a national education ministry can adapt the AVE intervention
       — videos, classroom protocol, and the survey panel —

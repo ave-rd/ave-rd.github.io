@@ -26,22 +26,32 @@ hero-style: gradient
 
 <dl class="stat-strip reveal">
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">5</dd>
     <dt class="stat-strip__label">Socios institucionales</dt>
+    <dd class="stat-strip__value">5</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">2</dd>
     <dt class="stat-strip__label">Pa&iacute;ses (RD y EE.&nbsp;UU.)</dt>
+    <dd class="stat-strip__value">2</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">18</dd>
     <dt class="stat-strip__label">Regiones educativas</dt>
+    <dd class="stat-strip__value">18</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">10+</dd>
     <dt class="stat-strip__label">A&ntilde;os de alianza</dt>
+    <dd class="stat-strip__value">10+</dd>
   </div>
 </dl>
+
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">Las cinco esquinas</div>
+  <h2>Qui&eacute;n hace qu&eacute;</h2>
+  <p class="lede">
+    Cada tarjeta nombra a la instituci&oacute;n, el rol que tiene
+    dentro del pipeline AVE-RD, y las personas que sostienen el
+    trabajo d&iacute;a a d&iacute;a.
+  </p>
+</div>
 
 {% for p in site.data.partner_leads.partners %}
 <section class="partner-card reveal" id="{{ p.id }}">
@@ -49,7 +59,7 @@ hero-style: gradient
     {% if p.logo and p.logo != "" %}
     <img src="{{ p.logo }}" alt="Logo de {{ p.short }}" loading="lazy" />
     {% else %}
-    <span style="font-family:var(--font-serif,serif);font-weight:500;font-size:24px;color:var(--turquoise-700);text-align:center;">{{ p.short }}</span>
+    <span class="partner-card__logo-text">{{ p.short }}</span>
     {% endif %}
   </div>
   <div class="partner-card__body">

@@ -26,20 +26,20 @@ hero-image: /img/hero-map.jpg
 
 <dl class="stat-strip reveal">
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">2.5&ndash;3pp</dd>
     <dt class="stat-strip__label">Reducci&oacute;n de deserci&oacute;n</dt>
+    <dd class="stat-strip__value">2.5&ndash;3pp</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">0.05&ndash;0.13&sigma;</dd>
     <dt class="stat-strip__label">Aumento en pruebas nacionales</dt>
+    <dd class="stat-strip__value">0.05&ndash;0.13&sigma;</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">600</dd>
     <dt class="stat-strip__label">Escuelas p&uacute;blicas aleatorizadas</dt>
+    <dd class="stat-strip__value">600</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">43,000</dd>
     <dt class="stat-strip__label">Estudiantes en el panel</dt>
+    <dd class="stat-strip__value">43,000</dd>
   </div>
 </dl>
 

@@ -2,13 +2,13 @@
 title: Partners
 description: "The five institutions that designed, funded and evaluated AVE-RD — with the named leads inside each one who carry the work."
 eyebrow: "Partners · 5 institutions"
-date: 2017-09-14T14:23:53+00:00
-author: Gonzalo Oyanedel
 layout: page
 order: 5
 lang: en
 alt_url: /es/partners/
 hero-style: gradient
+seo:
+  type: WebPage
 ---
 
 <p class="dropcap">
@@ -25,22 +25,32 @@ hero-style: gradient
 
 <dl class="stat-strip reveal">
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">5</dd>
     <dt class="stat-strip__label">Institutional partners</dt>
+    <dd class="stat-strip__value">5</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">2</dd>
     <dt class="stat-strip__label">Countries (DR &amp; US)</dt>
+    <dd class="stat-strip__value">2</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">18</dd>
     <dt class="stat-strip__label">Educational regions</dt>
+    <dd class="stat-strip__value">18</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">10+</dd>
     <dt class="stat-strip__label">Years of partnership</dt>
+    <dd class="stat-strip__value">10+</dd>
   </div>
 </dl>
+
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">The five corners</div>
+  <h2>Who does what</h2>
+  <p class="lede">
+    Each partner card below names the institution, the role it owns
+    in the AVE-RD pipeline, and the specific people inside it who
+    carry the work day-to-day.
+  </p>
+</div>
 
 {% for p in site.data.partner_leads.partners %}
 <section class="partner-card reveal" id="{{ p.id }}" itemscope itemtype="https://schema.org/{{ p.schema_type }}">
@@ -50,7 +60,7 @@ hero-style: gradient
     {% if p.logo and p.logo != "" %}
     <img src="{{ p.logo }}" alt="{{ p.short }} logo" loading="lazy" itemprop="logo" />
     {% else %}
-    <span style="font-family:var(--font-serif,serif);font-weight:500;font-size:24px;color:var(--turquoise-700);text-align:center;">{{ p.short }}</span>
+    <span class="partner-card__logo-text">{{ p.short }}</span>
     {% endif %}
   </div>
   <div class="partner-card__body">
@@ -141,7 +151,7 @@ hero-style: gradient
       "name": "{{ p.name | strip_html }}",
       "alternateName": "{{ p.short }}",
       "url": "{{ p.url }}",
-      "logo": "{{ site.url }}{{ p.logo }}",
+      {% if p.logo and p.logo != "" %}"logo": "{{ site.url }}{{ p.logo }}",{% endif %}
       "description": "{{ p.description | strip_html | strip_newlines | truncate: 240 }}",
       "address": {
         "@type": "PostalAddress",

@@ -9,6 +9,7 @@ brief_audience: "Ministries of education"
 brief_pages: 2
 brief_date: "2025-11-30"
 brief_pdf: "/briefs/AVE-RD_brief_for-ministers.pdf"
+brief_pdf_ready: false
 ---
 
 <div class="section-header reveal">
@@ -59,20 +60,20 @@ brief_pdf: "/briefs/AVE-RD_brief_for-ministers.pdf"
 
 <dl class="stat-strip reveal">
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">$TBD</dd>
     <dt class="stat-strip__label">Re-shoot &amp; localize videos</dt>
+    <dd class="stat-strip__value">$TBD</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">$TBD</dd>
     <dt class="stat-strip__label">Field operation · per 100 schools</dt>
+    <dd class="stat-strip__value">$TBD</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">$TBD</dd>
     <dt class="stat-strip__label">Survey panel · per cohort wave</dt>
+    <dd class="stat-strip__value">$TBD</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">$TBD</dd>
     <dt class="stat-strip__label">Adminstrative-data linkage</dt>
+    <dd class="stat-strip__value">$TBD</dd>
   </div>
 </dl>
 
@@ -148,8 +149,12 @@ brief_pdf: "/briefs/AVE-RD_brief_for-ministers.pdf"
 </ul>
 
 <p style="text-align:center;margin-top:32px">
+  {% if page.brief_pdf_ready %}
   <a class="btn-cta" href="{{ page.brief_pdf }}">Download brief (PDF)</a>
   <a class="btn-cta" href="/projects/contact/" style="margin-left: 12px;">Talk to the team</a>
+  {% else %}
+  <a class="btn-cta" href="/projects/contact/">Talk to the team</a>
+  {% endif %}
 </p>
 
 <script type="application/ld+json">

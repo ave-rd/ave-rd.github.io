@@ -29,19 +29,19 @@ hero-style: gradient
 
   <dl class="fundraise-cta__pillars">
     <div class="fundraise-cta__pillar">
-      <dt>Total budget · USD</dt>
-      <dd>$TBD</dd>
-      <p>Across re-survey, administrative-data linkage, brief series, and the open replication kit. Three-year horizon.</p>
+      <dt>Three-year horizon</dt>
+      <dd>2025&ndash;2027</dd>
+      <p>Re-survey, administrative-data linkage, brief series and open replication kit, fielded out of the project office in Santo Domingo.</p>
     </div>
     <div class="fundraise-cta__pillar">
-      <dt>Cost per panel-member tracked</dt>
-      <dd>$TBD</dd>
-      <p>Includes contact-tracing for migrants, mixed-mode survey, and quality-controlled record-linkage.</p>
+      <dt>Cohort to re-track</dt>
+      <dd>43,000</dd>
+      <p>Includes contact-tracing for migrants, a mixed-mode survey, and quality-controlled record-linkage to the Tesorer&iacute;a de la Seguridad Social earnings panel.</p>
     </div>
     <div class="fundraise-cta__pillar">
-      <dt>Match available</dt>
-      <dd>1 : TBD</dd>
-      <p>Existing institutional commitments from MINERD and J-PAL LAC underwrite a portion of field operations.</p>
+      <dt>Domestic match</dt>
+      <dd>Already in place</dd>
+      <p>MINERD funds field delivery, IDEICE hosts the data linkage, and INICIA Educaci&oacute;n is the lead domestic foundation partner. New funding goes directly to the marginal research output.</p>
     </div>
   </dl>
 

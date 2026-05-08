@@ -26,20 +26,20 @@ hero-image: /img/hero-map.jpg
 
 <dl class="stat-strip reveal">
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">2.5&ndash;3pp</dd>
     <dt class="stat-strip__label">Reduction in dropout</dt>
+    <dd class="stat-strip__value">2.5&ndash;3pp</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">0.05&ndash;0.13&sigma;</dd>
     <dt class="stat-strip__label">Lift in test scores</dt>
+    <dd class="stat-strip__value">0.05&ndash;0.13&sigma;</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">600</dd>
     <dt class="stat-strip__label">Public schools randomized</dt>
+    <dd class="stat-strip__value">600</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">43,000</dd>
     <dt class="stat-strip__label">Students in panel</dt>
+    <dd class="stat-strip__value">43,000</dd>
   </div>
 </dl>
 
@@ -115,7 +115,7 @@ hero-image: /img/hero-map.jpg
     {% include viz/dropout-trend.svg %}
   </div>
   <p class="viz-card__caption">
-    <strong>Note.</strong> Illustrative trajectory, scaled to the <span class="font-osf">2.5&ndash;3</span>&nbsp;pp average effect reported in Berry, Coffman, Morales &amp; Neilson (<span class="font-osf">2025</span>). Confidence band shown for the treatment series only. Source: <a href="/papers/AVE_working_paper_2025.pdf">AVE-RD working paper</a>.
+    <strong>Note.</strong> Illustrative trajectory, scaled to the <span class="font-osf">2.5&ndash;3</span>&nbsp;pp average effect reported in Berry, Coffman, Morales &amp; Neilson (<span class="font-osf">2025</span>). Confidence band shown for the treatment series only. Source: AVE-RD working paper (<a href="/projects/download-videos-2/">replication kit</a>).
   </p>
 </figure>
 
@@ -222,27 +222,43 @@ hero-image: /img/hero-map.jpg
   </p>
 </div>
 
-<ul class="brief-grid brief-grid--three reveal">
-  {% for p in site.data.partner_leads.partners %}
+<ul class="brief-grid reveal">
+  {% assign founding = site.data.partner_leads.partners | where_exp: "p", "p.id != 'inicia'" %}
+  {% for p in founding %}
   <li>
-    <article class="partner-card" style="grid-template-columns: 1fr; padding: 24px;">
-      <div class="partner-card__logo" style="min-height: 80px;">
+    <article class="partner-card partner-card--compact">
+      <div class="partner-card__logo">
         {% if p.logo and p.logo != "" %}
         <img src="{{ p.logo }}" alt="{{ p.short }} logo" loading="lazy" />
         {% else %}
-        <span style="font-family:var(--font-serif,serif);font-weight:500;font-size:22px;color:var(--turquoise-700);">{{ p.short }}</span>
+        <span class="partner-card__logo-text">{{ p.short }}</span>
         {% endif %}
       </div>
       <div class="partner-card__body">
         <span class="badge badge--{{ p.role_badge }}">{{ p.role_label }}</span>
-        <h3 style="margin-top: 12px;">{{ p.short }}</h3>
-        <p style="font-size: 14px;">{{ p.description | strip_html | truncate: 160 }}</p>
+        <h3>{{ p.short }}</h3>
+        <p>{{ p.description | strip_html | truncate: 160 }}</p>
         <a class="partner-card__link" href="/projects/partners/#{{ p.id }}">Learn more</a>
       </div>
     </article>
   </li>
   {% endfor %}
 </ul>
+
+{% assign inicia = site.data.partner_leads.partners | where: "id", "inicia" | first %}
+{% if inicia %}
+<div class="signal-panel signal-panel--research reveal">
+  <div class="eyebrow">Follow-up funder</div>
+  <p>
+    <strong>{{ inicia.name }}</strong> &mdash; the Vicini family&rsquo;s
+    Dominican education foundation, founded in <span class="font-osf">2010</span>
+    &mdash; joined the partnership for the
+    <span class="font-osf">2025&ndash;2027</span> follow-up wave as
+    lead domestic funder. Read the
+    <a href="/projects/partners/#inicia">full partner profile</a>.
+  </p>
+</div>
+{% endif %}
 
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Policy briefs</div>
@@ -268,7 +284,11 @@ hero-image: /img/hero-map.jpg
       <p class="brief-card__lede">{{ b.lede }}</p>
       <div class="brief-card__cta">
         <a href="/briefs/{{ b.slug }}/">Read brief</a>
+        {% if b.pdf_ready %}
         <span class="brief-card__cta-secondary"><a href="{{ b.pdf }}">PDF</a></span>
+        {% else %}
+        <span class="brief-card__cta-secondary"><span class="badge badge--neutral">PDF forthcoming</span></span>
+        {% endif %}
       </div>
     </article>
   </li>

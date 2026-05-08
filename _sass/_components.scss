@@ -145,6 +145,33 @@ main li + li { margin-top: $space-3; }
   .partner-card { grid-template-columns: 1fr; }
 }
 
+// Compact variant — single column, used inside the homepage partner
+// strip and any other context where the card needs to be square.
+.partner-card--compact {
+  grid-template-columns: 1fr;
+  padding: $space-6;
+  margin: 0;
+  height: 100%;
+
+  .partner-card__logo {
+    min-height: 80px;
+  }
+  .partner-card__body p {
+    font-size: $text-sm;
+  }
+  .partner-card__body h3 {
+    margin-top: $space-3;
+  }
+}
+
+.partner-card__logo-text {
+  font-family: $font-serif;
+  font-weight: $weight-medium;
+  font-size: $text-xl;
+  color: var(--turquoise-700);
+  text-align: center;
+}
+
 // ----- Video card (privacy-preserving lazy YouTube embed) -----
 .video-card {
   position: relative;
@@ -377,6 +404,8 @@ main li + li { margin-top: $space-3; }
 
   &__item {
     margin: 0;
+    display: flex;
+    flex-direction: column-reverse; // semantic dt-then-dd, visual value-on-top
   }
   &__value {
     display: block;
@@ -392,7 +421,7 @@ main li + li { margin-top: $space-3; }
   }
   &__label {
     display: block;
-    margin-top: $space-2;
+    margin: 0 0 $space-2; // gap below the dt (above dd visually thanks to column-reverse)
     font-family: $font-sans;
     font-size: $text-xs;
     font-weight: $weight-medium;
@@ -500,6 +529,16 @@ main li + li { margin-top: $space-3; }
     border: 0;
     overflow-x: auto;
     color: var(--foreground);
+  }
+
+  &__list {
+    margin: 0;
+    padding-left: $space-6;
+    list-style: disc;
+    li + li { margin-top: $space-3; }
+  }
+  &__note {
+    color: var(--muted-foreground);
   }
 }
 
@@ -1674,5 +1713,11 @@ footer {
   .is-active {
     color: var(--primary-foreground);
     background: var(--primary);
+  }
+  .is-disabled {
+    color: var(--border-strong);
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+    cursor: not-allowed;
   }
 }

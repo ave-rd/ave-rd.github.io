@@ -9,24 +9,25 @@ brief_audience: "Researchers and evaluators"
 brief_pages: 2
 brief_date: "2025-09-01"
 brief_pdf: "/briefs/AVE-RD_brief_what-worked.pdf"
+brief_pdf_ready: false
 ---
 
 <dl class="stat-strip reveal">
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">2.5&ndash;3pp</dd>
     <dt class="stat-strip__label">Dropout reduction</dt>
+    <dd class="stat-strip__value">2.5&ndash;3pp</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">0.05&ndash;0.13&sigma;</dd>
     <dt class="stat-strip__label">Test-score lift</dt>
+    <dd class="stat-strip__value">0.05&ndash;0.13&sigma;</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">42%</dd>
     <dt class="stat-strip__label">Boys with no expected wage premium pre-treatment</dt>
+    <dd class="stat-strip__value">42%</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">600</dd>
     <dt class="stat-strip__label">Public schools randomized</dt>
+    <dd class="stat-strip__value">600</dd>
   </div>
 </dl>
 
@@ -148,7 +149,11 @@ brief_pdf: "/briefs/AVE-RD_brief_what-worked.pdf"
 </ul>
 
 <p style="text-align:center;margin-top:32px">
+  {% if page.brief_pdf_ready %}
   <a class="btn-cta" href="{{ page.brief_pdf }}">Download brief (PDF)</a>
+  {% else %}
+  <span class="badge badge--neutral" style="font-size:13px;padding:8px 14px;">PDF forthcoming &mdash; HTML version above is canonical for now</span>
+  {% endif %}
 </p>
 
 <script type="application/ld+json">

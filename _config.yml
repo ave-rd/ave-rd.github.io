@@ -66,3 +66,9 @@ defaults:
       type: "news"
     values:
       layout: news
+      # The news layout emits a hand-rolled NewsArticle JSON-LD block
+      # with richer schema (authors, isPartOf, keywords). Tell
+      # jekyll-seo-tag to emit WebPage instead of its default
+      # BlogPosting so the two blocks complement rather than collide.
+      seo:
+        type: WebPage

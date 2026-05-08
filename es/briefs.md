@@ -38,7 +38,11 @@ hero-style: gradient
       <p class="brief-card__lede">{{ b.lede }}</p>
       <div class="brief-card__cta">
         <a href="/briefs/{{ b.slug }}/">Leer res&uacute;men</a>
+        {% if b.pdf_ready %}
         <span class="brief-card__cta-secondary"><a href="{{ b.pdf }}">PDF</a></span>
+        {% else %}
+        <span class="brief-card__cta-secondary"><span class="badge badge--neutral">PDF en preparaci&oacute;n</span></span>
+        {% endif %}
       </div>
     </article>
   </li>

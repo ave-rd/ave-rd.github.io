@@ -28,21 +28,27 @@ hero-style: gradient
 <ul class="press-logos reveal" aria-label="Selected press coverage">
   {% for c in site.data.press.coverage %}
   <li>
-    <a href="{{ c.url }}" rel="noopener" title="{{ c.outlet }} &mdash; {{ c.title }}">
-      {{ c.outlet }}
-    </a>
+    {% if c.url and c.url != "" and c.url != "#" %}
+    <a href="{{ c.url }}" rel="noopener" title="{{ c.outlet }} &mdash; {{ c.title }}">{{ c.outlet }}</a>
+    {% else %}
+    <span title="{{ c.outlet }} &mdash; {{ c.title }} (link forthcoming)">{{ c.outlet }}</span>
+    {% endif %}
   </li>
   {% endfor %}
 </ul>
 
 <div class="signal-panel reveal">
   <div class="eyebrow">Coverage detail</div>
-  <ul style="margin: 0; padding-left: 20px;">
+  <ul class="signal-panel__list">
     {% for c in site.data.press.coverage %}
     <li>
       <strong>{{ c.outlet }}</strong> &middot; <span class="font-osf">{{ c.date | date: "%B %Y" }}</span><br />
-      <a href="{{ c.url }}" rel="noopener">{{ c.title }}</a>
-      &mdash; <span style="color: var(--muted-foreground);">{{ c.note }}</span>
+      {% if c.url and c.url != "" and c.url != "#" %}
+        <a href="{{ c.url }}" rel="noopener">{{ c.title }}</a>
+      {% else %}
+        <em>{{ c.title }}</em> <span class="badge badge--neutral">URL forthcoming</span>
+      {% endif %}
+      &mdash; <span class="signal-panel__note">{{ c.note }}</span>
     </li>
     {% endfor %}
   </ul>

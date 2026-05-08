@@ -7,9 +7,12 @@ layout: default
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
             {% if page.title %}
+            {% comment %} The map hero variant draws an inline SVG and ignores
+               --hero-image, so don't emit a background-image var that would
+               trigger a 404 on browsers that fetch decorative properties. {% endcomment %}
             <header
                 class="hero{% if page.hero-style %} hero--{{ page.hero-style }}{% endif %}"
-                {% if page.hero-image %}style="--hero-image: url('{{ page.hero-image }}');"{% endif %}
+                {% if page.hero-image and page.hero-style != 'map' %}style="--hero-image: url('{{ page.hero-image }}');"{% endif %}
             >
                 {% if page.hero-style == 'map' %}
                 <div class="map-figure" aria-hidden="true">

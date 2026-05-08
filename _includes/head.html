@@ -15,6 +15,17 @@
     <meta name="theme-color" content="#3F6D65" />
     <meta name="format-detection" content="telephone=no" />
 
+    {% comment %} Open Graph / Twitter image — jekyll-seo-tag occasionally
+       skips og:image when site.image is a bare string, so emit explicitly.
+       Per-page image: front-matter wins; otherwise fall back to site default. {% endcomment %}
+    {% assign og_image = page.image | default: site.image %}
+    {% if og_image %}
+      <meta property="og:image" content="{{ og_image | absolute_url }}" />
+      <meta property="og:image:alt" content="{{ page.image_alt | default: site.title | append: ' — ' | append: site.tagline | default: site.description }}" />
+      <meta name="twitter:image" content="{{ og_image | absolute_url }}" />
+      <meta name="twitter:card" content="summary_large_image" />
+    {% endif %}
+
     {% comment %} hreflang: link the EN and ES versions of mirrored pages {% endcomment %}
     {% if page.alt_url %}
       {% assign current_lang = page.lang | default: site.lang | default: 'en' %}

@@ -162,20 +162,20 @@ sitemap: false
 <h3>Stat strip</h3>
 <dl class="stat-strip">
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">200,000</dd>
     <dt class="stat-strip__label">Students reached</dt>
+    <dd class="stat-strip__value">200,000</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">300,000</dd>
     <dt class="stat-strip__label">Surveys collected</dt>
+    <dd class="stat-strip__value">300,000</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">2,700</dd>
     <dt class="stat-strip__label">Officials mobilized</dt>
+    <dd class="stat-strip__value">2,700</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">2</dd>
     <dt class="stat-strip__label">Annual batches</dt>
+    <dd class="stat-strip__value">2</dd>
   </div>
 </dl>
 

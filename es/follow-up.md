@@ -32,19 +32,19 @@ hero-style: gradient
 
   <dl class="fundraise-cta__pillars">
     <div class="fundraise-cta__pillar">
-      <dt>Presupuesto total &middot; USD</dt>
-      <dd>$TBD</dd>
-      <p>Cubre re-encuesta, vinculaci&oacute;n administrativa, serie de res&uacute;menes y kit de replicaci&oacute;n abierto. Horizonte trianual.</p>
+      <dt>Horizonte trianual</dt>
+      <dd>2025&ndash;2027</dd>
+      <p>Re-encuesta, vinculaci&oacute;n administrativa, serie de res&uacute;menes y kit de replicaci&oacute;n abierto, ejecutado desde la oficina del proyecto en Santo Domingo.</p>
     </div>
     <div class="fundraise-cta__pillar">
-      <dt>Costo por miembro del panel rastreado</dt>
-      <dd>$TBD</dd>
-      <p>Incluye localizaci&oacute;n de migrantes, encuesta mixta, y vinculaci&oacute;n de registros con control de calidad.</p>
+      <dt>Cohorte a rastrear</dt>
+      <dd>43,000</dd>
+      <p>Incluye localizaci&oacute;n de migrantes, encuesta mixta, y vinculaci&oacute;n de registros con la Tesorer&iacute;a de la Seguridad Social.</p>
     </div>
     <div class="fundraise-cta__pillar">
-      <dt>Contraparte disponible</dt>
-      <dd>1 : TBD</dd>
-      <p>Compromisos institucionales existentes de MINERD y J-PAL LAC sostienen una porci&oacute;n de las operaciones de campo.</p>
+      <dt>Contraparte dom&eacute;stica</dt>
+      <dd>Ya en pie</dd>
+      <p>MINERD financia la entrega en aulas, IDEICE custodia los datos y INICIA Educaci&oacute;n es el socio fundacional dom&eacute;stico. El nuevo financiamiento va directo al producto de investigaci&oacute;n.</p>
     </div>
   </dl>
 

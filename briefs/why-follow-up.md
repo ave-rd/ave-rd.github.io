@@ -9,6 +9,7 @@ brief_audience: "Funders and principals"
 brief_pages: 2
 brief_date: "2025-10-15"
 brief_pdf: "/briefs/AVE-RD_brief_why-follow-up.pdf"
+brief_pdf_ready: false
 ---
 
 <div class="section-header reveal">
@@ -31,20 +32,20 @@ brief_pdf: "/briefs/AVE-RD_brief_why-follow-up.pdf"
 
 <dl class="stat-strip reveal">
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">~10</dd>
     <dt class="stat-strip__label">Years since first wave</dt>
+    <dd class="stat-strip__value">~10</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">43,000</dd>
     <dt class="stat-strip__label">Cohort to re-survey</dt>
+    <dd class="stat-strip__value">43,000</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">3</dd>
     <dt class="stat-strip__label">Year field plan</dt>
+    <dd class="stat-strip__value">3</dd>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">$TBD</dd>
-    <dt class="stat-strip__label">Total budget · USD</dt>
+    <dt class="stat-strip__label">Pre-analysis plan</dt>
+    <dd class="stat-strip__value">Registered</dd>
   </div>
 </dl>
 
@@ -129,7 +130,9 @@ brief_pdf: "/briefs/AVE-RD_brief_why-follow-up.pdf"
 
 <p style="text-align:center;margin-top:32px">
   <a class="btn-cta" href="/projects/follow-up/">See the follow-up plan</a>
+  {% if page.brief_pdf_ready %}
   <a class="btn-cta" href="{{ page.brief_pdf }}" style="margin-left: 12px;">Download brief (PDF)</a>
+  {% endif %}
 </p>
 
 <script type="application/ld+json">
