@@ -3,20 +3,27 @@
 # Other implementations of the same "information about returns to
 # education → schooling decisions" design that AVE-RD descends from.
 # Add new entries as the family grows.
+#
+# Generations:
+#   • Older siblings (telenovela video + classroom protocol):
+#     AVE-RD itself, DFM Peru.
+#   • Younger siblings (digital platform, app, chatbots, short-form
+#     video): DFM Chile, DFM Colombia / ICFES-Bot.
 
 projects:
   - id: dfm-peru
     name: "Decidiendo para un Futuro Mejor"
-    short: "DFM"
+    short: "DFM Perú"
     country: "Peru"
     flag: "🇵🇪"
+    generation: "Older sister · telenovela video"
     period: "2014–2018, then national policy"
     funder: "US Department of Labor (USDoL)"
     research_partner: "Innovations for Poverty Action (IPA) and J-PAL"
     govt_partner: "MINEDU Perú · MineduLAB"
-    relationship: "Sibling — same design, different country, different US funder, different research institution"
+    relationship: "Older sister — same telenovela-video design, different country, different US funder, different research institution"
     summary: >-
-      DFM is the Peruvian counterpart to AVE-RD. A telenovela-style
+      DFM Perú is the Peruvian counterpart to AVE-RD. A telenovela-style
       video series — paired with an interactive tablet app — delivered
       information about real earnings by schooling level, the social
       value of education, and financing options for higher study. The
@@ -37,7 +44,8 @@ projects:
       Two countries, two ministries, two US funders, two research
       institutions — and both reached national policy adoption. For a
       minister of education weighing whether to adapt AVE in their own
-      country, DFM is the existence proof that the design travels.
+      country, DFM Perú is the existence proof that the design travels.
+    site_url: ""    # TODO: spin up a stand-alone DFM-Perú project site
     links:
       - label: "IPA project page"
         url: "https://poverty-action.org/study/information-about-returns-post-primary-education-peru"
@@ -51,3 +59,103 @@ projects:
         url: "https://repositorio.minedu.gob.pe/handle/20.500.12799/5299"
       - label: "Aprendo en Casa — DFM during COVID-19"
         url: "https://www.poverty-action.org/blog/can-telenovela-help-kids-stay-school-during-covid-19"
+
+  - id: dfm-chile
+    name: "Decidiendo para un Futuro Mejor — Chile"
+    short: "DFM Chile"
+    country: "Chile"
+    flag: "🇨🇱"
+    generation: "Younger sister · digital platform"
+    period: "2021 pilot, expanding"
+    funder: "TBD"   # TODO: confirm primary funder
+    research_partner: "J-PAL Santiago and the Pontificia Universidad Católica de Chile (UC), with ConsiliumBots"
+    govt_partner: "Mineduc Chile"
+    relationship: "Younger sister — same theoretical premise, but delivered through an interactive digital platform rather than a televised video"
+    summary: >-
+      DFM Chile is the digital reincarnation of the AVE/DFM design.
+      Where the older siblings deliver information through a
+      telenovela-style video screened in class, DFM Chile delivers it
+      through an interactive web platform — a "digital vocational
+      counsellor" for grades 6–12 that walks students and parents
+      through earnings by schooling level, higher-education programmes,
+      and financing options. The 2021 pilot reached more than
+      11,000 students from 7th grade through the third year of
+      high school.
+    headline_results:
+      - figure: "11,000+"
+        label: "Students in 2021 pilot"
+      - figure: "~50%"
+        label: "Course-completion rate"
+      - figure: "5×"
+        label: "Lift in financial-aid awareness"
+    scale_up: >-
+      The DFM Chile platform tracks academic trajectories under a
+      data-sharing agreement with Mineduc Chile and is rolling out
+      across additional regions following the 2021 pilot.
+    why_it_matters: >-
+      DFM Chile shows the design's portability across delivery
+      modalities — the same information story carried by code, not
+      by video. The completion rate is unusually high for an online
+      course (~50% versus a typical 6.5% for MOOCs), suggesting that
+      the schooling-decision context is itself part of what keeps
+      students engaged.
+    site_url: "https://chile.decidiendofuturomejor.com/"
+    links:
+      - label: "DFM Chile platform"
+        url: "https://chile.decidiendofuturomejor.com/"
+      - label: "ConsiliumBots — DFM project page"
+        url: "https://www.consiliumbots.com/eng/projects/decidiendo-para-un-futuro-mejor"
+      - label: "Pontificia Universidad Católica — coverage"
+        url: "https://www.uc.cl/noticias/un-futuro-mejor/"
+      - label: "DFM Chile — overview video"
+        url: "https://www.youtube.com/watch?v=agjVXgcmsdc"
+
+  - id: dfm-colombia
+    name: "DFM Colombia · ICFES-Bot · OSObot"
+    short: "DFM Colombia / ICFES-Bot"
+    country: "Colombia"
+    flag: "🇨🇴"
+    generation: "Younger sister · WhatsApp chatbot"
+    period: "2018–present, ongoing at national scale"
+    funder: "TBD"   # TODO: confirm funders / supporters
+    research_partner: "ConsiliumBots, with researchers Michael Kremer, Jaime Saavedra, Eric Bettinger, Christian Posso"
+    govt_partner: "ICFES (Instituto Colombiano para la Evaluación de la Educación) and the Ministry of Education · led on the policy side by Mónica Espina"
+    relationship: "Younger sister — the same information story, delivered through personalised WhatsApp chatbots and short-form content rather than telenovela video"
+    summary: >-
+      In Colombia the design is delivered as a national-scale chatbot
+      operation. ICFES-Bot reaches roughly 430,000 high-school
+      seniors per year through WhatsApp, providing personalised
+      information about higher-education programmes, expected earnings
+      by field of study, programme accreditation, and financing
+      options including ICETEX student loans. A second chatbot,
+      OSObot, runs the equivalent service for Bogotá city scholarships
+      and reaches an additional 48,000 students.
+    headline_results:
+      - figure: "+36%"
+        label: "Loan applications (ICFES-Bot)"
+      - figure: "+27%"
+        label: "Loan take-up (ICFES-Bot)"
+      - figure: "430,000"
+        label: "Students reached / year"
+    scale_up: >-
+      ICFES-Bot is now in its seventh year of national operation,
+      delivered jointly with ICFES, the public agency that runs
+      Colombia's national exams. OSObot is in production at the city
+      level in Bogotá.
+    why_it_matters: >-
+      DFM Colombia / ICFES-Bot is the strongest evidence that the
+      design works without a video at all — pure personalised
+      information delivery, at national scale, with measurable effects
+      on credit applications and uptake. The largest effects are in
+      students who received the most personalised content.
+    site_url: "https://www2.icfes.gov.co/en/icfes-bot"
+    links:
+      - label: "ICFES-Bot (official ICFES page)"
+        url: "https://www2.icfes.gov.co/en/icfes-bot"
+      - label: "ConsiliumBots — Chatbots & AI projects"
+        url: "https://www.consiliumbots.com/eng/projects/chatbots-ai"
+      - label: "Banco de la República — analysis paper"
+        url: "https://repositorio.banrep.gov.co/server/api/core/bitstreams/697ef124-6c7d-46af-8e09-883867497e4d/content"
+      - label: "ConsiliumBots — research overview"
+        url: "https://www.consiliumbots.com/eng/research"
+

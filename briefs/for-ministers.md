@@ -28,21 +28,27 @@ brief_pdf: "/briefs/AVE-RD_brief_for-ministers.pdf"
 </p>
 
 <div class="signal-panel signal-panel--research reveal">
-  <div class="eyebrow">Existence proof: Peru</div>
+  <div class="eyebrow">Existence proof: Per&uacute;, Chile, Colombia</div>
   <p>
-    The closest analogue is <strong>Decidiendo para un Futuro Mejor
-    (DFM)</strong> in Peru &mdash; same intervention design, funded by
-    the US Department of Labor, managed by IPA and J-PAL with MINEDU
-    Per&uacute;'s MineduLAB. DFM reduced school dropout by
-    <span class="font-osf">18.8</span>% in urban areas at a marginal
-    cost of <span class="font-osf">$0.05</span> per student and was
-    subsequently scaled to all
-    <span class="font-osf">2,001</span> Peruvian secondary schools
-    with full class days. The DFM concept note, results brief, and
-    instruments are all in the public domain &mdash; see the
-    <a href="/projects/sister-projects/">sister-projects page</a> for
-    the full link set. Where AVE has been done, this is what the
-    next minister has to read.
+    The design has been implemented in three other countries already.
+    <strong>DFM Per&uacute;</strong> &mdash; same telenovela video,
+    funded by the US Department of Labor, IPA + J-PAL with MINEDU's
+    MineduLAB &mdash; reduced school dropout by
+    <span class="font-osf">18.8</span>% in urban areas at
+    <span class="font-osf">$0.05</span> per student and is now
+    standing policy across all <span class="font-osf">2,001</span>
+    Peruvian secondary schools with full class days. <strong>DFM
+    Chile</strong> (J-PAL Santiago and the Pontificia Universidad
+    Cat&oacute;lica with Mineduc Chile) is a digital platform serving
+    11,000+ students at completion rates roughly seven times those of
+    a typical online course. <strong>DFM Colombia / ICFES-Bot</strong>
+    (ConsiliumBots with ICFES) reaches ~430,000 high-school seniors a
+    year on WhatsApp and increased student-loan applications by
+    <span class="font-osf">36</span>%. Concept notes, results briefs,
+    instruments, and code for all three are linked from the
+    <a href="/projects/sister-projects/">sister-projects page</a>.
+    Where AVE has been done, this is what the next minister has to
+    read.
   </p>
 </div>
 

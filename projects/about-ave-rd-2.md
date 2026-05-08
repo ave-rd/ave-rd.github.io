@@ -105,21 +105,25 @@ hero-image: /img/hero-santo-domingo.jpg
 </ol>
 
 <div class="signal-panel reveal">
-  <div class="eyebrow">Sister project · Peru</div>
+  <div class="eyebrow">Sister projects · Per&uacute;, Chile, Colombia</div>
   <p>
-    The same design has been implemented in Peru as
-    <strong>Decidiendo para un Futuro Mejor (DFM)</strong> &mdash;
-    funded by the US Department of Labor, managed by Innovations for
-    Poverty Action (IPA) and J-PAL with MINEDU Per&uacute;'s
-    MineduLAB. DFM reduced school dropout by
-    <span class="font-osf">18.8</span>% in urban areas at a marginal
-    cost of <span class="font-osf">$0.05</span> per student, and was
-    subsequently adopted as Peruvian government policy across all
-    <span class="font-osf">2,001</span> secondary schools with full
-    class days. Two countries, two ministries, two US funders, two
-    research institutions &mdash; both at national policy.
-    See <a href="/projects/sister-projects/">Sister projects</a> for
-    the full comparison.
+    The same design has been implemented in three other countries.
+    <strong>DFM Per&uacute;</strong> &mdash; same telenovela video,
+    funded by the US Department of Labor, managed by IPA and J-PAL with
+    MINEDU's MineduLAB &mdash; reduced school dropout by
+    <span class="font-osf">18.8</span>% in urban areas at
+    <span class="font-osf">$0.05</span> per student and is now
+    standing policy across all <span class="font-osf">2,001</span>
+    Peruvian secondary schools with full class days. The two younger
+    siblings &mdash; <strong>DFM Chile</strong> (J-PAL Santiago, UC,
+    Mineduc Chile) and <strong>DFM Colombia / ICFES-Bot</strong>
+    (ConsiliumBots with ICFES, reaching ~430,000 high-school seniors a
+    year on WhatsApp) &mdash; have moved from televised video to
+    digital platform and chatbot, demonstrating that the design
+    travels across delivery surfaces too. Two countries at national
+    policy, four implementations, three research institutions. See
+    <a href="/projects/sister-projects/">Sister projects</a> for the
+    full comparison and the ConsiliumBots origin story.
   </p>
 </div>
 
