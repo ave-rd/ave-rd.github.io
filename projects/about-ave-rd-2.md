@@ -104,6 +104,25 @@ hero-image: /img/hero-santo-domingo.jpg
   </li>
 </ol>
 
+<div class="signal-panel reveal">
+  <div class="eyebrow">Sister project · Peru</div>
+  <p>
+    The same design has been implemented in Peru as
+    <strong>Decidiendo para un Futuro Mejor (DFM)</strong> &mdash;
+    funded by the US Department of Labor, managed by Innovations for
+    Poverty Action (IPA) and J-PAL with MINEDU Per&uacute;'s
+    MineduLAB. DFM reduced school dropout by
+    <span class="font-osf">18.8</span>% in urban areas at a marginal
+    cost of <span class="font-osf">$0.05</span> per student, and was
+    subsequently adopted as Peruvian government policy across all
+    <span class="font-osf">2,001</span> secondary schools with full
+    class days. Two countries, two ministries, two US funders, two
+    research institutions &mdash; both at national policy.
+    See <a href="/projects/sister-projects/">Sister projects</a> for
+    the full comparison.
+  </p>
+</div>
+
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">The funding context</div>
   <h2>Why USAID, why MINERD, why now INICIA</h2>

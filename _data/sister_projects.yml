@@ -1,0 +1,53 @@
+# AVE-RD's sister projects.
+# ---------------------------------------------------------------
+# Other implementations of the same "information about returns to
+# education → schooling decisions" design that AVE-RD descends from.
+# Add new entries as the family grows.
+
+projects:
+  - id: dfm-peru
+    name: "Decidiendo para un Futuro Mejor"
+    short: "DFM"
+    country: "Peru"
+    flag: "🇵🇪"
+    period: "2014–2018, then national policy"
+    funder: "US Department of Labor (USDoL)"
+    research_partner: "Innovations for Poverty Action (IPA) and J-PAL"
+    govt_partner: "MINEDU Perú · MineduLAB"
+    relationship: "Sibling — same design, different country, different US funder, different research institution"
+    summary: >-
+      DFM is the Peruvian counterpart to AVE-RD. A telenovela-style
+      video series — paired with an interactive tablet app — delivered
+      information about real earnings by schooling level, the social
+      value of education, and financing options for higher study. The
+      design is the operational twin of AVE-RD's: same theoretical
+      premise, same delivery mechanism, different country context.
+    headline_results:
+      - figure: "−18.8%"
+        label: "School dropout in urban areas"
+      - figure: "−15%"
+        label: "Child labor for girls (urban)"
+      - figure: "$0.05"
+        label: "Cost per student"
+    scale_up: >-
+      The video series was adopted by MINEDU Perú and is now shown in
+      all 2,001 secondary schools with a full class day, reaching
+      roughly 500,000 students nationwide.
+    why_it_matters: >-
+      Two countries, two ministries, two US funders, two research
+      institutions — and both reached national policy adoption. For a
+      minister of education weighing whether to adapt AVE in their own
+      country, DFM is the existence proof that the design travels.
+    links:
+      - label: "IPA project page"
+        url: "https://poverty-action.org/study/information-about-returns-post-primary-education-peru"
+      - label: "IPA — Choosing a Better Future"
+        url: "https://poverty-action.org/choosing-better-future-information-reduce-school-drop-out-and-child-labor-rates-peru"
+      - label: "J-PAL evaluation page"
+        url: "https://povertyactionlab.org/evaluation/providing-infomation-reduce-dropout-and-child-labor-peru"
+      - label: "Results brief (PDF, English)"
+        url: "https://poverty-action.org/sites/default/files/publications/Peru-Returns-to-Education-Brief-English-Sept-2018.pdf"
+      - label: "MINEDU concept note"
+        url: "https://repositorio.minedu.gob.pe/handle/20.500.12799/5299"
+      - label: "Aprendo en Casa — DFM during COVID-19"
+        url: "https://www.poverty-action.org/blog/can-telenovela-help-kids-stay-school-during-covid-19"

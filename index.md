@@ -339,6 +339,7 @@ hero-image: /img/hero-map.jpg
   <li><a href="/projects/briefs/">Policy briefs</a> &mdash; three two-page summaries for researchers, funders, and ministries.</li>
   <li><a href="/projects/download-videos-2/">Replication kit</a> &mdash; papers, instruments, code, data, and the procedure for using the videos in your own study.</li>
   <li><a href="/projects/partners/">Partners</a> &mdash; J-PAL LAC, MINERD, IDEICE, INICIA Educaci&oacute;n, USAID &mdash; with named leads inside each.</li>
+  <li><a href="/projects/sister-projects/">Sister projects</a> &mdash; Decidiendo para un Futuro Mejor (Peru) and the broader replication architecture.</li>
   <li><a href="/projects/press/">Press, voices &amp; milestones</a> &mdash; coverage, testimonials, and the 2014&ndash;2027 timeline.</li>
   <li><a href="/news/">News &amp; field updates</a> &mdash; brief releases and field reports.</li>
   <li><a href="/projects/follow-up/">Support the follow-up</a> &mdash; the budget, the named contacts, and the partnership model.</li>

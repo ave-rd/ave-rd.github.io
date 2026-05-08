@@ -27,6 +27,25 @@ brief_pdf: "/briefs/AVE-RD_brief_for-ministers.pdf"
   six-month launch sequence.
 </p>
 
+<div class="signal-panel signal-panel--research reveal">
+  <div class="eyebrow">Existence proof: Peru</div>
+  <p>
+    The closest analogue is <strong>Decidiendo para un Futuro Mejor
+    (DFM)</strong> in Peru &mdash; same intervention design, funded by
+    the US Department of Labor, managed by IPA and J-PAL with MINEDU
+    Per&uacute;'s MineduLAB. DFM reduced school dropout by
+    <span class="font-osf">18.8</span>% in urban areas at a marginal
+    cost of <span class="font-osf">$0.05</span> per student and was
+    subsequently scaled to all
+    <span class="font-osf">2,001</span> Peruvian secondary schools
+    with full class days. The DFM concept note, results brief, and
+    instruments are all in the public domain &mdash; see the
+    <a href="/projects/sister-projects/">sister-projects page</a> for
+    the full link set. Where AVE has been done, this is what the
+    next minister has to read.
+  </p>
+</div>
+
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Cost order</div>
   <h2>What a country-scale adaptation costs</h2>
