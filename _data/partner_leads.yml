@@ -126,11 +126,14 @@ partners:
     role_badge: "cohort"
     role_label: "Founding funder"
     description: >-
-      USAID provided primary funding for the AVE-RD pilot
-      (2014–2017) alongside MINERD. The endline report submitted
-      to USAID at Milestone 13 anchored the publication of the
-      first-wave results and informs the design of the
-      2025–2027 follow-up.
+      USAID's Dominican Republic mission was the founding funder of
+      AVE-RD (2014–2017), under a cooperative agreement with J-PAL
+      LAC and MINERD that scaled up the information-intervention design
+      from Robert Jensen's 2010 study in the country. The agreement
+      ran across thirteen milestones; the endline report submitted at
+      Milestone 13 documented the dropout, test-score and belief-update
+      effects that informed MINERD's subsequent policy adoption and
+      the design of the 2025–2027 follow-up.
     leads:
       - name: "Mission Director, USAID/Dominican Republic"   # TODO: replace
         role: "USAID/DR"

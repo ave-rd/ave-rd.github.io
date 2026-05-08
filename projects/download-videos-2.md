@@ -17,8 +17,48 @@ order: 4
 </p>
 
 <div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">Foundational paper</div>
+  <h2>The Jensen 2010 study AVE-RD scales up</h2>
+  <p class="lede">
+    Robert Jensen&rsquo;s <span class="font-osf">2010</span>
+    <em>Quarterly Journal of Economics</em> paper documented the
+    information gap and the schooling response that the AVE
+    intervention was built to act on at scale.
+  </p>
+</div>
+
+<div class="signal-panel reveal">
+  <div class="eyebrow">Citation</div>
+  <p style="margin:0;">
+    Jensen, Robert. &ldquo;The (Perceived) Returns to Education and
+    the Demand for Schooling.&rdquo; <em>Quarterly Journal of
+    Economics</em>, May <span class="font-osf">2010</span>,
+    <span class="font-osf">125(2)</span>:&nbsp;<span class="font-osf">515&ndash;548</span>.
+  </p>
+  <p style="margin: 12px 0 0;">
+    <a class="partner-card__link" href="https://academic.oup.com/qje/article-abstract/125/2/515/1882172">QJE article</a>
+    &nbsp;&middot;&nbsp;
+    <a class="partner-card__link" href="https://www.povertyactionlab.org/evaluation/impact-information-returns-education-demand-schooling-dominican-republic">J-PAL evaluation page</a>
+    &nbsp;&middot;&nbsp;
+    <a class="partner-card__link" href="https://eml.berkeley.edu/~saez/course131/Jensen10.pdf">Open PDF</a>
+  </p>
+</div>
+
+<p>
+  In Jensen&rsquo;s study, eighth-grade boys in the Dominican Republic
+  underestimated the wage returns to secondary schooling. A short,
+  one-shot information presentation in randomly assigned schools
+  raised completed schooling by
+  <span class="font-osf">0.20&ndash;0.35</span> additional years over
+  the next four years. AVE-RD is the operational scale-up: same
+  country, same theoretical premise, but delivered as a four-episode
+  classroom video the ministry can run on its own &mdash; and now
+  rolled out to every public school in the country.
+</p>
+
+<div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Working papers</div>
-  <h2>Read the analysis</h2>
+  <h2>Read the AVE-RD analysis</h2>
 </div>
 
 <ol class="numbered-list reveal">
@@ -55,7 +95,9 @@ order: 4
       <p>
         The full implementation and results report submitted to USAID at
         the end of the funded period. Includes effect tables and the
-        operational logistics narrative.
+        operational logistics narrative for the
+        <span class="font-osf">2014&ndash;2017</span> cooperative
+        agreement.
       </p>
       <p>
         <a class="partner-card__link" href="/papers/AVE_USAID_EndlineReport.pdf">Download (PDF)</a>
