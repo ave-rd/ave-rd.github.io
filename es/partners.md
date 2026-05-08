@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Socios
-description: "Las cuatro instituciones que diseñaron, financiaron y evaluaron AVE-RD — con los líderes nombrados dentro de cada una que sostienen el trabajo."
-eyebrow: "Socios · 4 instituciones"
+description: "Las cinco instituciones que diseñaron, financiaron y evaluaron AVE-RD — con los líderes nombrados dentro de cada una que sostienen el trabajo."
+eyebrow: "Socios · 5 instituciones"
 permalink: /es/partners/
 lang: es
 alt_url: /projects/partners/
@@ -11,13 +11,14 @@ hero-style: gradient
 ---
 
 <p class="dropcap">
-  AVE-RD es el trabajo de cuatro instituciones a trav&eacute;s de dos
+  AVE-RD es el trabajo de cinco instituciones a trav&eacute;s de dos
   pa&iacute;ses: un laboratorio de investigaci&oacute;n, un ministerio
-  nacional, una agencia de evaluaci&oacute;n, y un donante
-  internacional. Cada uno tom&oacute; una parte del proceso &mdash;
-  dise&ntilde;o, entrega, medici&oacute;n, financiamiento &mdash; y el
-  piloto alcanz&oacute; <span class="font-osf">200,000</span>
-  estudiantes porque las cuatro sostuvieron su esquina. La ola de
+  nacional, su brazo de evaluaci&oacute;n, una fundaci&oacute;n
+  dominicana de educaci&oacute;n, y un donante internacional. Cada uno
+  tom&oacute; una parte del proceso &mdash; dise&ntilde;o, entrega,
+  medici&oacute;n, financiamiento dom&eacute;stico, donante fundador
+  &mdash; y el piloto alcanz&oacute; <span class="font-osf">200,000</span>
+  estudiantes porque las cinco sostuvieron su esquina. La ola de
   seguimiento mantiene la misma arquitectura de alianza, con un
   &eacute;nfasis nuevo en el acceso de la agencia de evaluaci&oacute;n
   a registros administrativos de ingresos.
@@ -25,7 +26,7 @@ hero-style: gradient
 
 <dl class="stat-strip reveal">
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">4</dd>
+    <dd class="stat-strip__value">5</dd>
     <dt class="stat-strip__label">Socios institucionales</dt>
   </div>
   <div class="stat-strip__item">
@@ -45,7 +46,11 @@ hero-style: gradient
 {% for p in site.data.partner_leads.partners %}
 <section class="partner-card reveal" id="{{ p.id }}">
   <div class="partner-card__logo">
+    {% if p.logo and p.logo != "" %}
     <img src="{{ p.logo }}" alt="Logo de {{ p.short }}" loading="lazy" />
+    {% else %}
+    <span style="font-family:var(--font-serif,serif);font-weight:500;font-size:24px;color:var(--turquoise-700);text-align:center;">{{ p.short }}</span>
+    {% endif %}
   </div>
   <div class="partner-card__body">
     <span class="badge badge--{{ p.role_badge }}">{{ p.role_label }}</span>

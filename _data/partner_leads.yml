@@ -51,7 +51,9 @@ partners:
       management, administration and development of the country's
       education model. Its Department of Orientation and Psychology
       delivered the AVE-RD videos to schools nationwide and is the
-      operational owner of the follow-up wave.
+      operational owner of the follow-up wave. MINERD's Pruebas
+      Nacionales — the national assessment system — supplies the
+      test-score outcomes that anchor the impact analysis.
     quote:
       text: >-
         The pilot trained hundreds of our regional staff in modern
@@ -59,10 +61,10 @@ partners:
         capability that has outlived the project itself.
       attrib: "Dirección de Orientación y Psicología, MINERD"
     leads:
-      - name: "Director, Department of Orientation and Psychology"   # TODO: replace
+      - name: "Ancell Scheker"
+        role: "Vice-Minister · Director of Evaluation & Quality Control, MINERD · Pruebas Nacionales"
+      - name: "Director, Department of Orientation and Psychology"   # TODO: replace with real name
         role: "DOP Director, MINERD"
-      - name: "Vice-Minister for Pedagogical Affairs"                # TODO: replace
-        role: "MINERD"
       - name: "18 Regional DOP Coordinators"
         role: "MINERD · Educational regions"
 
@@ -77,17 +79,41 @@ partners:
     role_badge: "research"
     role_label: "Measurement"
     description: >-
-      The Dominican Institute for Evaluation and Investigation of
-      Educational Quality is a public, decentralized agency attached to
-      the Ministry of Education. IDEICE co-led the impact evaluation,
-      provided access to administrative records, and is the partner
-      responsible for the Pruebas Nacionales linkage that anchors the
-      long-run earnings analysis.
+      IDEICE is the research and evaluation arm of MINERD — a public,
+      decentralized agency attached to the Ministry of Education. It
+      co-led the AVE-RD impact evaluation, hosts the panel data, and
+      brokers the Pruebas Nacionales linkages. For the
+      2025–2027 follow-up, IDEICE is the data steward responsible
+      for the agreement that links the cohort to the Tesorería de la
+      Seguridad Social earnings panel.
     leads:
-      - name: "Executive Director"          # TODO: replace
+      - name: "Carmen Maura Taveras"
+        role: "Education evaluation · Pruebas Nacionales · World Bank Education Global Practice"
+      - name: "Executive Director, IDEICE"      # TODO: replace
         role: "IDEICE"
-      - name: "Director of Evaluation"      # TODO: replace
-        role: "IDEICE"
+
+  - id: inicia
+    name: "INICIA Educación"
+    short: "INICIA"
+    type: "Education foundation and impact-investment fund"
+    schema_type: "Organization"
+    country: "Dominican Republic"
+    url: "https://www.iniciaeducacion.org/"
+    logo: ""                                            # TODO: add /img/logos/inicia.png
+    role_badge: "cohort"
+    role_label: "Foundation partner & funder"
+    description: >-
+      INICIA Educación is a Dominican impact-investment fund focused
+      on the country's basic-education system, established in 2010 by
+      the Vicini family. It works in close partnership with MINERD and
+      IDEICE on system-wide evidence generation — including AVE-RD —
+      and is a key partner and funder of the
+      2025–2027 follow-up wave.
+    leads:
+      - name: "Executive Director"             # TODO: replace with real name
+        role: "INICIA Educación"
+      - name: "Education Programs Lead"        # TODO: replace with real name
+        role: "INICIA Educación"
 
   - id: usaid
     name: "USAID — United States Agency for International Development"

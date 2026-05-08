@@ -1,7 +1,7 @@
 ---
 title: Partners
-description: "The four institutions that designed, funded and evaluated AVE-RD — with the named leads inside each one who carry the work."
-eyebrow: "Partners · 4 institutions"
+description: "The five institutions that designed, funded and evaluated AVE-RD — with the named leads inside each one who carry the work."
+eyebrow: "Partners · 5 institutions"
 date: 2017-09-14T14:23:53+00:00
 author: Gonzalo Oyanedel
 layout: page
@@ -12,19 +12,20 @@ hero-style: gradient
 ---
 
 <p class="dropcap">
-  AVE-RD is the work of four institutions across two countries: a research
-  lab, a national ministry, an evaluation agency, and an international
-  donor. Each owned one part of the pipeline &mdash; design, delivery,
-  measurement, funding &mdash; and the pilot reached
-  <span class="font-osf">200,000</span> students because all four held
-  their corner. The follow-up wave keeps the same partnership architecture,
-  with a new emphasis on the evaluation agency's access to administrative
-  earnings records.
+  AVE-RD is the work of five institutions across two countries: a
+  research lab, a national ministry, its evaluation arm, a Dominican
+  education foundation, and an international donor. Each owns one
+  part of the pipeline &mdash; design, delivery, measurement,
+  domestic funding, founding donor &mdash; and the pilot reached
+  <span class="font-osf">200,000</span> students because all five
+  held their corner. The follow-up wave keeps the same partnership
+  architecture, with a new emphasis on the evaluation agency's access
+  to administrative earnings records.
 </p>
 
 <dl class="stat-strip reveal">
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">4</dd>
+    <dd class="stat-strip__value">5</dd>
     <dt class="stat-strip__label">Institutional partners</dt>
   </div>
   <div class="stat-strip__item">
@@ -46,7 +47,11 @@ hero-style: gradient
   <meta itemprop="name" content="{{ p.name | strip_html }}" />
   <meta itemprop="url" content="{{ p.url }}" />
   <div class="partner-card__logo">
+    {% if p.logo and p.logo != "" %}
     <img src="{{ p.logo }}" alt="{{ p.short }} logo" loading="lazy" itemprop="logo" />
+    {% else %}
+    <span style="font-family:var(--font-serif,serif);font-weight:500;font-size:24px;color:var(--turquoise-700);text-align:center;">{{ p.short }}</span>
+    {% endif %}
   </div>
   <div class="partner-card__body">
     <span class="badge badge--{{ p.role_badge }}">{{ p.role_label }}</span>

@@ -214,19 +214,24 @@ hero-image: /img/hero-map.jpg
 
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">The partnership</div>
-  <h2>Four institutions, two countries</h2>
+  <h2>Five institutions, two countries</h2>
   <p class="lede">
-    A research lab, a national ministry, an evaluation agency, and an
-    international donor. Each holds one corner of the pipeline.
+    A research lab, a national ministry, its evaluation arm, a Dominican
+    education foundation, and an international donor. Each holds one
+    corner of the pipeline.
   </p>
 </div>
 
-<ul class="brief-grid reveal" style="--grid-template:repeat(4,1fr);">
+<ul class="brief-grid brief-grid--three reveal">
   {% for p in site.data.partner_leads.partners %}
   <li>
     <article class="partner-card" style="grid-template-columns: 1fr; padding: 24px;">
       <div class="partner-card__logo" style="min-height: 80px;">
+        {% if p.logo and p.logo != "" %}
         <img src="{{ p.logo }}" alt="{{ p.short }} logo" loading="lazy" />
+        {% else %}
+        <span style="font-family:var(--font-serif,serif);font-weight:500;font-size:22px;color:var(--turquoise-700);">{{ p.short }}</span>
+        {% endif %}
       </div>
       <div class="partner-card__body">
         <span class="badge badge--{{ p.role_badge }}">{{ p.role_label }}</span>
@@ -333,7 +338,7 @@ hero-image: /img/hero-map.jpg
   <li><a href="/projects/videos/">The intervention</a> &mdash; all four videos with arm and episode metadata.</li>
   <li><a href="/projects/briefs/">Policy briefs</a> &mdash; three two-page summaries for researchers, funders, and ministries.</li>
   <li><a href="/projects/download-videos-2/">Replication kit</a> &mdash; papers, instruments, code, data, and the procedure for using the videos in your own study.</li>
-  <li><a href="/projects/partners/">Partners</a> &mdash; J-PAL LAC, MINERD, IDEICE, USAID &mdash; with named leads inside each.</li>
+  <li><a href="/projects/partners/">Partners</a> &mdash; J-PAL LAC, MINERD, IDEICE, INICIA Educaci&oacute;n, USAID &mdash; with named leads inside each.</li>
   <li><a href="/projects/press/">Press, voices &amp; milestones</a> &mdash; coverage, testimonials, and the 2014&ndash;2027 timeline.</li>
   <li><a href="/news/">News &amp; field updates</a> &mdash; brief releases and field reports.</li>
   <li><a href="/projects/follow-up/">Support the follow-up</a> &mdash; the budget, the named contacts, and the partnership model.</li>
@@ -389,6 +394,11 @@ hero-image: /img/hero-map.jpg
       "@type": "GovernmentOrganization",
       "name": "MINERD — Ministry of Education of the Dominican Republic",
       "url": "http://ministeriodeeducacion.gob.do/"
+    },
+    {
+      "@type": "Organization",
+      "name": "INICIA Educación",
+      "url": "https://www.iniciaeducacion.org/"
     }
   ],
   "subjectOf": [

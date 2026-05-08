@@ -146,9 +146,12 @@ staff:
   - name: "Gonzalo Oyanedel"
     role: "Project Manager — J-PAL LAC"
     note: "Oversees fieldwork, school logistics, and the survey panel."
+  - name: "Carmen Maura Taveras"
+    role: "Senior research collaborator · IDEICE / World Bank Education Global Practice"
+    note: "Long-time collaborator on Dominican education evaluations and Pruebas Nacionales linkages; bridges the academic team and IDEICE's research agenda. J-PAL profile: <a href=\"https://www.povertyactionlab.org/person/taveras\" rel=\"noopener\">povertyactionlab.org</a>."
+  - name: "Ancell Scheker"
+    role: "MINERD · Vice-Minister · Director of Evaluation & Quality Control · Pruebas Nacionales"
+    note: "Owns the assessment-system outcomes used in the impact analysis and the institutional approval path for the follow-up wave."
   - name: "Field Coordinator"          # TODO: replace with real name
     role: "MINERD · Dirección de Orientación y Psicología"
     note: "Liaison with regional DOP coordinators across the 18 educational regions."
-  - name: "IDEICE Research Lead"       # TODO: replace with real name
-    role: "IDEICE"
-    note: "Co-lead of the impact evaluation; quality assurance on Pruebas Nacionales linkages."
