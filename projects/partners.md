@@ -1,84 +1,151 @@
 ---
 title: Partners
-description: "The four institutions that designed, funded and evaluated AVE-RD."
+description: "The four institutions that designed, funded and evaluated AVE-RD — with the named leads inside each one who carry the work."
 eyebrow: "Partners · 4 institutions"
 date: 2017-09-14T14:23:53+00:00
 author: Gonzalo Oyanedel
 layout: page
 order: 5
+hero-style: gradient
 ---
 
 <p class="dropcap">
   AVE-RD is the work of four institutions across two countries: a research
-  lab, a national ministry, an evaluation agency, and an international donor.
-  Each owned one part of the pipeline &mdash; design, delivery, measurement,
-  funding &mdash; and the pilot reached <span class="font-osf">200,000</span>
-  students because all four held their corner.
+  lab, a national ministry, an evaluation agency, and an international
+  donor. Each owned one part of the pipeline &mdash; design, delivery,
+  measurement, funding &mdash; and the pilot reached
+  <span class="font-osf">200,000</span> students because all four held
+  their corner. The follow-up wave keeps the same partnership architecture,
+  with a new emphasis on the evaluation agency's access to administrative
+  earnings records.
 </p>
 
-<section class="partner-card reveal">
-  <div class="partner-card__logo">
-    <img src="/wp-content/uploads/2017/09/24685266591_cdb72f7120-300x89.jpg" alt="J-PAL Latin America and the Caribbean logo" width="257" height="80" loading="lazy" />
+<dl class="stat-strip reveal">
+  <div class="stat-strip__item">
+    <dd class="stat-strip__value">4</dd>
+    <dt class="stat-strip__label">Institutional partners</dt>
   </div>
-  <div class="partner-card__body">
-    <span class="badge badge--research">Research &amp; evaluation</span>
-    <h3>J-PAL Latin America &amp; the Caribbean</h3>
-    <p>
-      A non-profit research center reducing poverty and improving people&rsquo;s
-      quality of life by creating and disseminating rigorous evidence on what
-      public policies and social programs really work. J-PAL LAC led the
-      research design and impact evaluation for AVE-RD.
-    </p>
-    <a class="partner-card__link" href="https://www.povertyactionlab.org/lac">Visit J-PAL LAC</a>
+  <div class="stat-strip__item">
+    <dd class="stat-strip__value">2</dd>
+    <dt class="stat-strip__label">Countries (DR &amp; US)</dt>
   </div>
-</section>
+  <div class="stat-strip__item">
+    <dd class="stat-strip__value">18</dd>
+    <dt class="stat-strip__label">Educational regions</dt>
+  </div>
+  <div class="stat-strip__item">
+    <dd class="stat-strip__value">10+</dd>
+    <dt class="stat-strip__label">Years of partnership</dt>
+  </div>
+</dl>
 
-<section class="partner-card reveal">
+{% for p in site.data.partner_leads.partners %}
+<section class="partner-card reveal" id="{{ p.id }}" itemscope itemtype="https://schema.org/{{ p.schema_type }}">
+  <meta itemprop="name" content="{{ p.name | strip_html }}" />
+  <meta itemprop="url" content="{{ p.url }}" />
   <div class="partner-card__logo">
-    <img src="/wp-content/uploads/2017/09/download.png" alt="Ministry of Education of the Dominican Republic (MINERD) logo" width="144" height="104" loading="lazy" />
+    <img src="{{ p.logo }}" alt="{{ p.short }} logo" loading="lazy" itemprop="logo" />
   </div>
   <div class="partner-card__body">
-    <span class="badge badge--department">Implementation</span>
-    <h3>MINERD &mdash; Ministry of Education</h3>
-    <p>
-      The Dominican Ministry of Education is responsible for planning,
-      management, administration and development of the country&rsquo;s
-      education model. Its Department of Orientation and Psychology delivered
-      the AVE-RD videos to schools nationwide.
-    </p>
-    <a class="partner-card__link" href="http://ministeriodeeducacion.gob.do/">Visit MINERD</a>
-  </div>
-</section>
+    <span class="badge badge--{{ p.role_badge }}">{{ p.role_label }}</span>
+    <h3>{{ p.name }}</h3>
+    <p itemprop="description">{{ p.description }}</p>
 
-<section class="partner-card reveal">
-  <div class="partner-card__logo">
-    <img src="/wp-content/uploads/2017/09/ideice-logo.png" alt="IDEICE logo" width="193" height="79" loading="lazy" />
-  </div>
-  <div class="partner-card__body">
-    <span class="badge badge--research">Measurement</span>
-    <h3>IDEICE</h3>
-    <p>
-      The Dominican Institute of Evaluation and Investigation of Educational
-      Quality is a public, decentralized agency attached to the Ministry of
-      Education, of a technical nature, concentrated on research and
-      evaluation. IDEICE co-led the impact evaluation.
-    </p>
-    <a class="partner-card__link" href="http://www.ideice.gob.do/index.php">Visit IDEICE</a>
-  </div>
-</section>
+    {% if p.quote %}
+    <blockquote class="pullquote">
+      &ldquo;{{ p.quote.text }}&rdquo;
+      <span class="pullquote__attrib">&mdash; {{ p.quote.attrib }}</span>
+    </blockquote>
+    {% endif %}
 
-<section class="partner-card reveal">
-  <div class="partner-card__logo">
-    <img src="/wp-content/uploads/2017/09/usaid-logo-web-300x158.jpg" alt="USAID logo" width="189" height="102" loading="lazy" />
-  </div>
-  <div class="partner-card__body">
-    <span class="badge badge--cohort">Funding</span>
-    <h3>USAID</h3>
-    <p>
-      The United States Agency for International Development is the US
-      institution responsible for distributing most non-military foreign aid.
-      USAID provided primary funding for the AVE-RD pilot, alongside MINERD.
+    {% if p.leads and p.leads.size > 0 %}
+    <ul class="roster" aria-label="Named leads at {{ p.short }}">
+      {% for lead in p.leads %}
+      <li>
+        <span class="roster__name">{{ lead.name }}<span class="roster__role">{{ lead.role }}</span></span>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <p style="margin-top: 24px;">
+      <a class="partner-card__link" href="{{ p.url }}" rel="noopener">Visit {{ p.short }}</a>
     </p>
-    <a class="partner-card__link" href="https://www.usaid.gov/">Visit USAID</a>
   </div>
 </section>
+{% endfor %}
+
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">Partnering with AVE-RD</div>
+  <h2>What we look for in a new partner</h2>
+  <p class="lede">
+    The follow-up wave is open to additional research collaborators,
+    replication teams, and donors. The relationship is structured around
+    three deliverables.
+  </p>
+</div>
+
+<ol class="numbered-list reveal">
+  <li>
+    <div>
+      <h3>Co-author on a paper or brief</h3>
+      <p>
+        Researchers join the writing team for a working paper or one of
+        the planned <a href="/projects/briefs/">policy briefs</a>. Authorship
+        order is set at the design-of-analysis stage, not at writing time.
+      </p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <h3>Replicate the intervention in your country</h3>
+      <p>
+        Ministries and J-PAL regional offices can adapt the four videos,
+        the discussion guide, and the survey panel to local labor-market
+        data. We provide the kit and a six-month launch protocol.
+      </p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <h3>Fund the long-run wave</h3>
+      <p>
+        Foundations and bilateral donors can support specific budget lines
+        in the 2025&ndash;2027 follow-up: re-survey, administrative-data
+        linkage, qualitative interviews, and the open replication kit.
+        See <a href="/projects/follow-up/">Support the follow-up</a>.
+      </p>
+    </div>
+  </li>
+</ol>
+
+<p style="text-align:center;margin-top:24px">
+  <a class="partner-card__link" href="/projects/contact/">Write to the team</a>
+</p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {% for p in site.data.partner_leads.partners %}
+    {
+      "@type": "{{ p.schema_type }}",
+      "@id": "{{ site.url }}/projects/partners/#{{ p.id }}",
+      "name": "{{ p.name | strip_html }}",
+      "alternateName": "{{ p.short }}",
+      "url": "{{ p.url }}",
+      "logo": "{{ site.url }}{{ p.logo }}",
+      "description": "{{ p.description | strip_html | strip_newlines | truncate: 240 }}",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "{{ p.country }}"
+      },
+      "memberOf": {
+        "@type": "ResearchProject",
+        "@id": "{{ site.url }}/#project"
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>

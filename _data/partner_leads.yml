@@ -1,0 +1,112 @@
+# Named institutional leads for each AVE-RD partner.
+# ---------------------------------------------------------------
+# Each entry powers the roster underneath the partner card on
+# /projects/partners/. Lines marked  # TODO: verify  need a quick
+# read-through with the partner office before publication.
+
+partners:
+  - id: jpal-lac
+    name: "J-PAL Latin America & the Caribbean"
+    short: "J-PAL LAC"
+    type: "Research and evaluation"
+    schema_type: "ResearchOrganization"
+    country: "Chile"
+    url: "https://www.povertyactionlab.org/lac"
+    logo: "/wp-content/uploads/2017/09/24685266591_cdb72f7120-300x89.jpg"
+    role_badge: "research"
+    role_label: "Research & evaluation"
+    description: >-
+      A non-profit research center reducing poverty and improving lives by
+      creating and disseminating rigorous evidence on what public policies
+      and social programs really work. J-PAL LAC led the research design and
+      impact evaluation for AVE-RD, and now coordinates the
+      2025–2027 follow-up wave.
+    quote:
+      text: >-
+        AVE-RD showed that a fifteen-minute video, shown once in a
+        classroom, can move a schooling decision a year later. The
+        follow-up wave is what tells us whether that decision compounds
+        into earnings.
+      attrib: "J-PAL LAC, Executive Director"   # TODO: confirm attribution
+    leads:
+      - name: "Executive Director"        # TODO: replace with real name
+        role: "Executive Director, J-PAL LAC"
+      - name: "Senior Research Manager"   # TODO: replace with real name
+        role: "Education sector lead"
+      - name: "Country Lead"              # TODO: replace with real name
+        role: "Dominican Republic country lead"
+
+  - id: minerd
+    name: "MINERD — Ministry of Education of the Dominican Republic"
+    short: "MINERD"
+    type: "Government ministry"
+    schema_type: "GovernmentOrganization"
+    country: "Dominican Republic"
+    url: "http://ministeriodeeducacion.gob.do/"
+    logo: "/wp-content/uploads/2017/09/download.png"
+    role_badge: "department"
+    role_label: "Implementation partner"
+    description: >-
+      The Dominican Ministry of Education is responsible for planning,
+      management, administration and development of the country's
+      education model. Its Department of Orientation and Psychology
+      delivered the AVE-RD videos to schools nationwide and is the
+      operational owner of the follow-up wave.
+    quote:
+      text: >-
+        The pilot trained hundreds of our regional staff in modern
+        fieldwork, call-center operations, and logistics —
+        capability that has outlived the project itself.
+      attrib: "Dirección de Orientación y Psicología, MINERD"
+    leads:
+      - name: "Director, Department of Orientation and Psychology"   # TODO: replace
+        role: "DOP Director, MINERD"
+      - name: "Vice-Minister for Pedagogical Affairs"                # TODO: replace
+        role: "MINERD"
+      - name: "18 Regional DOP Coordinators"
+        role: "MINERD · Educational regions"
+
+  - id: ideice
+    name: "IDEICE — Dominican Institute of Evaluation and Investigation of Educational Quality"
+    short: "IDEICE"
+    type: "Evaluation agency"
+    schema_type: "GovernmentOrganization"
+    country: "Dominican Republic"
+    url: "http://www.ideice.gob.do/"
+    logo: "/wp-content/uploads/2017/09/ideice-logo.png"
+    role_badge: "research"
+    role_label: "Measurement"
+    description: >-
+      The Dominican Institute for Evaluation and Investigation of
+      Educational Quality is a public, decentralized agency attached to
+      the Ministry of Education. IDEICE co-led the impact evaluation,
+      provided access to administrative records, and is the partner
+      responsible for the Pruebas Nacionales linkage that anchors the
+      long-run earnings analysis.
+    leads:
+      - name: "Executive Director"          # TODO: replace
+        role: "IDEICE"
+      - name: "Director of Evaluation"      # TODO: replace
+        role: "IDEICE"
+
+  - id: usaid
+    name: "USAID — United States Agency for International Development"
+    short: "USAID"
+    type: "International donor"
+    schema_type: "GovernmentOrganization"
+    country: "United States"
+    url: "https://www.usaid.gov/"
+    logo: "/wp-content/uploads/2017/09/usaid-logo-web-300x158.jpg"
+    role_badge: "cohort"
+    role_label: "Founding funder"
+    description: >-
+      USAID provided primary funding for the AVE-RD pilot
+      (2014–2017) alongside MINERD. The endline report submitted
+      to USAID at Milestone 13 anchored the publication of the
+      first-wave results and informs the design of the
+      2025–2027 follow-up.
+    leads:
+      - name: "Mission Director, USAID/Dominican Republic"   # TODO: replace
+        role: "USAID/DR"
+      - name: "Education Office Lead"                         # TODO: replace
+        role: "USAID/DR"

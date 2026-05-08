@@ -1,0 +1,126 @@
+# AVE-RD principal investigators and project staff.
+# ---------------------------------------------------------------
+# Bios below are drafts. Names + affiliation framing follow the
+# BibTeX entry on the homepage; lines marked  # TODO: verify
+# need a quick read-through before publication.
+
+pis:
+  - id: berry
+    name: "James Berry"
+    role: "Co-Principal Investigator"
+    affiliation: "Department of Economics, University of Delaware"   # TODO: verify
+    affiliation_url: "https://www.lerner.udel.edu/faculty-staff/james-berry/"  # TODO: verify
+    photo: ""                       # /img/people/berry.jpg — supply 600x750 portrait
+    initials: "JB"
+    fields:
+      - "Development economics"
+      - "Education"
+      - "Behavioral economics"
+    bio: >-
+      Berry studies how households in low- and middle-income countries make
+      schooling and learning investments under uncertainty. With co-authors,
+      he designed AVE-RD's belief-elicitation instrument and the
+      identification strategy linking subjective wage expectations to
+      enrolment decisions. His broader research portfolio covers parental
+      investment, technology adoption, and the diffusion of information about
+      returns to schooling across South Asia, Sub-Saharan Africa, and the
+      Caribbean.
+    links:
+      - label: "Personal site"
+        url: "https://sites.google.com/site/jamesnberry/"   # TODO: verify
+      - label: "Google Scholar"
+        url: "https://scholar.google.com/citations?user=NQNqUhgAAAAJ"  # TODO: verify
+      - label: "ORCID"
+        url: "https://orcid.org/0000-0000-0000-0000"        # TODO: replace with real ORCID
+
+  - id: coffman
+    name: "Lucas C. Coffman"
+    role: "Co-Principal Investigator"
+    affiliation: "Department of Economics, Boston College"   # TODO: verify
+    affiliation_url: "https://www.bc.edu/bc-web/schools/morrissey/departments/economics.html"
+    photo: ""
+    initials: "LC"
+    fields:
+      - "Behavioral economics"
+      - "Field experiments"
+      - "Beliefs and persuasion"
+    bio: >-
+      Coffman's work asks how individuals form, update, and act on beliefs
+      — particularly when those beliefs touch on identity, social
+      perception, or moral judgement. Inside AVE-RD he led the design of the
+      persuasive arm: a video catalogue that frames the schooling decision
+      through eighth-grade characters rather than bare statistics, allowing a
+      direct test of whether persuasion above and beyond information shifts
+      behaviour. He has published on related topics in the
+      <em>QJE</em>, <em>AER</em>, and <em>Journal of Public Economics</em>.
+    links:
+      - label: "Faculty page"
+        url: "https://www.bc.edu/bc-web/schools/morrissey/departments/economics/people/faculty-directory/lucas-coffman.html"  # TODO: verify
+      - label: "Google Scholar"
+        url: "https://scholar.google.com/citations?user=lU2OGDcAAAAJ"  # TODO: verify
+      - label: "Working papers"
+        url: "https://lucascoffman.com/research"  # TODO: verify
+
+  - id: morales
+    name: "Daniel Morales"
+    role: "Co-Principal Investigator · Country lead"
+    affiliation: "J-PAL Latin America & the Caribbean"   # TODO: verify role / affiliation
+    affiliation_url: "https://www.povertyactionlab.org/lac"
+    photo: ""
+    initials: "DM"
+    fields:
+      - "Education policy"
+      - "Impact evaluation"
+      - "Public-sector partnerships"
+    bio: >-
+      Morales is the project's country lead and the bridge between the
+      academic team and the Dominican Ministry of Education. He coordinated
+      the 600-school randomization, the 2015–2016 fieldwork, and the
+      ongoing 2025–2027 follow-up wave that links the original cohort
+      to administrative earnings records. His research focuses on how
+      ministries of education in Latin America can adopt evidence-based
+      practice without losing the operational realism their schools require.
+    links:
+      - label: "J-PAL profile"
+        url: "https://www.povertyactionlab.org/person/morales"  # TODO: verify
+      - label: "Email"
+        url: "mailto:proyecto.ave.rd@gmail.com"
+
+  - id: neilson
+    name: "Christopher A. Neilson"
+    role: "Co-Principal Investigator"
+    affiliation: "Department of Economics, Yale University"   # TODO: verify (Yale or Princeton?)
+    affiliation_url: "https://economics.yale.edu/people/christopher-neilson"   # TODO: verify
+    photo: ""
+    initials: "CN"
+    fields:
+      - "Education economics"
+      - "Information and choice"
+      - "Labor markets"
+    bio: >-
+      Neilson studies how families and students choose schools and careers
+      under information frictions, and how policy can re-balance those
+      choices. He led the linkage between AVE-RD's panel survey and the
+      Tesorería de la Seguridad Social earnings records that anchor
+      the long-run follow-up. His prior work on information disclosure in
+      Chile (the <em>Mineduc Cartillas</em>) supplied the methodological
+      template for AVE-RD's informative arm.
+    links:
+      - label: "Faculty page"
+        url: "https://economics.yale.edu/people/christopher-neilson"   # TODO: verify
+      - label: "Google Scholar"
+        url: "https://scholar.google.com/citations?user=Sa3-HhYAAAAJ"  # TODO: verify
+      - label: "Personal site"
+        url: "https://christopherneilson.github.io"             # TODO: verify
+
+# Project staff and country team — short profiles, no photos required.
+staff:
+  - name: "Gonzalo Oyanedel"
+    role: "Project Manager — J-PAL LAC"
+    note: "Oversees fieldwork, school logistics, and the survey panel."
+  - name: "Field Coordinator"          # TODO: replace with real name
+    role: "MINERD · Dirección de Orientación y Psicología"
+    note: "Liaison with regional DOP coordinators across the 18 educational regions."
+  - name: "IDEICE Research Lead"       # TODO: replace with real name
+    role: "IDEICE"
+    note: "Co-lead of the impact evaluation; quality assurance on Pruebas Nacionales linkages."

@@ -6,6 +6,15 @@
 
     {% seo %}
 
+    {% if page.keywords %}
+    <meta name="keywords" content="{{ page.keywords | join: ', ' }}" />
+    {% else %}
+    <meta name="keywords" content="AVE-RD, Aprendiendo el Valor de la Educacion, randomized evaluation, school dropout, Dominican Republic, education economics, J-PAL, MINERD, IDEICE, RCT, information frictions, schooling decisions, Berry, Coffman, Morales, Neilson" />
+    {% endif %}
+
+    <meta name="theme-color" content="#3F6D65" />
+    <meta name="format-detection" content="telephone=no" />
+
     <link rel='shortcut icon' type='image/png' href='{{ site.baseurl }}/favicon.png' />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 // ============================================================
 // Components — Iznik
 // ============================================================
@@ -569,4 +570,596 @@ footer {
 // ----- Container width refinement -----
 .container, .container-fluid {
   position: relative;
+}
+
+// ============================================================
+// Person card — researchers and named partner leads
+// ============================================================
+.person-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-6;
+  margin: $space-7 0;
+  padding: 0;
+  list-style: none;
+
+  > li { margin: 0; }
+}
+@media (min-width: $bp-sm) {
+  .person-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: $bp-md) {
+  .person-grid--four { grid-template-columns: repeat(4, 1fr); }
+}
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow var(--duration-normal) var(--ease-out),
+              transform var(--duration-normal) var(--ease-out),
+              border-color var(--duration-normal) var(--ease-out);
+
+  &:hover,
+  &:focus-within {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: var(--turquoise-300);
+  }
+
+  &__portrait {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    background:
+      radial-gradient(circle at 30% 30%, #{rgba($turquoise-300, 0.55)}, transparent 60%),
+      radial-gradient(circle at 75% 70%, #{rgba($cobalt-300, 0.45)}, transparent 65%),
+      linear-gradient(160deg, var(--turquoise-100) 0%, var(--parchment-100) 100%);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: saturate(0.9);
+      transition: transform 0.6s var(--ease-out), filter var(--duration-normal) var(--ease-out);
+    }
+    .person-card:hover & img,
+    .person-card:focus-within & img {
+      transform: scale(1.04);
+      filter: saturate(1.05);
+    }
+
+    // Initials fallback when no portrait is supplied
+    &--initials {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $font-serif;
+      font-weight: $weight-medium;
+      font-size: $text-5xl;
+      letter-spacing: $track-display;
+      color: var(--turquoise-700);
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+    }
+  }
+
+  &__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: $space-5 $space-6 $space-6;
+  }
+
+  &__role {
+    display: block;
+    margin-bottom: $space-2;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+  }
+
+  &__name {
+    margin: 0 0 $space-2;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-xl;
+    line-height: $leading-snug;
+    letter-spacing: $track-tight;
+    color: var(--display);
+  }
+
+  &__affiliation {
+    margin: 0 0 $space-4;
+    font-family: $font-sans;
+    font-size: $text-sm;
+    color: var(--muted-foreground);
+  }
+
+  &__bio {
+    margin: 0 0 $space-5;
+    font-size: $text-base;
+    line-height: $leading-relaxed;
+    color: var(--foreground);
+  }
+
+  &__links {
+    margin: auto 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-2 $space-4;
+
+    li { margin: 0; }
+
+    a {
+      font-family: $font-sans;
+      font-size: $text-xs;
+      font-weight: $weight-medium;
+      text-transform: uppercase;
+      letter-spacing: $track-eyebrow;
+      color: var(--primary);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color var(--duration-fast) var(--ease-out),
+                  border-color var(--duration-fast) var(--ease-out);
+
+      &:hover,
+      &:focus-visible {
+        color: var(--primary-strong);
+        border-bottom-color: currentColor;
+      }
+    }
+  }
+}
+
+// ============================================================
+// Brief card — policy briefs index
+// ============================================================
+.brief-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-6;
+  margin: $space-7 0;
+  padding: 0;
+  list-style: none;
+
+  > li { margin: 0; }
+}
+@media (min-width: $bp-sm) {
+  .brief-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: $bp-md) {
+  .brief-grid--three { grid-template-columns: repeat(3, 1fr); }
+}
+
+.brief-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: $space-7 $space-6 $space-6;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow var(--duration-normal) var(--ease-out),
+              transform var(--duration-normal) var(--ease-out),
+              border-color var(--duration-normal) var(--ease-out);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(
+      90deg,
+      var(--turquoise-500) 0%,
+      var(--cobalt-500) 60%,
+      var(--bole-500) 100%
+    );
+  }
+
+  &:hover,
+  &:focus-within {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: var(--turquoise-300);
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-3;
+    margin-bottom: $space-4;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--muted-foreground);
+
+    .dot { color: var(--border-strong); }
+    .brief-card__audience { color: var(--accent-editorial); }
+  }
+
+  &__title {
+    margin: 0 0 $space-3;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-xl;
+    line-height: $leading-snug;
+    color: var(--display);
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      background-image: linear-gradient(var(--turquoise-300), var(--turquoise-300));
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size var(--duration-normal) var(--ease-out);
+    }
+    a:hover,
+    a:focus-visible {
+      background-size: 100% 2px;
+    }
+  }
+
+  &__lede {
+    margin: 0 0 $space-5;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: $text-md;
+    line-height: $leading-normal;
+    color: var(--muted-foreground);
+  }
+
+  &__cta {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-4;
+    padding-top: $space-4;
+    border-top: 1px solid var(--border);
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+
+      &::after { content: " \2192"; }
+      &:hover,
+      &:focus-visible {
+        color: var(--primary-strong);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
+    .brief-card__cta-secondary a {
+      color: var(--muted-foreground);
+      &::after { content: ""; }
+      &:hover,
+      &:focus-visible { color: var(--primary); }
+    }
+  }
+}
+
+// ============================================================
+// Fundraise CTA — ask block for follow-up wave
+// ============================================================
+.fundraise-cta {
+  position: relative;
+  margin: $space-9 0;
+  padding: $space-9 $space-7;
+  border-radius: var(--radius-hero);
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(circle at 12% 20%, #{rgba($turquoise-300, 0.55)}, transparent 60%),
+    radial-gradient(circle at 88% 80%, #{rgba($bole-500, 0.45)},      transparent 60%),
+    linear-gradient(135deg, #{$cobalt-700} 0%, #{$turquoise-700} 55%, #{$ink-900} 100%);
+  box-shadow: var(--shadow-lg);
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      repeating-linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.025) 0 2px,
+        transparent 2px 6px
+      );
+    mix-blend-mode: overlay;
+    opacity: 0.6;
+  }
+
+  > * { position: relative; z-index: 1; }
+
+  &__eyebrow {
+    display: inline-block;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--turquoise-100);
+    margin-bottom: $space-5;
+  }
+
+  &__title {
+    margin: 0 0 $space-5;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-3xl;
+    line-height: $leading-tight;
+    letter-spacing: $track-display;
+    color: #fff;
+    max-width: 22ch;
+
+    em {
+      font-style: italic;
+      color: var(--turquoise-100);
+    }
+  }
+  @media (min-width: $bp-sm) {
+    &__title { font-size: $text-4xl; }
+  }
+
+  &__lede {
+    margin: 0 0 $space-7;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: $text-lg;
+    line-height: $leading-normal;
+    color: rgba(255, 255, 255, 0.92);
+    max-width: 56ch;
+  }
+
+  &__pillars {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-5 $space-7;
+    margin: 0 0 $space-7;
+    padding: 0;
+    list-style: none;
+  }
+  @media (min-width: $bp-sm) {
+    &__pillars { grid-template-columns: repeat(3, 1fr); }
+  }
+  &__pillar {
+    margin: 0;
+    padding-top: $space-4;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+    dt {
+      font-family: $font-sans;
+      font-size: $text-xs;
+      font-weight: $weight-medium;
+      text-transform: uppercase;
+      letter-spacing: $track-eyebrow;
+      color: var(--turquoise-100);
+      margin-bottom: $space-2;
+    }
+    dd {
+      margin: 0;
+      font-family: $font-serif;
+      font-weight: $weight-medium;
+      font-size: $text-2xl;
+      line-height: $leading-snug;
+      letter-spacing: $track-tight;
+      color: #fff;
+    }
+    p {
+      margin: $space-2 0 0;
+      font-family: $font-sans;
+      font-size: $text-base;
+      line-height: $leading-normal;
+      color: rgba(255, 255, 255, 0.85);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-4;
+  }
+}
+
+// ============================================================
+// Buttons — primary CTA + ghost variant
+// ============================================================
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-3;
+  padding: 14px 24px;
+  font-family: $font-sans;
+  font-size: $text-base;
+  font-weight: $weight-medium;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: $track-eyebrow;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: #fff;
+  color: var(--cobalt-700);
+  box-shadow: var(--shadow-md);
+  transition: transform var(--duration-fast) var(--ease-out),
+              box-shadow var(--duration-fast) var(--ease-out),
+              background var(--duration-fast) var(--ease-out),
+              color var(--duration-fast) var(--ease-out);
+
+  &::after { content: "\2192"; }
+
+  &:hover,
+  &:focus-visible {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-lg);
+    background: var(--turquoise-50);
+    color: var(--cobalt-700);
+  }
+
+  &--ghost {
+    background: transparent;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.55);
+    box-shadow: none;
+
+    &:hover,
+    &:focus-visible {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      box-shadow: none;
+    }
+  }
+}
+
+// ============================================================
+// Roster — compact partner-lead list under each partner card
+// ============================================================
+.roster {
+  margin: $space-5 0 0;
+  padding: $space-5 0 0;
+  border-top: 1px dashed var(--border);
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-4 $space-6;
+
+  > li { margin: 0; }
+
+  &__name {
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-md;
+    color: var(--display);
+    line-height: $leading-snug;
+  }
+  &__role {
+    display: block;
+    margin-top: 2px;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--muted-foreground);
+  }
+}
+@media (min-width: $bp-sm) {
+  .roster { grid-template-columns: repeat(2, 1fr); }
+}
+
+// ============================================================
+// Pull-quote — testimonial used inside partner cards and briefs
+// ============================================================
+.pullquote {
+  margin: $space-6 0 $space-3;
+  padding: $space-5 $space-6;
+  background: var(--turquoise-50);
+  border-left: 3px solid var(--accent-research);
+  border-radius: var(--radius-sm);
+  font-family: $font-serif;
+  font-style: italic;
+  font-size: $text-md;
+  line-height: $leading-relaxed;
+  color: var(--ink-800);
+
+  &__attrib {
+    display: block;
+    margin-top: $space-3;
+    font-family: $font-sans;
+    font-style: normal;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--muted-foreground);
+  }
+}
+
+// ============================================================
+// Hero — gradient variant (for fundraising / brief-index pages)
+// ============================================================
+.hero--gradient {
+  min-height: 360px;
+  border-color: var(--turquoise-300);
+  color: #fff;
+  background:
+    radial-gradient(circle at 14% 22%, #{rgba($turquoise-300, 0.55)}, transparent 55%),
+    radial-gradient(circle at 84% 78%, #{rgba($bole-500, 0.40)},      transparent 60%),
+    linear-gradient(135deg, #{$cobalt-700} 0%, #{$turquoise-700} 60%, #{$ink-900} 100%);
+
+  &::before {
+    opacity: 0.5;
+    background:
+      repeating-linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.03) 0 2px,
+        transparent 2px 6px
+      );
+  }
+
+  .hero__eyebrow {
+    color: var(--turquoise-100);
+    &::before { background: var(--turquoise-100); }
+  }
+  .hero__title {
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    em {
+      color: var(--turquoise-100);
+      font-style: italic;
+    }
+  }
+  .hero__lede {
+    color: rgba(255, 255, 255, 0.92);
+  }
+}
+@media (min-width: $bp-sm) {
+  .hero--gradient { min-height: 440px; }
+}
+@media (min-width: $bp-md) {
+  .hero--gradient { min-height: 500px; }
+}
+
+// ============================================================
+// Section grid — generic two-up layout for "feature + media"
+// ============================================================
+.feature-pair {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-7;
+  margin: $space-8 0;
+  align-items: center;
+}
+@media (min-width: $bp-md) {
+  .feature-pair { grid-template-columns: 3fr 2fr; }
+  .feature-pair--reverse {
+    grid-template-columns: 2fr 3fr;
+    .feature-pair__media { order: -1; }
+  }
+}
+.feature-pair__media img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-md);
 }

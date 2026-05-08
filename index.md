@@ -1,21 +1,23 @@
 ---
 layout: page
 title: Learning the value of education
-description: "A school-randomized RCT testing how short videos shift Dominican students' beliefs about the returns to education — and their schooling decisions."
-eyebrow: "AVE · Dominican Republic"
+description: "A school-randomized RCT testing how short videos shift Dominican students' beliefs about the returns to education — and their schooling decisions. Now in a long-run follow-up wave, 2025–2027."
+eyebrow: "AVE · Dominican Republic · Information & schooling"
 hero-style: map
 hero-image: /img/hero-map.jpg
 ---
 
 <p class="dropcap">
-  AVE &mdash; <em>Aprendiendo el Valor de la Educación</em> &mdash; is a
-  large-scale randomized evaluation conducted in the Dominican Republic
-  with the Ministry of Education. We test whether a brief, scalable
-  information campaign &mdash; four short videos shown in the classroom &mdash;
-  can shift students&rsquo; beliefs about the returns to education and,
-  with them, the choice to stay in school. The first wave reached
-  <span class="font-osf">600</span> public schools and <span class="font-osf">43,000</span>
-  students. A new follow-up wave is now in the field.
+  AVE &mdash; <em>Aprendiendo el Valor de la Educaci&oacute;n</em> &mdash;
+  is a large-scale randomized evaluation conducted in the Dominican
+  Republic with the Ministry of Education. We test whether a brief,
+  scalable information campaign &mdash; four short videos shown in the
+  classroom &mdash; can shift students&rsquo; beliefs about the returns
+  to education and, with them, the choice to stay in school. The first
+  wave reached <span class="font-osf">600</span> public schools and
+  <span class="font-osf">43,000</span> students. A
+  <span class="font-osf">2025&ndash;2027</span> follow-up wave links the
+  same cohort to administrative earnings records.
 </p>
 
 <dl class="stat-strip reveal">
@@ -24,7 +26,7 @@ hero-image: /img/hero-map.jpg
     <dt class="stat-strip__label">Reduction in dropout</dt>
   </div>
   <div class="stat-strip__item">
-    <dd class="stat-strip__value">0.05&ndash;0.13σ</dd>
+    <dd class="stat-strip__value">0.05&ndash;0.13&sigma;</dd>
     <dt class="stat-strip__label">Lift in test scores</dt>
   </div>
   <div class="stat-strip__item">
@@ -140,47 +142,139 @@ hero-image: /img/hero-map.jpg
 
 <p style="text-align:center">
   <a class="partner-card__link" href="/projects/about-ave-rd-2/">Read the methodology</a>
+  &nbsp;&middot;&nbsp;
+  <a class="partner-card__link" href="/briefs/what-worked/">Two-page brief</a>
 </p>
 
 <div class="section-header reveal">
-  <div class="eyebrow eyebrow--rule">Now</div>
-  <h2>2025&ndash;2027 follow-up wave</h2>
+  <div class="eyebrow eyebrow--rule">The team</div>
+  <h2>Four authors, one country team</h2>
   <p class="lede">
-    AVE is back in the field. The follow-up wave extends the original
-    panel by ten years, links the schooling outcomes to administrative
-    earnings data, and tests whether the belief updates from
-    <span class="font-osf">2015&ndash;2016</span> persist into early
-    careers.
+    The same investigators and field operation that ran the
+    2015&ndash;2016 wave run the follow-up. Institutional memory is the
+    cheapest research input we have.
   </p>
 </div>
 
-<div class="signal-panel signal-panel--research reveal">
-  <div class="eyebrow">In the field</div>
-  <p>
-    <strong>Research questions.</strong>
-    Do the dropout and test-score effects from the original wave translate
-    into measurable labor-market outcomes a decade later? How durable are
-    the belief shifts? Do they propagate to siblings or peers?
+<ul class="person-grid person-grid--four reveal">
+  {% for pi in site.data.researchers.pis %}
+  <li>
+    <article class="person-card">
+      <div class="person-card__portrait{% unless pi.photo and pi.photo != "" %} person-card__portrait--initials{% endunless %}">
+        {% if pi.photo and pi.photo != "" %}
+        <img src="{{ pi.photo }}" alt="Portrait of {{ pi.name }}" loading="lazy" />
+        {% else %}
+        <span aria-hidden="true">{{ pi.initials }}</span>
+        {% endif %}
+      </div>
+      <div class="person-card__body">
+        <span class="person-card__role">{{ pi.role }}</span>
+        <h3 class="person-card__name">{{ pi.name }}</h3>
+        <p class="person-card__affiliation">{{ pi.affiliation }}</p>
+        <ul class="person-card__links">
+          <li><a href="/projects/researchers/#{{ pi.id }}">Read bio</a></li>
+        </ul>
+      </div>
+    </article>
+  </li>
+  {% endfor %}
+</ul>
+
+<p style="text-align:center;margin-top:8px">
+  <a class="partner-card__link" href="/projects/researchers/">Meet the full team</a>
+</p>
+
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">The partnership</div>
+  <h2>Four institutions, two countries</h2>
+  <p class="lede">
+    A research lab, a national ministry, an evaluation agency, and an
+    international donor. Each holds one corner of the pipeline.
   </p>
-  <p>
-    <strong>Design.</strong>
-    Re-survey of the original cohort, linked to MINERD enrollment records
-    and the Tesorer&iacute;a de la Seguridad Social earnings panel.
-    A new RCT layer tests an updated video catalog with current
-    labor-market data.
+</div>
+
+<ul class="brief-grid reveal" style="--grid-template:repeat(4,1fr);">
+  {% for p in site.data.partner_leads.partners %}
+  <li>
+    <article class="partner-card" style="grid-template-columns: 1fr; padding: 24px;">
+      <div class="partner-card__logo" style="min-height: 80px;">
+        <img src="{{ p.logo }}" alt="{{ p.short }} logo" loading="lazy" />
+      </div>
+      <div class="partner-card__body">
+        <span class="badge badge--{{ p.role_badge }}">{{ p.role_label }}</span>
+        <h3 style="margin-top: 12px;">{{ p.short }}</h3>
+        <p style="font-size: 14px;">{{ p.description | strip_html | truncate: 160 }}</p>
+        <a class="partner-card__link" href="/projects/partners/#{{ p.id }}">Learn more</a>
+      </div>
+    </article>
+  </li>
+  {% endfor %}
+</ul>
+
+<div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">Policy briefs</div>
+  <h2>Three two-page briefs, three audiences</h2>
+  <p class="lede">
+    Researchers, funders, and ministries each read a different version of
+    the AVE-RD evidence. The briefs are the working summary.
   </p>
-  <p>
-    <strong>Status.</strong>
-    Pre-analysis plan registered. Field operations resumed
-    <span class="font-osf">2025</span>. First descriptive results expected
-    <span class="font-osf">2026</span>.
+</div>
+
+<ul class="brief-grid brief-grid--three reveal">
+  {% for b in site.data.briefs.briefs %}
+  <li>
+    <article class="brief-card">
+      <div class="brief-card__meta">
+        <span class="brief-card__audience">{{ b.audience }}</span>
+        <span class="dot">&middot;</span>
+        <span><span class="font-osf">{{ b.pages }}</span>&nbsp;pages</span>
+      </div>
+      <h3 class="brief-card__title">
+        <a href="/briefs/{{ b.slug }}/">{{ b.title }}</a>
+      </h3>
+      <p class="brief-card__lede">{{ b.lede }}</p>
+      <div class="brief-card__cta">
+        <a href="/briefs/{{ b.slug }}/">Read brief</a>
+        <span class="brief-card__cta-secondary"><a href="{{ b.pdf }}">PDF</a></span>
+      </div>
+    </article>
+  </li>
+  {% endfor %}
+</ul>
+
+<div class="fundraise-cta reveal" id="follow-up">
+  <span class="fundraise-cta__eyebrow">Now in the field &middot; 2025&ndash;2027 follow-up wave</span>
+  <h2 class="fundraise-cta__title">From a fifteen-minute video to <em>ten years of earnings</em>.</h2>
+  <p class="fundraise-cta__lede">
+    AVE is back in the field. The follow-up wave extends the original
+    panel by a decade, links schooling outcomes to administrative earnings
+    data, and tests whether the belief updates from
+    <span class="font-osf">2015&ndash;2016</span> persist into early
+    careers.
   </p>
-  <p>
-    <strong>Partner with us.</strong>
-    Researchers, ministries, and donors interested in adapting AVE for
-    other contexts &mdash; please <a href="/projects/contact/">write to the
-    team</a>.
-  </p>
+
+  <dl class="fundraise-cta__pillars">
+    <div class="fundraise-cta__pillar">
+      <dt>Status</dt>
+      <dd>Pre-analysis registered</dd>
+      <p>Field operations resumed <span class="font-osf">2025</span>. First descriptive results expected <span class="font-osf">2026</span>.</p>
+    </div>
+    <div class="fundraise-cta__pillar">
+      <dt>What it tests</dt>
+      <dd>Long-run earnings</dd>
+      <p>Cohort linked to the Tesorer&iacute;a de la Seguridad Social earnings panel via IDEICE.</p>
+    </div>
+    <div class="fundraise-cta__pillar">
+      <dt>What it produces</dt>
+      <dd>Open kit + brief series</dd>
+      <p>De-identified panel, Stata pipeline, and three two-page briefs &mdash; all CC&nbsp;BY&nbsp;4.0.</p>
+    </div>
+  </dl>
+
+  <div class="fundraise-cta__actions">
+    <a class="btn-cta" href="/projects/follow-up/">Support the follow-up</a>
+    <a class="btn-cta btn-cta--ghost" href="/briefs/why-follow-up/">Read the funder brief</a>
+  </div>
 </div>
 
 <div class="section-header reveal">
@@ -207,8 +301,75 @@ hero-image: /img/hero-map.jpg
 
 <ul>
   <li><a href="/projects/about-ave-rd-2/">About the project</a> &mdash; methodology, sample, identification.</li>
+  <li><a href="/projects/researchers/">The research team</a> &mdash; PIs, country team, and how to collaborate.</li>
   <li><a href="/projects/videos/">The intervention</a> &mdash; all four videos with arm and episode metadata.</li>
+  <li><a href="/projects/briefs/">Policy briefs</a> &mdash; three two-page summaries for researchers, funders, and ministries.</li>
   <li><a href="/projects/download-videos-2/">Replication kit</a> &mdash; papers, instruments, code, data, and the procedure for using the videos in your own study.</li>
-  <li><a href="/projects/partners/">Partners</a> &mdash; J-PAL LAC, MINERD, IDEICE, USAID.</li>
+  <li><a href="/projects/partners/">Partners</a> &mdash; J-PAL LAC, MINERD, IDEICE, USAID &mdash; with named leads inside each.</li>
+  <li><a href="/projects/follow-up/">Support the follow-up</a> &mdash; the budget, the named contacts, and the partnership model.</li>
   <li><a href="/projects/gallery/">Photographs from the field</a>.</li>
 </ul>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchProject",
+  "@id": "{{ site.url }}/#project",
+  "name": "AVE-RD — Aprendiendo el Valor de la Educación",
+  "alternateName": "Learning the Value of Education in the Dominican Republic",
+  "url": "{{ site.url }}/",
+  "description": "{{ page.description | strip_html }}",
+  "inLanguage": ["en", "es"],
+  "spatialCoverage": {
+    "@type": "Country",
+    "name": "Dominican Republic"
+  },
+  "about": [
+    "Education economics",
+    "School dropout",
+    "Information frictions",
+    "Randomized controlled trial",
+    "Belief elicitation"
+  ],
+  "founder": [
+    {% for pi in site.data.researchers.pis %}
+    {
+      "@type": "Person",
+      "@id": "{{ site.url }}/projects/researchers/#{{ pi.id }}",
+      "name": "{{ pi.name | strip_html }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "memberOf": [
+    {% for p in site.data.partner_leads.partners %}
+    {
+      "@type": "{{ p.schema_type }}",
+      "@id": "{{ site.url }}/projects/partners/#{{ p.id }}",
+      "name": "{{ p.name | strip_html }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "funder": [
+    {
+      "@type": "GovernmentOrganization",
+      "name": "USAID",
+      "url": "https://www.usaid.gov/"
+    },
+    {
+      "@type": "GovernmentOrganization",
+      "name": "MINERD — Ministry of Education of the Dominican Republic",
+      "url": "http://ministeriodeeducacion.gob.do/"
+    }
+  ],
+  "subjectOf": [
+    {% for b in site.data.briefs.briefs %}
+    {
+      "@type": "ScholarlyArticle",
+      "name": "{{ b.title | strip_html }}",
+      "url": "{{ site.url }}/briefs/{{ b.slug }}/",
+      "datePublished": "{{ b.date }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
