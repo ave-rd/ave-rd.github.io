@@ -3,6 +3,8 @@ layout: page
 title: Learning the value of education
 description: "A school-randomized RCT testing how short videos shift Dominican students' beliefs about the returns to education — and their schooling decisions. Now in a long-run follow-up wave, 2025–2027."
 eyebrow: "AVE · Dominican Republic · Information & schooling"
+lang: en
+alt_url: /es/
 hero-style: map
 hero-image: /img/hero-map.jpg
 ---
@@ -90,6 +92,21 @@ hero-image: /img/hero-map.jpg
   <div class="eyebrow eyebrow--rule">What we found</div>
   <h2>Four effects, replicated across the panel</h2>
 </div>
+
+<figure class="viz-card reveal">
+  <span class="viz-card__eyebrow">Figure 1 · cumulative dropout</span>
+  <h3 class="viz-card__title">Treatment and control schools track in 2015, then diverge.</h3>
+  <p class="viz-card__lede">
+    Cumulative dropout in grade-7&ndash;12 cohorts. The treatment effect emerges with a
+    one-year lag and reaches roughly <span class="font-osf">3</span>&nbsp;pp by 2017.
+  </p>
+  <div class="viz-card__figure" aria-hidden="false">
+    {% include viz/dropout-trend.svg %}
+  </div>
+  <p class="viz-card__caption">
+    <strong>Note.</strong> Illustrative trajectory, scaled to the <span class="font-osf">2.5&ndash;3</span>&nbsp;pp average effect reported in Berry, Coffman, Morales &amp; Neilson (<span class="font-osf">2025</span>). Confidence band shown for the treatment series only. Source: <a href="/papers/AVE_working_paper_2025.pdf">AVE-RD working paper</a>.
+  </p>
+</figure>
 
 <ol class="numbered-list reveal">
   <li>
@@ -306,6 +323,8 @@ hero-image: /img/hero-map.jpg
   <li><a href="/projects/briefs/">Policy briefs</a> &mdash; three two-page summaries for researchers, funders, and ministries.</li>
   <li><a href="/projects/download-videos-2/">Replication kit</a> &mdash; papers, instruments, code, data, and the procedure for using the videos in your own study.</li>
   <li><a href="/projects/partners/">Partners</a> &mdash; J-PAL LAC, MINERD, IDEICE, USAID &mdash; with named leads inside each.</li>
+  <li><a href="/projects/press/">Press, voices &amp; milestones</a> &mdash; coverage, testimonials, and the 2014&ndash;2027 timeline.</li>
+  <li><a href="/news/">News &amp; field updates</a> &mdash; brief releases and field reports.</li>
   <li><a href="/projects/follow-up/">Support the follow-up</a> &mdash; the budget, the named contacts, and the partnership model.</li>
   <li><a href="/projects/gallery/">Photographs from the field</a>.</li>
 </ul>

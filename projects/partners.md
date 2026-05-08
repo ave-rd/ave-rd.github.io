@@ -6,6 +6,8 @@ date: 2017-09-14T14:23:53+00:00
 author: Gonzalo Oyanedel
 layout: page
 order: 5
+lang: en
+alt_url: /es/partners/
 hero-style: gradient
 ---
 

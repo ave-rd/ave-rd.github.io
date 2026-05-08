@@ -4,6 +4,8 @@ description: "How to fund AVE-RD's 2025–2027 long-run follow-up — the budget
 eyebrow: "Follow-up · 2025–2027"
 layout: page
 order: 6
+lang: en
+alt_url: /es/follow-up/
 hero-style: gradient
 ---
 

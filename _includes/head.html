@@ -15,6 +15,19 @@
     <meta name="theme-color" content="#3F6D65" />
     <meta name="format-detection" content="telephone=no" />
 
+    {% comment %} hreflang: link the EN and ES versions of mirrored pages {% endcomment %}
+    {% if page.alt_url %}
+      {% assign current_lang = page.lang | default: site.lang | default: 'en' %}
+      {% if current_lang == 'es' %}
+        <link rel="alternate" hreflang="es" href="{{ page.url | prepend: site.url }}" />
+        <link rel="alternate" hreflang="en" href="{{ page.alt_url | prepend: site.url }}" />
+      {% else %}
+        <link rel="alternate" hreflang="en" href="{{ page.url | prepend: site.url }}" />
+        <link rel="alternate" hreflang="es" href="{{ page.alt_url | prepend: site.url }}" />
+      {% endif %}
+      <link rel="alternate" hreflang="x-default" href="{{ page.url | prepend: site.url }}" />
+    {% endif %}
+
     <link rel='shortcut icon' type='image/png' href='{{ site.baseurl }}/favicon.png' />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
 

@@ -1163,3 +1163,516 @@ footer {
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-md);
 }
+
+// ============================================================
+// Viz card — inline SVG figures with caption + source
+// ============================================================
+.viz-card {
+  margin: $space-7 0;
+  padding: $space-7 $space-6 $space-6;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+
+  &__eyebrow {
+    display: inline-block;
+    margin-bottom: $space-3;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+  }
+
+  &__title {
+    margin: 0 0 $space-3;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-xl;
+    line-height: $leading-snug;
+    letter-spacing: $track-tight;
+    color: var(--display);
+  }
+
+  &__lede {
+    margin: 0 0 $space-6;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: $text-md;
+    line-height: $leading-normal;
+    color: var(--muted-foreground);
+    max-width: 60ch;
+  }
+
+  &__figure {
+    margin: 0;
+    overflow-x: auto;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+
+  &__caption {
+    margin: $space-5 0 0;
+    padding-top: $space-4;
+    border-top: 1px solid var(--border);
+    font-family: $font-sans;
+    font-size: $text-sm;
+    line-height: $leading-relaxed;
+    color: var(--muted-foreground);
+
+    strong {
+      color: var(--foreground);
+      font-weight: $weight-medium;
+    }
+  }
+}
+
+// ----- Forest-plot SVG primitives -----
+.forest-plot {
+  font-family: $font-sans;
+
+  .forest-grid line {
+    stroke: var(--border);
+    stroke-width: 1;
+    stroke-dasharray: 2 4;
+  }
+  .forest-axis {
+    stroke: var(--border-strong);
+    stroke-width: 1.5;
+  }
+  .forest-zero {
+    stroke: var(--accent-editorial);
+    stroke-width: 1.5;
+    stroke-dasharray: 4 3;
+  }
+  .forest-label {
+    font-size: 13px;
+    font-weight: 500;
+    fill: var(--foreground);
+  }
+  .forest-tick {
+    font-size: 11px;
+    fill: var(--muted-foreground);
+  }
+  .forest-ci {
+    stroke: var(--turquoise-700);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+  }
+  .forest-point {
+    fill: var(--turquoise-700);
+    stroke: #fff;
+    stroke-width: 2;
+  }
+  .forest-point--ed {
+    fill: var(--accent-editorial);
+  }
+}
+
+// ----- Trend chart SVG primitives -----
+.trend-chart {
+  font-family: $font-sans;
+
+  .trend-grid line {
+    stroke: var(--border);
+    stroke-width: 1;
+  }
+  .trend-axis {
+    stroke: var(--border-strong);
+    stroke-width: 1.5;
+  }
+  .trend-tick {
+    font-size: 11px;
+    fill: var(--muted-foreground);
+  }
+  .trend-label {
+    font-size: 12px;
+    fill: var(--foreground);
+    font-weight: 500;
+  }
+  .trend-line-control {
+    fill: none;
+    stroke: var(--muted-foreground);
+    stroke-width: 2.5;
+    stroke-dasharray: 5 4;
+  }
+  .trend-line-treatment {
+    fill: none;
+    stroke: var(--turquoise-700);
+    stroke-width: 3;
+    stroke-linecap: round;
+  }
+  .trend-point-control {
+    fill: var(--muted-foreground);
+  }
+  .trend-point-treatment {
+    fill: var(--turquoise-700);
+    stroke: #fff;
+    stroke-width: 2;
+  }
+  .trend-band {
+    fill: var(--turquoise-300);
+    fill-opacity: 0.18;
+  }
+}
+
+// ============================================================
+// Timeline — vertical milestone list
+// ============================================================
+.timeline {
+  position: relative;
+  margin: $space-8 0;
+  padding: 0 0 0 $space-7;
+  list-style: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      var(--turquoise-300) 0%,
+      var(--cobalt-300) 50%,
+      var(--bole-300) 100%
+    );
+    border-radius: 1px;
+  }
+
+  > li {
+    position: relative;
+    padding: 0 0 $space-7 0;
+    margin: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -$space-7 + 1px;
+      top: 6px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 3px solid var(--turquoise-600);
+      box-shadow: var(--shadow-sm);
+    }
+
+    &.timeline__item--future::before {
+      border-color: var(--bole-500);
+      background: var(--bole-50);
+    }
+    &.timeline__item--current::before {
+      border-color: var(--turquoise-600);
+      background: var(--turquoise-500);
+    }
+  }
+
+  &__date {
+    display: block;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+    margin-bottom: $space-2;
+  }
+
+  &__title {
+    margin: 0 0 $space-3;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-lg;
+    line-height: $leading-snug;
+    letter-spacing: $track-tight;
+    color: var(--display);
+  }
+
+  &__body {
+    margin: 0;
+    font-family: $font-sans;
+    font-size: $text-base;
+    line-height: $leading-relaxed;
+    color: var(--foreground);
+  }
+}
+
+// ============================================================
+// Testimonial card — pulled quotes with attribution + role
+// ============================================================
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-6;
+  margin: $space-7 0;
+  padding: 0;
+  list-style: none;
+
+  > li { margin: 0; }
+}
+@media (min-width: $bp-sm) {
+  .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.testimonial-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: $space-7 $space-6 $space-6;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: box-shadow var(--duration-normal) var(--ease-out);
+
+  &:hover { box-shadow: var(--shadow-md); }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: -8px;
+    left: $space-5;
+    font-family: $font-serif;
+    font-size: 100px;
+    line-height: 1;
+    color: var(--turquoise-300);
+    pointer-events: none;
+  }
+
+  &__body {
+    position: relative;
+    z-index: 1;
+    margin: 0 0 $space-6;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: $text-md;
+    line-height: $leading-relaxed;
+    color: var(--foreground);
+  }
+
+  &__attrib {
+    margin-top: auto;
+    padding-top: $space-4;
+    border-top: 1px solid var(--border);
+  }
+  &__name {
+    display: block;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-md;
+    color: var(--display);
+  }
+  &__role {
+    display: block;
+    margin-top: 2px;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--muted-foreground);
+  }
+}
+
+// ============================================================
+// Press logos — grayscale row of media outlets
+// ============================================================
+.press-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: $space-5 $space-6;
+  margin: $space-7 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+
+  > li {
+    margin: 0;
+    text-align: center;
+  }
+
+  a, span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 64px;
+    padding: $space-3 $space-4;
+    color: var(--muted-foreground);
+    text-decoration: none;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: $text-md;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-tile);
+    background: var(--bg-card);
+    transition: color var(--duration-normal) var(--ease-out),
+                border-color var(--duration-normal) var(--ease-out),
+                transform var(--duration-normal) var(--ease-out);
+  }
+  a:hover,
+  a:focus-visible {
+    color: var(--display);
+    border-color: var(--turquoise-300);
+    transform: translateY(-1px);
+  }
+  img {
+    max-height: 36px;
+    width: auto;
+    filter: grayscale(1) opacity(0.7);
+    transition: filter var(--duration-normal) var(--ease-out);
+  }
+  a:hover img,
+  a:focus-visible img { filter: grayscale(0) opacity(1); }
+}
+@media (min-width: $bp-sm) {
+  .press-logos { grid-template-columns: repeat(4, 1fr); }
+}
+
+// ============================================================
+// News card — index of /news/ posts
+// ============================================================
+.news-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-6;
+  margin: $space-7 0;
+  padding: 0;
+  list-style: none;
+
+  > li { margin: 0; }
+}
+@media (min-width: $bp-sm) {
+  .news-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: $space-6;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--duration-normal) var(--ease-out),
+              transform var(--duration-normal) var(--ease-out),
+              border-color var(--duration-normal) var(--ease-out);
+
+  &:hover,
+  &:focus-within {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: var(--turquoise-300);
+  }
+
+  &__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-3;
+    margin-bottom: $space-3;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--muted-foreground);
+
+    .news-card__category { color: var(--accent-editorial); }
+    .dot { color: var(--border-strong); }
+  }
+
+  &__title {
+    margin: 0 0 $space-3;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-xl;
+    line-height: $leading-snug;
+    color: var(--display);
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      background-image: linear-gradient(var(--turquoise-300), var(--turquoise-300));
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size var(--duration-normal) var(--ease-out);
+    }
+    a:hover,
+    a:focus-visible { background-size: 100% 2px; }
+  }
+
+  &__excerpt {
+    margin: 0 0 $space-5;
+    font-family: $font-sans;
+    font-size: $text-base;
+    line-height: $leading-relaxed;
+    color: var(--foreground);
+  }
+
+  &__cta {
+    margin-top: auto;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      &::after { content: " \2192"; }
+      &:hover, &:focus-visible {
+        color: var(--primary-strong);
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+}
+
+// ============================================================
+// Language switcher — small EN | ES toggle in nav
+// ============================================================
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-2;
+  padding: 4px 10px;
+  margin-left: $space-3;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-family: $font-sans;
+  font-size: $text-xs;
+  font-weight: $weight-medium;
+  text-transform: uppercase;
+  letter-spacing: $track-eyebrow;
+  background: var(--bg-card);
+
+  a, span {
+    color: var(--muted-foreground);
+    text-decoration: none;
+    padding: 2px 6px;
+    border-radius: 999px;
+    transition: color var(--duration-fast) var(--ease-out),
+                background var(--duration-fast) var(--ease-out);
+  }
+  a:hover, a:focus-visible {
+    color: var(--primary-strong);
+  }
+  .is-active {
+    color: var(--primary-foreground);
+    background: var(--primary);
+  }
+}

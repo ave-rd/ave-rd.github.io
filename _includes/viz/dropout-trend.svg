@@ -1,0 +1,56 @@
+<svg viewBox="0 0 720 320" class="trend-chart" role="img" aria-labelledby="tc-title tc-desc" preserveAspectRatio="xMidYMid meet">
+  <title id="tc-title">Cumulative dropout, treatment vs control, 2015–2017</title>
+  <desc id="tc-desc">Line chart showing cumulative dropout rates in the AVE-RD treatment and control schools across grade 7–12 cohorts from 2015 through 2017. Treatment line tracks the control line in 2015, then diverges in 2016 and 2017 with the gap reaching roughly 3 percentage points by year three.</desc>
+
+  <!-- Y-axis grid lines -->
+  <g class="trend-grid">
+    <line x1="80"  y1="240" x2="640" y2="240" />
+    <line x1="80"  y1="180" x2="640" y2="180" />
+    <line x1="80"  y1="120" x2="640" y2="120" />
+    <line x1="80"  y1="60"  x2="640" y2="60"  />
+  </g>
+
+  <!-- Axes -->
+  <line class="trend-axis" x1="80" y1="40"  x2="80"  y2="240" />
+  <line class="trend-axis" x1="80" y1="240" x2="640" y2="240" />
+
+  <!-- Y-axis ticks -->
+  <text class="trend-tick" x="74" y="245" text-anchor="end">0%</text>
+  <text class="trend-tick" x="74" y="185" text-anchor="end">10%</text>
+  <text class="trend-tick" x="74" y="125" text-anchor="end">20%</text>
+  <text class="trend-tick" x="74" y="65"  text-anchor="end">30%</text>
+
+  <!-- X-axis ticks -->
+  <text class="trend-tick" x="80"  y="262" text-anchor="middle">2015</text>
+  <text class="trend-tick" x="360" y="262" text-anchor="middle">2016</text>
+  <text class="trend-tick" x="640" y="262" text-anchor="middle">2017</text>
+
+  <!-- Confidence band (treatment) -->
+  <path class="trend-band"
+        d="M 80 240 L 360 198 L 640 153 L 640 127 L 360 188 L 80 240 Z" />
+
+  <!-- Control line: cumulative dropout 0% → 8% → 18% -->
+  <polyline class="trend-line-control"
+            points="80,240 360,187 640,120" />
+  <circle class="trend-point-control" cx="80"  cy="240" r="5" />
+  <circle class="trend-point-control" cx="360" cy="187" r="5" />
+  <circle class="trend-point-control" cx="640" cy="120" r="5" />
+
+  <!-- Treatment line: 0% → 7% → 15% -->
+  <polyline class="trend-line-treatment"
+            points="80,240 360,193 640,140" />
+  <circle class="trend-point-treatment" cx="80"  cy="240" r="6" />
+  <circle class="trend-point-treatment" cx="360" cy="193" r="6" />
+  <circle class="trend-point-treatment" cx="640" cy="140" r="6" />
+
+  <!-- End labels -->
+  <text class="trend-label" x="650" y="124" fill="currentColor">Control</text>
+  <text class="trend-label" x="650" y="144">Treatment</text>
+
+  <!-- Effect annotation -->
+  <line x1="640" y1="120" x2="640" y2="140" stroke="currentColor" stroke-width="1.5" />
+  <text class="trend-tick" x="660" y="134">≈ 3 pp gap</text>
+
+  <!-- Y-axis label (rotated) -->
+  <text class="trend-label" x="20" y="140" transform="rotate(-90 20 140)" text-anchor="middle">Cumulative dropout</text>
+</svg>

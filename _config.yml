@@ -49,6 +49,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+collections:
+  news:
+    output: true
+    permalink: /news/:path/
+
 defaults:
   - scope:
       path: "projects"
@@ -56,3 +61,8 @@ defaults:
     values:
       layout: page
       header-img: img/averd.jpg
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: news

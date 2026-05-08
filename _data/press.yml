@@ -1,0 +1,95 @@
+# Press coverage and testimonials.
+# Bracket-marked entries are placeholders awaiting confirmed coverage.
+
+coverage:
+  - outlet: "Listín Diario"
+    title: "Estudio del MINERD reduce deserción escolar con videos"   # TODO: replace with real headline
+    date: "2017-08-21"
+    url: "#"                                                          # TODO: real URL
+    note: "Coverage of the USAID endline report and the dropout finding."
+  - outlet: "El Caribe"
+    title: "Aprendiendo el Valor de la Educación: ¿qué cambió?"      # TODO: replace
+    date: "2017-09-04"
+    url: "#"                                                          # TODO: real URL
+    note: "Profile of the program implementation."
+  - outlet: "J-PAL Newsroom"
+    title: "Information matters: lessons from AVE-RD"                  # TODO: replace
+    date: "2025-04-12"
+    url: "#"                                                          # TODO: real URL
+    note: "J-PAL news brief announcing the follow-up wave."
+  - outlet: "VOA Noticias"
+    title: "Videos en aulas dominicanas: el experimento que sigue"     # TODO: replace
+    date: "2025-06-02"
+    url: "#"                                                          # TODO: real URL
+    note: "Spanish-language radio segment on the 2025 follow-up."
+
+# Testimonials — quotes pulled from interviews, official letters,
+# or partner sites. Bracket-marked entries are placeholders.
+testimonials:
+  - id: minerd-dop
+    quote: >-
+      The pilot trained hundreds of our regional staff in modern
+      fieldwork, call-center operations, and logistics — capability
+      that has outlived the project itself.
+    name: "Director, Department of Orientation and Psychology"        # TODO: replace
+    role: "MINERD"
+
+  - id: usaid
+    quote: >-
+      AVE-RD demonstrated that a low-cost, scalable intervention can
+      shift the schooling decisions of tens of thousands of students.
+      It is the kind of evidence USAID was created to produce.
+    name: "Mission Director, USAID/Dominican Republic (2017)"          # TODO: replace
+    role: "USAID"
+
+  - id: ideice
+    quote: >-
+      Linking AVE-RD to the Pruebas Nacionales has anchored our
+      evidence pipeline. The follow-up wave will do the same with the
+      social-security earnings panel.
+    name: "Director of Evaluation, IDEICE"                             # TODO: replace
+    role: "IDEICE"
+
+  - id: jpal-lac
+    quote: >-
+      AVE-RD is what scalable looks like in education research:
+      cheap to deliver, defensible to identify, and adaptable to a new
+      country in months rather than years.
+    name: "Executive Director, J-PAL LAC"                              # TODO: replace
+    role: "J-PAL LAC"
+
+# Project milestones — used by the timeline component on /press/
+# and the homepage.
+timeline:
+  - date: "2014"
+    title: "USAID Cooperative Agreement"
+    body: "Project funded as a five-year pilot. MINERD's Department of Orientation and Psychology becomes the implementation owner."
+    state: "past"
+  - date: "May 2015"
+    title: "First wave of videos in 600 schools"
+    body: "Persuasive and informative arms screened across 18 educational regions. Baseline beliefs about wage returns elicited."
+    state: "past"
+  - date: "April 2016"
+    title: "Second wave — twice-treated cohort"
+    body: "Same schools return for a second screening. Twice-treated students later show the largest test-score effect."
+    state: "past"
+  - date: "2017"
+    title: "Endline report submitted to USAID (Milestone 13)"
+    body: "Dropout, test-score, and belief-update effects documented. Capacity-building outcomes reported separately."
+    state: "past"
+  - date: "2024"
+    title: "Pre-analysis plan registered for the long-run follow-up"
+    body: "Outcomes pre-specified: enrolment, secondary completion, formal-sector earnings via TSS, and migration."
+    state: "past"
+  - date: "2025"
+    title: "Follow-up fieldwork resumes"
+    body: "Cohort tracking and re-survey begin in the same 18 educational regions. IDEICE secures the TSS data-linkage agreement."
+    state: "current"
+  - date: "2026"
+    title: "First descriptive results"
+    body: "Initial enrolment-and-earnings descriptives released as a working paper and a funder brief."
+    state: "future"
+  - date: "2027"
+    title: "Long-run impact paper + open replication kit"
+    body: "Full earnings-impact estimates published. De-identified panel and Stata pipeline released CC BY 4.0."
+    state: "future"

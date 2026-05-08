@@ -48,6 +48,20 @@ brief_pdf: "/briefs/AVE-RD_brief_what-worked.pdf"
   channels operate alongside Bayesian belief updating.
 </p>
 
+<figure class="viz-card reveal">
+  <span class="viz-card__eyebrow">Figure 1 · test-score effects</span>
+  <h3 class="viz-card__title">Standardized effect sizes &mdash; informative arm, twice-treated, top deciles.</h3>
+  <p class="viz-card__lede">
+    Three slices of the panel, three intervals, all excluding zero. The largest effect is in twice-treated students.
+  </p>
+  <div class="viz-card__figure">
+    {% include viz/forest-plot.svg %}
+  </div>
+  <p class="viz-card__caption">
+    <strong>Note.</strong> Effect sizes in standard deviations of the Pruebas Nacionales score, with <span class="font-osf">95</span>%&nbsp;confidence intervals. The twice-treated point estimate is at <span class="font-osf">0.10&sigma;</span> with a wider CI than the informative-arm baseline. Drawn from headline numbers in Berry, Coffman, Morales &amp; Neilson (<span class="font-osf">2025</span>).
+  </p>
+</figure>
+
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Four replicated effects</div>
   <h2>Effect sizes and where they show up</h2>

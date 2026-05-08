@@ -4,6 +4,8 @@ description: "Two-page briefs distilling AVE-RD's findings, the case for the fol
 eyebrow: "Briefs · 3 issues"
 layout: page
 order: 4
+lang: en
+alt_url: /es/briefs/
 hero-style: gradient
 ---
 
