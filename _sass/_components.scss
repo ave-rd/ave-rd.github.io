@@ -1721,3 +1721,261 @@ footer {
     cursor: not-allowed;
   }
 }
+
+// ============================================================
+// Campaign / signature components
+// ============================================================
+
+// Counter chip rendered in the campaign hero — "247 signatories"
+.signatory-counter {
+  display: inline-flex;
+  align-items: baseline;
+  gap: $space-3;
+  margin: $space-5 0 $space-3;
+  padding: $space-3 $space-5;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-family: $font-sans;
+
+  &__value {
+    font-family: $font-serif;
+    font-feature-settings: 'onum' 1;
+    font-variant-numeric: oldstyle-nums;
+    font-weight: $weight-medium;
+    font-size: $text-2xl;
+    line-height: 1;
+    color: #fff;
+  }
+  &__label {
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+
+// Signature wall — grouped by tier
+.signature-wall {
+  margin: $space-8 0;
+}
+
+.signature-tier {
+  margin: $space-7 0;
+
+  &__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: $space-3;
+    margin-bottom: $space-5;
+    padding-bottom: $space-3;
+    border-bottom: 1px solid var(--border);
+  }
+  &__title {
+    margin: 0;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-xl;
+    line-height: $leading-snug;
+    letter-spacing: $track-tight;
+    color: var(--display);
+  }
+  &__count {
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+  }
+}
+
+.signature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-4;
+  padding: 0;
+  list-style: none;
+
+  > li { margin: 0; }
+}
+@media (min-width: $bp-sm) {
+  .signature-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: $bp-md) {
+  .signature-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.signature-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: $space-5 $space-6;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-tile);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--duration-normal) var(--ease-out),
+              border-color var(--duration-normal) var(--ease-out);
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--turquoise-300);
+  }
+
+  &__statement {
+    margin: 0 0 $space-4;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: $text-base;
+    line-height: $leading-relaxed;
+    color: var(--foreground);
+
+    &:empty { display: none; }
+  }
+
+  &__attrib {
+    margin-top: auto;
+    padding-top: $space-3;
+    border-top: 1px dashed var(--border);
+  }
+  &__name {
+    display: block;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-md;
+    line-height: $leading-snug;
+    color: var(--display);
+  }
+  &__role {
+    display: block;
+    margin-top: 2px;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    color: var(--muted-foreground);
+  }
+  &__inst {
+    display: block;
+    margin-top: 2px;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+  }
+  &__verified {
+    display: inline-block;
+    margin-left: $space-2;
+    color: var(--turquoise-700);
+    font-size: $text-sm;
+    line-height: 1;
+    vertical-align: baseline;
+  }
+}
+
+// Tally form embed wrapper — keeps the iframe in the page rhythm
+.tally-frame {
+  margin: $space-8 0;
+  padding: $space-7 $space-6;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+
+  &__header {
+    margin-bottom: $space-5;
+  }
+  &__title {
+    margin: 0 0 $space-3;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-xl;
+    line-height: $leading-snug;
+    color: var(--display);
+  }
+  &__lede {
+    margin: 0;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: $text-md;
+    line-height: $leading-normal;
+    color: var(--muted-foreground);
+    max-width: 60ch;
+  }
+
+  iframe {
+    width: 100%;
+    min-height: 720px;
+    border: 0;
+    border-radius: var(--radius-tile);
+    background: var(--bg);
+  }
+
+  &__placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $space-3;
+    min-height: 220px;
+    padding: $space-7;
+    border-radius: var(--radius-tile);
+    border: 1px dashed var(--border-strong);
+    background: var(--bg-alt);
+    text-align: center;
+
+    p {
+      margin: 0;
+      font-family: $font-serif;
+      font-style: italic;
+      font-size: $text-md;
+      color: var(--muted-foreground);
+      max-width: 50ch;
+    }
+  }
+
+  &__note {
+    margin: $space-5 0 0;
+    font-family: $font-sans;
+    font-size: $text-sm;
+    line-height: $leading-relaxed;
+    color: var(--muted-foreground);
+  }
+}
+
+// Letter / pledge body — a slightly bigger reading width with
+// a leading rule, used for the open-letter prose on each campaign
+.letter-body {
+  margin: $space-8 0;
+  padding: $space-7 $space-8;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent-editorial);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  font-family: $font-serif;
+  font-size: $text-md;
+  line-height: $leading-relaxed;
+  color: var(--foreground);
+
+  > p:first-child {
+    margin-top: 0;
+    font-style: italic;
+    color: var(--muted-foreground);
+  }
+
+  &__recipient {
+    display: block;
+    margin-bottom: $space-5;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+  }
+}

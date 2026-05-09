@@ -1,0 +1,57 @@
+{% comment %}
+  Renders a Tally form embed (or a "submissions opening soon"
+  placeholder if no form ID is set).
+  Inputs:
+    include.form_id    - the Tally form ID (e.g. "ABC123") or empty
+    include.title      - heading shown above the embed
+    include.lede       - one-line subtitle
+    include.lang       - "en" or "es"
+{% endcomment %}
+
+<section class="tally-frame" aria-label="{{ include.title }}">
+  <div class="tally-frame__header">
+    <h2 class="tally-frame__title">{{ include.title }}</h2>
+    {% if include.lede %}<p class="tally-frame__lede">{{ include.lede }}</p>{% endif %}
+  </div>
+
+  {% if include.form_id and include.form_id != "" %}
+    <iframe
+      data-tally-src="https://tally.so/embed/{{ include.form_id }}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+      src="https://tally.so/embed/{{ include.form_id }}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+      loading="lazy"
+      title="{{ include.title }}"></iframe>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+  {% else %}
+    <div class="tally-frame__placeholder" role="status">
+      {% if include.lang == 'es' %}
+      <p>
+        <strong>El formulario abrir&aacute; pronto.</strong>
+        Mientras tanto, escr&iacute;banos a
+        <a href="mailto:proyecto.ave.rd@gmail.com">proyecto.ave.rd@gmail.com</a>
+        con su nombre, instituci&oacute;n y rol &mdash; el equipo
+        a&ntilde;adir&aacute; su firma manualmente.
+      </p>
+      {% else %}
+      <p>
+        <strong>The form is opening soon.</strong>
+        In the meantime, write to
+        <a href="mailto:proyecto.ave.rd@gmail.com">proyecto.ave.rd@gmail.com</a>
+        with your name, institution, and role &mdash; the team will add
+        your signature manually.
+      </p>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <p class="tally-frame__note">
+    {% if include.lang == 'es' %}
+    Su correo electr&oacute;nico se usa s&oacute;lo para verificar
+    su identidad y nunca se publica. Lea c&oacute;mo manejamos las
+    firmas en <a href="/projects/campaigns/">Su voz</a>.
+    {% else %}
+    Your email address is used only to verify your identity and is
+    never published. See how signatures are handled on the
+    <a href="/projects/campaigns/">campaigns hub</a>.
+    {% endif %}
+  </p>
+</section>

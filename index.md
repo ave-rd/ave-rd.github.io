@@ -331,6 +331,68 @@ hero-image: /img/hero-map.jpg
 </div>
 
 <div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">Add your voice</div>
+  <h2>Two open letters, two audiences</h2>
+  <p class="lede">
+    Signatures are the social proof that ministers and funders move
+    on. We&rsquo;re collecting on two parallel campaigns: continuity
+    of the Dominican policy, and endorsement of the long-run
+    follow-up evaluation.
+  </p>
+</div>
+
+{% assign continue_count = site.data.signatures.continue_policy | size %}
+{% assign pledge_count = site.data.signatures.follow_up_pledge | size %}
+
+<ul class="brief-grid reveal">
+  <li>
+    <article class="brief-card">
+      <div class="brief-card__meta">
+        <span class="brief-card__audience">🇩🇴 &nbsp; Dominican stakeholders</span>
+        <span class="dot">&middot;</span>
+        <span><span class="font-osf">{{ continue_count }}</span>&nbsp;signatories</span>
+      </div>
+      <h3 class="brief-card__title">
+        <a href="/campaigns/continue-the-policy/">Continue the AVE policy</a>
+      </h3>
+      <p class="brief-card__lede">
+        Open letter to MINERD asking that the AVE intervention
+        continue at full coverage and that the follow-up evaluation
+        be supported. For ministry officials, school directors,
+        counsellors, parents, and alumni.
+      </p>
+      <div class="brief-card__cta">
+        <a href="/campaigns/continue-the-policy/">Read &amp; sign</a>
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="brief-card">
+      <div class="brief-card__meta">
+        <span class="brief-card__audience">🌐 &nbsp; International research community</span>
+        <span class="dot">&middot;</span>
+        <span><span class="font-osf">{{ pledge_count }}</span>&nbsp;endorsers</span>
+      </div>
+      <h3 class="brief-card__title">
+        <a href="/campaigns/support-the-follow-up/">Endorse the long-run follow-up</a>
+      </h3>
+      <p class="brief-card__lede">
+        Pledge for foundations, bilateral donors, multilaterals, and
+        the long-run-RCT research community to recognise the
+        2025&ndash;2027 follow-up as a priority replication.
+      </p>
+      <div class="brief-card__cta">
+        <a href="/campaigns/support-the-follow-up/">Read &amp; endorse</a>
+      </div>
+    </article>
+  </li>
+</ul>
+
+<p style="text-align:center;margin-top:8px">
+  <a class="partner-card__link" href="/projects/campaigns/">How signatures are verified</a>
+</p>
+
+<div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Cite this work</div>
   <h2>How to reference AVE</h2>
 </div>
@@ -360,6 +422,7 @@ hero-image: /img/hero-map.jpg
   <li><a href="/projects/download-videos-2/">Replication kit</a> &mdash; papers, instruments, code, data, and the procedure for using the videos in your own study.</li>
   <li><a href="/projects/partners/">Partners</a> &mdash; J-PAL LAC, MINERD, IDEICE, INICIA Educaci&oacute;n, USAID &mdash; with named leads inside each.</li>
   <li><a href="/projects/sister-projects/">Sister projects</a> &mdash; DFM Per&uacute;, DFM Chile, DFM Colombia / ICFES-Bot and the ConsiliumBots origin story.</li>
+  <li><a href="/projects/campaigns/">Add your voice</a> &mdash; two open letters: continue the Dominican policy, and endorse the long-run follow-up.</li>
   <li><a href="/projects/press/">Press, voices &amp; milestones</a> &mdash; coverage, testimonials, and the 2014&ndash;2027 timeline.</li>
   <li><a href="/news/">News &amp; field updates</a> &mdash; brief releases and field reports.</li>
   <li><a href="/projects/follow-up/">Support the follow-up</a> &mdash; the budget, the named contacts, and the partnership model.</li>

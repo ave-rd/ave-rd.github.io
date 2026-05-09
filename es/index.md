@@ -145,6 +145,66 @@ hero-image: /img/hero-map.jpg
 </div>
 
 <div class="section-header reveal">
+  <div class="eyebrow eyebrow--rule">Sume su voz</div>
+  <h2>Carta abierta y aval p&uacute;blico</h2>
+  <p class="lede">
+    Las firmas son la prueba social que mueve a ministros y a
+    financiadores. Tenemos dos campa&ntilde;as paralelas en marcha:
+    la continuidad de la pol&iacute;tica AVE en la Rep&uacute;blica
+    Dominicana, y el aval internacional a la evaluaci&oacute;n de
+    seguimiento.
+  </p>
+</div>
+
+{% assign continue_count = site.data.signatures.continue_policy | size %}
+{% assign pledge_count = site.data.signatures.follow_up_pledge | size %}
+
+<ul class="brief-grid reveal">
+  <li>
+    <article class="brief-card">
+      <div class="brief-card__meta">
+        <span class="brief-card__audience">🇩🇴 &nbsp; Actores dominicanos</span>
+        <span class="dot">&middot;</span>
+        <span><span class="font-osf">{{ continue_count }}</span>&nbsp;firmas</span>
+      </div>
+      <h3 class="brief-card__title">
+        <a href="/es/sumate/">Continuemos la pol&iacute;tica AVE</a>
+      </h3>
+      <p class="brief-card__lede">
+        Carta abierta al MINERD pidiendo que la intervenci&oacute;n AVE
+        contin&uacute;e a cobertura completa y que la
+        evaluaci&oacute;n de seguimiento reciba apoyo. Para
+        funcionarios, directores, orientadores, padres y egresados.
+      </p>
+      <div class="brief-card__cta">
+        <a href="/es/sumate/">Leer y firmar</a>
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="brief-card">
+      <div class="brief-card__meta">
+        <span class="brief-card__audience">🌐 &nbsp; Comunidad de investigaci&oacute;n</span>
+        <span class="dot">&middot;</span>
+        <span><span class="font-osf">{{ pledge_count }}</span>&nbsp;avales</span>
+      </div>
+      <h3 class="brief-card__title">
+        <a href="/campaigns/support-the-follow-up/">Avale la evaluaci&oacute;n a largo plazo</a>
+      </h3>
+      <p class="brief-card__lede">
+        Compromiso para fundaciones, donantes bilaterales y
+        multilaterales, y la comunidad investigadora en RCT de largo
+        plazo: reconocer el seguimiento <span class="font-osf">2025&ndash;2027</span>
+        como una replicaci&oacute;n prioritaria.
+      </p>
+      <div class="brief-card__cta">
+        <a href="/campaigns/support-the-follow-up/">Leer y avalar</a>
+      </div>
+    </article>
+  </li>
+</ul>
+
+<div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Sobre el sitio</div>
   <h2>M&aacute;s contenido</h2>
 </div>
@@ -156,4 +216,5 @@ hero-image: /img/hero-map.jpg
   <li><a href="/es/briefs/">Res&uacute;menes de pol&iacute;tica</a> &mdash; tres res&uacute;menes de dos p&aacute;ginas.</li>
   <li><a href="/es/partners/">Socios</a> &mdash; J-PAL LAC, MINERD, IDEICE, INICIA Educaci&oacute;n, USAID.</li>
   <li><a href="/es/follow-up/">Apoyar el seguimiento</a> &mdash; presupuesto, contactos y modelo de alianza.</li>
+  <li><a href="/es/sumate/">Sume su voz</a> &mdash; carta abierta al MINERD para continuar la pol&iacute;tica.</li>
 </ul>
