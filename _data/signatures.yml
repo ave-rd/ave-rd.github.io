@@ -1,0 +1,119 @@
+# Moderated signatures for the two campaigns.
+# ---------------------------------------------------------------
+# Workflow:
+#   1. Visitor fills the on-page sign form on the campaign page.
+#   2. Visitor picks a submit channel:
+#        - mailto: opens their mail client with a structured body
+#          pre-filled to proyecto.ave.rd@gmail.com
+#        - GitHub Issue: opens a pre-filled issue in this repo
+#          labelled `signature` + the campaign id
+#        - Copy to clipboard: for systems where mailto: does not
+#          open (locked Chromebooks, kiosks, webmail-only setups)
+#   3. Spam guards on the form: hidden honeypot + 3-second dwell
+#      timer. Both fail closed (silent no-op).
+#   4. Project team verifies (school code, institution, ORCID, etc.)
+#      and pastes the approved entry into this file — either
+#      directly via the GitHub web UI, or by forwarding the
+#      verification email to a Claude Code session that commits.
+#   5. The site rebuilds and the entry appears on the wall.
+#
+# Tiers (rendered in this order):
+#   policymakers   - government, ministry, IDEICE, multilateral
+#   researchers    - academia, J-PAL, IPA, ConsiliumBots, NBER
+#   educators      - school directors, counsellors, teachers
+#   community      - parents, alumni, students
+#
+# Schema per entry:
+#   name        : "Real Name" (required, public)
+#   role        : "Role / title" (required, public)
+#   institution : "Org name" (required, public)
+#   country     : "DR" / "US" / etc. (optional, public)
+#   tier        : one of the four above
+#   statement   : optional, max 280 characters, public
+#   date        : ISO date the signature was approved
+#   verified    : true once the team confirms the signatory's identity
+#
+# Seeded entries below are PLACEHOLDERS that document the schema —
+# replace with real signatures before launch.
+
+continue_policy:
+  - name: "Carmen Maura Taveras"
+    role: "Senior research collaborator"
+    institution: "IDEICE / World Bank Education Global Practice"
+    country: "DR"
+    tier: "researchers"
+    statement: >-
+      The AVE intervention proved that a small information shift
+      can move a schooling decision. Continuing it is cheap and
+      well-evidenced; replacing it would be neither.
+    date: "2026-05-09"
+    verified: true                                     # TODO: confirm before launch
+  - name: "Director, DOP"                              # TODO: replace
+    role: "Direcci&oacute;n de Orientaci&oacute;n y Psicolog&iacute;a"
+    institution: "MINERD"
+    country: "DR"
+    tier: "policymakers"
+    statement: >-
+      Our regional staff are still using the AVE protocol every
+      semester. The capacity built during the pilot has outlived
+      the grant.
+    date: "2026-05-09"
+    verified: false
+  - name: "School Director — placeholder"              # TODO: replace
+    role: "Director, public secondary school"
+    institution: "Regi&oacute;n educativa 10"
+    country: "DR"
+    tier: "educators"
+    statement: >-
+      We screen the AVE videos every year. Students engage with
+      them; the conversation that follows is the lesson.
+    date: "2026-05-09"
+    verified: false
+  - name: "Alumni signatory — placeholder"             # TODO: replace
+    role: "Former AVE-RD student, 2015 cohort"
+    institution: ""
+    country: "DR"
+    tier: "community"
+    statement: >-
+      I saw the videos in eighth grade. Ten years later I am
+      working in the formal labour market. I want the next cohort
+      to see them too.
+    date: "2026-05-09"
+    verified: false
+
+follow_up_pledge:
+  - name: "James Berry"
+    role: "Co-PI, AVE-RD"
+    institution: "University of Georgia, Terry College of Business"
+    country: "US"
+    tier: "researchers"
+    statement: ""
+    date: "2026-05-09"
+    verified: true                                     # TODO: confirm
+  - name: "Lucas C. Coffman"
+    role: "Co-PI, AVE-RD"
+    institution: "Boston College, Department of Economics"
+    country: "US"
+    tier: "researchers"
+    statement: ""
+    date: "2026-05-09"
+    verified: true                                     # TODO: confirm
+  - name: "Daniel Morales"
+    role: "Co-PI, AVE-RD &middot; Country lead"
+    institution: "Tecnol&oacute;gico de Monterrey"
+    country: "MX"
+    tier: "researchers"
+    statement: ""
+    date: "2026-05-09"
+    verified: true                                     # TODO: confirm
+  - name: "Christopher A. Neilson"
+    role: "Co-PI, AVE-RD"
+    institution: "Yale University, Economics &amp; Jackson School of Global Affairs"
+    country: "US"
+    tier: "researchers"
+    statement: >-
+      The follow-up is what turns AVE from a schooling-effect
+      study into an earnings-effect study. That step is the one
+      the field has been missing.
+    date: "2026-05-09"
+    verified: true                                     # TODO: confirm

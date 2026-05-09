@@ -3,7 +3,7 @@ title: Reach the project team
 description: "Office, telephones and e-mail for the AVE-RD pilot."
 eyebrow: "Contact"
 layout: page
-order: 7
+order: 11
 seo:
   type: ContactPage
 ---

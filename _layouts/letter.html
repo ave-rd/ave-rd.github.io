@@ -1,0 +1,130 @@
+---
+layout: default
+---
+
+{% comment %}
+  Formal printable letter layout. Uses the default chrome on screen
+  (nav + footer for navigation), but @media print hides everything
+  except the .letter-document so File > Print → PDF gives the
+  project office a clean, deliverable carta.
+
+  Layout drives off frontmatter:
+    page.lang             - "en" | "es"
+    page.letter_date      - long-form date string (e.g. "9 de mayo de 2026")
+    page.letter_place     - "Santo Domingo, República Dominicana"
+    page.letter_recipient - block-form recipient (HTML allowed)
+    page.letter_salutation- "Estimado/a Sr./Sra. Ministro/a:"
+    page.letter_closer    - "Atentamente," / "Sincerely yours,"
+    page.letter_signed_by - "El equipo del proyecto AVE-RD"
+    page.signature_key    - "continue_policy" | "follow_up_pledge"
+{% endcomment %}
+
+{% assign sigs = site.data.signatures[page.signature_key] %}
+{% assign sig_count = sigs | size %}
+
+{% if page.lang == 'es' %}
+  {% assign t_back = "Volver a la campa&ntilde;a" %}
+  {% assign t_print = "Imprimir / Guardar como PDF" %}
+  {% assign t_signed = "Firmado por" %}
+  {% assign t_persons = "personas" %}
+  {% assign t_partner_intro = "AVE-RD es una iniciativa conjunta de" %}
+  {% assign t_partners = "J-PAL LAC &middot; MINERD &middot; IDEICE &middot; INICIA Educaci&oacute;n &middot; USAID" %}
+  {% assign t_contact = "Oficina del proyecto" %}
+  {% assign t_tier_pol = "Funcionarios y sector p&uacute;blico" %}
+  {% assign t_tier_res = "Investigadores y academia" %}
+  {% assign t_tier_edu = "Educadores y personal escolar" %}
+  {% assign t_tier_com = "Padres, egresados y estudiantes" %}
+  {% assign t_letterhead_sub = "Aspiraciones, Videos y Educaci&oacute;n &middot; Rep&uacute;blica Dominicana" %}
+{% else %}
+  {% assign t_back = "Back to the campaign" %}
+  {% assign t_print = "Print / Save as PDF" %}
+  {% assign t_signed = "Signed by" %}
+  {% assign t_persons = "individuals" %}
+  {% assign t_partner_intro = "AVE-RD is a joint initiative of" %}
+  {% assign t_partners = "J-PAL LAC &middot; MINERD &middot; IDEICE &middot; INICIA Educaci&oacute;n &middot; USAID" %}
+  {% assign t_contact = "Project office" %}
+  {% assign t_tier_pol = "Policymakers and public-sector officials" %}
+  {% assign t_tier_res = "Researchers and academics" %}
+  {% assign t_tier_edu = "Educators and school staff" %}
+  {% assign t_tier_com = "Parents, alumni, and students" %}
+  {% assign t_letterhead_sub = "Aspirations, Videos and Education &middot; Dominican Republic" %}
+{% endif %}
+
+<div class="letter-toolbar" role="region" aria-label="Letter actions">
+  <div class="letter-toolbar__inner">
+    <a class="letter-toolbar__link" href="{{ page.campaign_url }}">&larr; {{ t_back }}</a>
+    <button type="button" class="btn-cta btn-cta--ghost letter-toolbar__print" onclick="window.print();">{{ t_print }}</button>
+  </div>
+</div>
+
+<article class="letter-document" lang="{{ page.lang }}">
+
+  <header class="letter-document__head">
+    <img class="letter-document__logo" src="{{ '/img/logos/logo_ave.jpg' | prepend: site.baseurl }}" alt="AVE-RD" />
+    <div class="letter-document__head-text">
+      <h1 class="letter-document__title">AVE-RD</h1>
+      <p class="letter-document__subtitle">{{ t_letterhead_sub }}</p>
+    </div>
+  </header>
+
+  <div class="letter-document__rule" aria-hidden="true"></div>
+
+  <div class="letter-document__meta">
+    <p class="letter-document__place">{{ page.letter_place }}</p>
+    <p class="letter-document__date"><span class="font-osf">{{ page.letter_date }}</span></p>
+  </div>
+
+  <div class="letter-document__recipient">
+    {{ page.letter_recipient }}
+  </div>
+
+  <p class="letter-document__salutation">{{ page.letter_salutation }}</p>
+
+  <div class="letter-document__body">
+    {{ content }}
+  </div>
+
+  <div class="letter-document__close">
+    <p class="letter-document__closer">{{ page.letter_closer }}</p>
+    <p class="letter-document__signed">{{ page.letter_signed_by }}</p>
+  </div>
+
+  <section class="letter-document__signatures" aria-labelledby="letter-signatures-heading">
+    <h2 id="letter-signatures-heading" class="letter-document__signatures-title">
+      {{ t_signed }} <span class="font-osf">{{ sig_count }}</span> {{ t_persons }}
+    </h2>
+
+    {% assign tiers = "policymakers,researchers,educators,community" | split: "," %}
+    {% assign tier_labels = "" | split: "," %}
+    {% assign tier_labels = tier_labels | push: t_tier_pol | push: t_tier_res | push: t_tier_edu | push: t_tier_com %}
+
+    {% for tier in tiers %}
+      {% assign tier_sigs = sigs | where: "tier", tier %}
+      {% if tier_sigs.size > 0 %}
+      <div class="letter-tier">
+        <h3 class="letter-tier__title">{{ tier_labels[forloop.index0] }} <span class="letter-tier__count font-osf">({{ tier_sigs.size }})</span></h3>
+        <ul class="letter-tier__list">
+          {% for s in tier_sigs %}
+          <li class="letter-tier__entry">
+            <span class="letter-tier__name">{{ s.name }}</span>
+            <span class="letter-tier__role">{{ s.role }}{% if s.institution and s.institution != "" %} &mdash; {{ s.institution }}{% endif %}{% if s.country and s.country != "" %} ({{ s.country }}){% endif %}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </section>
+
+  <footer class="letter-document__foot">
+    <p class="letter-document__partners">
+      <span class="letter-document__partner-intro">{{ t_partner_intro }}:</span>
+      <span class="letter-document__partner-list">{{ t_partners }}</span>
+    </p>
+    <p class="letter-document__contact">
+      {{ t_contact }}: <a href="mailto:{{ site.data.campaigns.site_recipient_email }}">{{ site.data.campaigns.site_recipient_email }}</a> &middot;
+      <a href="https://ave-rd.github.io/">ave-rd.github.io</a>
+    </p>
+  </footer>
+
+</article>

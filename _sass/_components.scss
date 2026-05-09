@@ -1721,3 +1721,671 @@ footer {
     cursor: not-allowed;
   }
 }
+
+// ============================================================
+// Campaign / signature components
+// ============================================================
+
+// Counter chip rendered in the campaign hero — "247 signatories"
+.signatory-counter {
+  display: inline-flex;
+  align-items: baseline;
+  gap: $space-3;
+  margin: $space-5 0 $space-3;
+  padding: $space-3 $space-5;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  font-family: $font-sans;
+
+  &__value {
+    font-family: $font-serif;
+    font-feature-settings: 'onum' 1;
+    font-variant-numeric: oldstyle-nums;
+    font-weight: $weight-medium;
+    font-size: $text-2xl;
+    line-height: 1;
+    color: #fff;
+  }
+  &__label {
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+
+// Signature wall — grouped by tier
+.signature-wall {
+  margin: $space-8 0;
+
+  &__empty {
+    margin: $space-7 0;
+    padding: $space-7 $space-7;
+    text-align: center;
+    background: var(--bg-card);
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius-card);
+
+    h3 {
+      margin: $space-3 0 $space-3;
+      font-family: $font-serif;
+      font-weight: $weight-medium;
+      font-size: $text-lg;
+      color: var(--display);
+    }
+    p {
+      margin: 0 auto;
+      max-width: 50ch;
+      font-family: $font-serif;
+      font-style: italic;
+      font-size: $text-md;
+      line-height: $leading-relaxed;
+      color: var(--muted-foreground);
+    }
+    strong {
+      font-style: normal;
+      color: var(--accent-editorial);
+      font-weight: $weight-medium;
+    }
+  }
+  &__empty-mark {
+    display: block;
+    margin: 0 0 $space-3;
+    font-size: 28pt;
+    color: var(--accent-editorial);
+    line-height: 1;
+  }
+}
+
+.signature-tier {
+  margin: $space-7 0;
+
+  &__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: $space-3;
+    margin-bottom: $space-5;
+    padding-bottom: $space-3;
+    border-bottom: 1px solid var(--border);
+  }
+  &__title {
+    margin: 0;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-xl;
+    line-height: $leading-snug;
+    letter-spacing: $track-tight;
+    color: var(--display);
+  }
+  &__count {
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+  }
+}
+
+.signature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-4;
+  padding: 0;
+  list-style: none;
+
+  > li { margin: 0; }
+}
+@media (min-width: $bp-sm) {
+  .signature-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: $bp-md) {
+  .signature-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.signature-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: $space-5 $space-6;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-tile);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--duration-normal) var(--ease-out),
+              border-color var(--duration-normal) var(--ease-out);
+
+  &:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--turquoise-300);
+  }
+
+  &__statement {
+    margin: 0 0 $space-4;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: $text-base;
+    line-height: $leading-relaxed;
+    color: var(--foreground);
+
+    &:empty { display: none; }
+  }
+
+  &__attrib {
+    margin-top: auto;
+    padding-top: $space-3;
+    border-top: 1px dashed var(--border);
+  }
+  &__name {
+    display: block;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-md;
+    line-height: $leading-snug;
+    color: var(--display);
+  }
+  &__role {
+    display: block;
+    margin-top: 2px;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    color: var(--muted-foreground);
+  }
+  &__inst {
+    display: block;
+    margin-top: 2px;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+  }
+  &__verified {
+    display: inline-block;
+    margin-left: $space-2;
+    color: var(--turquoise-700);
+    font-size: $text-sm;
+    line-height: 1;
+    vertical-align: baseline;
+  }
+}
+
+// Self-managed sign-up form
+.sign-form {
+  margin: $space-8 0;
+  padding: $space-7 $space-6;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+
+  &__header {
+    margin-bottom: $space-6;
+  }
+  &__title {
+    margin: 0 0 $space-3;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: $text-xl;
+    line-height: $leading-snug;
+    color: var(--display);
+  }
+  &__lede {
+    margin: 0;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: $text-md;
+    line-height: $leading-normal;
+    color: var(--muted-foreground);
+    max-width: 60ch;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: $space-5;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-5;
+  }
+  @media (min-width: $bp-sm) {
+    &__row { grid-template-columns: 1fr 1fr; }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: $space-2;
+
+    &--narrow { max-width: 200px; }
+    &--error input,
+    &--error textarea {
+      border-color: var(--bole-500);
+      background: var(--bole-50);
+    }
+    &--error legend {
+      color: var(--bole-700);
+    }
+  }
+
+  &__label {
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+  }
+  &__hint {
+    color: var(--muted-foreground);
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: $weight-regular;
+  }
+  &__req {
+    color: var(--bole-600);
+    margin-left: 2px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-family: $font-sans;
+    font-size: $text-base;
+    line-height: $leading-normal;
+    color: var(--foreground);
+    background: var(--bg);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    transition: border-color var(--duration-fast) var(--ease-out),
+                box-shadow var(--duration-fast) var(--ease-out);
+
+    &:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-soft);
+    }
+  }
+  textarea { resize: vertical; min-height: 80px; }
+
+  &__counter {
+    display: block;
+    margin-top: 4px;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    color: var(--muted-foreground);
+  }
+
+  &__tier {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    legend {
+      padding: 0;
+      margin-bottom: $space-3;
+      font-family: $font-sans;
+      font-size: $text-xs;
+      font-weight: $weight-medium;
+      text-transform: uppercase;
+      letter-spacing: $track-eyebrow;
+      color: var(--accent-editorial);
+    }
+  }
+  &__radio {
+    display: flex;
+    align-items: flex-start;
+    gap: $space-3;
+    padding: $space-3 $space-4;
+    margin-bottom: $space-2;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: $font-sans;
+    font-size: $text-base;
+    cursor: pointer;
+    transition: border-color var(--duration-fast) var(--ease-out),
+                background var(--duration-fast) var(--ease-out);
+
+    &:hover { border-color: var(--turquoise-300); }
+
+    input { margin-top: 4px; flex-shrink: 0; }
+    &:has(input:checked) {
+      border-color: var(--primary);
+      background: var(--primary-soft);
+    }
+  }
+
+  &__consent {
+    display: flex;
+    gap: $space-3;
+    align-items: flex-start;
+    padding: $space-4;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: $font-sans;
+    font-size: $text-sm;
+    line-height: $leading-relaxed;
+    color: var(--foreground);
+
+    input { margin-top: 3px; flex-shrink: 0; }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-3;
+    margin-top: $space-4;
+  }
+
+  &__fallback {
+    margin: $space-4 0 0;
+    font-family: $font-sans;
+    font-size: $text-sm;
+    color: var(--muted-foreground);
+  }
+
+  // Honeypot — visually + screen-reader hidden, but still in the
+  // DOM and reachable by autofill so naive bots will fill it in.
+  &__honeypot {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  // Inline status banner shown after "Copy to clipboard" succeeds.
+  &__copied {
+    margin: $space-4 0 0;
+    padding: $space-3 $space-4;
+    background: var(--turquoise-50);
+    border: 1px solid var(--turquoise-300);
+    border-radius: var(--radius-sm);
+    font-family: $font-sans;
+    font-size: $text-sm;
+    line-height: $leading-normal;
+    color: var(--turquoise-700);
+
+    &-mark {
+      font-weight: $weight-medium;
+      margin-right: 4px;
+    }
+  }
+}
+
+// Letter / pledge body — a slightly bigger reading width with
+// a leading rule, used for the open-letter prose on each campaign
+.letter-body {
+  margin: $space-8 0;
+  padding: $space-7 $space-8;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent-editorial);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-sm);
+  font-family: $font-serif;
+  font-size: $text-md;
+  line-height: $leading-relaxed;
+  color: var(--foreground);
+
+  > p:first-child {
+    margin-top: 0;
+    font-style: italic;
+    color: var(--muted-foreground);
+  }
+
+  &__recipient {
+    display: block;
+    margin-bottom: $space-5;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+  }
+}
+
+// Formal printable letter (carta) — designed to be saved as PDF
+// and hand-delivered. Dominican-formal layout: letterhead, dated,
+// addressed, signed.
+.letter-toolbar {
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+  padding: $space-4 0;
+  margin-bottom: $space-7;
+
+  &__inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 $space-5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-4;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    font-family: $font-sans;
+    font-size: $text-sm;
+    color: var(--accent-editorial);
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  &__print { white-space: nowrap; }
+}
+
+.letter-document {
+  max-width: 720px;
+  margin: 0 auto $space-9;
+  padding: $space-9 $space-8;
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  font-family: $font-serif;
+  color: #1a1a1a;
+  font-size: 11.5pt;
+  line-height: 1.55;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: $space-5;
+    margin-bottom: $space-4;
+  }
+  &__logo {
+    width: 96px;
+    height: auto;
+    flex-shrink: 0;
+  }
+  &__head-text { flex: 1; }
+  &__title {
+    margin: 0 0 4pt;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: 22pt;
+    line-height: 1.1;
+    letter-spacing: 1pt;
+    color: var(--accent-editorial);
+  }
+  &__subtitle {
+    margin: 0;
+    font-family: $font-sans;
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--muted-foreground);
+  }
+  &__rule {
+    height: 2px;
+    background: var(--accent-editorial);
+    margin: $space-4 0 $space-7;
+  }
+
+  &__meta {
+    text-align: right;
+    margin-bottom: $space-6;
+    font-family: $font-serif;
+    font-size: 11pt;
+  }
+  &__place,
+  &__date { margin: 0; }
+  &__place { font-style: italic; color: var(--muted-foreground); }
+  &__date { font-weight: $weight-medium; }
+
+  &__recipient {
+    margin-bottom: $space-6;
+    font-family: $font-serif;
+    font-size: 11pt;
+    line-height: 1.4;
+
+    p { margin: 0; }
+    strong { font-weight: $weight-medium; }
+  }
+
+  &__salutation {
+    margin: 0 0 $space-5;
+    font-family: $font-serif;
+    font-size: 11.5pt;
+    font-weight: $weight-medium;
+  }
+
+  &__body {
+    margin-bottom: $space-7;
+
+    p {
+      margin: 0 0 $space-4;
+      text-align: justify;
+      hyphens: auto;
+      font-size: 11.5pt;
+      line-height: 1.6;
+    }
+
+    p:first-child::first-letter {
+      font-size: 2.4em;
+      float: left;
+      line-height: 0.85;
+      padding: 4pt 6pt 0 0;
+      font-weight: $weight-medium;
+      color: var(--accent-editorial);
+    }
+
+    strong { font-weight: $weight-medium; color: #000; }
+  }
+
+  &__close {
+    margin: $space-7 0 $space-8;
+  }
+  &__closer {
+    margin: 0 0 $space-3;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: 11.5pt;
+  }
+  &__signed {
+    margin: 0;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: 11.5pt;
+  }
+
+  &__signatures {
+    margin-top: $space-7;
+    padding-top: $space-6;
+    border-top: 1px solid var(--border-strong);
+    page-break-before: auto;
+  }
+  &__signatures-title {
+    margin: 0 0 $space-5;
+    font-family: $font-sans;
+    font-size: 10pt;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+  }
+
+  &__foot {
+    margin-top: $space-8;
+    padding-top: $space-5;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-family: $font-sans;
+    font-size: 9pt;
+    color: var(--muted-foreground);
+    line-height: 1.5;
+  }
+  &__partners { margin: 0 0 $space-2; }
+  &__partner-intro {
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    font-size: 8pt;
+  }
+  &__partner-list { display: block; margin-top: 2pt; }
+  &__contact { margin: 0; }
+}
+
+.letter-tier {
+  margin-bottom: $space-5;
+  page-break-inside: avoid;
+
+  &__title {
+    margin: 0 0 $space-3;
+    font-family: $font-sans;
+    font-size: 9.5pt;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--foreground);
+    border-bottom: 1px dotted var(--border-strong);
+    padding-bottom: 4pt;
+  }
+  &__count {
+    color: var(--muted-foreground);
+    font-weight: $weight-regular;
+    margin-left: 4pt;
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    column-gap: $space-6;
+  }
+  @media (max-width: $bp-sm) {
+    &__list { columns: 1; }
+  }
+  &__entry {
+    margin: 0 0 $space-3;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    font-size: 10.5pt;
+    line-height: 1.4;
+  }
+  &__name {
+    display: block;
+    font-weight: $weight-medium;
+    color: #000;
+  }
+  &__role {
+    display: block;
+    font-style: italic;
+    font-size: 10pt;
+    color: var(--muted-foreground);
+  }
+}
