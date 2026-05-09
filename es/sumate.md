@@ -107,11 +107,14 @@ seo:
 
 {% include signature-wall.html signatures=sigs lang="es" %}
 
-{% include tally-embed.html
-   form_id=campaign.tally_form_id
+{% include sign-form.html
+   campaign_id=campaign.id
+   recipient=site.data.campaigns.site_recipient_email
+   repo=site.data.campaigns.github_repo
+   gh_labels=campaign.github_issue_labels
+   lang="es"
    title="Sume su firma"
-   lede="Cinco campos y una frase de hasta 280 caracteres. Verificamos cada entrada antes de publicarla."
-   lang="es" %}
+   lede="Ocho campos y un mensaje de apoyo opcional. Dos formas de enviar. Verificamos cada entrada antes de publicarla." %}
 
 <p style="text-align:center;margin-top:32px">
   <a class="btn-cta btn-cta--ghost" href="/campaigns/continue-the-policy/" hreflang="en">English version</a>

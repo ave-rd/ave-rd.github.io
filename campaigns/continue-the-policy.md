@@ -95,11 +95,14 @@ seo:
 
 {% include signature-wall.html signatures=sigs lang="en" %}
 
-{% include tally-embed.html
-   form_id=campaign.tally_form_id
+{% include sign-form.html
+   campaign_id=campaign.id
+   recipient=site.data.campaigns.site_recipient_email
+   repo=site.data.campaigns.github_repo
+   gh_labels=campaign.github_issue_labels
+   lang="en"
    title="Add your signature"
-   lede="Five fields and a 280-character statement. We verify each entry before publication."
-   lang="en" %}
+   lede="Eight fields, a 280-character statement, two ways to submit. We verify each entry against an institutional contact before publication." %}
 
 <div class="signal-panel reveal">
   <div class="eyebrow">Sister campaign</div>
@@ -113,6 +116,6 @@ seo:
 </div>
 
 <p style="text-align:center;margin-top:32px">
-  <a class="btn-cta" href="#tally-frame">Sign the letter</a>
+  <a class="btn-cta" href="#sign-form-continue-policy-section">Sign the letter</a>
   <a class="btn-cta btn-cta--ghost" href="/es/sumate/" style="margin-left: 12px;" hreflang="es">Versi&oacute;n en espa&ntilde;ol</a>
 </p>

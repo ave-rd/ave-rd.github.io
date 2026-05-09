@@ -90,3 +90,127 @@
     headerHeight = nav.offsetHeight;
   });
 })();
+
+// ============================================================
+// Self-managed signature form
+// ------------------------------------------------------------
+// On submit, build a structured body string from the form fields
+// and either open a pre-filled mailto: or a pre-filled GitHub
+// Issue. No backend, no third party.
+// ============================================================
+(function () {
+  var forms = document.querySelectorAll('.sign-form__body');
+  if (!forms.length) return;
+
+  function val(form, name) {
+    var el = form.querySelector('[name="' + name + '"]');
+    if (!el) return '';
+    if (el.type === 'radio' || el.type === 'checkbox') {
+      var checked = form.querySelector('[name="' + name + '"]:checked');
+      return checked ? checked.value : '';
+    }
+    return (el.value || '').trim();
+  }
+
+  function buildBody(form, opts) {
+    var lang = form.getAttribute('data-lang') || 'en';
+    var campaign = form.getAttribute('data-campaign');
+    var lines = [];
+    var L = lang === 'es'
+      ? { name: 'Nombre', role: 'Rol', inst: 'Institución', country: 'País', tier: 'Categoría', stmt: 'Mensaje', email: 'Correo', consent: 'Consentimiento', campaign: 'Campaña', note: 'Esta firma fue generada por el formulario en el sitio AVE-RD. El equipo verificará la identidad del firmante antes de publicar.' }
+      : { name: 'Name', role: 'Role', inst: 'Institution', country: 'Country', tier: 'Tier', stmt: 'Statement', email: 'Email', consent: 'Consent to verify', campaign: 'Campaign', note: 'This signature was submitted via the AVE-RD site sign-up form. The project team will verify the signatory before publishing.' };
+
+    lines.push(L.campaign + ': ' + campaign);
+    lines.push(L.name + ': ' + val(form, 'name'));
+    lines.push(L.role + ': ' + val(form, 'role'));
+    lines.push(L.inst + ': ' + val(form, 'institution'));
+    lines.push(L.country + ': ' + val(form, 'country'));
+    lines.push(L.tier + ': ' + val(form, 'tier'));
+    lines.push(L.stmt + ': ' + val(form, 'statement'));
+    lines.push(L.email + ': ' + val(form, 'email'));
+    lines.push(L.consent + ': ' + (val(form, 'consent') ? 'yes' : 'no'));
+    lines.push('');
+    lines.push('---');
+    lines.push(L.note);
+    return lines.join('\n');
+  }
+
+  function buildSubject(form) {
+    var lang = form.getAttribute('data-lang') || 'en';
+    var name = val(form, 'name');
+    var inst = val(form, 'institution');
+    var who = inst ? (name + ', ' + inst) : name;
+    var prefix = lang === 'es' ? 'Firma AVE-RD' : 'AVE-RD signature';
+    var campaign = form.getAttribute('data-campaign');
+    return prefix + ' (' + campaign + '): ' + (who || '[unnamed]');
+  }
+
+  function validate(form) {
+    var ok = true;
+    form.querySelectorAll('[required]').forEach(function (el) {
+      var bad = false;
+      if (el.type === 'radio') {
+        bad = !form.querySelector('[name="' + el.name + '"]:checked');
+      } else if (el.type === 'checkbox') {
+        bad = !el.checked;
+      } else {
+        bad = !el.value || !el.value.trim();
+      }
+      if (bad) {
+        el.closest('.sign-form__field, .sign-form__consent, .sign-form__tier').classList.add('sign-form__field--error');
+        ok = false;
+      } else {
+        el.closest('.sign-form__field, .sign-form__consent, .sign-form__tier').classList.remove('sign-form__field--error');
+      }
+    });
+    var emailEl = form.querySelector('[name="email"]');
+    if (emailEl && emailEl.value && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(emailEl.value)) {
+      emailEl.closest('.sign-form__field').classList.add('sign-form__field--error');
+      ok = false;
+    }
+    return ok;
+  }
+
+  forms.forEach(function (form) {
+    // Live character counter on the statement textarea.
+    var stmt = form.querySelector('[name="statement"]');
+    if (stmt) {
+      var counter = document.getElementById(stmt.getAttribute('data-counter'));
+      var max = parseInt(stmt.getAttribute('maxlength'), 10) || 280;
+      var lang = form.getAttribute('data-lang') || 'en';
+      var label = lang === 'es' ? 'caracteres restantes' : 'characters left';
+      function update() {
+        if (!counter) return;
+        var remaining = max - (stmt.value || '').length;
+        counter.innerHTML = '<span class="font-osf">' + remaining + '</span> ' + label;
+      }
+      stmt.addEventListener('input', update);
+      update();
+    }
+
+    form.querySelectorAll('.sign-form__submit').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (!validate(form)) return;
+        var body = buildBody(form);
+        var subject = buildSubject(form);
+        var action = btn.getAttribute('data-action');
+        var url;
+        if (action === 'email') {
+          var to = form.getAttribute('data-recipient');
+          url = 'mailto:' + encodeURIComponent(to) +
+                '?subject=' + encodeURIComponent(subject) +
+                '&body=' + encodeURIComponent(body);
+          window.location.href = url;
+        } else if (action === 'github') {
+          var repo = form.getAttribute('data-repo');
+          var labels = form.getAttribute('data-labels') || 'signature';
+          url = 'https://github.com/' + repo + '/issues/new' +
+                '?labels=' + encodeURIComponent(labels) +
+                '&title=' + encodeURIComponent(subject) +
+                '&body=' + encodeURIComponent(body);
+          window.open(url, '_blank', 'noopener');
+        }
+      });
+    });
+  });
+})();

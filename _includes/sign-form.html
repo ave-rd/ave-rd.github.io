@@ -1,0 +1,131 @@
+{% comment %}
+  Self-managed sign-up form. No third-party form provider.
+
+  On submit, JS reads the field values, builds a structured body
+  string, then either:
+    - opens mailto: <recipient> (primary)
+    - opens a pre-filled GitHub Issue (secondary)
+
+  The team triages the resulting email or issue, verifies the
+  signatory, and pastes the entry into _data/signatures.yml.
+
+  Inputs:
+    include.campaign_id   - "continue-policy" | "follow-up-pledge"
+    include.recipient     - email address (e.g. proyecto.ave.rd@gmail.com)
+    include.repo          - "ave-rd/ave-rd.github.io"
+    include.gh_labels     - "signature,continue-policy"
+    include.lang          - "en" | "es"
+    include.title         - section heading
+    include.lede          - one-line subtitle
+{% endcomment %}
+
+{% assign sf_id = "sign-form-" | append: include.campaign_id %}
+{% if include.lang == 'es' %}
+  {% assign t_name = "Nombre completo" %}
+  {% assign t_role = "Rol o cargo" %}
+  {% assign t_inst = "Instituci&oacute;n" %}
+  {% assign t_country = "Pa&iacute;s" %}
+  {% assign t_tier = "Categor&iacute;a" %}
+  {% assign t_tier_pol = "Funcionario / sector p&uacute;blico" %}
+  {% assign t_tier_res = "Investigador / academia" %}
+  {% assign t_tier_edu = "Educador / personal escolar" %}
+  {% assign t_tier_com = "Padre, madre, egresado/a, estudiante" %}
+  {% assign t_stmt = "Mensaje de apoyo (opcional, m&aacute;ximo 280 caracteres)" %}
+  {% assign t_email = "Correo de contacto (no se publica)" %}
+  {% assign t_consent = "Autorizo que el equipo del proyecto contacte este correo para verificar mi identidad antes de publicar la firma." %}
+  {% assign t_submit_email = "Firmar por correo" %}
+  {% assign t_submit_gh = "Abrir como issue de GitHub" %}
+  {% assign t_required = "Requerido" %}
+  {% assign t_chars_left = "caracteres restantes" %}
+  {% assign t_pick_one = "Elija una" %}
+  {% assign t_no_handler = "Si su navegador no abre la aplicaci&oacute;n de correo, copie el cuerpo del mensaje y env&iacute;elo a" %}
+{% else %}
+  {% assign t_name = "Full name" %}
+  {% assign t_role = "Role or title" %}
+  {% assign t_inst = "Institution" %}
+  {% assign t_country = "Country" %}
+  {% assign t_tier = "Tier" %}
+  {% assign t_tier_pol = "Policymaker / public-sector official" %}
+  {% assign t_tier_res = "Researcher / academic" %}
+  {% assign t_tier_edu = "Educator / school staff" %}
+  {% assign t_tier_com = "Parent, alumni, or student" %}
+  {% assign t_stmt = "Statement of support (optional, max 280 chars)" %}
+  {% assign t_email = "Contact email (not published)" %}
+  {% assign t_consent = "I allow the project team to contact this email to verify my identity before publishing the signature." %}
+  {% assign t_submit_email = "Sign by email" %}
+  {% assign t_submit_gh = "Open as GitHub Issue" %}
+  {% assign t_required = "Required" %}
+  {% assign t_chars_left = "characters left" %}
+  {% assign t_pick_one = "Pick one" %}
+  {% assign t_no_handler = "If your browser does not open a mail client, copy the body and send it to" %}
+{% endif %}
+
+<section class="sign-form" id="{{ sf_id }}-section" aria-labelledby="{{ sf_id }}-title">
+  <header class="sign-form__header">
+    <h2 class="sign-form__title" id="{{ sf_id }}-title">{{ include.title }}</h2>
+    {% if include.lede %}<p class="sign-form__lede">{{ include.lede }}</p>{% endif %}
+  </header>
+
+  <form id="{{ sf_id }}" class="sign-form__body" novalidate
+        data-campaign="{{ include.campaign_id }}"
+        data-recipient="{{ include.recipient }}"
+        data-repo="{{ include.repo }}"
+        data-labels="{{ include.gh_labels }}"
+        data-lang="{{ include.lang }}">
+
+    <div class="sign-form__row">
+      <label class="sign-form__field">
+        <span class="sign-form__label">{{ t_name }} <span class="sign-form__req" aria-label="{{ t_required }}">*</span></span>
+        <input type="text" name="name" autocomplete="name" required maxlength="120" />
+      </label>
+      <label class="sign-form__field">
+        <span class="sign-form__label">{{ t_role }} <span class="sign-form__req" aria-label="{{ t_required }}">*</span></span>
+        <input type="text" name="role" autocomplete="organization-title" required maxlength="160" />
+      </label>
+    </div>
+
+    <div class="sign-form__row">
+      <label class="sign-form__field">
+        <span class="sign-form__label">{{ t_inst }}</span>
+        <input type="text" name="institution" autocomplete="organization" maxlength="200" />
+      </label>
+      <label class="sign-form__field sign-form__field--narrow">
+        <span class="sign-form__label">{{ t_country }}</span>
+        <input type="text" name="country" autocomplete="country-name" maxlength="3" placeholder="DR / US / MX" />
+      </label>
+    </div>
+
+    <fieldset class="sign-form__field sign-form__tier">
+      <legend class="sign-form__label">{{ t_tier }} <span class="sign-form__req" aria-label="{{ t_required }}">*</span> <span class="sign-form__hint">— {{ t_pick_one }}</span></legend>
+      <label class="sign-form__radio"><input type="radio" name="tier" value="policymakers" required /> {{ t_tier_pol }}</label>
+      <label class="sign-form__radio"><input type="radio" name="tier" value="researchers" /> {{ t_tier_res }}</label>
+      <label class="sign-form__radio"><input type="radio" name="tier" value="educators" /> {{ t_tier_edu }}</label>
+      <label class="sign-form__radio"><input type="radio" name="tier" value="community" /> {{ t_tier_com }}</label>
+    </fieldset>
+
+    <label class="sign-form__field">
+      <span class="sign-form__label">{{ t_stmt }}</span>
+      <textarea name="statement" maxlength="280" rows="3" data-counter="{{ sf_id }}-counter"></textarea>
+      <span class="sign-form__counter" id="{{ sf_id }}-counter" aria-live="polite"><span class="font-osf">280</span> {{ t_chars_left }}</span>
+    </label>
+
+    <label class="sign-form__field">
+      <span class="sign-form__label">{{ t_email }} <span class="sign-form__req" aria-label="{{ t_required }}">*</span></span>
+      <input type="email" name="email" autocomplete="email" required maxlength="200" />
+    </label>
+
+    <label class="sign-form__consent">
+      <input type="checkbox" name="consent" required />
+      <span>{{ t_consent }}</span>
+    </label>
+
+    <div class="sign-form__actions">
+      <button type="button" class="btn-cta sign-form__submit" data-action="email">{{ t_submit_email }}</button>
+      <button type="button" class="btn-cta btn-cta--ghost sign-form__submit" data-action="github">{{ t_submit_gh }}</button>
+    </div>
+
+    <p class="sign-form__fallback">
+      {{ t_no_handler }} <a href="mailto:{{ include.recipient }}">{{ include.recipient }}</a>.
+    </p>
+  </form>
+</section>

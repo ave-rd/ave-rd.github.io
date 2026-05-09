@@ -1,12 +1,23 @@
 # AVE-RD signature campaigns
 # ---------------------------------------------------------------
 # Two parallel campaigns. Each entry feeds a campaign page that
-# renders an ask, a moderated signature wall, and a Tally form embed.
+# renders an ask, a moderated signature wall, and a self-managed
+# sign-up form.
 #
-# To activate a Tally form: create the form at tally.so, copy its
-# form ID (the ABC123 part of https://tally.so/r/ABC123), and replace
-# the `tally_form_id` placeholder. Disable the embed by setting
-# `tally_form_id: ""` (the page will say "submissions opening soon").
+# Submit channels (configured per campaign):
+#   recipient_email     — primary mailto: target. The form opens the
+#                          visitor's email client with all fields as
+#                          the structured body.
+#   github_issue_labels — comma-separated list applied to the
+#                          pre-filled GitHub Issue when the visitor
+#                          uses the secondary submit button.
+#
+# Moderation: the project team reads the email or issue, verifies
+# the signatory, forwards to a Claude session, and Claude commits
+# the verified entry into _data/signatures.yml.
+
+site_recipient_email: "proyecto.ave.rd@gmail.com"
+github_repo: "ave-rd/ave-rd.github.io"
 
 campaigns:
   - id: continue-policy
@@ -50,7 +61,7 @@ campaigns:
       que corrió la ola 2015–2016 es el mismo que corre el
       seguimiento. La continuidad es el insumo más barato que
       tenemos.
-    tally_form_id: ""    # TODO: create form at tally.so, paste ID
+    github_issue_labels: "signature,continue-policy"
     page_order: 5
 
   - id: follow-up-pledge
@@ -90,5 +101,6 @@ campaigns:
       a las fundaciones y a los donantes bilaterales a observar la
       demanda existente de la comunidad investigadora por mediciones
       de largo plazo sobre intervenciones informativas en educación.
-    tally_form_id: ""    # TODO: create form at tally.so, paste ID
+    github_issue_labels: "signature,follow-up-pledge"
     page_order: 6
+

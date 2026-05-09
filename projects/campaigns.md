@@ -88,12 +88,30 @@ seo:
 <ol class="numbered-list reveal">
   <li>
     <div>
-      <h3>You submit through the campaign-page form</h3>
+      <h3>You fill the on-page form</h3>
       <p>
-        Each campaign embeds a Tally form. We collect your name,
-        role, institution, country, an optional 280-character
-        statement, and a contact email (used only to verify your
-        identity).
+        Each campaign page has a self-contained form &mdash; no
+        third-party form provider, no account to create. We ask for
+        your name, role, institution, country, tier, an optional
+        280-character statement, and a contact email used only for
+        verification.
+      </p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <h3>You pick a submit channel</h3>
+      <p>
+        <strong>Sign by email</strong> opens your mail client with
+        the structured fields pre-filled to the project office at
+        <a href="mailto:proyecto.ave.rd@gmail.com">proyecto.ave.rd@gmail.com</a>.
+        Universal &mdash; works on every device, no account needed.
+        <br /><br />
+        <strong>Open as GitHub Issue</strong> opens a pre-filled
+        issue in this repository labelled <code>signature</code> +
+        the campaign ID. Each signature becomes its own auditable
+        record. Recommended for researcher and policymaker signatories
+        who already have GitHub accounts.
       </p>
     </div>
   </li>
@@ -104,21 +122,24 @@ seo:
         Policymaker and educator signatures are verified against
         institutional contact information; researcher signatures
         are verified by affiliation domain or ORCID; community
-        signatures (parents, alumni, students) pass a captcha and a
-        light moderation check. We do not publish any entry until
-        we are reasonably confident the signatory is who they say
-        they are.
+        signatures (parents, alumni, students) are verified by reply
+        to the contact email and a light moderation check. We do not
+        publish any entry until we are reasonably confident the
+        signatory is who they say they are.
       </p>
     </div>
   </li>
   <li>
     <div>
-      <h3>Approved signatures appear on the campaign page</h3>
+      <h3>Approved signatures land on the campaign page</h3>
       <p>
-        We publish your name, role, institution, country, and the
-        statement you wrote. Your email address is never published
-        and never shared. You can ask us to remove your signature
-        at any time by writing to the
+        Once verified, the team commits the entry to
+        <code>_data/signatures.yml</code> in this repository &mdash;
+        manually or via a Claude Code session &mdash; and the site
+        rebuilds. We publish your name, role, institution, country,
+        and the statement you wrote. Your email address is never
+        published and never shared. You can ask us to remove your
+        signature at any time by writing to the
         <a href="/projects/contact/">project office</a>.
       </p>
     </div>

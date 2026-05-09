@@ -105,11 +105,14 @@ seo:
 
 {% include signature-wall.html signatures=sigs lang="en" %}
 
-{% include tally-embed.html
-   form_id=campaign.tally_form_id
+{% include sign-form.html
+   campaign_id=campaign.id
+   recipient=site.data.campaigns.site_recipient_email
+   repo=site.data.campaigns.github_repo
+   gh_labels=campaign.github_issue_labels
+   lang="en"
    title="Add your endorsement"
-   lede="Researchers, J-PAL/IPA staff, foundation officers, multilateral programme leads. Five fields and an optional 280-character statement."
-   lang="en" %}
+   lede="Researchers, J-PAL/IPA staff, foundation officers, multilateral programme leads. Eight fields and two ways to submit." %}
 
 <div class="signal-panel signal-panel--research reveal">
   <div class="eyebrow">Sister campaign</div>
@@ -124,6 +127,6 @@ seo:
 </div>
 
 <p style="text-align:center;margin-top:32px">
-  <a class="btn-cta" href="#tally-frame">Add your endorsement</a>
+  <a class="btn-cta" href="#sign-form-follow-up-pledge-section">Add your endorsement</a>
   <a class="btn-cta btn-cta--ghost" href="/projects/follow-up/" style="margin-left: 12px;">Read the funder brief</a>
 </p>

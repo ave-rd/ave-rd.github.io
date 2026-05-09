@@ -1877,8 +1877,8 @@ footer {
   }
 }
 
-// Tally form embed wrapper — keeps the iframe in the page rhythm
-.tally-frame {
+// Self-managed sign-up form
+.sign-form {
   margin: $space-8 0;
   padding: $space-7 $space-6;
   background: var(--bg-card);
@@ -1887,7 +1887,7 @@ footer {
   box-shadow: var(--shadow-sm);
 
   &__header {
-    margin-bottom: $space-5;
+    margin-bottom: $space-6;
   }
   &__title {
     margin: 0 0 $space-3;
@@ -1907,42 +1907,154 @@ footer {
     max-width: 60ch;
   }
 
-  iframe {
-    width: 100%;
-    min-height: 720px;
-    border: 0;
-    border-radius: var(--radius-tile);
-    background: var(--bg);
-  }
-
-  &__placeholder {
+  &__body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: $space-3;
-    min-height: 220px;
-    padding: $space-7;
-    border-radius: var(--radius-tile);
-    border: 1px dashed var(--border-strong);
-    background: var(--bg-alt);
-    text-align: center;
+    gap: $space-5;
+  }
 
-    p {
-      margin: 0;
-      font-family: $font-serif;
-      font-style: italic;
-      font-size: $text-md;
-      color: var(--muted-foreground);
-      max-width: 50ch;
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $space-5;
+  }
+  @media (min-width: $bp-sm) {
+    &__row { grid-template-columns: 1fr 1fr; }
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: $space-2;
+
+    &--narrow { max-width: 200px; }
+    &--error input,
+    &--error textarea {
+      border-color: var(--bole-500);
+      background: var(--bole-50);
+    }
+    &--error legend {
+      color: var(--bole-700);
     }
   }
 
-  &__note {
-    margin: $space-5 0 0;
+  &__label {
+    font-family: $font-sans;
+    font-size: $text-xs;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+  }
+  &__hint {
+    color: var(--muted-foreground);
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: $weight-regular;
+  }
+  &__req {
+    color: var(--bole-600);
+    margin-left: 2px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-family: $font-sans;
+    font-size: $text-base;
+    line-height: $leading-normal;
+    color: var(--foreground);
+    background: var(--bg);
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-sm);
+    transition: border-color var(--duration-fast) var(--ease-out),
+                box-shadow var(--duration-fast) var(--ease-out);
+
+    &:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-soft);
+    }
+  }
+  textarea { resize: vertical; min-height: 80px; }
+
+  &__counter {
+    display: block;
+    margin-top: 4px;
+    font-family: $font-sans;
+    font-size: $text-xs;
+    color: var(--muted-foreground);
+  }
+
+  &__tier {
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    legend {
+      padding: 0;
+      margin-bottom: $space-3;
+      font-family: $font-sans;
+      font-size: $text-xs;
+      font-weight: $weight-medium;
+      text-transform: uppercase;
+      letter-spacing: $track-eyebrow;
+      color: var(--accent-editorial);
+    }
+  }
+  &__radio {
+    display: flex;
+    align-items: flex-start;
+    gap: $space-3;
+    padding: $space-3 $space-4;
+    margin-bottom: $space-2;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-family: $font-sans;
+    font-size: $text-base;
+    cursor: pointer;
+    transition: border-color var(--duration-fast) var(--ease-out),
+                background var(--duration-fast) var(--ease-out);
+
+    &:hover { border-color: var(--turquoise-300); }
+
+    input { margin-top: 4px; flex-shrink: 0; }
+    &:has(input:checked) {
+      border-color: var(--primary);
+      background: var(--primary-soft);
+    }
+  }
+
+  &__consent {
+    display: flex;
+    gap: $space-3;
+    align-items: flex-start;
+    padding: $space-4;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
     font-family: $font-sans;
     font-size: $text-sm;
     line-height: $leading-relaxed;
+    color: var(--foreground);
+
+    input { margin-top: 3px; flex-shrink: 0; }
+  }
+
+  &__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-3;
+    margin-top: $space-4;
+  }
+
+  &__fallback {
+    margin: $space-4 0 0;
+    font-family: $font-sans;
+    font-size: $text-sm;
     color: var(--muted-foreground);
   }
 }
