@@ -5,6 +5,7 @@ eyebrow: "Campaigns · 2 letters, 4 tiers"
 layout: page
 order: 7
 lang: en
+alt_url: /es/voz/
 hero-style: gradient
 seo:
   type: WebPage

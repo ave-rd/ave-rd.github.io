@@ -7,7 +7,7 @@ permalink: /es/sumate/
 hero-style: gradient
 lang: es
 alt_url: /campaigns/continue-the-policy/
-order: 7
+order: 8
 seo:
   type: WebPage
 ---
@@ -117,5 +117,7 @@ seo:
    lede="Ocho campos y un mensaje de apoyo opcional. Dos formas de enviar. Verificamos cada entrada antes de publicarla." %}
 
 <p style="text-align:center;margin-top:32px">
-  <a class="btn-cta btn-cta--ghost" href="/campaigns/continue-the-policy/" hreflang="en">English version</a>
+  <a class="btn-cta" href="#sign-form-continue-policy-section">Sumar mi firma</a>
+  <a class="btn-cta btn-cta--ghost" href="/es/sumate/carta/" style="margin-left: 12px;">Carta formal imprimible</a>
+  <a class="btn-cta btn-cta--ghost" href="/campaigns/continue-the-policy/" style="margin-left: 12px;" hreflang="en">English version</a>
 </p>

@@ -171,7 +171,42 @@
     return ok;
   }
 
+  // Spam guards: honeypot field + minimum time-on-page before submit.
+  // A bot that fires within 3s of page load, or that fills the
+  // honeypot field, gets silently no-op'd. Real users see no
+  // friction — no captcha, no extra clicks.
+  var MIN_DWELL_MS = 3000;
+
+  function isLikelyBot(form, loadedAt) {
+    var trap = form.querySelector('[name="website"]');
+    if (trap && trap.value && trap.value.trim() !== '') return true;
+    if (Date.now() - loadedAt < MIN_DWELL_MS) return true;
+    return false;
+  }
+
+  function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      try {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'absolute';
+        ta.style.left = '-9999px';
+        document.body.appendChild(ta);
+        ta.select();
+        var ok = document.execCommand('copy');
+        document.body.removeChild(ta);
+        ok ? resolve() : reject(new Error('execCommand failed'));
+      } catch (e) { reject(e); }
+    });
+  }
+
   forms.forEach(function (form) {
+    var loadedAt = Date.now();
+
     // Live character counter on the statement textarea.
     var stmt = form.querySelector('[name="statement"]');
     if (stmt) {
@@ -188,9 +223,12 @@
       update();
     }
 
+    var copiedBanner = document.getElementById(form.id + '-copied');
+
     form.querySelectorAll('.sign-form__submit').forEach(function (btn) {
       btn.addEventListener('click', function () {
         if (!validate(form)) return;
+        if (isLikelyBot(form, loadedAt)) return;
         var body = buildBody(form);
         var subject = buildSubject(form);
         var action = btn.getAttribute('data-action');
@@ -209,6 +247,23 @@
                 '&title=' + encodeURIComponent(subject) +
                 '&body=' + encodeURIComponent(body);
           window.open(url, '_blank', 'noopener');
+        } else if (action === 'copy') {
+          var clip = subject + '\n\n' + body;
+          copyToClipboard(clip).then(function () {
+            if (copiedBanner) {
+              copiedBanner.hidden = false;
+              setTimeout(function () { copiedBanner.hidden = true; }, 6000);
+            }
+          }).catch(function () {
+            // Fallback: tell the user to copy by hand.
+            var to = form.getAttribute('data-recipient');
+            window.prompt(
+              form.getAttribute('data-lang') === 'es'
+                ? 'Copie este mensaje y envíelo a ' + to
+                : 'Copy this and send it to ' + to,
+              clip
+            );
+          });
         }
       });
     });

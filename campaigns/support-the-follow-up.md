@@ -6,6 +6,7 @@ eyebrow: "Pledge · 2025–2027"
 permalink: /campaigns/support-the-follow-up/
 hero-style: gradient
 lang: en
+alt_url: /es/avale/
 seo:
   type: WebPage
 ---
@@ -128,5 +129,7 @@ seo:
 
 <p style="text-align:center;margin-top:32px">
   <a class="btn-cta" href="#sign-form-follow-up-pledge-section">Add your endorsement</a>
+  <a class="btn-cta btn-cta--ghost" href="/campaigns/support-the-follow-up/letter/" style="margin-left: 12px;">Printable pledge &amp; endorsers list</a>
   <a class="btn-cta btn-cta--ghost" href="/projects/follow-up/" style="margin-left: 12px;">Read the funder brief</a>
+  <a class="btn-cta btn-cta--ghost" href="/es/avale/" style="margin-left: 12px;" hreflang="es">Versi&oacute;n en espa&ntilde;ol</a>
 </p>

@@ -117,5 +117,6 @@ seo:
 
 <p style="text-align:center;margin-top:32px">
   <a class="btn-cta" href="#sign-form-continue-policy-section">Sign the letter</a>
+  <a class="btn-cta btn-cta--ghost" href="/campaigns/continue-the-policy/letter/" style="margin-left: 12px;">Printable carta &amp; signed-by list</a>
   <a class="btn-cta btn-cta--ghost" href="/es/sumate/" style="margin-left: 12px;" hreflang="es">Versi&oacute;n en espa&ntilde;ol</a>
 </p>

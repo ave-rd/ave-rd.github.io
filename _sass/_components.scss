@@ -1759,6 +1759,44 @@ footer {
 // Signature wall — grouped by tier
 .signature-wall {
   margin: $space-8 0;
+
+  &__empty {
+    margin: $space-7 0;
+    padding: $space-7 $space-7;
+    text-align: center;
+    background: var(--bg-card);
+    border: 1px dashed var(--border-strong);
+    border-radius: var(--radius-card);
+
+    h3 {
+      margin: $space-3 0 $space-3;
+      font-family: $font-serif;
+      font-weight: $weight-medium;
+      font-size: $text-lg;
+      color: var(--display);
+    }
+    p {
+      margin: 0 auto;
+      max-width: 50ch;
+      font-family: $font-serif;
+      font-style: italic;
+      font-size: $text-md;
+      line-height: $leading-relaxed;
+      color: var(--muted-foreground);
+    }
+    strong {
+      font-style: normal;
+      color: var(--accent-editorial);
+      font-weight: $weight-medium;
+    }
+  }
+  &__empty-mark {
+    display: block;
+    margin: 0 0 $space-3;
+    font-size: 28pt;
+    color: var(--accent-editorial);
+    line-height: 1;
+  }
 }
 
 .signature-tier {
@@ -2057,6 +2095,34 @@ footer {
     font-size: $text-sm;
     color: var(--muted-foreground);
   }
+
+  // Honeypot — visually + screen-reader hidden, but still in the
+  // DOM and reachable by autofill so naive bots will fill it in.
+  &__honeypot {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  // Inline status banner shown after "Copy to clipboard" succeeds.
+  &__copied {
+    margin: $space-4 0 0;
+    padding: $space-3 $space-4;
+    background: var(--turquoise-50);
+    border: 1px solid var(--turquoise-300);
+    border-radius: var(--radius-sm);
+    font-family: $font-sans;
+    font-size: $text-sm;
+    line-height: $leading-normal;
+    color: var(--turquoise-700);
+
+    &-mark {
+      font-weight: $weight-medium;
+      margin-right: 4px;
+    }
+  }
 }
 
 // Letter / pledge body — a slightly bigger reading width with
@@ -2089,5 +2155,237 @@ footer {
     text-transform: uppercase;
     letter-spacing: $track-eyebrow;
     color: var(--accent-editorial);
+  }
+}
+
+// Formal printable letter (carta) — designed to be saved as PDF
+// and hand-delivered. Dominican-formal layout: letterhead, dated,
+// addressed, signed.
+.letter-toolbar {
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+  padding: $space-4 0;
+  margin-bottom: $space-7;
+
+  &__inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 $space-5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $space-4;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    font-family: $font-sans;
+    font-size: $text-sm;
+    color: var(--accent-editorial);
+    text-decoration: none;
+
+    &:hover { text-decoration: underline; }
+  }
+
+  &__print { white-space: nowrap; }
+}
+
+.letter-document {
+  max-width: 720px;
+  margin: 0 auto $space-9;
+  padding: $space-9 $space-8;
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  font-family: $font-serif;
+  color: #1a1a1a;
+  font-size: 11.5pt;
+  line-height: 1.55;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    gap: $space-5;
+    margin-bottom: $space-4;
+  }
+  &__logo {
+    width: 96px;
+    height: auto;
+    flex-shrink: 0;
+  }
+  &__head-text { flex: 1; }
+  &__title {
+    margin: 0 0 4pt;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: 22pt;
+    line-height: 1.1;
+    letter-spacing: 1pt;
+    color: var(--accent-editorial);
+  }
+  &__subtitle {
+    margin: 0;
+    font-family: $font-sans;
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--muted-foreground);
+  }
+  &__rule {
+    height: 2px;
+    background: var(--accent-editorial);
+    margin: $space-4 0 $space-7;
+  }
+
+  &__meta {
+    text-align: right;
+    margin-bottom: $space-6;
+    font-family: $font-serif;
+    font-size: 11pt;
+  }
+  &__place,
+  &__date { margin: 0; }
+  &__place { font-style: italic; color: var(--muted-foreground); }
+  &__date { font-weight: $weight-medium; }
+
+  &__recipient {
+    margin-bottom: $space-6;
+    font-family: $font-serif;
+    font-size: 11pt;
+    line-height: 1.4;
+
+    p { margin: 0; }
+    strong { font-weight: $weight-medium; }
+  }
+
+  &__salutation {
+    margin: 0 0 $space-5;
+    font-family: $font-serif;
+    font-size: 11.5pt;
+    font-weight: $weight-medium;
+  }
+
+  &__body {
+    margin-bottom: $space-7;
+
+    p {
+      margin: 0 0 $space-4;
+      text-align: justify;
+      hyphens: auto;
+      font-size: 11.5pt;
+      line-height: 1.6;
+    }
+
+    p:first-child::first-letter {
+      font-size: 2.4em;
+      float: left;
+      line-height: 0.85;
+      padding: 4pt 6pt 0 0;
+      font-weight: $weight-medium;
+      color: var(--accent-editorial);
+    }
+
+    strong { font-weight: $weight-medium; color: #000; }
+  }
+
+  &__close {
+    margin: $space-7 0 $space-8;
+  }
+  &__closer {
+    margin: 0 0 $space-3;
+    font-family: $font-serif;
+    font-style: italic;
+    font-size: 11.5pt;
+  }
+  &__signed {
+    margin: 0;
+    font-family: $font-serif;
+    font-weight: $weight-medium;
+    font-size: 11.5pt;
+  }
+
+  &__signatures {
+    margin-top: $space-7;
+    padding-top: $space-6;
+    border-top: 1px solid var(--border-strong);
+    page-break-before: auto;
+  }
+  &__signatures-title {
+    margin: 0 0 $space-5;
+    font-family: $font-sans;
+    font-size: 10pt;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--accent-editorial);
+  }
+
+  &__foot {
+    margin-top: $space-8;
+    padding-top: $space-5;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-family: $font-sans;
+    font-size: 9pt;
+    color: var(--muted-foreground);
+    line-height: 1.5;
+  }
+  &__partners { margin: 0 0 $space-2; }
+  &__partner-intro {
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    font-size: 8pt;
+  }
+  &__partner-list { display: block; margin-top: 2pt; }
+  &__contact { margin: 0; }
+}
+
+.letter-tier {
+  margin-bottom: $space-5;
+  page-break-inside: avoid;
+
+  &__title {
+    margin: 0 0 $space-3;
+    font-family: $font-sans;
+    font-size: 9.5pt;
+    font-weight: $weight-medium;
+    text-transform: uppercase;
+    letter-spacing: $track-eyebrow;
+    color: var(--foreground);
+    border-bottom: 1px dotted var(--border-strong);
+    padding-bottom: 4pt;
+  }
+  &__count {
+    color: var(--muted-foreground);
+    font-weight: $weight-regular;
+    margin-left: 4pt;
+  }
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    column-gap: $space-6;
+  }
+  @media (max-width: $bp-sm) {
+    &__list { columns: 1; }
+  }
+  &__entry {
+    margin: 0 0 $space-3;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    font-size: 10.5pt;
+    line-height: 1.4;
+  }
+  &__name {
+    display: block;
+    font-weight: $weight-medium;
+    color: #000;
+  }
+  &__role {
+    display: block;
+    font-style: italic;
+    font-size: 10pt;
+    color: var(--muted-foreground);
   }
 }

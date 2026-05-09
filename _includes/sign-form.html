@@ -35,10 +35,12 @@
   {% assign t_consent = "Autorizo que el equipo del proyecto contacte este correo para verificar mi identidad antes de publicar la firma." %}
   {% assign t_submit_email = "Firmar por correo" %}
   {% assign t_submit_gh = "Abrir como issue de GitHub" %}
+  {% assign t_submit_copy = "Copiar al portapapeles" %}
+  {% assign t_copied = "Copiado &mdash; ahora p&eacute;guelo en cualquier correo o WhatsApp" %}
   {% assign t_required = "Requerido" %}
   {% assign t_chars_left = "caracteres restantes" %}
   {% assign t_pick_one = "Elija una" %}
-  {% assign t_no_handler = "Si su navegador no abre la aplicaci&oacute;n de correo, copie el cuerpo del mensaje y env&iacute;elo a" %}
+  {% assign t_no_handler = "Si su navegador no abre la aplicaci&oacute;n de correo, use <strong>Copiar al portapapeles</strong> y env&iacute;elo a" %}
 {% else %}
   {% assign t_name = "Full name" %}
   {% assign t_role = "Role or title" %}
@@ -54,10 +56,12 @@
   {% assign t_consent = "I allow the project team to contact this email to verify my identity before publishing the signature." %}
   {% assign t_submit_email = "Sign by email" %}
   {% assign t_submit_gh = "Open as GitHub Issue" %}
+  {% assign t_submit_copy = "Copy to clipboard" %}
+  {% assign t_copied = "Copied &mdash; now paste into any email or WhatsApp" %}
   {% assign t_required = "Required" %}
   {% assign t_chars_left = "characters left" %}
   {% assign t_pick_one = "Pick one" %}
-  {% assign t_no_handler = "If your browser does not open a mail client, copy the body and send it to" %}
+  {% assign t_no_handler = "If your browser does not open a mail client, use <strong>Copy to clipboard</strong> and send to" %}
 {% endif %}
 
 <section class="sign-form" id="{{ sf_id }}-section" aria-labelledby="{{ sf_id }}-title">
@@ -119,10 +123,26 @@
       <span>{{ t_consent }}</span>
     </label>
 
+    {%- comment -%}
+      Honeypot. Real humans never see or fill this; bots happily do.
+      Submit handler silently no-ops if it's non-empty. Visually
+      hidden but reachable by autofill — that's the point.
+    {%- endcomment -%}
+    <div class="sign-form__honeypot" aria-hidden="true">
+      <label>Website (leave blank)
+        <input type="text" name="website" tabindex="-1" autocomplete="off" />
+      </label>
+    </div>
+
     <div class="sign-form__actions">
       <button type="button" class="btn-cta sign-form__submit" data-action="email">{{ t_submit_email }}</button>
       <button type="button" class="btn-cta btn-cta--ghost sign-form__submit" data-action="github">{{ t_submit_gh }}</button>
+      <button type="button" class="btn-cta btn-cta--ghost sign-form__submit" data-action="copy">{{ t_submit_copy }}</button>
     </div>
+
+    <p class="sign-form__copied" id="{{ sf_id }}-copied" role="status" aria-live="polite" hidden>
+      <span class="sign-form__copied-mark" aria-hidden="true">&#10003;</span> {{ t_copied }}
+    </p>
 
     <p class="sign-form__fallback">
       {{ t_no_handler }} <a href="mailto:{{ include.recipient }}">{{ include.recipient }}</a>.

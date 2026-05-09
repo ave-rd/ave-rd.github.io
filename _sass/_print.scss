@@ -21,4 +21,48 @@
     box-shadow: none !important;
     page-break-inside: avoid;
   }
+
+  // Formal letter -- printed on letter-size paper, hand-deliverable.
+  @page {
+    size: letter;
+    margin: 0.75in;
+  }
+
+  // Hide every chrome element when printing the letter document
+  body:has(.letter-document) {
+    .navbar-custom,
+    .navbar,
+    footer,
+    .footer,
+    .letter-toolbar,
+    .skip-link,
+    .sr-only-focusable {
+      display: none !important;
+    }
+    main { padding: 0 !important; margin: 0 !important; }
+  }
+
+  .letter-document {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: #fff !important;
+    color: #000 !important;
+
+    &__title { color: #000 !important; }
+    &__rule { background: #000 !important; }
+    &__body p:first-child::first-letter { color: #000 !important; }
+    &__signatures-title { color: #000 !important; }
+    &__signatures { page-break-before: auto; }
+
+    a { color: #000 !important; text-decoration: none; }
+  }
+
+  .letter-tier {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
 }

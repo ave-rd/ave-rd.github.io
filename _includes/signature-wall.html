@@ -10,41 +10,66 @@
 {% assign labels_es = "Funcionarios,Investigadores,Educadores,Comunidad" | split: "," %}
 {% assign verb_en = "signatories" %}
 {% assign verb_es = "firmantes" %}
+{% assign total = include.signatures | size %}
 
 <div class="signature-wall">
-  {% for tier in tiers %}
-    {% assign tier_sigs = include.signatures | where: "tier", tier %}
-    {% if tier_sigs.size > 0 %}
-    <section class="signature-tier">
-      <div class="signature-tier__header">
-        <h3 class="signature-tier__title">
-          {% if include.lang == 'es' %}{{ labels_es[forloop.index0] }}{% else %}{{ labels_en[forloop.index0] }}{% endif %}
-        </h3>
-        <span class="signature-tier__count">
-          <span class="font-osf">{{ tier_sigs.size }}</span>&nbsp;{% if include.lang == 'es' %}{{ verb_es }}{% else %}{{ verb_en }}{% endif %}
-        </span>
-      </div>
-      <ul class="signature-grid">
-        {% for s in tier_sigs %}
-        <li>
-          <article class="signature-card">
-            {% if s.statement and s.statement != "" %}
-            <p class="signature-card__statement">&ldquo;{{ s.statement | strip }}&rdquo;</p>
-            {% endif %}
-            <div class="signature-card__attrib">
-              <span class="signature-card__name">
-                {{ s.name }}{% if s.verified %}<span class="signature-card__verified" aria-label="Verified" title="Verified signatory">&#10003;</span>{% endif %}
-              </span>
-              <span class="signature-card__role">{{ s.role }}</span>
-              {% if s.institution and s.institution != "" %}
-              <span class="signature-card__inst">{{ s.institution }}{% if s.country %} &middot; {{ s.country }}{% endif %}</span>
+  {% if total == 0 %}
+    <div class="signature-wall__empty">
+      <p class="signature-wall__empty-mark" aria-hidden="true">&#9998;</p>
+      {% if include.lang == 'es' %}
+      <h3>A&uacute;n no hay firmas publicadas</h3>
+      <p>
+        Esta campa&ntilde;a est&aacute; en su fase inicial. Cuando
+        las primeras firmas verificadas se publiquen, aparecer&aacute;n
+        agrupadas por categor&iacute;a en este espacio.
+        <strong>Sea de los primeros en sumar la suya</strong> usando
+        el formulario abajo.
+      </p>
+      {% else %}
+      <h3>No verified signatures yet</h3>
+      <p>
+        This campaign is in its opening days. As the first verified
+        signatures are published, they will appear here grouped by
+        tier. <strong>Be one of the first to add yours</strong>
+        using the form below.
+      </p>
+      {% endif %}
+    </div>
+  {% else %}
+    {% for tier in tiers %}
+      {% assign tier_sigs = include.signatures | where: "tier", tier %}
+      {% if tier_sigs.size > 0 %}
+      <section class="signature-tier">
+        <div class="signature-tier__header">
+          <h3 class="signature-tier__title">
+            {% if include.lang == 'es' %}{{ labels_es[forloop.index0] }}{% else %}{{ labels_en[forloop.index0] }}{% endif %}
+          </h3>
+          <span class="signature-tier__count">
+            <span class="font-osf">{{ tier_sigs.size }}</span>&nbsp;{% if include.lang == 'es' %}{{ verb_es }}{% else %}{{ verb_en }}{% endif %}
+          </span>
+        </div>
+        <ul class="signature-grid">
+          {% for s in tier_sigs %}
+          <li>
+            <article class="signature-card">
+              {% if s.statement and s.statement != "" %}
+              <p class="signature-card__statement">&ldquo;{{ s.statement | strip }}&rdquo;</p>
               {% endif %}
-            </div>
-          </article>
-        </li>
-        {% endfor %}
-      </ul>
-    </section>
-    {% endif %}
-  {% endfor %}
+              <div class="signature-card__attrib">
+                <span class="signature-card__name">
+                  {{ s.name }}{% if s.verified %}<span class="signature-card__verified" aria-label="Verified" title="Verified signatory">&#10003;</span>{% endif %}
+                </span>
+                <span class="signature-card__role">{{ s.role }}</span>
+                {% if s.institution and s.institution != "" %}
+                <span class="signature-card__inst">{{ s.institution }}{% if s.country %} &middot; {{ s.country }}{% endif %}</span>
+                {% endif %}
+              </div>
+            </article>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
 </div>
