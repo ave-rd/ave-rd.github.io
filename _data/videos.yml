@@ -1,8 +1,10 @@
 # AVE-RD intervention videos
 # ---------------------------
-# Edit the title / description / arm / episode fields with the real values
-# from your records. The id and playlist fields are taken from the URLs you
-# shared; everything else is a placeholder waiting for editorial.
+# Episodes 1–4 of the AVE telenovela series, screened in Dominican
+# secondary classrooms. Episode-level titles, descriptions, and
+# arm/duration fields are draft summaries based on the published
+# project description; replace with the canonical metadata from the
+# project records before any external launch.
 
 playlist: "PLoHTHS27BGgzGvx9PpKYiweKnyXZV95dd"
 playlist_url: "https://www.youtube.com/playlist?list=PLoHTHS27BGgzGvx9PpKYiweKnyXZV95dd"
@@ -10,32 +12,32 @@ playlist_url: "https://www.youtube.com/playlist?list=PLoHTHS27BGgzGvx9PpKYiweKny
 videos:
   - id: "1G-2CeXbr7I"
     episode: 1
-    title: "Episode 1 — title to fill in"
-    description: "One-line description of what this episode covers. Edit me."
+    title: "Pensar en el futuro"  # TODO: confirm canonical title
+    description: "Eighth-grade characters confront the choice between staying in school or leaving for work — the schooling decision framed through everyday Dominican classroom life."
     arm: "persuasive"
     duration: "15:00"
     language: "es"
 
   - id: "5kV64q9nr_0"
     episode: 2
-    title: "Episode 2 — title to fill in"
-    description: "One-line description. Edit me."
+    title: "El valor de seguir"  # TODO: confirm canonical title
+    description: "The cast weighs the social and family pressures that pull a student out of school. Sets up the persuasive frame of the series."
     arm: "persuasive"
     duration: "15:00"
     language: "es"
 
   - id: "IebQH6CvAx8"
     episode: 3
-    title: "Episode 3 — title to fill in"
-    description: "One-line description. Edit me."
-    arm: "persuasive"
+    title: "Lo que dicen los n&uacute;meros"  # TODO: confirm canonical title
+    description: "Wage statistics by completed schooling level enter the story. The informative-arm version of this episode adds the quantitative comparison directly on screen."
+    arm: "informative"
     duration: "15:00"
     language: "es"
 
   - id: "y5ESPUW_TvU"
     episode: 4
-    title: "Episode 4 — title to fill in"
-    description: "One-line description. Edit me."
+    title: "La decisi&oacute;n"  # TODO: confirm canonical title
+    description: "Resolution: the central character commits to completing secondary school. Closes the series with a discussion prompt for the classroom guide."
     arm: "persuasive"
     duration: "15:00"
     language: "es"

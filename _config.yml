@@ -1,6 +1,7 @@
 # Site settings
 title: AVE-RD
-description: "Learning the Value of Education in the Dominican Republic"
+tagline: "A randomized evaluation of information & schooling decisions, with a 2025–2027 long-run follow-up"
+description: "AVE-RD is a school-randomized RCT in the Dominican Republic that tests whether short classroom videos shift students' beliefs about the returns to education — and reduce dropout. The first wave reached 600 schools and 43,000 students; a 2025–2027 follow-up wave links the same cohort to administrative earnings records."
 url: "https://ave-rd.github.io"
 lang: en
 
@@ -12,6 +13,22 @@ logo: /img/logos/logo_ave.jpg
 
 # Default share image for jekyll-seo-tag
 image: /img/averd.jpg
+
+# Site-level author for jekyll-seo-tag (PIs are listed individually
+# on /projects/researchers/ with Person JSON-LD).
+author:
+  name: "AVE-RD Project"
+  url: "https://ave-rd.github.io"
+
+# Twitter / social — jekyll-seo-tag emits twitter:card and og:* tags
+# from these.
+twitter:
+  card: summary_large_image
+social:
+  name: "AVE-RD"
+  links:
+    - "https://github.com/ave-rd/ave-rd.github.io"
+    - "https://www.povertyactionlab.org/lac"
 
 # Repository (used by footer GitHub link)
 github_username: ave-rd
@@ -32,6 +49,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+collections:
+  news:
+    output: true
+    permalink: /news/:path/
+
 defaults:
   - scope:
       path: "projects"
@@ -39,3 +61,14 @@ defaults:
     values:
       layout: page
       header-img: img/averd.jpg
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: news
+      # The news layout emits a hand-rolled NewsArticle JSON-LD block
+      # with richer schema (authors, isPartOf, keywords). Tell
+      # jekyll-seo-tag to emit WebPage instead of its default
+      # BlogPosting so the two blocks complement rather than collide.
+      seo:
+        type: WebPage

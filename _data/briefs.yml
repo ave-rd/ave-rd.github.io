@@ -1,0 +1,63 @@
+# Policy briefs index.
+# Each entry is also a standalone page in /briefs/.
+
+briefs:
+  - id: what-worked
+    slug: "what-worked"
+    title: "What worked: four replicated effects from AVE-RD"
+    audience: "Researchers & evaluators"
+    audience_short: "research"
+    pages: 2
+    date: "2025-09-01"
+    pdf: "/briefs/AVE-RD_brief_what-worked.pdf"   # TODO: add the PDF
+    pdf_ready: false
+    lede: >-
+      A two-page summary of the four headline effects from the
+      2015–2016 wave: dropout, test scores, belief shifts, and
+      mechanism. Tables, effect sizes, and pre-analysis links.
+    keywords:
+      - "Aprendiendo el Valor de la Educación"
+      - "AVE-RD"
+      - "school dropout"
+      - "Dominican Republic"
+      - "RCT"
+
+  - id: why-follow-up
+    slug: "why-follow-up"
+    title: "Why a long-run follow-up: from schooling to earnings"
+    audience: "Funders & principals"
+    audience_short: "funders"
+    pages: 2
+    date: "2025-10-15"
+    pdf: "/briefs/AVE-RD_brief_why-follow-up.pdf"  # TODO: add the PDF
+    pdf_ready: false
+    lede: >-
+      The economic case for tracking the original cohort ten years on:
+      what a one-percentage-point change in dropout buys in lifetime
+      earnings, why the answer matters for replication, and what the
+      follow-up budget covers.
+    keywords:
+      - "long-run RCT follow-up"
+      - "schooling and earnings"
+      - "fundraising"
+      - "education impact evaluation"
+
+  - id: for-ministers
+    slug: "for-ministers"
+    title: "For ministers of education: adapting AVE for your country"
+    audience: "Ministries of education"
+    audience_short: "ministries"
+    pages: 2
+    date: "2025-11-30"
+    pdf: "/briefs/AVE-RD_brief_for-ministers.pdf"  # TODO: add the PDF
+    pdf_ready: false
+    lede: >-
+      How a national education ministry can adapt the AVE intervention
+      — videos, classroom protocol, and the survey panel —
+      to local labor-market data. Cost ranges, partnership model, and
+      a six-month launch checklist.
+    keywords:
+      - "policy brief"
+      - "education ministry"
+      - "intervention adaptation"
+      - "AVE replication"

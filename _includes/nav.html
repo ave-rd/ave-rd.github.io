@@ -12,16 +12,43 @@
         </div>
 
         <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+            {% assign current_lang = page.lang | default: site.lang | default: 'en' %}
             <ul class="nav navbar-nav navbar-right">
+                {% if current_lang == 'es' %}
+                <li>
+                    <a href="{{ site.baseurl }}/es/">Inicio</a>
+                </li>
+                {% assign nav_pages = site.pages | where_exp: "p", "p.title" | where_exp: "p", "p.order" | where: "lang", "es" | sort: "order" %}
+                {% else %}
                 <li>
                     <a href="{{ site.baseurl }}/">Home</a>
                 </li>
-                {% assign nav_pages = site.pages | where_exp: "p", "p.title" | where_exp: "p", "p.order" | sort: "order" %}
-                {% for page in nav_pages %}
+                {% assign nav_pages = site.pages | where_exp: "p", "p.title" | where_exp: "p", "p.order" | where_exp: "p", "p.lang != 'es'" | sort: "order" %}
+                {% endif %}
+                {% for nav_page in nav_pages %}
                 <li>
-                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                    <a href="{{ nav_page.url | prepend: site.baseurl }}">{{ nav_page.title }}</a>
                 </li>
                 {% endfor %}
+                <li class="lang-switch-wrap" style="display:flex;align-items:center;padding:0 12px;">
+                    <span class="lang-switch" aria-label="Language">
+                        {% if current_lang == 'es' %}
+                            {% if page.alt_url %}
+                                <a href="{{ page.alt_url | prepend: site.baseurl }}" hreflang="en">EN</a>
+                            {% else %}
+                                <span class="is-disabled" aria-disabled="true" title="Only available in Spanish">EN</span>
+                            {% endif %}
+                            <span class="is-active" aria-current="true">ES</span>
+                        {% else %}
+                            <span class="is-active" aria-current="true">EN</span>
+                            {% if page.alt_url %}
+                                <a href="{{ page.alt_url | prepend: site.baseurl }}" hreflang="es">ES</a>
+                            {% else %}
+                                <span class="is-disabled" aria-disabled="true" title="S&oacute;lo disponible en ingl&eacute;s">ES</span>
+                            {% endif %}
+                        {% endif %}
+                    </span>
+                </li>
             </ul>
         </div>
     </div>
