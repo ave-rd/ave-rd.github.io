@@ -1,11 +1,21 @@
 # Moderated signatures for the two campaigns.
 # ---------------------------------------------------------------
 # Workflow:
-#   1. Visitor submits the Tally form on the campaign page.
-#   2. Tally pushes the entry to a Google Sheet + email notification.
-#   3. Project team verifies (school code, institution, ORCID, etc.)
-#      and pastes the approved entry into this file.
-#   4. The site rebuilds and the entry appears on the wall.
+#   1. Visitor fills the on-page sign form on the campaign page.
+#   2. Visitor picks a submit channel:
+#        - mailto: opens their mail client with a structured body
+#          pre-filled to proyecto.ave.rd@gmail.com
+#        - GitHub Issue: opens a pre-filled issue in this repo
+#          labelled `signature` + the campaign id
+#        - Copy to clipboard: for systems where mailto: does not
+#          open (locked Chromebooks, kiosks, webmail-only setups)
+#   3. Spam guards on the form: hidden honeypot + 3-second dwell
+#      timer. Both fail closed (silent no-op).
+#   4. Project team verifies (school code, institution, ORCID, etc.)
+#      and pastes the approved entry into this file — either
+#      directly via the GitHub web UI, or by forwarding the
+#      verification email to a Claude Code session that commits.
+#   5. The site rebuilds and the entry appears on the wall.
 #
 # Tiers (rendered in this order):
 #   policymakers   - government, ministry, IDEICE, multilateral
