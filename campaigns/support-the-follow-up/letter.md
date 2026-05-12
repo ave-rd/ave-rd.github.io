@@ -23,6 +23,12 @@ sitemap: false
   <span class="font-osf">2025&ndash;2027</span> and to call for its
   recognition as a priority replication of the Jensen
   <span class="font-osf">2010</span> information&ndash;schooling design.
+  AVE-RD originated as a project of USAID's
+  <a href="https://www.usaid.gov/div">Development Innovation Ventures
+  (DIV)</a> programme &mdash; the agency's open-innovation fund for
+  rigorously evaluated, cost-effective development solutions &mdash;
+  and now sits at the rare juncture of <em>standing national policy</em>
+  and <em>open long-run measurement</em>.
 </p>
 
 <p>

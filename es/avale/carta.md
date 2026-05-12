@@ -23,6 +23,13 @@ sitemap: false
   <span class="font-osf">2025&ndash;2027</span> y solicitar su
   reconocimiento como replicación prioritaria del diseño Jensen
   <span class="font-osf">2010</span> sobre información y escolaridad.
+  AVE-RD nació como proyecto de
+  <a href="https://www.usaid.gov/div">Development Innovation Ventures
+  (DIV)</a> de USAID &mdash; el fondo de innovación abierta de la
+  agencia para soluciones de desarrollo rigurosamente evaluadas y de
+  bajo costo &mdash; y hoy se ubica en el cruce poco frecuente entre
+  <em>política nacional vigente</em> y <em>medición abierta de
+  largo plazo</em>.
 </p>
 
 <p>

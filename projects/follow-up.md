@@ -110,7 +110,7 @@ hero-style: gradient
 
 <ul>
   <li><strong>Foundations focused on Latin America &amp; the Caribbean</strong> with an education or human-capital portfolio.</li>
-  <li><strong>Bilateral donors</strong> (USAID and peer agencies) extending or building on the founding pilot.</li>
+  <li><strong>Bilateral donors</strong> (USAID &mdash; including the <a href="https://www.usaid.gov/div">Development Innovation Ventures</a> programme that originally funded the pilot &mdash; and peer agencies) extending or building on the founding work.</li>
   <li><strong>Multilaterals</strong> (IDB, World Bank, CAF) with operating programs in Dominican basic education.</li>
   <li><strong>University-housed funds</strong> at our PIs' institutions willing to second-fund individual budget lines.</li>
 </ul>

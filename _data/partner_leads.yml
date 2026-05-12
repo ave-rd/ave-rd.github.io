@@ -117,18 +117,22 @@ partners:
 
   - id: usaid
     name: "USAID — United States Agency for International Development"
-    short: "USAID"
+    short: "USAID DIV"
     type: "International donor"
     schema_type: "GovernmentOrganization"
     country: "United States"
-    url: "https://www.usaid.gov/"
+    url: "https://www.usaid.gov/div"
     logo: "/wp-content/uploads/2017/09/usaid-logo-web-300x158.jpg"
     role_badge: "cohort"
-    role_label: "Founding funder"
+    role_label: "Founding funder · USAID DIV"
     description: >-
-      USAID's Dominican Republic mission was the founding funder of
-      AVE-RD (2014–2017), under a cooperative agreement with J-PAL
-      LAC and MINERD that scaled up the information-intervention design
+      AVE-RD originated as a USAID Development Innovation Ventures
+      (DIV) project. DIV is USAID's open-innovation fund for
+      evidence-based, cost-effective development solutions, with a
+      tiered-grant model that selects on rigorous evaluation. USAID's
+      Dominican Republic mission and DIV jointly funded the AVE-RD
+      pilot (2014–2017) under a cooperative agreement with J-PAL LAC
+      and MINERD that scaled up the information-intervention design
       from Robert Jensen's 2010 study in the country. The agreement
       ran across thirteen milestones; the endline report submitted at
       Milestone 13 documented the dropout, test-score and belief-update
@@ -139,3 +143,5 @@ partners:
         role: "USAID/DR"
       - name: "Education Office Lead"                         # TODO: replace
         role: "USAID/DR"
+      - name: "DIV Programme Officer"                         # TODO: replace
+        role: "USAID Development Innovation Ventures"

@@ -25,7 +25,12 @@ seo:
 <p class="dropcap">
   AVE-RD&rsquo;s first wave moved a schooling decision; the
   <span class="font-osf">2025&ndash;2027</span> follow-up tells us
-  whether that decision moved <em>lives</em>. This pledge is for
+  whether that decision moved <em>lives</em>. The project originated
+  as a USAID
+  <a href="https://www.usaid.gov/div">Development Innovation Ventures
+  (DIV)</a> grant &mdash; an open-innovation programme that selects
+  on the rigour of the evaluation a project can sustain &mdash;
+  and grew into standing MINERD policy. This pledge is for
   foundations, bilateral and multilateral funders, and the long-run-RCT
   research community. Endorsing it signals that the project sits inside
   a recognised research priority &mdash; reproducible information

@@ -26,14 +26,19 @@ seo:
 <p class="dropcap">
   La primera ola de AVE-RD movi&oacute; una decisi&oacute;n
   escolar; el seguimiento <span class="font-osf">2025&ndash;2027</span>
-  nos dice si esa decisi&oacute;n movi&oacute; <em>vidas</em>. Este
-  aval est&aacute; dirigido a fundaciones, donantes bilaterales y
-  multilaterales, y a la comunidad de investigaci&oacute;n en RCT
-  de largo plazo. Avalarlo se&ntilde;ala que el proyecto se
-  inscribe en una prioridad de investigaci&oacute;n reconocida
-  &mdash; intervenciones informativas reproducibles en
-  educaci&oacute;n, medidas a escala de cohorte y seguidas hasta el
-  mercado laboral.
+  nos dice si esa decisi&oacute;n movi&oacute; <em>vidas</em>. El
+  proyecto naci&oacute; como una subvenci&oacute;n de
+  <a href="https://www.usaid.gov/div">Development Innovation Ventures
+  (DIV)</a> de USAID &mdash; un programa de innovaci&oacute;n abierta
+  que selecciona por el rigor de la evaluaci&oacute;n que el
+  proyecto puede sostener &mdash; y creci&oacute; hasta convertirse
+  en pol&iacute;tica permanente del MINERD. Este aval est&aacute;
+  dirigido a fundaciones, donantes bilaterales y multilaterales, y a
+  la comunidad de investigaci&oacute;n en RCT de largo plazo.
+  Avalarlo se&ntilde;ala que el proyecto se inscribe en una prioridad
+  de investigaci&oacute;n reconocida &mdash; intervenciones
+  informativas reproducibles en educaci&oacute;n, medidas a escala
+  de cohorte y seguidas hasta el mercado laboral.
 </p>
 
 <aside class="letter-body reveal" aria-labelledby="pledge-heading">
