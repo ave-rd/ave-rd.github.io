@@ -269,3 +269,151 @@
     });
   });
 })();
+
+// ============================================================
+// Photo gallery lightbox
+// ------------------------------------------------------------
+// Progressively enhances .photo-gallery: each item is already an
+// <a href="…full.jpg"> so clicks work without JS. With JS, clicks
+// open a fullscreen overlay with prev/next, keyboard nav, focus
+// trap, and click-outside-to-close.
+// ============================================================
+(function () {
+  var gallery = document.querySelector('[data-lightbox-gallery]');
+  if (!gallery) return;
+
+  var items = Array.prototype.slice.call(
+    gallery.querySelectorAll('.photo-gallery__item')
+  );
+  if (!items.length) return;
+
+  var slides = items.map(function (a) {
+    var img = a.querySelector('img');
+    return {
+      href: a.getAttribute('href'),
+      caption: a.querySelector('figcaption')
+        ? a.querySelector('figcaption').textContent.trim()
+        : (img ? img.getAttribute('alt') : ''),
+      alt: img ? img.getAttribute('alt') : ''
+    };
+  });
+
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var overlay, imgEl, captionEl, counterEl, prevBtn, nextBtn, closeBtn;
+  var current = 0;
+  var lastFocus = null;
+
+  function buildOverlay() {
+    overlay = document.createElement('div');
+    overlay.className = 'lightbox';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-label', 'Photo gallery');
+    overlay.innerHTML =
+      '<button type="button" class="lightbox__btn lightbox__close" aria-label="Close (Esc)">&#10005;</button>' +
+      '<span class="lightbox__counter" aria-live="polite"></span>' +
+      '<button type="button" class="lightbox__btn lightbox__prev" aria-label="Previous (Left arrow)">&#8592;</button>' +
+      '<figure class="lightbox__figure">' +
+        '<img class="lightbox__img" alt="" />' +
+        '<figcaption class="lightbox__caption"></figcaption>' +
+      '</figure>' +
+      '<button type="button" class="lightbox__btn lightbox__next" aria-label="Next (Right arrow)">&#8594;</button>';
+    document.body.appendChild(overlay);
+
+    imgEl = overlay.querySelector('.lightbox__img');
+    captionEl = overlay.querySelector('.lightbox__caption');
+    counterEl = overlay.querySelector('.lightbox__counter');
+    prevBtn = overlay.querySelector('.lightbox__prev');
+    nextBtn = overlay.querySelector('.lightbox__next');
+    closeBtn = overlay.querySelector('.lightbox__close');
+
+    prevBtn.addEventListener('click', function (e) { e.stopPropagation(); step(-1); });
+    nextBtn.addEventListener('click', function (e) { e.stopPropagation(); step(1); });
+    closeBtn.addEventListener('click', function (e) { e.stopPropagation(); close(); });
+    overlay.addEventListener('click', function (e) {
+      // Click on the backdrop (not on the image or controls) dismisses
+      if (e.target === overlay || e.target.classList.contains('lightbox__figure')) {
+        close();
+      }
+    });
+    document.addEventListener('keydown', onKey);
+  }
+
+  function show(i) {
+    current = (i + slides.length) % slides.length;
+    var s = slides[current];
+    imgEl.classList.add('is-loading');
+    imgEl.setAttribute('alt', s.alt);
+    var probe = new Image();
+    probe.onload = function () {
+      imgEl.src = s.href;
+      imgEl.classList.remove('is-loading');
+    };
+    probe.onerror = function () {
+      // Fall back to the thumbnail src if the full image won't load
+      var thumb = items[current].querySelector('img');
+      imgEl.src = thumb ? thumb.getAttribute('src') : s.href;
+      imgEl.classList.remove('is-loading');
+    };
+    probe.src = s.href;
+    captionEl.textContent = s.caption;
+    counterEl.textContent = (current + 1) + ' / ' + slides.length;
+    // Preload neighbours so prev/next feel instant
+    [-1, 1].forEach(function (off) {
+      var n = (current + off + slides.length) % slides.length;
+      var pre = new Image();
+      pre.src = slides[n].href;
+    });
+  }
+
+  function step(delta) { show(current + delta); }
+
+  function open(i) {
+    if (!overlay) buildOverlay();
+    lastFocus = document.activeElement;
+    document.body.classList.add('lightbox-open');
+    overlay.classList.add('is-open');
+    show(i);
+    // Move focus into the dialog for screen readers + keyboard
+    setTimeout(function () { closeBtn.focus(); }, reduce ? 0 : 50);
+  }
+
+  function close() {
+    if (!overlay) return;
+    overlay.classList.remove('is-open');
+    document.body.classList.remove('lightbox-open');
+    if (lastFocus && typeof lastFocus.focus === 'function') {
+      lastFocus.focus();
+    }
+  }
+
+  function onKey(e) {
+    if (!overlay || !overlay.classList.contains('is-open')) return;
+    switch (e.key) {
+      case 'Escape':     close(); break;
+      case 'ArrowLeft':  step(-1); break;
+      case 'ArrowRight': step(1); break;
+      case 'Home':       show(0); break;
+      case 'End':        show(slides.length - 1); break;
+      case 'Tab':
+        // Simple focus trap: keep focus among the three buttons
+        var focusables = [closeBtn, prevBtn, nextBtn];
+        var idx = focusables.indexOf(document.activeElement);
+        var next = e.shiftKey
+          ? (idx <= 0 ? focusables.length - 1 : idx - 1)
+          : (idx === focusables.length - 1 ? 0 : idx + 1);
+        focusables[next].focus();
+        e.preventDefault();
+        break;
+    }
+  }
+
+  // Intercept clicks. The <a href> still works without JS — this
+  // just upgrades the experience when JS is available.
+  items.forEach(function (a, i) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      open(i);
+    });
+  });
+})();
