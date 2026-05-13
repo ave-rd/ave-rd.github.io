@@ -13,10 +13,14 @@ seo:
 <p class="dropcap">
   AVE-RD is a pilot public-policy project that evaluates the effect of a
   video-based information campaign on the schooling decisions of Dominican
-  students in grades 7&ndash;12. Implemented by the Ministry of Education,
-  evaluated by IDEICE and J-PAL LAC, funded by USAID and MINERD with
-  follow-up support from INICIA Educaci&oacute;n. The study is a direct
-  scale-up of <a href="https://academic.oup.com/qje/article-abstract/125/2/515/1882172">Robert Jensen&rsquo;s 2010
+  students in grades 7&ndash;12. <strong>It originated as a USAID
+  <a href="https://www.usaid.gov/div">Development Innovation Ventures
+  (DIV)</a> project</strong> &mdash; the agency&rsquo;s open-innovation
+  fund for evidence-based development solutions. Implemented by the
+  Ministry of Education, evaluated by IDEICE and J-PAL LAC, funded by
+  USAID/DIV and MINERD with follow-up support from INICIA
+  Educaci&oacute;n. The study is a direct scale-up of
+  <a href="https://academic.oup.com/qje/article-abstract/125/2/515/1882172">Robert Jensen&rsquo;s 2010
   <em>Quarterly Journal of Economics</em> paper</a> on perceived returns
   to education in the Dominican Republic.
 </p>
@@ -129,11 +133,19 @@ seo:
 
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">The funding context</div>
-  <h2>Why USAID, why MINERD, why now INICIA</h2>
+  <h2>From a USAID DIV grant to standing MINERD policy</h2>
 </div>
 
 <p>
-  USAID&rsquo;s Dominican Republic mission funded the AVE-RD pilot
+  AVE-RD entered the world as a project of
+  <strong><a href="https://www.usaid.gov/div">Development Innovation
+  Ventures (DIV)</a></strong>, USAID&rsquo;s open-innovation funding
+  mechanism for evidence-based, cost-effective development
+  solutions. DIV operates on a tiered-grant model that selects on
+  the credibility of the evidence the project can generate &mdash;
+  which is why a randomized, school-level evaluation co-led by
+  J-PAL LAC and IDEICE fit the programme&rsquo;s remit. USAID&rsquo;s
+  Dominican Republic mission and DIV jointly funded the AVE-RD pilot
   (<span class="font-osf">2014&ndash;2017</span>) under a cooperative
   agreement with J-PAL LAC and MINERD. The agreement was structured
   around <strong>thirteen milestones</strong> covering instrument
