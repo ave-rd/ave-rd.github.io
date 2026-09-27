@@ -93,14 +93,15 @@ seo:
     <div>
       <h3>USAID Endline Report (Milestone 13)</h3>
       <p>
-        The full implementation and results report submitted to USAID at
-        the end of the funded period. Includes effect tables and the
-        operational logistics narrative for the
-        <span class="font-osf">2014&ndash;2017</span> cooperative
-        agreement.
+        The implementation and results report J-PAL LAC submitted to
+        USAID&rsquo;s Development Innovation Ventures at the end of the
+        <span class="font-osf">2014&ndash;2017</span> award
+        (AID-F-14-00030). Includes the effect tables and the operational
+        logistics narrative, and is the source for the sample sizes and
+        effect sizes quoted on this site.
       </p>
       <p>
-        <span class="badge badge--neutral">PDF forthcoming</span> &middot; <a class="partner-card__link" href="/projects/contact/">Request the draft</a>
+        <a class="partner-card__link" href="https://www.christopher-neilson.com/work/documents/AVE/AVE_USAID_EndlineReport.pdf" rel="noopener">Read the report (PDF)</a>
       </p>
     </div>
   </li>

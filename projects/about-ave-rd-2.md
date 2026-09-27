@@ -14,8 +14,9 @@ seo:
   AVE-RD is a pilot public-policy project that evaluates the effect of a
   video-based information campaign on the schooling decisions of Dominican
   students in grades 7&ndash;12. Implemented by the Ministry of Education,
-  evaluated by IDEICE and J-PAL LAC, funded by USAID and MINERD, with
-  seed funding from Fundaci&oacute;n Inicia. The study is a direct
+  evaluated by IDEICE and J-PAL LAC, funded by USAID&rsquo;s Development
+  Innovation Ventures and MINERD, with seed funding from
+  Fundaci&oacute;n Inicia. The study is a direct
   scale-up of <a href="https://academic.oup.com/qje/article-abstract/125/2/515/1882172">Robert Jensen&rsquo;s 2010
   <em>Quarterly Journal of Economics</em> paper</a> on perceived returns
   to education in the Dominican Republic.
@@ -136,16 +137,20 @@ seo:
 </div>
 
 <p>
-  USAID&rsquo;s Dominican Republic mission funded the AVE-RD pilot
-  (<span class="font-osf">2014&ndash;2017</span>) under a cooperative
-  agreement with J-PAL LAC and MINERD. The agreement was structured
+  USAID&rsquo;s Development Innovation Ventures (DIV) funded the AVE-RD
+  pilot (<span class="font-osf">2014&ndash;2017</span>) through an award
+  to J-PAL LAC (AID-F-14-00030): US$<span class="font-osf">1,258,979</span>
+  in <span class="font-osf">2014</span>, plus a
+  US$<span class="font-osf">510,000</span> extension in
+  <span class="font-osf">2016</span>. The team applied with
+  MINERD&rsquo;s sponsorship through IDEICE. The award was structured
   around <strong>thirteen milestones</strong> covering instrument
   design, school-level randomization, two waves of fieldwork, the
   Pruebas Nacionales linkage, and a final endline report. The
-  <a href="/projects/download-videos-2/">endline report at
-  Milestone <span class="font-osf">13</span></a> documented the
-  dropout, test-score, and belief-update effects that subsequently
-  drove the policy-adoption decision at MINERD.
+  <a href="https://www.christopher-neilson.com/work/documents/AVE/AVE_USAID_EndlineReport.pdf" rel="noopener">endline
+  report at Milestone <span class="font-osf">13</span></a> documented
+  the dropout and test-score effects that informed MINERD&rsquo;s
+  decision to take the program over.
 </p>
 
 <p>

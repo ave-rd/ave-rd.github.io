@@ -47,8 +47,8 @@ testimonials:
 # and the homepage.
 timeline:
   - date: "2014"
-    title: "USAID Cooperative Agreement"
-    body: "Project funded as a five-year pilot. MINERD's Department of Orientation and Psychology becomes the implementation owner."
+    title: "USAID DIV award"
+    body: "USAID's Development Innovation Ventures awards J-PAL LAC US$1,258,979 for a three-year policy pilot, later extended to June 2017. MINERD's Department of Orientation and Psychology is the implementing partner."
     state: "past"
   - date: "May 2015"
     title: "First wave: 599 schools randomized"
@@ -59,8 +59,8 @@ timeline:
     body: "787 informative, 807 persuasive and 875 control schools. The 398 schools treated in 2015 are treated again; students who saw the informative video in both years later show the largest test-score effect (0.129 SD)."
     state: "past"
   - date: "2017"
-    title: "Endline report submitted to USAID (Milestone 13)"
-    body: "Dropout, test-score, and belief-update effects documented. Capacity-building outcomes reported separately."
+    title: "Endline report submitted to USAID DIV (Milestone 13)"
+    body: "Dropout falls 2.5–3 pp a year after exposure; eighth-grade test scores rise 0.05–0.13 SD. From 2017, MINERD finances and runs the program itself."
     state: "past"
   - date: "Now"
     title: "Planning the long-run follow-up"
