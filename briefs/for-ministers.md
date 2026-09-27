@@ -44,8 +44,7 @@ brief_pdf_ready: false
     11,000+ students at completion rates roughly seven times those of
     a typical online course. <strong>DFM Colombia / ICFES-Bot</strong>
     (ConsiliumBots with ICFES) reaches ~430,000 high-school seniors a
-    year on WhatsApp and increased student-loan applications by
-    <span class="font-osf">36</span>%. Concept notes, results briefs,
+    year on WhatsApp. Concept notes, results briefs,
     instruments, and code for all three are linked from the
     <a href="/projects/sister-projects/">sister-projects page</a>.
     Where AVE has been done, this is what the next minister has to
