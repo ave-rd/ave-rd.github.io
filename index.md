@@ -415,7 +415,7 @@ hero-image: /img/hero-map.jpg
   <li><a href="/projects/partners/">Partners</a> &mdash; J-PAL LAC, MINERD, IDEICE, INICIA Educaci&oacute;n, USAID &mdash; with named leads inside each.</li>
   <li><a href="/projects/sister-projects/">Sister projects</a> &mdash; DFM Per&uacute;, DFM Chile, DFM Colombia / ICFES-Bot and the ConsiliumBots origin story.</li>
   <li><a href="/projects/campaigns/">Add your voice</a> &mdash; two open letters: continue the Dominican policy, and endorse the long-run follow-up.</li>
-  <li><a href="/projects/press/">Press, voices &amp; milestones</a> &mdash; coverage, testimonials, and the project timeline.</li>
+  <li><a href="/projects/press/">Press &amp; milestones</a> &mdash; coverage and the project timeline.</li>
   <li><a href="/news/">News</a> &mdash; brief releases and project updates.</li>
   <li><a href="/projects/follow-up/">Support the follow-up</a> &mdash; the budget, the named contacts, and the partnership model.</li>
   <li><a href="/projects/gallery/">Photographs from the field</a>.</li>

@@ -1,15 +1,14 @@
 ---
-title: Press, voices and milestones
-description: "AVE-RD in the press, in the words of partners and field staff, and on a single timeline from 2014."
-eyebrow: "Press · voices · milestones"
+title: Press and milestones
+description: "AVE-RD in the press and on a single timeline from 2014."
+eyebrow: "Press · milestones"
 layout: page
 order: 8
 hero-style: gradient
 ---
 
 <p class="dropcap">
-  Three things together on one page: who has covered AVE-RD, what the
-  partners and field officers say about it in their own words, and a
+  Two things together on one page: who has covered AVE-RD, and a
   single timeline that runs from the founding USAID grant in
   <span class="font-osf">2014</span> to the long-run follow-up now
   being planned.
@@ -54,6 +53,10 @@ hero-style: gradient
   </ul>
 </div>
 
+{% comment %} Hidden until _data/press.yml has real, approved quotes.
+   When it does, put "voices" back in the page title and intro. {% endcomment %}
+{% assign testimonials = site.data.press.testimonials %}
+{% if testimonials and testimonials.size > 0 %}
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Voices</div>
   <h2>What the partners say</h2>
@@ -64,7 +67,7 @@ hero-style: gradient
 </div>
 
 <ul class="testimonial-grid reveal">
-  {% for t in site.data.press.testimonials %}
+  {% for t in testimonials %}
   <li>
     <article class="testimonial-card" id="{{ t.id }}">
       <p class="testimonial-card__body">{{ t.quote }}</p>
@@ -76,6 +79,7 @@ hero-style: gradient
   </li>
   {% endfor %}
 </ul>
+{% endif %}
 
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Timeline</div>

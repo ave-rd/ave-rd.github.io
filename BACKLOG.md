@@ -13,27 +13,26 @@ campaign public, because they affect credibility on first contact.
 
 ### Seed the signature walls with real founders
 
-Both campaigns currently render with placeholder entries that are
-clearly marked. Before launch, replace them with verified, real
-names. The placeholders document the schema; treat them as a
-template, not as content.
+The seeded placeholder signatories and their invented statements
+were removed in September 2026. The continue-policy wall is empty
+and shows its "no signatures yet" state; the schema is documented
+in the header of `_data/signatures.yml`. Add only real signatures,
+with statements in the signatory's own words.
 
-- `_data/signatures.yml` → `continue_policy`:
-  - Carmen Maura Taveras — confirm `verified: true` is correct
-    (entry exists, flagged `# TODO: confirm before launch`).
-  - "Director, DOP" — replace with the actual Director of the
-    Dirección de Orientación y Psicología.
-  - "School Director — placeholder" — replace with one or more
-    real public-secondary school directors who have agreed to be
-    public.
-  - "Alumni signatory — placeholder" — replace with at least one
-    AVE-RD alumni who has agreed to be public (parental consent
-    required if under 18).
+- `_data/signatures.yml` → `continue_policy` (empty). Invite:
+  - Carmen Maura Taveras. She was seeded as a verified signatory
+    with an invented statement; re-add her only once she agrees.
+  - The Director of the Dirección de Orientación y Psicología.
+  - One or more public-secondary school directors who have agreed
+    to be public.
+  - At least one AVE-RD alumnus who has agreed to be public
+    (parental consent required if under 18).
 - `_data/signatures.yml` → `follow_up_pledge`:
   - James Berry, Lucas C. Coffman, Daniel Morales, Christopher
     A. Neilson — confirm the four PIs have approved being listed
     publicly with the `verified: true` flag. All four are
-    currently `# TODO: confirm`.
+    currently `# TODO: confirm`. The seeded statement attributed
+    to Neilson was removed.
 
 Target: 5–10 founding signatures per campaign before launch.
 Empty walls kill momentum more than any form-quality issue.

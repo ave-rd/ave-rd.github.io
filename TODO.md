@@ -57,13 +57,14 @@ remove the bullet in the same PR).
 Found in the same accuracy pass (source of record: the 2017 endline
 report, J-PAL LAC, USAID DIV award AID-F-14-00030). Confirm, source,
 or remove each before funder reviews.
-- **Placeholder quotes attributed to real roles**: J-PAL LAC Executive
-  Director, USAID/DR Mission Director and MINERD DOP Director
-  (`_data/press.yml` testimonials; J-PAL and MINERD quotes in
-  `_data/partner_leads.yml`). Placeholder press items (Listín Diario,
-  El Caribe, 2017) have made-up headlines.
-- **Seeded signatures**, including a statement attributed to Carmen
-  Maura Taveras (`_data/signatures.yml`; see BACKLOG.md).
+- **Placeholder press coverage**: the Listín Diario and El Caribe
+  (2017) items in `_data/press.yml` have made-up headlines and no
+  URLs. (Placeholder partner quotes, testimonials and seeded
+  signatures with invented statements were removed in September
+  2026.)
+- **PI endorsements**: the four PI entries on the follow-up pledge
+  (`_data/signatures.yml`) are still `verified: true # TODO: confirm`;
+  see BACKLOG.md.
 - **"Every public school in the country" / "now national policy"**:
   the endline documents only the 2017–2019 rollout plan (Table 8).
 - **Beliefs and mechanism findings** (homepage, what-worked brief, ES

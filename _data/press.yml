@@ -16,32 +16,20 @@ coverage:
 # Noticias, June 2025) that described coverage of a follow-up wave that
 # has not started. Add real follow-up coverage here once it exists.
 
-# Testimonials — quotes pulled from interviews, official letters,
-# or partner sites. Bracket-marked entries are placeholders.
-testimonials:
-  - id: minerd-dop
-    quote: >-
-      The pilot trained hundreds of our regional staff in modern
-      fieldwork, call-center operations, and logistics — capability
-      that has outlived the project itself.
-    name: "Director, Department of Orientation and Psychology"        # TODO: replace
-    role: "MINERD"
-
-  - id: usaid
-    quote: >-
-      AVE-RD demonstrated that a low-cost, scalable intervention can
-      shift the schooling decisions of tens of thousands of students.
-      It is the kind of evidence USAID was created to produce.
-    name: "Mission Director, USAID/Dominican Republic (2017)"          # TODO: replace
-    role: "USAID"
-
-  - id: jpal-lac
-    quote: >-
-      AVE-RD is what scalable looks like in education research:
-      cheap to deliver, defensible to identify, and adaptable to a new
-      country in months rather than years.
-    name: "Executive Director, J-PAL LAC"                              # TODO: replace
-    role: "J-PAL LAC"
+# Testimonials: quotes from interviews, official letters, or partner
+# sites. Add only quotes the speaker has actually given or approved,
+# with a real name. The "Voices" section on /projects/press/ is hidden
+# while this list is empty. Placeholder quotes attributed to the J-PAL
+# LAC Executive Director, a USAID/DR Mission Director and the MINERD
+# DOP Director were removed in September 2026.
+#
+# Schema per entry:
+#   - id: short-slug
+#     quote: >-
+#       The quote, verbatim.
+#     name: "Full name"
+#     role: "Title, institution"
+testimonials: []
 
 # Project milestones — used by the timeline component on /press/
 # and the homepage.

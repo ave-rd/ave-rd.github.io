@@ -3,6 +3,10 @@
 # Each entry powers the roster underneath the partner card on
 # /projects/partners/. Lines marked  # TODO: verify  need a quick
 # read-through with the partner office before publication.
+#
+# Optional per partner: `quote:` with `text:` and `attrib:` renders
+# as a pull quote on the partners pages. Use only quotes the speaker
+# has actually given or approved.
 
 partners:
   - id: jpal-lac
@@ -20,13 +24,6 @@ partners:
       creating and disseminating rigorous evidence on what public policies
       and social programs really work. J-PAL LAC led the research design and
       impact evaluation for AVE-RD.
-    quote:
-      text: >-
-        AVE-RD showed that a fifteen-minute video, shown once in a
-        classroom, can move a schooling decision a year later. The
-        follow-up wave is what tells us whether that decision compounds
-        into earnings.
-      attrib: "J-PAL LAC, Executive Director"   # TODO: confirm attribution
     leads:
       - name: "Executive Director"        # TODO: replace with real name
         role: "Executive Director, J-PAL LAC"
@@ -53,12 +50,6 @@ partners:
       took over financing and running the program. MINERD's Pruebas
       Nacionales — the national assessment system — supplies the
       test-score outcomes that anchor the impact analysis.
-    quote:
-      text: >-
-        The pilot trained hundreds of our regional staff in modern
-        fieldwork, call-center operations, and logistics —
-        capability that has outlived the project itself.
-      attrib: "Dirección de Orientación y Psicología, MINERD"
     leads:
       - name: "Ancell Scheker"
         role: "Vice-Minister · Director of Evaluation & Quality Control, MINERD · Pruebas Nacionales"

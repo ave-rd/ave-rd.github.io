@@ -89,6 +89,7 @@ layout: default
     <p class="letter-document__signed">{{ page.letter_signed_by }}</p>
   </div>
 
+  {% if sig_count > 0 %}
   <section class="letter-document__signatures" aria-labelledby="letter-signatures-heading">
     <h2 id="letter-signatures-heading" class="letter-document__signatures-title">
       {{ t_signed }} <span class="font-osf">{{ sig_count }}</span> {{ t_persons }}
@@ -115,6 +116,7 @@ layout: default
       {% endif %}
     {% endfor %}
   </section>
+  {% endif %}
 
   <footer class="letter-document__foot">
     <p class="letter-document__partners">
