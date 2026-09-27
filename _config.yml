@@ -1,7 +1,7 @@
 # Site settings
 title: AVE-RD
-tagline: "A randomized evaluation of information & schooling decisions, with a 2025–2027 long-run follow-up"
-description: "AVE-RD is a school-randomized RCT in the Dominican Republic that tests whether short classroom videos shift students' beliefs about the returns to education — and reduce dropout. It randomized 599 public schools in 2015 and 2,469 in 2016, and its dropout analysis covers 428,400 students; a 2025–2027 follow-up wave links the same cohort to administrative earnings records."
+tagline: "A randomized evaluation of information & schooling decisions, and a planned long-run follow-up"
+description: "AVE-RD is a school-randomized RCT in the Dominican Republic that tests whether short classroom videos shift students' beliefs about the returns to education — and reduce dropout. It randomized 599 public schools in 2015 and 2,469 in 2016, and its dropout analysis covers 428,400 students. A planned long-run follow-up would link the same students to administrative earnings records."
 url: "https://ave-rd.github.io"
 lang: en
 

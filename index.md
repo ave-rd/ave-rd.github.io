@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Learning the value of education
-description: "A school-randomized RCT testing how short videos shift Dominican students' beliefs about the returns to education — and their schooling decisions. Now in a long-run follow-up wave, 2025–2027."
+description: "A school-randomized RCT testing how short videos shift Dominican students' beliefs about the returns to education — and their schooling decisions. A long-run follow-up is being planned."
 eyebrow: "AVE · Dominican Republic · Information & schooling"
 lang: en
 alt_url: /es/
@@ -23,8 +23,8 @@ hero-image: /img/hero-map.jpg
   students. Following the
   evaluation, the intervention was adopted as government policy and is
   now implemented in <strong>every public school in the country</strong>.
-  A <span class="font-osf">2025&ndash;2027</span> follow-up wave links
-  the original cohort to administrative earnings records.
+  A planned long-run follow-up would link the same students to
+  administrative earnings records.
 </p>
 
 <dl class="stat-strip reveal">
@@ -187,9 +187,8 @@ hero-image: /img/hero-map.jpg
   <div class="eyebrow eyebrow--rule">The team</div>
   <h2>Four authors, one country team</h2>
   <p class="lede">
-    The same investigators and field operation that ran the
-    2015&ndash;2016 wave run the follow-up. Institutional memory is the
-    cheapest research input we have.
+    The four investigators behind the 2015&ndash;2016 evaluation,
+    working with a country team in Santo Domingo.
   </p>
 </div>
 
@@ -232,8 +231,7 @@ hero-image: /img/hero-map.jpg
 </div>
 
 <ul class="brief-grid reveal">
-  {% assign founding = site.data.partner_leads.partners | where_exp: "p", "p.id != 'inicia'" %}
-  {% for p in founding %}
+  {% for p in site.data.partner_leads.partners %}
   <li>
     <article class="partner-card partner-card--compact">
       <div class="partner-card__logo">
@@ -253,21 +251,6 @@ hero-image: /img/hero-map.jpg
   </li>
   {% endfor %}
 </ul>
-
-{% assign inicia = site.data.partner_leads.partners | where: "id", "inicia" | first %}
-{% if inicia %}
-<div class="signal-panel signal-panel--research reveal">
-  <div class="eyebrow">Follow-up funder</div>
-  <p>
-    <strong>{{ inicia.name }}</strong> &mdash; the Vicini family&rsquo;s
-    Dominican education foundation, founded in <span class="font-osf">2010</span>
-    &mdash; joined the partnership for the
-    <span class="font-osf">2025&ndash;2027</span> follow-up wave as
-    lead domestic funder. Read the
-    <a href="/projects/partners/#inicia">full partner profile</a>.
-  </p>
-</div>
-{% endif %}
 
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Policy briefs</div>
@@ -305,26 +288,26 @@ hero-image: /img/hero-map.jpg
 </ul>
 
 <div class="fundraise-cta reveal" id="follow-up">
-  <span class="fundraise-cta__eyebrow">Now in the field &middot; 2025&ndash;2027 follow-up wave</span>
-  <h2 class="fundraise-cta__title">From a fifteen-minute video to <em>ten years of earnings</em>.</h2>
+  <span class="fundraise-cta__eyebrow">In preparation &middot; long-run follow-up</span>
+  <h2 class="fundraise-cta__title">From a fifteen-minute video to <em>earnings a decade later</em>.</h2>
   <p class="fundraise-cta__lede">
-    AVE is back in the field. The follow-up wave extends the original
-    panel by a decade, links schooling outcomes to administrative earnings
-    data, and tests whether the belief updates from
-    <span class="font-osf">2015&ndash;2016</span> persist into early
+    The planned follow-up would return to the students in the original
+    evaluation about a decade on, link them to administrative earnings
+    records, and test whether the effects measured in
+    <span class="font-osf">2015&ndash;2016</span> carry into early
     careers.
   </p>
 
   <dl class="fundraise-cta__pillars">
     <div class="fundraise-cta__pillar">
       <dt>Status</dt>
-      <dd>Pre-analysis registered</dd>
-      <p>Field operations resumed <span class="font-osf">2025</span>. First descriptive results expected <span class="font-osf">2026</span>.</p>
+      <dd>In preparation</dd>
+      <p>The timeline and partners will be posted here once they are confirmed.</p>
     </div>
     <div class="fundraise-cta__pillar">
       <dt>What it tests</dt>
       <dd>Long-run earnings</dd>
-      <p>Cohort linked to the Tesorer&iacute;a de la Seguridad Social earnings panel via IDEICE.</p>
+      <p>Students from the original evaluation linked to administrative earnings records.</p>
     </div>
     <div class="fundraise-cta__pillar">
       <dt>What it produces</dt>
@@ -388,7 +371,7 @@ hero-image: /img/hero-map.jpg
       <p class="brief-card__lede">
         Pledge for foundations, bilateral donors, multilaterals, and
         the long-run-RCT research community to recognise the
-        2025&ndash;2027 follow-up as a priority replication.
+        long-run follow-up as a priority replication.
       </p>
       <div class="brief-card__cta">
         <a href="/campaigns/support-the-follow-up/">Read &amp; endorse</a>
@@ -432,8 +415,8 @@ hero-image: /img/hero-map.jpg
   <li><a href="/projects/partners/">Partners</a> &mdash; J-PAL LAC, MINERD, IDEICE, INICIA Educaci&oacute;n, USAID &mdash; with named leads inside each.</li>
   <li><a href="/projects/sister-projects/">Sister projects</a> &mdash; DFM Per&uacute;, DFM Chile, DFM Colombia / ICFES-Bot and the ConsiliumBots origin story.</li>
   <li><a href="/projects/campaigns/">Add your voice</a> &mdash; two open letters: continue the Dominican policy, and endorse the long-run follow-up.</li>
-  <li><a href="/projects/press/">Press, voices &amp; milestones</a> &mdash; coverage, testimonials, and the 2014&ndash;2027 timeline.</li>
-  <li><a href="/news/">News &amp; field updates</a> &mdash; brief releases and field reports.</li>
+  <li><a href="/projects/press/">Press, voices &amp; milestones</a> &mdash; coverage, testimonials, and the project timeline.</li>
+  <li><a href="/news/">News</a> &mdash; brief releases and project updates.</li>
   <li><a href="/projects/follow-up/">Support the follow-up</a> &mdash; the budget, the named contacts, and the partnership model.</li>
   <li><a href="/projects/gallery/">Photographs from the field</a>.</li>
 </ul>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Continuemos la política AVE. Apoyemos la evaluación a largo plazo."
-description: "Carta abierta de actores dominicanos al MINERD pidiendo que la intervención AVE continúe a cobertura completa y que la evaluación de seguimiento 2025–2027 reciba apoyo institucional."
+description: "Carta abierta de actores dominicanos al MINERD pidiendo que la intervención AVE continúe a cobertura completa y que la evaluación de seguimiento de largo plazo reciba apoyo institucional."
 eyebrow: "Carta abierta · República Dominicana"
 permalink: /es/sumate/
 hero-style: gradient
@@ -29,8 +29,8 @@ seo:
   AVE &mdash; cuatro videos cortos y un protocolo de aula &mdash; fue
   adoptada como pol&iacute;tica del MINERD y se entrega hoy en
   <strong>todas las escuelas p&uacute;blicas del pa&iacute;s</strong>.
-  La ola de seguimiento <span class="font-osf">2025&ndash;2027</span>
-  es la que nos dice si el efecto escolar se traduce en ingresos.
+  El seguimiento de largo plazo previsto es el que nos dir&iacute;a si
+  el efecto escolar se traduce en ingresos.
   Esta carta, dirigida al Ministerio, pide dos cosas: continuidad de
   la pol&iacute;tica, y apoyo a la evaluaci&oacute;n de largo plazo.
 </p>
@@ -65,12 +65,12 @@ seo:
 
   <p>
     <strong>Segundo, apoyar la evaluaci&oacute;n de seguimiento de
-    largo plazo.</strong> La cohorte original tiene hoy
-    <span class="font-osf">23&ndash;26</span> a&ntilde;os y se
-    puede ubicar a trav&eacute;s de los registros de matr&iacute;cula
-    del MINERD y el panel de ingresos de la Tesorer&iacute;a de la
-    Seguridad Social. La ola de seguimiento convierte el efecto
-    escolar de corto plazo en la primera evidencia de largo plazo
+    largo plazo.</strong> Los estudiantes de la evaluaci&oacute;n
+    original superan hoy los veinte a&ntilde;os, edad suficiente para
+    que los registros administrativos de ingresos muestren si el efecto
+    escolar lleg&oacute; al mercado laboral. El seguimiento
+    convertir&iacute;a el efecto escolar de corto plazo en la primera
+    evidencia de largo plazo
     sobre una campa&ntilde;a informativa basada en video en
     Am&eacute;rica Latina &mdash; un resultado que los ministerios
     de educaci&oacute;n de la regi&oacute;n usar&aacute;n como
@@ -78,12 +78,9 @@ seo:
   </p>
 
   <p>
-    El equipo del pa&iacute;s que corri&oacute; la ola
-    2015&ndash;2016 es el mismo que corre el seguimiento. Los
-    acuerdos de datos est&aacute;n abiertos. El plan de
-    pre-an&aacute;lisis est&aacute; registrado. Lo que falta es el
-    apoyo institucional del Ministerio. Sumamos nuestros nombres
-    abajo.
+    El seguimiento se apoya directamente en la evaluaci&oacute;n que
+    el Ministerio acogi&oacute; en 2015&ndash;2016. Lo que necesita del
+    Ministerio es apoyo institucional. Sumamos nuestros nombres abajo.
   </p>
 </aside>
 

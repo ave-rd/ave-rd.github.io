@@ -34,33 +34,30 @@ campaigns:
     ask_en: >-
       The undersigned ask the Ministry of Education to (1) maintain
       the AVE intervention as standing policy in every public school
-      in the country, and (2) support the 2025–2027 long-run
-      follow-up evaluation that converts a documented short-term
+      in the country, and (2) support the long-run follow-up
+      evaluation that would convert a documented short-term
       schooling effect into the first long-run earnings evidence on
       a video-based information campaign in Latin America.
     ask_es: >-
       Los abajo firmantes solicitamos al Ministerio de Educación
       (1) mantener la intervención AVE como política permanente en
       todas las escuelas públicas del país, y (2) apoyar la
-      evaluación de seguimiento de largo plazo 2025–2027, que
-      convierte un efecto escolar de corto plazo ya documentado en
+      evaluación de seguimiento de largo plazo, que convertiría un
+      efecto escolar de corto plazo ya documentado en
       la primera evidencia de largo plazo sobre una campaña
       informativa basada en video en América Latina.
     why_en: >-
       AVE has reached every public school in the Dominican Republic
       and reduced dropout by 2.5–3 percentage points in the original
-      pilot. The follow-up wave is what tells us whether the
-      schooling effect compounds into earnings — and the country
-      team that ran the 2015–2016 wave is the one running the
-      follow-up. Continuity is the cheapest research input we have.
+      pilot. The long-run follow-up is what would tell us whether
+      the schooling effect compounds into earnings. Continuity is the
+      cheapest research input we have.
     why_es: >-
       AVE llega hoy a todas las escuelas públicas dominicanas y
       redujo la deserción en 2.5–3 puntos porcentuales en el piloto
-      original. La ola de seguimiento es la que nos dice si el
-      efecto escolar se traduce en ingresos — y el equipo del país
-      que corrió la ola 2015–2016 es el mismo que corre el
-      seguimiento. La continuidad es el insumo más barato que
-      tenemos.
+      original. El seguimiento de largo plazo es el que nos diría si
+      el efecto escolar se traduce en ingresos. La continuidad es el
+      insumo más barato que tenemos.
     github_issue_labels: "signature,continue-policy"
     page_order: 5
 
@@ -71,22 +68,23 @@ campaigns:
     audience: "Funders and the international research community"
     title_en: "Endorse the AVE-RD long-run follow-up evaluation."
     title_es: "Avale la evaluación de seguimiento a largo plazo AVE-RD."
-    eyebrow_en: "Pledge · 2025–2027"
-    eyebrow_es: "Compromiso · 2025–2027"
+    eyebrow_en: "Pledge · long-run follow-up"
+    eyebrow_es: "Compromiso · seguimiento de largo plazo"
     recipient_en: "Foundations, bilateral and multilateral funders, and the long-run-RCT research community"
     recipient_es: "Fundaciones, donantes bilaterales y multilaterales, y la comunidad de investigación en RCT de largo plazo"
     ask_en: >-
       Endorsers commit to (1) recognise the AVE-RD long-run follow-up
       as a priority replication of the Jensen 2010 information–schooling
-      design, (2) support the 2025–2027 cohort re-survey and TSS
+      design, (2) support the follow-up survey and administrative
       earnings linkage, and (3) treat the open replication kit as a
       reusable benchmark for similar interventions in other countries.
     ask_es: >-
       Los firmantes se comprometen a (1) reconocer el seguimiento de
       largo plazo de AVE-RD como una replicación prioritaria del
       diseño Jensen 2010 sobre información y escolaridad, (2) apoyar
-      la re-encuesta de cohorte 2025–2027 y la vinculación con la
-      TSS, y (3) tratar el kit de replicación abierta como un
+      la encuesta de seguimiento y la vinculación con registros
+      administrativos de ingresos, y (3) tratar el kit de replicación
+      abierta como un
       referente reutilizable para intervenciones similares en otros
       países.
     why_en: >-

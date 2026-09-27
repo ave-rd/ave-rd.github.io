@@ -1,4 +1,8 @@
 ---
+# UNPUBLISHED: layout placeholder, not a real event. No TSS data-linkage
+# agreement has been signed. Do not republish without the team
+# confirming the actual status (see TODO.md).
+published: false
 title: "IDEICE finalizes TSS data-linkage agreement for the long-run wave"
 description: "The Dominican Institute of Evaluation and the Tesorería de la Seguridad Social have signed the data-handling agreement that lets AVE-RD link its 43,000-student panel to formal-sector earnings."
 date: 2026-01-20

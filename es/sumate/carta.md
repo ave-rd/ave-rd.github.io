@@ -1,7 +1,7 @@
 ---
 layout: letter
 title: "Carta abierta — Continuemos la política AVE"
-description: "Versión imprimible de la carta abierta dominicana al MINERD: continuidad de la intervención AVE y apoyo a la evaluación de seguimiento 2025–2027."
+description: "Versión imprimible de la carta abierta dominicana al MINERD: continuidad de la intervención AVE y apoyo a la evaluación de seguimiento de largo plazo."
 permalink: /es/sumate/carta/
 lang: es
 campaign_url: /es/sumate/
@@ -48,24 +48,21 @@ sitemap: false
 
 <p>
   <strong>Segundo, solicitamos el apoyo institucional a la
-  evaluación de seguimiento de largo plazo
-  <span class="font-osf">2025&ndash;2027</span>.</strong> La
-  cohorte original tiene hoy <span class="font-osf">23&ndash;26</span>
-  años y se puede ubicar a través de los registros de matrícula
-  del MINERD y el panel de ingresos de la Tesorería de la Seguridad
-  Social. La ola de seguimiento convierte el efecto escolar de
-  corto plazo en la primera evidencia de largo plazo sobre una
+  evaluación de seguimiento de largo plazo.</strong> Los
+  estudiantes de la evaluación original superan hoy los veinte
+  años, edad suficiente para que los registros administrativos de
+  ingresos muestren si el efecto escolar llegó al mercado laboral.
+  El seguimiento convertiría el efecto escolar de corto plazo en
+  la primera evidencia de largo plazo sobre una
   campaña informativa basada en video en América Latina &mdash;
   un resultado que los ministerios de educación de la región
   utilizarán como referencia.
 </p>
 
 <p>
-  El equipo del país que dirigió la ola
-  <span class="font-osf">2015&ndash;2016</span> es el mismo que
-  conduce el seguimiento. Los acuerdos de datos se encuentran
-  abiertos. El plan de pre-análisis está debidamente registrado.
-  Lo que falta es el apoyo institucional del Ministerio. En esa
+  El seguimiento se apoya directamente en la evaluación que el
+  Ministerio acogió en <span class="font-osf">2015&ndash;2016</span>.
+  Lo que necesita del Ministerio es apoyo institucional. En esa
   comprensión, sumamos respetuosamente nuestros nombres a esta
   carta.
 </p>

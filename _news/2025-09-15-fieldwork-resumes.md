@@ -1,4 +1,8 @@
 ---
+# UNPUBLISHED: layout placeholder, not a real event. Follow-up fieldwork
+# has not resumed and no pre-analysis plan has been registered. Do not
+# republish without the team confirming the actual status (see TODO.md).
+published: false
 title: "Follow-up fieldwork resumes across 18 educational regions"
 description: "After a registered pre-analysis plan and a renewed agreement with MINERD, AVE-RD's long-run wave is back in the field — starting with cohort tracking in three pilot regions."
 date: 2025-09-15

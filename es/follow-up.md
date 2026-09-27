@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Apoyar el seguimiento
-description: "Cómo financiar la ola de seguimiento 2025–2027 de AVE-RD — el presupuesto, los contactos nombrados, y el modelo de alianza para fundaciones y donantes bilaterales."
-eyebrow: "Seguimiento · 2025–2027"
+description: "Cómo financiar el seguimiento de largo plazo previsto de AVE-RD — qué cubriría el presupuesto, a quién contactar, y cómo pueden aliarse fundaciones y donantes bilaterales."
+eyebrow: "Seguimiento de largo plazo · en preparación"
 permalink: /es/follow-up/
 lang: es
 alt_url: /projects/follow-up/
@@ -16,39 +16,39 @@ hero-style: gradient
   <span class="font-osf">2015</span> y <span class="font-osf">2,469</span>
   en <span class="font-osf">2016</span>; su an&aacute;lisis de
   deserci&oacute;n abarca a <span class="font-osf">428,400</span>
-  estudiantes. La ola
-  de seguimiento mueve <em>tiempo</em>: una d&eacute;cada despu&eacute;s,
-  re-encuestamos la misma cohorte y la vinculamos al panel de ingresos
-  de la seguridad social dominicana. La ola de seguimiento est&aacute;
-  abierta a fundaciones y donantes bilaterales. Esta p&aacute;gina es
+  estudiantes. El seguimiento previsto agrega <em>tiempo</em>: cerca
+  de una d&eacute;cada despu&eacute;s, vincular&iacute;a a esos mismos
+  estudiantes con registros administrativos de ingresos y
+  encuestar&iacute;a a una submuestra. El seguimiento est&aacute;
+  abierto a fundaciones y donantes bilaterales. Esta p&aacute;gina es
   la solicitud.
 </p>
 
 <div class="fundraise-cta reveal">
-  <span class="fundraise-cta__eyebrow">Meta de financiamiento &middot; <span class="font-osf">2025&ndash;2027</span></span>
-  <h2 class="fundraise-cta__title">De un video de quince minutos a <em>diez a&ntilde;os de ingresos</em>.</h2>
+  <span class="fundraise-cta__eyebrow">Financiamiento &middot; Seguimiento de largo plazo</span>
+  <h2 class="fundraise-cta__title">De un video de quince minutos a <em>los ingresos una d&eacute;cada despu&eacute;s</em>.</h2>
   <p class="fundraise-cta__lede">
-    La ola de seguimiento convierte un efecto escolar de corto plazo
+    El seguimiento convertir&iacute;a un efecto escolar de corto plazo
     en la primera evidencia de largo plazo sobre una intervenci&oacute;n
-    informativa basada en video en Am&eacute;rica Latina. Tres a&ntilde;os
-    de campo, una cohorte, un kit de replicaci&oacute;n abierto al final.
+    informativa basada en video en Am&eacute;rica Latina, con un kit de
+    replicaci&oacute;n abierto al final.
   </p>
 
   <dl class="fundraise-cta__pillars">
     <div class="fundraise-cta__pillar">
-      <dt>Horizonte trianual</dt>
-      <dd>2025&ndash;2027</dd>
-      <p>Re-encuesta, vinculaci&oacute;n administrativa, serie de res&uacute;menes y kit de replicaci&oacute;n abierto, ejecutado desde la oficina del proyecto en Santo Domingo.</p>
+      <dt>Horizonte</dt>
+      <dd>Por confirmar</dd>
+      <p>Publicaremos el calendario aqu&iacute; cuando est&eacute; confirmado. El trabajo: vinculaci&oacute;n administrativa, una encuesta de seguimiento, la serie de res&uacute;menes y un kit de replicaci&oacute;n abierto.</p>
     </div>
     <div class="fundraise-cta__pillar">
       <dt>Estudiantes en el an&aacute;lisis de deserci&oacute;n original</dt>
       <dd>428,400</dd>
-      <p>Incluye localizaci&oacute;n de migrantes, encuesta mixta, y vinculaci&oacute;n de registros con la Tesorer&iacute;a de la Seguridad Social.</p>
+      <p>Del an&aacute;lisis de deserci&oacute;n <span class="font-osf">2016&ndash;17</span> (informe final, cuadro&nbsp;<span class="font-osf">5</span>). El seguimiento vincular&iacute;a a los estudiantes de la evaluaci&oacute;n original con registros administrativos de ingresos.</p>
     </div>
     <div class="fundraise-cta__pillar">
-      <dt>Contraparte dom&eacute;stica</dt>
-      <dd>Ya en pie</dd>
-      <p>MINERD financia la entrega en aulas, IDEICE custodia los datos y INICIA Educaci&oacute;n es el socio fundacional dom&eacute;stico. El nuevo financiamiento va directo al producto de investigaci&oacute;n.</p>
+      <dt>Pol&iacute;tica ya instalada</dt>
+      <dd>Traspasada al MINERD en 2017</dd>
+      <p>A partir de <span class="font-osf">2017</span> la Direcci&oacute;n de Orientaci&oacute;n y Psicolog&iacute;a del MINERD asumi&oacute; el financiamiento y la ejecuci&oacute;n de los videos, as&iacute; que el nuevo financiamiento paga investigaci&oacute;n, no la entrega de la intervenci&oacute;n.</p>
     </div>
   </dl>
 
@@ -66,12 +66,12 @@ hero-style: gradient
 <ol class="numbered-list reveal">
   <li>
     <div>
-      <h3>Re-encuesta de la cohorte</h3>
+      <h3>Encuesta de seguimiento</h3>
       <p>
-        Instrumento mixto (CATI + presencial) en las
-        <span class="font-osf">18</span> regiones educativas. Incluye
-        protocolo de localizaci&oacute;n para migrantes, estimados en
-        ~<span class="font-osf">10</span>% de la cohorte.
+        Una encuesta a una submuestra de los estudiantes originales, con
+        localizaci&oacute;n de quienes se han mudado. El tama&ntilde;o de
+        la muestra y la modalidad de la encuesta a&uacute;n est&aacute;n
+        por definirse.
       </p>
     </div>
   </li>
@@ -79,9 +79,12 @@ hero-style: gradient
     <div>
       <h3>Vinculaci&oacute;n con datos administrativos</h3>
       <p>
-        Panel AVE-RD cruzado con los registros de la
-        Tesorer&iacute;a de la Seguridad Social. IDEICE es el
-        guardi&aacute;n de los datos.
+        Vincula a los estudiantes de la evaluaci&oacute;n original con
+        registros administrativos de ingresos. El presupuesto cubre los
+        costos legales, de comit&eacute; de &eacute;tica e
+        infraestructura de la vinculaci&oacute;n, y la
+        des-identificaci&oacute;n para el kit de replicaci&oacute;n
+        abierto.
       </p>
     </div>
   </li>
@@ -90,8 +93,7 @@ hero-style: gradient
       <h3>Kit de replicaci&oacute;n abierto y working paper</h3>
       <p>
         Limpia, empaqueta y publica el panel des-identificado y el
-        pipeline en Stata. El plan pre-an&aacute;lisis ya est&aacute;
-        registrado.
+        pipeline en Stata junto con el working paper de largo plazo.
       </p>
     </div>
   </li>

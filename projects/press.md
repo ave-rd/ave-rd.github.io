@@ -1,6 +1,6 @@
 ---
 title: Press, voices and milestones
-description: "AVE-RD in the press, in the words of partners and field staff, and on a single 2014–2027 timeline."
+description: "AVE-RD in the press, in the words of partners and field staff, and on a single timeline from 2014."
 eyebrow: "Press · voices · milestones"
 layout: page
 order: 8
@@ -11,8 +11,8 @@ hero-style: gradient
   Three things together on one page: who has covered AVE-RD, what the
   partners and field officers say about it in their own words, and a
   single timeline that runs from the founding USAID grant in
-  <span class="font-osf">2014</span> through the long-run results
-  expected in <span class="font-osf">2027</span>.
+  <span class="font-osf">2014</span> to the long-run follow-up now
+  being planned.
 </p>
 
 <div class="section-header reveal">
@@ -58,8 +58,8 @@ hero-style: gradient
   <div class="eyebrow eyebrow--rule">Voices</div>
   <h2>What the partners say</h2>
   <p class="lede">
-    Quotes from the four institutional partners. Useful for funders
-    looking for an external read on the program.
+    Quotes from institutional partners. Useful for funders looking for
+    an external read on the program.
   </p>
 </div>
 
@@ -79,10 +79,9 @@ hero-style: gradient
 
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Timeline</div>
-  <h2>From a 2014 grant to a 2027 long-run paper</h2>
+  <h2>From a 2014 grant to a long-run follow-up</h2>
   <p class="lede">
-    Eight milestones. The current marker sits on the
-    <span class="font-osf">2025</span> resumption of fieldwork.
+    The current marker sits on planning for the long-run follow-up.
   </p>
 </div>
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Aprendiendo el Valor de la Educación
-description: "Una evaluación aleatorizada en escuelas de la República Dominicana que prueba si videos cortos cambian las creencias de los estudiantes sobre los retornos a la educación — y reduce la deserción. La ola de seguimiento 2025–2027 ya está en el campo."
+description: "Una evaluación aleatorizada en escuelas de la República Dominicana que prueba si videos cortos cambian las creencias de los estudiantes sobre los retornos a la educación — y reduce la deserción. Se prepara un seguimiento de largo plazo."
 eyebrow: "AVE · República Dominicana · Información y decisiones escolares"
 permalink: /es/
 lang: es
@@ -23,8 +23,8 @@ hero-image: /img/hero-map.jpg
   <span class="font-osf">2,469</span> en <span class="font-osf">2016</span>;
   su an&aacute;lisis de deserci&oacute;n abarca a
   <span class="font-osf">428,400</span> estudiantes.
-  Una nueva ola de seguimiento, <span class="font-osf">2025&ndash;2027</span>,
-  vincula la misma cohorte a registros administrativos de ingresos.
+  Un seguimiento de largo plazo, en preparaci&oacute;n, vincular&iacute;a
+  a esos mismos estudiantes con registros administrativos de ingresos.
 </p>
 
 <dl class="stat-strip reveal">
@@ -120,27 +120,27 @@ hero-image: /img/hero-map.jpg
 </p>
 
 <div class="fundraise-cta reveal" id="seguimiento">
-  <span class="fundraise-cta__eyebrow">En el campo &middot; Ola de seguimiento <span class="font-osf">2025&ndash;2027</span></span>
-  <h2 class="fundraise-cta__title">De un video de quince minutos a <em>diez a&ntilde;os de ingresos</em>.</h2>
+  <span class="fundraise-cta__eyebrow">En preparaci&oacute;n &middot; Seguimiento de largo plazo</span>
+  <h2 class="fundraise-cta__title">De un video de quince minutos a <em>los ingresos una d&eacute;cada despu&eacute;s</em>.</h2>
   <p class="fundraise-cta__lede">
-    AVE est&aacute; de vuelta en el campo. La ola de seguimiento extiende
-    el panel original por una d&eacute;cada, vincula los resultados
-    escolares a datos administrativos de ingresos y prueba si las
-    actualizaciones de creencias de
-    <span class="font-osf">2015&ndash;2016</span> persisten en la vida
+    El seguimiento previsto volver&iacute;a a los estudiantes de la
+    evaluaci&oacute;n original cerca de una d&eacute;cada despu&eacute;s,
+    los vincular&iacute;a con registros administrativos de ingresos y
+    probar&iacute;a si los efectos medidos en
+    <span class="font-osf">2015&ndash;2016</span> se sostienen en la vida
     laboral temprana.
   </p>
 
   <dl class="fundraise-cta__pillars">
     <div class="fundraise-cta__pillar">
       <dt>Estado</dt>
-      <dd>Plan pre-registrado</dd>
-      <p>El trabajo de campo se reanud&oacute; en <span class="font-osf">2025</span>. Primeros resultados descriptivos esperados en <span class="font-osf">2026</span>.</p>
+      <dd>En preparaci&oacute;n</dd>
+      <p>El calendario y los socios se publicar&aacute;n aqu&iacute; cuando est&eacute;n confirmados.</p>
     </div>
     <div class="fundraise-cta__pillar">
       <dt>Qu&eacute; mide</dt>
       <dd>Ingresos a largo plazo</dd>
-      <p>Cohorte vinculada al panel de ingresos de la Tesorer&iacute;a de la Seguridad Social v&iacute;a IDEICE.</p>
+      <p>Estudiantes de la evaluaci&oacute;n original vinculados a registros administrativos de ingresos.</p>
     </div>
     <div class="fundraise-cta__pillar">
       <dt>Qu&eacute; produce</dt>
@@ -205,8 +205,8 @@ hero-image: /img/hero-map.jpg
       <p class="brief-card__lede">
         Compromiso para fundaciones, donantes bilaterales y
         multilaterales, y la comunidad investigadora en RCT de largo
-        plazo: reconocer el seguimiento <span class="font-osf">2025&ndash;2027</span>
-        como una replicaci&oacute;n prioritaria.
+        plazo: reconocer el seguimiento de largo plazo como una
+        replicaci&oacute;n prioritaria.
       </p>
       <div class="brief-card__cta">
         <a href="/campaigns/support-the-follow-up/">Leer y avalar</a>

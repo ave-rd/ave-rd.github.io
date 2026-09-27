@@ -1,7 +1,7 @@
 ---
 layout: letter
 title: "Pledge — Endorse the AVE-RD long-run follow-up"
-description: "Printable version of the international pledge endorsing the AVE-RD 2025–2027 follow-up evaluation as a priority replication of the Jensen 2010 design."
+description: "Printable version of the international pledge endorsing the planned AVE-RD long-run follow-up evaluation as a priority replication of the Jensen 2010 design."
 permalink: /campaigns/support-the-follow-up/letter/
 lang: en
 campaign_url: /campaigns/support-the-follow-up/
@@ -19,8 +19,7 @@ sitemap: false
 
 <p>
   We, the undersigned, write to formally endorse the AVE-RD
-  long-run follow-up evaluation
-  <span class="font-osf">2025&ndash;2027</span> and to call for its
+  long-run follow-up evaluation and to call for its
   recognition as a priority replication of the Jensen
   <span class="font-osf">2010</span> information&ndash;schooling design.
 </p>
@@ -39,21 +38,20 @@ sitemap: false
 </p>
 
 <p>
-  <strong>The 2025&ndash;2027 wave answers the earnings question.</strong>
-  By re-surveying the original cohort &mdash; now
-  <span class="font-osf">23&ndash;26</span> years old &mdash; and
-  linking treatment status to administrative earnings records held
-  by the Tesorería de la Seguridad Social, AVE-RD becomes the first
-  study to convert a documented short-run information effect into
-  long-run labour-market evidence in Latin America. This is the
-  evidence step the field has been missing.
+  <strong>The long-run follow-up would answer the earnings question.</strong>
+  By linking students from the original evaluation &mdash; now in
+  their twenties &mdash; to administrative earnings records, and
+  surveying a subsample, AVE-RD would become the first study to
+  convert a documented short-run information effect into long-run
+  labour-market evidence in Latin America. This is the evidence step
+  the field has been missing.
 </p>
 
 <p>
   We commit to <strong>(1)</strong> recognise the AVE-RD long-run
   follow-up as a priority replication of the Jensen
   <span class="font-osf">2010</span> design;
-  <strong>(2)</strong> support the cohort re-survey and TSS
+  <strong>(2)</strong> support the follow-up survey and administrative
   earnings linkage through funding decisions, citation, peer review,
   and dissemination as appropriate to our roles; and
   <strong>(3)</strong> treat the open replication kit
@@ -62,7 +60,6 @@ sitemap: false
 </p>
 
 <p>
-  The data agreements are open. The pre-analysis plan is
-  registered. The country team is the same team that ran the
-  original wave. We add our names below.
+  The follow-up builds on the original randomization; what it needs
+  is funding, not a new design. We add our names below.
 </p>

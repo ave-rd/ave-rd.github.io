@@ -1,7 +1,7 @@
 ---
 title: Support the follow-up
-description: "How to fund AVE-RD's 2025–2027 long-run follow-up — the budget, the named contacts, and the partnership model for foundations and bilateral donors."
-eyebrow: "Follow-up · 2025–2027"
+description: "How to fund AVE-RD's planned long-run follow-up — what the budget would cover, who to contact, and how foundations and bilateral donors can partner."
+eyebrow: "Long-run follow-up · in preparation"
 layout: page
 order: 6
 lang: en
@@ -14,37 +14,37 @@ hero-style: gradient
   schools in <span class="font-osf">2015</span> and
   <span class="font-osf">2,469</span> in <span class="font-osf">2016</span>;
   its dropout analysis covers <span class="font-osf">428,400</span>
-  students. The follow-up wave moves
-  <em>time</em>: a decade later, we re-survey the same cohort and link
-  them to the Dominican social-security earnings panel. The follow-up is
-  open to foundation and bilateral funders. This page is the ask.
+  students. The planned follow-up adds <em>time</em>: about a decade
+  on, it would link the same students to administrative earnings
+  records and survey a subsample. The follow-up is open to foundation
+  and bilateral funders. This page is the ask.
 </p>
 
 <div class="fundraise-cta reveal">
-  <span class="fundraise-cta__eyebrow">Fundraising target &middot; 2025&ndash;2027</span>
-  <h2 class="fundraise-cta__title">From a fifteen-minute video to <em>ten years of earnings</em>.</h2>
+  <span class="fundraise-cta__eyebrow">Fundraising &middot; long-run follow-up</span>
+  <h2 class="fundraise-cta__title">From a fifteen-minute video to <em>earnings a decade later</em>.</h2>
   <p class="fundraise-cta__lede">
-    The follow-up wave converts a short-term schooling effect into the
+    The follow-up would turn a short-term schooling effect into the
     first long-run earnings evidence on a video-based information
-    intervention in Latin America. Three years of fieldwork, one cohort,
-    one open replication kit at the end.
+    intervention in Latin America, with an open replication kit at the
+    end.
   </p>
 
   <dl class="fundraise-cta__pillars">
     <div class="fundraise-cta__pillar">
-      <dt>Three-year horizon</dt>
-      <dd>2025&ndash;2027</dd>
-      <p>Re-survey, administrative-data linkage, brief series and open replication kit, fielded out of the project office in Santo Domingo.</p>
+      <dt>Horizon</dt>
+      <dd>To be confirmed</dd>
+      <p>We will post the timeline here once it is confirmed. The work: administrative-data linkage, a follow-up survey, the brief series and an open replication kit.</p>
     </div>
     <div class="fundraise-cta__pillar">
       <dt>Students in the original dropout analysis</dt>
       <dd>428,400</dd>
-      <p>Includes contact-tracing for migrants, a mixed-mode survey, and quality-controlled record-linkage to the Tesorer&iacute;a de la Seguridad Social earnings panel.</p>
+      <p>From the <span class="font-osf">2016&ndash;17</span> dropout analysis (endline Table&nbsp;<span class="font-osf">5</span>). The follow-up would link students from the original evaluation to administrative earnings records.</p>
     </div>
     <div class="fundraise-cta__pillar">
-      <dt>Domestic match</dt>
-      <dd>Already in place</dd>
-      <p>MINERD funds field delivery, IDEICE hosts the data linkage, and INICIA Educaci&oacute;n is the lead domestic foundation partner. New funding goes directly to the marginal research output.</p>
+      <dt>Policy already in place</dt>
+      <dd>Handed to MINERD in 2017</dd>
+      <p>From <span class="font-osf">2017</span> MINERD&rsquo;s Department of Orientation and Psychology took over financing and running the videos, so new funding pays for research, not for delivering the intervention.</p>
     </div>
   </dl>
 
@@ -62,13 +62,11 @@ hero-style: gradient
 <ol class="numbered-list reveal">
   <li>
     <div>
-      <h3>Cohort re-survey &middot; <span class="font-osf">n</span> households</h3>
+      <h3>Follow-up survey</h3>
       <p>
-        Mixed-mode (CATI + in-person) instrument fielded across all
-        <span class="font-osf">18</span> educational regions. Includes
-        contact-tracing protocol for migrants, who account for an
-        estimated <span class="font-osf">m</span>% of the
-        cohort.
+        A survey of a subsample of the original students, with contact
+        tracing for those who have moved. Sample size and survey mode
+        are still to be set.
       </p>
     </div>
   </li>
@@ -76,10 +74,10 @@ hero-style: gradient
     <div>
       <h3>Administrative-data linkage</h3>
       <p>
-        AVE-RD panel cross-walked to the Tesorer&iacute;a de la Seguridad
-        Social earnings records. IDEICE is the data steward; budget
-        covers the legal, IRB, and infrastructure costs of the linkage,
-        plus de-identification for the open replication kit.
+        Links students from the original evaluation to administrative
+        earnings records. The budget covers the legal, IRB, and
+        infrastructure costs of the linkage, plus de-identification for
+        the open replication kit.
       </p>
     </div>
   </li>
@@ -88,8 +86,7 @@ hero-style: gradient
       <h3>Open replication kit &amp; long-run working paper</h3>
       <p>
         Cleans, packages, and releases the de-identified panel and
-        Stata pipeline. The pre-analysis plan for the long-run wave is
-        already registered.
+        Stata pipeline alongside the long-run working paper.
       </p>
     </div>
   </li>
@@ -119,20 +116,19 @@ hero-style: gradient
 </ul>
 
 <div class="signal-panel signal-panel--research reveal">
-  <div class="eyebrow">Pre-existing commitments</div>
+  <div class="eyebrow">Already in place</div>
   <p>
-    <strong>Institutional.</strong> MINERD funds the in-school operation
-    out of the DOP base budget. IDEICE is the data partner. J-PAL LAC
-    underwrites the country-team coordination. These commitments mean a
-    funder's marginal dollar buys research and replication, not field
-    setup.
+    <strong>Policy.</strong> From <span class="font-osf">2017</span>
+    MINERD&rsquo;s Department of Orientation and Psychology took over
+    financing and running the intervention (<span class="font-osf">2017</span>
+    endline report). A funder&rsquo;s marginal dollar buys research and
+    replication, not delivery of the videos.
   </p>
   <p>
-    <strong>Methodological.</strong> The pre-analysis plan for the
-    long-run outcomes is registered. Effect sizes from the first wave
-    are published. The follow-up does not depend on a new identification
-    strategy &mdash; only on funding the field operation that converts
-    the existing design into earnings outcomes.
+    <strong>Methodological.</strong> The short-run effects are documented
+    in the <span class="font-osf">2017</span> endline report. The
+    follow-up does not depend on a new identification strategy &mdash;
+    it builds on the original school-level randomization.
   </p>
 </div>
 

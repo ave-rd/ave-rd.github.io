@@ -14,8 +14,8 @@ seo:
   AVE-RD is a pilot public-policy project that evaluates the effect of a
   video-based information campaign on the schooling decisions of Dominican
   students in grades 7&ndash;12. Implemented by the Ministry of Education,
-  evaluated by IDEICE and J-PAL LAC, funded by USAID and MINERD with
-  follow-up support from INICIA Educaci&oacute;n. The study is a direct
+  evaluated by IDEICE and J-PAL LAC, funded by USAID and MINERD, with
+  seed funding from Fundaci&oacute;n Inicia. The study is a direct
   scale-up of <a href="https://academic.oup.com/qje/article-abstract/125/2/515/1882172">Robert Jensen&rsquo;s 2010
   <em>Quarterly Journal of Economics</em> paper</a> on perceived returns
   to education in the Dominican Republic.
@@ -132,7 +132,7 @@ seo:
 
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">The funding context</div>
-  <h2>Why USAID, why MINERD, why now INICIA</h2>
+  <h2>Why USAID, why MINERD</h2>
 </div>
 
 <p>
@@ -158,16 +158,14 @@ seo:
 </p>
 
 <p>
-  For the <span class="font-osf">2025&ndash;2027</span> long-run
-  follow-up, the funding architecture is updated. MINERD continues to
-  carry field operations. IDEICE is the data steward and brokers the
-  Tesorer&iacute;a de la Seguridad Social earnings linkage.
-  <a href="https://www.iniciaeducacion.org/">INICIA Educaci&oacute;n</a>
-  &mdash; the Vicini family&rsquo;s Dominican education foundation
-  &mdash; is the lead domestic funder. The
-  <a href="/projects/follow-up/">follow-up plan</a> describes the
-  remaining funding gap, primarily concentrated in the cohort
-  re-survey and the open replication kit.
+  Fundaci&oacute;n Inicia provided the project&rsquo;s first funding: a
+  US$<span class="font-osf">100,000</span> seed grant in
+  <span class="font-osf">2012</span> for the focus groups and pilot
+  surveys that preceded the USAID award. For the long-run follow-up,
+  the funding plan is still being put together; the
+  <a href="/projects/follow-up/">follow-up page</a> describes what it
+  would cover, and partners and funders will be named there once
+  agreements are in place.
 </p>
 
 <div class="section-header reveal">
@@ -228,12 +226,11 @@ seo:
   <p>
     Following the evaluation, MINERD adopted AVE as standing policy. The
     four videos and the classroom protocol are now delivered in
-    <strong>every public school in the Dominican Republic</strong>. The
-    <span class="font-osf">2025&ndash;2027</span> follow-up wave operates
-    on top of that policy backdrop &mdash; the original cohort is now
-    <span class="font-osf">23&ndash;26</span> years old and reachable
-    through MINERD enrolment records and the Tesorer&iacute;a de la
-    Seguridad Social earnings panel.
+    <strong>every public school in the Dominican Republic</strong>. A
+    planned long-run follow-up would build on that policy backdrop: the
+    students in the original evaluation are now in their twenties, old
+    enough for administrative earnings records to show whether the
+    schooling effects carried into the labor market.
   </p>
 </div>
 

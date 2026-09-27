@@ -1,22 +1,22 @@
 ---
 title: News and field updates
-description: "Field-update posts, brief releases, and milestone announcements from the AVE-RD project."
-eyebrow: "News · field updates"
+description: "Brief releases, milestone announcements, and updates on the planned long-run follow-up from the AVE-RD project."
+eyebrow: "News · project updates"
 layout: page
 permalink: /news/
 hero-style: gradient
 ---
 
 <p class="dropcap">
-  Short posts from the field operation in Santo Domingo: contact-tracing
-  pilot read-outs, brief releases, partnership milestones, and
-  occasional notes on what the cohort tells us. Subscribe via
+  Short posts from the AVE-RD project: brief releases, partnership
+  milestones, and updates on the long-run follow-up as its plans are
+  confirmed. Subscribe via
   <a href="/feed.xml">RSS</a> or follow the project on the
   partner channels listed at the bottom of the page.
 </p>
 
 <div class="section-header reveal">
-  <div class="eyebrow eyebrow--rule">Latest field updates</div>
+  <div class="eyebrow eyebrow--rule">Latest updates</div>
   <h2>Posts, sorted newest first</h2>
 </div>
 
@@ -44,8 +44,8 @@ hero-style: gradient
 <div class="signal-panel signal-panel--research reveal">
   <div class="eyebrow">Stay in the loop</div>
   <p>
-    Updates land roughly once a month during fieldwork and at brief
-    releases otherwise. The <a href="/feed.xml">RSS feed</a> is the
+    Updates land at brief releases and project milestones. The
+    <a href="/feed.xml">RSS feed</a> is the
     canonical source. For institutional announcements, follow
     <a href="https://www.povertyactionlab.org/lac" rel="noopener">J-PAL LAC</a>
     or the partner channels on the

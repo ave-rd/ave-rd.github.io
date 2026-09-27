@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "Endorse the AVE-RD long-run follow-up evaluation."
-description: "An international pledge of support for the 2025–2027 long-run follow-up evaluation, addressed to foundations, bilateral and multilateral funders, and the long-run-RCT research community."
-eyebrow: "Pledge · 2025–2027"
+description: "An international pledge of support for the planned long-run follow-up evaluation, addressed to foundations, bilateral and multilateral funders, and the long-run-RCT research community."
+eyebrow: "Pledge · long-run follow-up"
 permalink: /campaigns/support-the-follow-up/
 hero-style: gradient
 lang: en
@@ -23,9 +23,9 @@ seo:
 </p>
 
 <p class="dropcap">
-  AVE-RD&rsquo;s first wave moved a schooling decision; the
-  <span class="font-osf">2025&ndash;2027</span> follow-up tells us
-  whether that decision moved <em>lives</em>. This pledge is for
+  AVE-RD&rsquo;s first wave moved a schooling decision; the planned
+  long-run follow-up would tell us whether that decision moved
+  <em>lives</em>. This pledge is for
   foundations, bilateral and multilateral funders, and the long-run-RCT
   research community. Endorsing it signals that the project sits inside
   a recognised research priority &mdash; reproducible information
@@ -57,12 +57,11 @@ seo:
     </li>
     <li>
       <div>
-        <h3>Support the 2025&ndash;2027 cohort re-survey and TSS earnings linkage.</h3>
+        <h3>Support the follow-up survey and administrative earnings linkage.</h3>
         <p>
-          We treat the cohort re-survey, the IDEICE-brokered linkage
-          to the Tesorer&iacute;a de la Seguridad Social earnings
-          panel, and the open replication kit as legitimate budget
-          lines for our institutions and our peer reviewers.
+          We treat the follow-up survey, the linkage to administrative
+          earnings records, and the open replication kit as legitimate
+          budget lines for our institutions and our peer reviewers.
         </p>
       </div>
     </li>

@@ -18,9 +18,8 @@ seo:
   part of the pipeline &mdash; design, delivery, measurement,
   domestic funding, founding donor &mdash; and the pilot reached
   <span class="font-osf">200,000</span> students because all five
-  held their corner. The follow-up wave keeps the same partnership
-  architecture, with a new emphasis on the evaluation agency's access
-  to administrative earnings records.
+  held their corner. The planned long-run follow-up would add
+  administrative earnings records to the data the pilot produced.
 </p>
 
 <dl class="stat-strip reveal">
@@ -96,8 +95,8 @@ seo:
   <div class="eyebrow eyebrow--rule">Partnering with AVE-RD</div>
   <h2>What we look for in a new partner</h2>
   <p class="lede">
-    The follow-up wave is open to additional research collaborators,
-    replication teams, and donors. The relationship is structured around
+    The planned long-run follow-up is open to additional research
+    collaborators, replication teams, and donors. The relationship is structured around
     three deliverables.
   </p>
 </div>
@@ -128,8 +127,8 @@ seo:
       <h3>Fund the long-run wave</h3>
       <p>
         Foundations and bilateral donors can support specific budget lines
-        in the 2025&ndash;2027 follow-up: re-survey, administrative-data
-        linkage, qualitative interviews, and the open replication kit.
+        in the planned long-run follow-up: the follow-up survey,
+        administrative-data linkage, and the open replication kit.
         See <a href="/projects/follow-up/">Support the follow-up</a>.
       </p>
     </div>

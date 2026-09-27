@@ -19,8 +19,7 @@ partners:
       A non-profit research center reducing poverty and improving lives by
       creating and disseminating rigorous evidence on what public policies
       and social programs really work. J-PAL LAC led the research design and
-      impact evaluation for AVE-RD, and now coordinates the
-      2025–2027 follow-up wave.
+      impact evaluation for AVE-RD.
     quote:
       text: >-
         AVE-RD showed that a fifteen-minute video, shown once in a
@@ -50,8 +49,8 @@ partners:
       The Dominican Ministry of Education is responsible for planning,
       management, administration and development of the country's
       education model. Its Department of Orientation and Psychology
-      delivered the AVE-RD videos to schools nationwide and is the
-      operational owner of the follow-up wave. MINERD's Pruebas
+      delivered the AVE-RD videos to schools nationwide and, from 2017,
+      took over financing and running the program. MINERD's Pruebas
       Nacionales — the national assessment system — supplies the
       test-score outcomes that anchor the impact analysis.
     quote:
@@ -82,10 +81,7 @@ partners:
       IDEICE is the research and evaluation arm of MINERD — a public,
       decentralized agency attached to the Ministry of Education. It
       co-led the AVE-RD impact evaluation, hosts the panel data, and
-      brokers the Pruebas Nacionales linkages. For the
-      2025–2027 follow-up, IDEICE is the data steward responsible
-      for the agreement that links the cohort to the Tesorería de la
-      Seguridad Social earnings panel.
+      brokers the Pruebas Nacionales linkages.
     leads:
       - name: "Carmen Maura Taveras"
         role: "Education evaluation · Pruebas Nacionales · World Bank Education Global Practice"
@@ -101,14 +97,15 @@ partners:
     url: "https://www.iniciaeducacion.org/"
     logo: ""                                            # TODO: add /img/logos/inicia.png
     role_badge: "cohort"
-    role_label: "Foundation partner & funder"
+    role_label: "Seed funder (2012)"
     description: >-
       INICIA Educación is a Dominican impact-investment fund focused
       on the country's basic-education system, established in 2010 by
       the Vicini family. It works in close partnership with MINERD and
-      IDEICE on system-wide evidence generation — including AVE-RD —
-      and is a key partner and funder of the
-      2025–2027 follow-up wave.
+      IDEICE on system-wide evidence generation. In 2012 Fundación
+      Inicia gave J-PAL LAC a US$100,000 seed grant for the focus
+      groups and pilot surveys that led to AVE-RD — the project's
+      first funding.
     leads:
       - name: "Executive Director"             # TODO: replace with real name
         role: "INICIA Educación"
@@ -132,8 +129,7 @@ partners:
       from Robert Jensen's 2010 study in the country. The agreement
       ran across thirteen milestones; the endline report submitted at
       Milestone 13 documented the dropout, test-score and belief-update
-      effects that informed MINERD's subsequent policy adoption and
-      the design of the 2025–2027 follow-up.
+      effects that informed MINERD's subsequent policy adoption.
     leads:
       - name: "Mission Director, USAID/Dominican Republic"   # TODO: replace
         role: "USAID/DR"

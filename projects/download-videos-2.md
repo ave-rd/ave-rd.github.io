@@ -116,9 +116,9 @@ seo:
 </div>
 
 <p>
-  The instruments are organized by wave (baseline 2015, endline 2016, and
-  the 2025&ndash;2027 follow-up wave) and by respondent (student, parent,
-  teacher, principal). The full inventory is in the
+  The instruments are organized by survey wave (baseline 2014, follow-up
+  2015, endline 2016) and by respondent (student, parent, teacher,
+  principal). The full inventory is in the
   <a href="https://github.com/ave-rd/ave-rd.github.io/tree/master/instruments"><code>instruments/</code> directory</a>
   of this site's repository.
 </p>

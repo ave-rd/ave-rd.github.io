@@ -116,10 +116,11 @@ brief_pdf_ready: false
     <div>
       <h3>An evaluation agency owns the data</h3>
       <p>
-        A national evaluation body (in DR's case, IDEICE) hosts the panel
-        and brokers the link to administrative records. This is the role
-        most often missing in adaptations &mdash; without it, the
-        long-run earnings analysis is not feasible.
+        A national evaluation body (in the DR, IDEICE) was AVE-RD&rsquo;s
+        local research partner inside the ministry. This role is often
+        missing in adaptations. Plan the route to administrative records
+        &mdash; enrollment, exams, earnings &mdash; from the start;
+        without it, a long-run earnings analysis is not feasible.
       </p>
     </div>
   </li>
