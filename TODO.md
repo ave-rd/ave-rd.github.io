@@ -16,8 +16,9 @@ remove the bullet in the same PR).
   participating school.
 - **Drop a CSV at `_data/schools.csv`** with at minimum `lat,lng`
   columns (and optionally `name`, `province`, `wave`). The SVG can
-  then be regenerated to plot the real ~600 points (probably as small
-  dots with province cluster bubbles for legibility).
+  then be regenerated to plot the real schools (599 in the 2015 wave,
+  2,469 by 2016), probably as small dots with province cluster
+  bubbles for legibility.
 
 ### PDFs → fix the Replication Kit page
 - `/projects/download-videos-2/` lists three working papers with
@@ -35,12 +36,60 @@ remove the bullet in the same PR).
   a settled venue/year. If unpublished, `@unpublished` form is fine
   for now.
 
-### Real "Now: 2025–2027 follow-up wave" copy
-- Homepage `signal-panel--research` block currently has fabricated
-  detail (TSS earnings linkage, "pre-analysis plan registered",
-  "first results 2026"). I made it up to demonstrate the pattern.
-- **Replace with real research questions, real design summary, real
-  timeline.** From `index.md`, near the end.
+### Real long-run follow-up copy
+- The invented follow-up details (TSS/IDEICE earnings linkage,
+  "pre-analysis plan registered", "first results 2026", fieldwork
+  "resumed" in 18 regions, INICIA as lead funder, the 2025–2027
+  window) were removed site-wide in the September 2026 accuracy pass.
+  The site now says only that a long-run follow-up is planned, would
+  link the original students to administrative earnings records, and
+  is seeking funding.
+- Two news posts are unpublished (`published: false`), not deleted:
+  `_news/2025-09-15-fieldwork-resumes.md` and
+  `_news/2026-01-20-tss-linkage-agreement.md`. Rewrite or delete.
+- **Needs from the team:** confirmed status, timeline, earnings-data
+  custodian, partners and funders, and pre-analysis-plan plans. Then
+  fill in the homepage `#follow-up` block, `/projects/follow-up/`,
+  `/briefs/why-follow-up/`, the "Now" entry in `_data/press.yml`, and
+  the Spanish mirrors.
+
+### Unverified claims still on the site
+Found in the same accuracy pass (source of record: the 2017 endline
+report, J-PAL LAC, USAID DIV award AID-F-14-00030). Confirm, source,
+or remove each before funder reviews.
+- **Placeholder quotes attributed to real roles**: J-PAL LAC Executive
+  Director, USAID/DR Mission Director and MINERD DOP Director
+  (`_data/press.yml` testimonials; J-PAL and MINERD quotes in
+  `_data/partner_leads.yml`). Placeholder press items (Listín Diario,
+  El Caribe, 2017) have made-up headlines.
+- **Seeded signatures**, including a statement attributed to Carmen
+  Maura Taveras (`_data/signatures.yml`; see BACKLOG.md).
+- **"Every public school in the country" / "now national policy"**:
+  the endline documents only the 2017–2019 rollout plan (Table 8).
+- **Beliefs and mechanism findings** (homepage, what-worked brief, ES
+  home): "42% of boys expected no income difference", "students whose
+  beliefs updated were the ones who stayed", "effects exceed a
+  pure-information model". None of these is in the endline; cite the
+  working paper or remove.
+- **About-page stat strip**: 200,000 students reached, 300,000
+  surveys, 2,700 officials (also "200,000" on the partners pages). The
+  endline timeline shows about 44,500 (2015) and 265,000 (2016)
+  students in treated schools and roughly 160,000 surveys; 2,700 has
+  no source.
+- **Dropout details**: "reductions across grades 7–12" (About) and
+  "strongest in students re-exposed in the second wave" (what-worked).
+  The significant effect is the one-year-lagged effect of 2015
+  exposure (Table 5); same-year 2016 effects are not significant.
+- **Homepage Figure 1** (`_includes/viz/dropout-trend.svg`) is an
+  illustrative trajectory with invented levels and an invented
+  confidence band; replace with a Table 5 coefficient plot or remove.
+- **Dates**: briefs (Sept–Nov 2025) and the funder-brief news post
+  (4 Nov 2025) are dated before the files existed (May 2026).
+- **Sister projects**: "each implementation pre-registered an
+  evaluation", DFM Chile figures (11,000+, ~50% completion, 5×
+  awareness) and ICFES-Bot's 430,000/year were not checked.
+- **Funder list** on `/projects/follow-up/` names USAID among
+  bilateral donors; check this is still appropriate.
 
 ### Real video metadata
 - `_data/videos.yml` has draft Spanish episode titles
@@ -73,10 +122,12 @@ remove the bullet in the same PR).
 
 ### Headline-finding charts
 - Homepage states `2.5–3pp dropout`, `0.05–0.13σ test scores` as
-  numbers in the stat strip. No visual.
+  numbers in the stat strip. The what-worked brief's forest plot now
+  plots endline Table 6; the homepage dropout figure is still
+  illustrative (see "Unverified claims" above).
 - **Build small inline SVG bar charts** — one per finding, showing
-  effect size + confidence interval. Drop into `figures/` + embed in
-  the relevant section. Static, no JS.
+  effect size + confidence interval from the endline tables. Drop
+  into `figures/` + embed in the relevant section. Static, no JS.
 
 ### Province-level deployment map
 - Beyond the decorative homepage hero, build a more rigorous

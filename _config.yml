@@ -45,6 +45,9 @@ permalink: pretty
 exclude:
   - README.md
   - LICENSE.md
+  # Internal planning docs: keep them in the repo, not on the site.
+  - TODO.md
+  - BACKLOG.md
   - vendor
   - Gemfile
   - Gemfile.lock
