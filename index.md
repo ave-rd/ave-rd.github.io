@@ -15,9 +15,12 @@ hero-image: /img/hero-map.jpg
   Republic with the Ministry of Education. We test whether a brief,
   scalable information campaign &mdash; four short videos shown in the
   classroom &mdash; can shift students&rsquo; beliefs about the returns
-  to education and, with them, the choice to stay in school. The first
-  wave reached <span class="font-osf">600</span> public schools and
-  <span class="font-osf">43,000</span> students. Following the
+  to education and, with them, the choice to stay in school. The
+  evaluation randomized <span class="font-osf">599</span> public
+  schools in <span class="font-osf">2015</span> and
+  <span class="font-osf">2,469</span> in <span class="font-osf">2016</span>;
+  its dropout analysis covers <span class="font-osf">428,400</span>
+  students. Following the
   evaluation, the intervention was adopted as government policy and is
   now implemented in <strong>every public school in the country</strong>.
   A <span class="font-osf">2025&ndash;2027</span> follow-up wave links
@@ -34,12 +37,12 @@ hero-image: /img/hero-map.jpg
     <dd class="stat-strip__value">0.05&ndash;0.13&sigma;</dd>
   </div>
   <div class="stat-strip__item">
-    <dt class="stat-strip__label">Public schools randomized</dt>
-    <dd class="stat-strip__value">600</dd>
+    <dt class="stat-strip__label">Public schools randomized by 2016</dt>
+    <dd class="stat-strip__value">2,469</dd>
   </div>
   <div class="stat-strip__item">
-    <dt class="stat-strip__label">Students in panel</dt>
-    <dd class="stat-strip__value">43,000</dd>
+    <dt class="stat-strip__label">Students in the dropout analysis</dt>
+    <dd class="stat-strip__value">428,400</dd>
   </div>
 </dl>
 
@@ -135,12 +138,18 @@ hero-image: /img/hero-map.jpg
     <div>
       <h3>Test scores rose, especially with statistics</h3>
       <p>
-        Pruebas Nacionales scores improved by
-        <span class="font-osf">0.05&ndash;0.06</span> SD in the informative
-        arm, growing to <span class="font-osf">0.07&ndash;0.13</span> SD
-        for students who saw the video twice. Effect was largest
-        (<span class="font-osf">~0.10</span> SD) in the upper three deciles
-        of baseline performance.
+        On the <span class="font-osf">2016</span> eighth-grade Pruebas
+        Nacionales, students who saw the informative video that year
+        scored <span class="font-osf">0.065</span> SD higher, and those
+        who had also seen it in <span class="font-osf">2015</span> scored
+        <span class="font-osf">0.129</span> SD higher (both
+        <em>p</em>&nbsp;&lt;&nbsp;<span class="font-osf">0.01</span>).
+        The persuasive video raised scores by
+        <span class="font-osf">0.052</span> and
+        <span class="font-osf">0.077</span> SD
+        (<em>p</em>&nbsp;&lt;&nbsp;<span class="font-osf">0.05</span>).
+        Gains were larger in the upper part of the score distribution,
+        especially with the informative video.
       </p>
     </div>
   </li>

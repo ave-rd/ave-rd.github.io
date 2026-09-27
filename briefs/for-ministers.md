@@ -134,7 +134,7 @@ brief_pdf_ready: false
   <li><strong>Months 1&ndash;2.</strong> Wage-data review, partner agreements, IRB submission.</li>
   <li><strong>Months 2&ndash;3.</strong> Video re-shoot or localization, classroom-protocol translation, pilot in 5&ndash;10 schools.</li>
   <li><strong>Month 4.</strong> Sample frame, randomization, baseline survey instrument adapted.</li>
-  <li><strong>Months 5&ndash;6.</strong> Field rollout in the first cohort. The full <span class="font-osf">600</span>-school target is a year-two milestone, not a year-one one.</li>
+  <li><strong>Months 5&ndash;6.</strong> Field rollout in the first cohort. A sample on the scale of AVE&rsquo;s (<span class="font-osf">599</span> schools in its first year, <span class="font-osf">2,469</span> in its second) is a year-two milestone, not a year-one one.</li>
 </ul>
 
 <div class="section-header reveal">

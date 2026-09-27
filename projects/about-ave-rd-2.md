@@ -95,10 +95,13 @@ seo:
       <h3>National scale, not a sub-sample</h3>
       <p>
         Jensen&rsquo;s sample was a research-grade sub-sample. The
-        AVE-RD pilot reached <span class="font-osf">600</span> public
-        schools and <span class="font-osf">43,000</span> students at
-        baseline; the post-evaluation policy adoption brought the
-        intervention to <em>every public school in the country</em>.
+        AVE-RD evaluation randomized <span class="font-osf">599</span>
+        public schools in <span class="font-osf">2015</span> and
+        <span class="font-osf">2,469</span> in <span class="font-osf">2016</span>,
+        and its dropout analysis covers
+        <span class="font-osf">428,400</span> students; the
+        post-evaluation policy adoption brought the intervention to
+        <em>every public school in the country</em>.
       </p>
     </div>
   </li>
@@ -255,7 +258,7 @@ seo:
   <li>
     <div>
       <h3>Higher National Test scores</h3>
-      <p>Treated students scored higher on the Pruebas Nacionales than untreated peers in the same school.</p>
+      <p>Eighth graders in treated schools scored higher on the Pruebas Nacionales than those in control schools: <span class="font-osf">0.065</span> SD after seeing the informative video in <span class="font-osf">2016</span>, and <span class="font-osf">0.129</span> SD after seeing it in both <span class="font-osf">2015</span> and <span class="font-osf">2016</span>.</p>
     </div>
   </li>
   <li>

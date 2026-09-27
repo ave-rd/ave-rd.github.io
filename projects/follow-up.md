@@ -10,8 +10,11 @@ hero-style: gradient
 ---
 
 <p class="dropcap">
-  AVE-RD's first wave moved <span class="font-osf">600</span> schools and
-  <span class="font-osf">43,000</span> students. The follow-up wave moves
+  AVE-RD's evaluation randomized <span class="font-osf">599</span> public
+  schools in <span class="font-osf">2015</span> and
+  <span class="font-osf">2,469</span> in <span class="font-osf">2016</span>;
+  its dropout analysis covers <span class="font-osf">428,400</span>
+  students. The follow-up wave moves
   <em>time</em>: a decade later, we re-survey the same cohort and link
   them to the Dominican social-security earnings panel. The follow-up is
   open to foundation and bilateral funders. This page is the ask.
@@ -34,8 +37,8 @@ hero-style: gradient
       <p>Re-survey, administrative-data linkage, brief series and open replication kit, fielded out of the project office in Santo Domingo.</p>
     </div>
     <div class="fundraise-cta__pillar">
-      <dt>Cohort to re-track</dt>
-      <dd>43,000</dd>
+      <dt>Students in the original dropout analysis</dt>
+      <dd>428,400</dd>
       <p>Includes contact-tracing for migrants, a mixed-mode survey, and quality-controlled record-linkage to the Tesorer&iacute;a de la Seguridad Social earnings panel.</p>
     </div>
     <div class="fundraise-cta__pillar">

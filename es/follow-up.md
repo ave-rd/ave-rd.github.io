@@ -11,8 +11,12 @@ hero-style: gradient
 ---
 
 <p class="dropcap">
-  La primera ola de AVE-RD movi&oacute; <span class="font-osf">600</span>
-  escuelas y <span class="font-osf">43,000</span> estudiantes. La ola
+  La evaluaci&oacute;n de AVE-RD aleatoriz&oacute;
+  <span class="font-osf">599</span> escuelas p&uacute;blicas en
+  <span class="font-osf">2015</span> y <span class="font-osf">2,469</span>
+  en <span class="font-osf">2016</span>; su an&aacute;lisis de
+  deserci&oacute;n abarca a <span class="font-osf">428,400</span>
+  estudiantes. La ola
   de seguimiento mueve <em>tiempo</em>: una d&eacute;cada despu&eacute;s,
   re-encuestamos la misma cohorte y la vinculamos al panel de ingresos
   de la seguridad social dominicana. La ola de seguimiento est&aacute;
@@ -37,8 +41,8 @@ hero-style: gradient
       <p>Re-encuesta, vinculaci&oacute;n administrativa, serie de res&uacute;menes y kit de replicaci&oacute;n abierto, ejecutado desde la oficina del proyecto en Santo Domingo.</p>
     </div>
     <div class="fundraise-cta__pillar">
-      <dt>Cohorte a rastrear</dt>
-      <dd>43,000</dd>
+      <dt>Estudiantes en el an&aacute;lisis de deserci&oacute;n original</dt>
+      <dd>428,400</dd>
       <p>Incluye localizaci&oacute;n de migrantes, encuesta mixta, y vinculaci&oacute;n de registros con la Tesorer&iacute;a de la Seguridad Social.</p>
     </div>
     <div class="fundraise-cta__pillar">

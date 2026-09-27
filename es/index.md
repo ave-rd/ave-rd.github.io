@@ -17,9 +17,12 @@ hero-image: /img/hero-map.jpg
   Probamos si una breve campa&ntilde;a informativa &mdash; cuatro videos
   cortos proyectados en aulas &mdash; logra modificar las creencias de
   los estudiantes sobre los retornos a la educaci&oacute;n y, con ello,
-  la decisi&oacute;n de permanecer en la escuela. La primera ola
-  alcanz&oacute; <span class="font-osf">600</span> escuelas
-  p&uacute;blicas y <span class="font-osf">43,000</span> estudiantes.
+  la decisi&oacute;n de permanecer en la escuela. La evaluaci&oacute;n
+  aleatoriz&oacute; <span class="font-osf">599</span> escuelas
+  p&uacute;blicas en <span class="font-osf">2015</span> y
+  <span class="font-osf">2,469</span> en <span class="font-osf">2016</span>;
+  su an&aacute;lisis de deserci&oacute;n abarca a
+  <span class="font-osf">428,400</span> estudiantes.
   Una nueva ola de seguimiento, <span class="font-osf">2025&ndash;2027</span>,
   vincula la misma cohorte a registros administrativos de ingresos.
 </p>
@@ -34,12 +37,12 @@ hero-image: /img/hero-map.jpg
     <dd class="stat-strip__value">0.05&ndash;0.13&sigma;</dd>
   </div>
   <div class="stat-strip__item">
-    <dt class="stat-strip__label">Escuelas p&uacute;blicas aleatorizadas</dt>
-    <dd class="stat-strip__value">600</dd>
+    <dt class="stat-strip__label">Escuelas p&uacute;blicas aleatorizadas hasta 2016</dt>
+    <dd class="stat-strip__value">2,469</dd>
   </div>
   <div class="stat-strip__item">
-    <dt class="stat-strip__label">Estudiantes en el panel</dt>
-    <dd class="stat-strip__value">43,000</dd>
+    <dt class="stat-strip__label">Estudiantes en el an&aacute;lisis de deserci&oacute;n</dt>
+    <dd class="stat-strip__value">428,400</dd>
   </div>
 </dl>
 
@@ -66,13 +69,21 @@ hero-image: /img/hero-map.jpg
     <div>
       <h3>Los puntajes mejoraron, sobre todo con estad&iacute;sticas</h3>
       <p>
-        Los puntajes en las Pruebas Nacionales mejoraron
-        <span class="font-osf">0.05&ndash;0.06</span>&nbsp;DE en el
-        brazo informativo y hasta
-        <span class="font-osf">0.07&ndash;0.13</span>&nbsp;DE en
-        estudiantes que vieron el video dos veces. El efecto fue
-        mayor (~<span class="font-osf">0.10</span>&nbsp;DE) en los
-        deciles superiores de desempe&ntilde;o de base.
+        En las Pruebas Nacionales de octavo grado de
+        <span class="font-osf">2016</span>, quienes vieron el video
+        informativo ese a&ntilde;o obtuvieron
+        <span class="font-osf">0.065</span>&nbsp;DE m&aacute;s, y
+        quienes adem&aacute;s lo hab&iacute;an visto en
+        <span class="font-osf">2015</span>,
+        <span class="font-osf">0.129</span>&nbsp;DE m&aacute;s (ambos
+        <em>p</em>&nbsp;&lt;&nbsp;<span class="font-osf">0.01</span>).
+        El video persuasivo elev&oacute; los puntajes en
+        <span class="font-osf">0.052</span> y
+        <span class="font-osf">0.077</span>&nbsp;DE
+        (<em>p</em>&nbsp;&lt;&nbsp;<span class="font-osf">0.05</span>).
+        Las ganancias fueron mayores en la parte alta de la
+        distribuci&oacute;n de puntajes, sobre todo con el video
+        informativo.
       </p>
     </div>
   </li>

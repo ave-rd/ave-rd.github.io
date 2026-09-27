@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Why a long-run follow-up: from schooling to earnings"
-description: "The economic case for tracking AVE-RD's original 43,000-student cohort ten years on, with budget lines for the 2025–2027 follow-up wave."
+description: "The economic case for tracking the students in AVE-RD's original evaluation ten years on, with budget lines for the 2025–2027 follow-up wave."
 eyebrow: "Brief 02 · For funders"
 permalink: /briefs/why-follow-up/
 hero-style: gradient
@@ -36,8 +36,8 @@ brief_pdf_ready: false
     <dd class="stat-strip__value">~10</dd>
   </div>
   <div class="stat-strip__item">
-    <dt class="stat-strip__label">Cohort to re-survey</dt>
-    <dd class="stat-strip__value">43,000</dd>
+    <dt class="stat-strip__label">Students in the dropout analysis</dt>
+    <dd class="stat-strip__value">428,400</dd>
   </div>
   <div class="stat-strip__item">
     <dt class="stat-strip__label">Year field plan</dt>
