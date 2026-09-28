@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Why a long-run follow-up: from schooling to earnings"
-description: "The economic case for tracking AVE-RD's original 43,000-student cohort ten years on, with budget lines for the 2025–2027 follow-up wave."
+description: "The case for following the students in AVE-RD's original evaluation into the labor market a decade on, and what the planned follow-up's budget would cover."
 eyebrow: "Brief 02 · For funders"
 permalink: /briefs/why-follow-up/
 hero-style: gradient
@@ -18,16 +18,15 @@ brief_pdf_ready: false
 </div>
 
 <p>
-  AVE-RD's first wave moved schooling decisions. The follow-up tells us
-  whether those decisions moved <em>lives</em>. In <span class="font-osf">2025</span>
-  the original cohort is now <span class="font-osf">23&ndash;26</span>
-  years old &mdash; old enough to be on the labor market, old enough to be
-  in the Dominican social security earnings panel, and young enough that
-  intervening on schooling decisions a decade ago should still register in
-  observable outcomes today. The follow-up wave links the cohort to those
-  records, re-surveys a subsample for qualitative depth, and produces the
-  first long-run evidence on a video-based information intervention in
-  Latin America.
+  AVE-RD's first waves moved schooling decisions. The follow-up would
+  tell us whether those decisions moved <em>lives</em>. The students in
+  the <span class="font-osf">2015&ndash;2016</span> evaluation are now
+  in their twenties &mdash; old enough to be in the labor market and to
+  appear in administrative earnings records, and recent enough that
+  schooling decisions made a decade ago should still register in
+  observable outcomes. The planned follow-up would link them to those
+  records, survey a subsample for depth, and produce the first long-run
+  evidence on a video-based information intervention in Latin America.
 </p>
 
 <dl class="stat-strip reveal">
@@ -36,36 +35,52 @@ brief_pdf_ready: false
     <dd class="stat-strip__value">~10</dd>
   </div>
   <div class="stat-strip__item">
-    <dt class="stat-strip__label">Cohort to re-survey</dt>
-    <dd class="stat-strip__value">43,000</dd>
+    <dt class="stat-strip__label">Students in the dropout analysis</dt>
+    <dd class="stat-strip__value">428,400</dd>
   </div>
   <div class="stat-strip__item">
-    <dt class="stat-strip__label">Year field plan</dt>
-    <dd class="stat-strip__value">3</dd>
+    <dt class="stat-strip__label">Public schools randomized by 2016</dt>
+    <dd class="stat-strip__value">2,469</dd>
   </div>
   <div class="stat-strip__item">
-    <dt class="stat-strip__label">Pre-analysis plan</dt>
-    <dd class="stat-strip__value">Registered</dd>
+    <dt class="stat-strip__label">Dropout reduction a year after exposure</dt>
+    <dd class="stat-strip__value">2.5&ndash;3pp</dd>
   </div>
 </dl>
 
 <div class="section-header reveal">
-  <div class="eyebrow eyebrow--rule">What a one-percentage-point dropout reduction is worth</div>
-  <h2>Back-of-envelope economics</h2>
+  <div class="eyebrow eyebrow--rule">What we can price today</div>
+  <h2>Costs are measured; earnings are not &mdash; yet</h2>
 </div>
 
 <p>
-  Dominican earnings data show a wage premium of roughly
-  <span class="font-osf">X</span>&nbsp;% for completed secondary
-  schooling versus dropouts (placeholder &mdash; replace with the
-  TSS-derived figure). At cohort scale
-  (<span class="font-osf">43,000</span> students, of whom roughly
-  <span class="font-osf">Y</span> are at the dropout margin),
-  a <span class="font-osf">2.5</span>&nbsp;pp dropout reduction sustained
-  through to secondary completion implies present-discounted lifetime
-  earnings of approximately
-  <span class="font-osf">Z</span> per affected student. The
-  follow-up converts those projections into observed earnings.
+  The <span class="font-osf">2017</span> endline report prices the
+  short-run effects. Producing the videos cost about
+  US$<span class="font-osf">104,000</span>, and revising them for the
+  second year another US$<span class="font-osf">25,400</span>; training
+  the staff who delivered them cost between
+  US$<span class="font-osf">22,000</span> and
+  US$<span class="font-osf">63,000</span> a year in
+  <span class="font-osf">2015&ndash;16</span>. The report&rsquo;s
+  cost-effectiveness table puts the cost of raising test scores by one
+  standard deviation at US$<span class="font-osf">60.2</span> for the
+  informative video seen once and US$<span class="font-osf">78.5</span>
+  for students who saw it in both years
+  (US$<span class="font-osf">73.9</span> and
+  US$<span class="font-osf">124.4</span> for the persuasive video;
+  Table&nbsp;<span class="font-osf">7</span>). In
+  <span class="font-osf">2017</span> MINERD budgeted
+  DOP&nbsp;<span class="font-osf">1,730,000</span> (about
+  US$<span class="font-osf">36,808</span>) to run the program in
+  <span class="font-osf">2,000</span> schools.
+</p>
+
+<p>
+  What the endline could not measure is the benefit side in earnings:
+  whether a <span class="font-osf">2.5&ndash;3</span>&nbsp;pp drop in
+  dropout and higher test scores translate into higher adult earnings.
+  That is the number the follow-up is designed to measure, rather than
+  assume.
 </p>
 
 <div class="section-header reveal">
@@ -76,11 +91,12 @@ brief_pdf_ready: false
 <ol class="numbered-list reveal">
   <li>
     <div>
-      <h3>Cohort re-survey (<span class="font-osf">n</span> households, panel attrition modelled)</h3>
+      <h3>Follow-up survey</h3>
       <p>
-        Field operation, contact tracing for migrants, mixed-mode (CATI +
-        in-person) instrument. Drives the qualitative depth of the
-        long-run findings.
+        A survey of a subsample of the original students, with contact
+        tracing for those who have moved. Adds depth to what
+        administrative records show; sample size and survey mode are
+        still to be set.
       </p>
     </div>
   </li>
@@ -88,9 +104,8 @@ brief_pdf_ready: false
     <div>
       <h3>Administrative-data linkage</h3>
       <p>
-        Tesorer&iacute;a de la Seguridad Social earnings records
-        cross-walked to the AVE-RD panel under a use agreement. IDEICE is
-        the data-handling partner; covers the legal, IRB, and
+        Administrative earnings records linked to the AVE-RD evaluation
+        samples under a data-use agreement. Covers the legal, IRB, and
         infrastructure costs of the linkage.
       </p>
     </div>
@@ -119,13 +134,13 @@ brief_pdf_ready: false
 
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Why now</div>
-  <h2>Three reasons the timing is unusually good</h2>
+  <h2>Why the timing matters</h2>
 </div>
 
 <ul>
-  <li><strong>The cohort is reachable.</strong> Most of the original 43,000 are still in the country and recoverable through the MINERD enrolment trail and TSS. Each additional year of delay raises tracking cost.</li>
-  <li><strong>The administrative pipeline is open.</strong> IDEICE has secured the access agreements that let us link AVE-RD to TSS without re-consenting the cohort. That window is not permanent.</li>
-  <li><strong>The country team is intact.</strong> The same MINERD officials and J-PAL LAC researchers who ran the 2015&ndash;2016 wave are running the follow-up. Institutional memory is the cheapest research input we have, and only this round can rely on it.</li>
+  <li><strong>The students are old enough.</strong> Students in the 2015&ndash;2016 evaluation are now in their twenties, so schooling decisions made then should be visible in labor-market outcomes.</li>
+  <li><strong>Tracking gets harder with time.</strong> Each additional year of delay raises the cost of finding the students who need to be surveyed.</li>
+  <li><strong>Institutional memory fades.</strong> The people and records behind the 2015&ndash;2016 evaluation are easier to draw on now than later. Institutional memory is the cheapest research input we have.</li>
 </ul>
 
 <p style="text-align:center;margin-top:32px">

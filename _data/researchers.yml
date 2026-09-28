@@ -91,9 +91,8 @@ pis:
     bio: >-
       Morales is the project's country lead and the bridge between the
       academic team and the Dominican Ministry of Education. He
-      coordinated the 600-school randomization, the 2015–2016
-      fieldwork, and the ongoing 2025–2027 follow-up wave that links
-      the original cohort to administrative earnings records. His
+      coordinated the 2015 randomization of 599 schools and the
+      2015–2016 fieldwork. His
       research at Tecnológico de Monterrey focuses on impact
       measurement, data analytics, and the operational adoption of
       evidence-based practice by ministries of education across Latin
@@ -126,9 +125,7 @@ pis:
       research is in education markets and the role of information in
       household human-capital investment, with policy collaborations in
       Chile, Peru, Ecuador, Colombia, Brazil, and the Dominican
-      Republic. Inside AVE-RD he led the linkage between the panel
-      survey and the Tesorería de la Seguridad Social earnings records
-      that anchor the long-run follow-up.
+      Republic.
     links:
       - label: "Yale faculty page"
         url: "https://jackson.yale.edu/person/christopher-neilson/"
@@ -151,7 +148,7 @@ staff:
     note: "Long-time collaborator on Dominican education evaluations and Pruebas Nacionales linkages; bridges the academic team and IDEICE's research agenda. J-PAL profile: <a href=\"https://www.povertyactionlab.org/person/taveras\" rel=\"noopener\">povertyactionlab.org</a>."
   - name: "Ancell Scheker"
     role: "MINERD · Vice-Minister · Director of Evaluation & Quality Control · Pruebas Nacionales"
-    note: "Owns the assessment-system outcomes used in the impact analysis and the institutional approval path for the follow-up wave."
+    note: "Owns the assessment-system outcomes used in the impact analysis."
   - name: "Field Coordinator"          # TODO: replace with real name
     role: "MINERD · Dirección de Orientación y Psicología"
     note: "Liaison with regional DOP coordinators across the 18 educational regions."

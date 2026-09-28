@@ -1,7 +1,7 @@
 ---
 layout: letter
 title: "Open letter — Continue the AVE policy"
-description: "Printable version of the open letter from Dominican stakeholders to MINERD requesting continuity of the AVE intervention and support for the 2025–2027 follow-up evaluation."
+description: "Printable version of the open letter from Dominican stakeholders to MINERD requesting continuity of the AVE intervention and support for the long-run follow-up evaluation."
 permalink: /campaigns/continue-the-policy/letter/
 lang: en
 campaign_url: /campaigns/continue-the-policy/
@@ -45,22 +45,19 @@ sitemap: false
 
 <p>
   <strong>Second, we ask for institutional support of the
-  long-run follow-up evaluation
-  <span class="font-osf">2025&ndash;2027</span>.</strong> The
-  original cohort is now <span class="font-osf">23&ndash;26</span>
-  years old and reachable through MINERD enrolment records and the
-  Tesorería de la Seguridad Social earnings panel. The follow-up
-  wave converts the documented short-term effect into the first
-  long-run earnings evidence on a video-based information campaign
-  in Latin America &mdash; an output that ministries of education
-  across the region will use as a benchmark.
+  long-run follow-up evaluation.</strong> Students in the original
+  evaluation are now in their twenties, old enough for
+  administrative earnings records to show whether the schooling
+  effect carried into the labour market. The follow-up would
+  convert the documented short-term effect into the first long-run
+  earnings evidence on a video-based information campaign in Latin
+  America &mdash; an output that ministries of education across the
+  region will use as a benchmark.
 </p>
 
 <p>
-  The country team that ran the
-  <span class="font-osf">2015&ndash;2016</span> wave is the team
-  running the follow-up. The data agreements are open. The
-  pre-analysis plan is registered. The remaining input is
-  institutional support from the Ministry. In that understanding,
-  we respectfully add our names to this letter.
+  The follow-up builds directly on the evaluation the Ministry
+  hosted in <span class="font-osf">2015&ndash;2016</span>. What it
+  needs from the Ministry is institutional support. In that
+  understanding, we respectfully add our names to this letter.
 </p>

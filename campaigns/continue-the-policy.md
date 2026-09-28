@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Continue the AVE policy. Support the long-run evaluation."
-description: "An open letter from Dominican stakeholders to MINERD requesting that the AVE intervention continue at full coverage and that the 2025–2027 long-run follow-up evaluation be supported."
+description: "An open letter from Dominican stakeholders to MINERD requesting that the AVE intervention continue at full coverage and that the long-run follow-up evaluation be supported."
 eyebrow: "Open letter · Dominican Republic"
 permalink: /campaigns/continue-the-policy/
 hero-style: gradient
@@ -27,8 +27,8 @@ seo:
   evaluation, the AVE intervention &mdash; four short videos and a
   classroom protocol &mdash; was adopted as MINERD policy and is now
   delivered in <strong>every public school in the Dominican Republic</strong>.
-  The <span class="font-osf">2025&ndash;2027</span> follow-up wave is
-  what tells us whether the schooling effect translates into earnings.
+  The planned long-run follow-up is what would tell us whether the
+  schooling effect translates into earnings.
   This letter, addressed to the Ministry, asks for two things:
   continuity of the policy, and support for the long-run evaluation.
 </p>
@@ -57,21 +57,19 @@ seo:
 
   <p>
     <strong>Second, support the long-run follow-up evaluation.</strong>
-    The original cohort is now
-    <span class="font-osf">23&ndash;26</span> years old and reachable
-    through MINERD enrolment records and the Tesorer&iacute;a de la
-    Seguridad Social earnings panel. The follow-up wave converts the
-    documented short-term effect into the first long-run earnings
-    evidence on a video-based information campaign in Latin America
-    &mdash; an output that ministries of education across the region
-    will use as a benchmark.
+    Students in the original evaluation are now in their twenties, old
+    enough for administrative earnings records to show whether the
+    schooling effect carried into the labour market. The follow-up would
+    convert the documented short-term effect into the first long-run
+    earnings evidence on a video-based information campaign in Latin
+    America &mdash; an output that ministries of education across the
+    region will use as a benchmark.
   </p>
 
   <p>
-    The country team that ran the 2015&ndash;2016 wave is the team
-    running the follow-up. The data agreements are open. The
-    pre-analysis plan is registered. The remaining input is
-    institutional support from the Ministry. We add our names below.
+    The follow-up builds directly on the evaluation the Ministry hosted
+    in 2015&ndash;2016. What it needs from the Ministry is institutional
+    support. We add our names below.
   </p>
 </aside>
 

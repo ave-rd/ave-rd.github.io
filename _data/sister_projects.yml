@@ -130,11 +130,10 @@ projects:
       options including ICETEX student loans. A second chatbot,
       OSObot, runs the equivalent service for Bogotá city scholarships
       and reaches an additional 48,000 students.
+    # Loan-application and take-up effects (+36% / +27%) removed: they
+    # have not been verified against a published evaluation. Add impact
+    # estimates here only once they are.
     headline_results:
-      - figure: "+36%"
-        label: "Loan applications (ICFES-Bot)"
-      - figure: "+27%"
-        label: "Loan take-up (ICFES-Bot)"
       - figure: "430,000"
         label: "Students reached / year"
     scale_up: >-
@@ -143,11 +142,9 @@ projects:
       Colombia's national exams. OSObot is in production at the city
       level in Bogotá.
     why_it_matters: >-
-      DFM Colombia / ICFES-Bot is the strongest evidence that the
-      design works without a video at all — pure personalised
-      information delivery, at national scale, with measurable effects
-      on credit applications and uptake. The largest effects are in
-      students who received the most personalised content.
+      DFM Colombia / ICFES-Bot shows the design can be delivered
+      without a video at all — personalised information on WhatsApp,
+      at national scale.
     site_url: "https://www2.icfes.gov.co/en/icfes-bot"
     links:
       - label: "ICFES-Bot (official ICFES page)"

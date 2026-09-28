@@ -34,7 +34,7 @@ layout: default
   {% assign t_tier_res = "Investigadores y academia" %}
   {% assign t_tier_edu = "Educadores y personal escolar" %}
   {% assign t_tier_com = "Padres, egresados y estudiantes" %}
-  {% assign t_letterhead_sub = "Aspiraciones, Videos y Educaci&oacute;n &middot; Rep&uacute;blica Dominicana" %}
+  {% assign t_letterhead_sub = "Aprendiendo el Valor de la Educaci&oacute;n &middot; Rep&uacute;blica Dominicana" %}
 {% else %}
   {% assign t_back = "Back to the campaign" %}
   {% assign t_print = "Print / Save as PDF" %}
@@ -47,7 +47,7 @@ layout: default
   {% assign t_tier_res = "Researchers and academics" %}
   {% assign t_tier_edu = "Educators and school staff" %}
   {% assign t_tier_com = "Parents, alumni, and students" %}
-  {% assign t_letterhead_sub = "Aspirations, Videos and Education &middot; Dominican Republic" %}
+  {% assign t_letterhead_sub = "Learning the Value of Education &middot; Dominican Republic" %}
 {% endif %}
 
 <div class="letter-toolbar" role="region" aria-label="Letter actions">
@@ -89,6 +89,7 @@ layout: default
     <p class="letter-document__signed">{{ page.letter_signed_by }}</p>
   </div>
 
+  {% if sig_count > 0 %}
   <section class="letter-document__signatures" aria-labelledby="letter-signatures-heading">
     <h2 id="letter-signatures-heading" class="letter-document__signatures-title">
       {{ t_signed }} <span class="font-osf">{{ sig_count }}</span> {{ t_persons }}
@@ -115,6 +116,7 @@ layout: default
       {% endif %}
     {% endfor %}
   </section>
+  {% endif %}
 
   <footer class="letter-document__foot">
     <p class="letter-document__partners">

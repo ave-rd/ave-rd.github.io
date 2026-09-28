@@ -10,18 +10,19 @@ hero-style: gradient
 <p class="dropcap">
   AVE-RD is a four-author study with a country team in Santo Domingo. The
   principal investigators designed the experiment and write the analysis;
-  the country team runs the field operation, the call centre, the survey
-  panel, and the day-to-day relationship with the Ministry of Education.
-  The follow-up wave keeps the same architecture &mdash; same authors,
-  same country team &mdash; extended ten years.
+  in <span class="font-osf">2015&ndash;2016</span> the country team ran
+  the field operation, the call centre, the survey panel, and the
+  day-to-day relationship with the Ministry of Education. The planned
+  long-run follow-up builds on the same study.
 </p>
 
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Principal investigators</div>
   <h2>Four authors, one study</h2>
   <p class="lede">
-    Each PI owns one corner of the design: belief elicitation, persuasion,
-    country implementation, and the link to administrative earnings data.
+    Each PI brings one strand of expertise to the study: belief
+    elicitation, persuasion, country implementation, and information in
+    education markets.
   </p>
 </div>
 
@@ -66,9 +67,10 @@ hero-style: gradient
   <div class="eyebrow eyebrow--rule">Country team</div>
   <h2>The Santo Domingo operation</h2>
   <p class="lede">
-    The follow-up wave runs out of the project office on Mahatma Gandhi
-    Street. A small standing team coordinates with MINERD's Department of
-    Orientation and Psychology and the 18 regional DOP coordinators.
+    The <span class="font-osf">2015&ndash;2016</span> field operation ran
+    out of the project office on Mahatma Gandhi Street, working with
+    MINERD's Department of Orientation and Psychology and the 18 regional
+    DOP coordinators.
   </p>
 </div>
 

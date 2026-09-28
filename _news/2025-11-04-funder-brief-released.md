@@ -1,6 +1,6 @@
 ---
-title: "Funder brief released: from a fifteen-minute video to ten years of earnings"
-description: "AVE-RD's two-page case for the long-run follow-up wave is now public. It lays out the budget, the partnership architecture, and what a one-percentage-point change in dropout buys in lifetime earnings."
+title: "Funder brief released: from a fifteen-minute video to earnings a decade later"
+description: "AVE-RD's two-page case for a long-run follow-up is now public. It sets out what the 2017 endline already prices, what the follow-up budget would cover, and why the earnings effect has to be measured rather than assumed."
 date: 2025-11-04
 category: "Brief"
 authors:
@@ -16,11 +16,10 @@ permalink: /news/2025/funder-brief-released/
 <p class="dropcap">
   The second instalment in the AVE-RD brief series &mdash; aimed at
   foundations, bilateral donors, and multilaterals &mdash; is
-  <a href="/briefs/why-follow-up/">now public</a>. It pairs the
-  back-of-envelope economics with a four-line budget for the
-  <span class="font-osf">2025&ndash;2027</span> follow-up wave and
-  three reasons the timing is unusually good (the cohort is reachable;
-  the IDEICE/TSS data agreement is open; the country team is intact).
+  <a href="/briefs/why-follow-up/">now public</a>. It pairs what the
+  <span class="font-osf">2017</span> endline report already prices with
+  a four-line budget for the planned long-run follow-up, and explains
+  why the timing matters.
 </p>
 
 <div class="section-header reveal">
@@ -33,9 +32,10 @@ permalink: /news/2025/funder-brief-released/
   autumn, is for researchers and evaluators &mdash; it summarises the
   four headline effects with confidence intervals. Brief 02 is for the
   audience that decides whether the long-run wave gets funded. We
-  describe the ask in a single page, and answer the question that
-  comes up first in every funder conversation: <em>what does a
-  percentage point of dropout reduction actually buy?</em>
+  describe the ask in a single page, and explain why the question that
+  comes up first in every funder conversation &mdash; <em>what does a
+  percentage point of dropout reduction actually buy?</em> &mdash; has
+  to be measured rather than assumed.
 </p>
 
 <p>

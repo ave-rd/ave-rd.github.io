@@ -44,8 +44,7 @@ brief_pdf_ready: false
     11,000+ students at completion rates roughly seven times those of
     a typical online course. <strong>DFM Colombia / ICFES-Bot</strong>
     (ConsiliumBots with ICFES) reaches ~430,000 high-school seniors a
-    year on WhatsApp and increased student-loan applications by
-    <span class="font-osf">36</span>%. Concept notes, results briefs,
+    year on WhatsApp. Concept notes, results briefs,
     instruments, and code for all three are linked from the
     <a href="/projects/sister-projects/">sister-projects page</a>.
     Where AVE has been done, this is what the next minister has to
@@ -116,10 +115,11 @@ brief_pdf_ready: false
     <div>
       <h3>An evaluation agency owns the data</h3>
       <p>
-        A national evaluation body (in DR's case, IDEICE) hosts the panel
-        and brokers the link to administrative records. This is the role
-        most often missing in adaptations &mdash; without it, the
-        long-run earnings analysis is not feasible.
+        A national evaluation body (in the DR, IDEICE) was AVE-RD&rsquo;s
+        local research partner inside the ministry. This role is often
+        missing in adaptations. Plan the route to administrative records
+        &mdash; enrollment, exams, earnings &mdash; from the start;
+        without it, a long-run earnings analysis is not feasible.
       </p>
     </div>
   </li>
@@ -134,7 +134,7 @@ brief_pdf_ready: false
   <li><strong>Months 1&ndash;2.</strong> Wage-data review, partner agreements, IRB submission.</li>
   <li><strong>Months 2&ndash;3.</strong> Video re-shoot or localization, classroom-protocol translation, pilot in 5&ndash;10 schools.</li>
   <li><strong>Month 4.</strong> Sample frame, randomization, baseline survey instrument adapted.</li>
-  <li><strong>Months 5&ndash;6.</strong> Field rollout in the first cohort. The full <span class="font-osf">600</span>-school target is a year-two milestone, not a year-one one.</li>
+  <li><strong>Months 5&ndash;6.</strong> Field rollout in the first cohort. A sample on the scale of AVE&rsquo;s (<span class="font-osf">599</span> schools in its first year, <span class="font-osf">2,469</span> in its second) is a year-two milestone, not a year-one one.</li>
 </ul>
 
 <div class="section-header reveal">

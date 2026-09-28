@@ -14,8 +14,9 @@ seo:
   AVE-RD is a pilot public-policy project that evaluates the effect of a
   video-based information campaign on the schooling decisions of Dominican
   students in grades 7&ndash;12. Implemented by the Ministry of Education,
-  evaluated by IDEICE and J-PAL LAC, funded by USAID and MINERD with
-  follow-up support from INICIA Educaci&oacute;n. The study is a direct
+  evaluated by IDEICE and J-PAL LAC, funded by USAID&rsquo;s Development
+  Innovation Ventures and MINERD, with seed funding from
+  Fundaci&oacute;n Inicia. The study is a direct
   scale-up of <a href="https://academic.oup.com/qje/article-abstract/125/2/515/1882172">Robert Jensen&rsquo;s 2010
   <em>Quarterly Journal of Economics</em> paper</a> on perceived returns
   to education in the Dominican Republic.
@@ -95,10 +96,13 @@ seo:
       <h3>National scale, not a sub-sample</h3>
       <p>
         Jensen&rsquo;s sample was a research-grade sub-sample. The
-        AVE-RD pilot reached <span class="font-osf">600</span> public
-        schools and <span class="font-osf">43,000</span> students at
-        baseline; the post-evaluation policy adoption brought the
-        intervention to <em>every public school in the country</em>.
+        AVE-RD evaluation randomized <span class="font-osf">599</span>
+        public schools in <span class="font-osf">2015</span> and
+        <span class="font-osf">2,469</span> in <span class="font-osf">2016</span>,
+        and its dropout analysis covers
+        <span class="font-osf">428,400</span> students; the
+        post-evaluation policy adoption brought the intervention to
+        <em>every public school in the country</em>.
       </p>
     </div>
   </li>
@@ -129,20 +133,24 @@ seo:
 
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">The funding context</div>
-  <h2>Why USAID, why MINERD, why now INICIA</h2>
+  <h2>Why USAID, why MINERD</h2>
 </div>
 
 <p>
-  USAID&rsquo;s Dominican Republic mission funded the AVE-RD pilot
-  (<span class="font-osf">2014&ndash;2017</span>) under a cooperative
-  agreement with J-PAL LAC and MINERD. The agreement was structured
+  USAID&rsquo;s Development Innovation Ventures (DIV) funded the AVE-RD
+  pilot (<span class="font-osf">2014&ndash;2017</span>) through an award
+  to J-PAL LAC (AID-F-14-00030): US$<span class="font-osf">1,258,979</span>
+  in <span class="font-osf">2014</span>, plus a
+  US$<span class="font-osf">510,000</span> extension in
+  <span class="font-osf">2016</span>. The team applied with
+  MINERD&rsquo;s sponsorship through IDEICE. The award was structured
   around <strong>thirteen milestones</strong> covering instrument
   design, school-level randomization, two waves of fieldwork, the
   Pruebas Nacionales linkage, and a final endline report. The
-  <a href="/projects/download-videos-2/">endline report at
-  Milestone <span class="font-osf">13</span></a> documented the
-  dropout, test-score, and belief-update effects that subsequently
-  drove the policy-adoption decision at MINERD.
+  <a href="https://www.christopher-neilson.com/work/documents/AVE/AVE_USAID_EndlineReport.pdf" rel="noopener">endline
+  report at Milestone <span class="font-osf">13</span></a> documented
+  the dropout and test-score effects that informed MINERD&rsquo;s
+  decision to take the program over.
 </p>
 
 <p>
@@ -155,16 +163,14 @@ seo:
 </p>
 
 <p>
-  For the <span class="font-osf">2025&ndash;2027</span> long-run
-  follow-up, the funding architecture is updated. MINERD continues to
-  carry field operations. IDEICE is the data steward and brokers the
-  Tesorer&iacute;a de la Seguridad Social earnings linkage.
-  <a href="https://www.iniciaeducacion.org/">INICIA Educaci&oacute;n</a>
-  &mdash; the Vicini family&rsquo;s Dominican education foundation
-  &mdash; is the lead domestic funder. The
-  <a href="/projects/follow-up/">follow-up plan</a> describes the
-  remaining funding gap, primarily concentrated in the cohort
-  re-survey and the open replication kit.
+  Fundaci&oacute;n Inicia provided the project&rsquo;s first funding: a
+  US$<span class="font-osf">100,000</span> seed grant in
+  <span class="font-osf">2012</span> for the focus groups and pilot
+  surveys that preceded the USAID award. For the long-run follow-up,
+  the funding plan is still being put together; the
+  <a href="/projects/follow-up/">follow-up page</a> describes what it
+  would cover, and partners and funders will be named there once
+  agreements are in place.
 </p>
 
 <div class="section-header reveal">
@@ -225,12 +231,11 @@ seo:
   <p>
     Following the evaluation, MINERD adopted AVE as standing policy. The
     four videos and the classroom protocol are now delivered in
-    <strong>every public school in the Dominican Republic</strong>. The
-    <span class="font-osf">2025&ndash;2027</span> follow-up wave operates
-    on top of that policy backdrop &mdash; the original cohort is now
-    <span class="font-osf">23&ndash;26</span> years old and reachable
-    through MINERD enrolment records and the Tesorer&iacute;a de la
-    Seguridad Social earnings panel.
+    <strong>every public school in the Dominican Republic</strong>. A
+    planned long-run follow-up would build on that policy backdrop: the
+    students in the original evaluation are now in their twenties, old
+    enough for administrative earnings records to show whether the
+    schooling effects carried into the labor market.
   </p>
 </div>
 
@@ -255,7 +260,7 @@ seo:
   <li>
     <div>
       <h3>Higher National Test scores</h3>
-      <p>Treated students scored higher on the Pruebas Nacionales than untreated peers in the same school.</p>
+      <p>Eighth graders in treated schools scored higher on the Pruebas Nacionales than those in control schools: <span class="font-osf">0.065</span> SD after seeing the informative video in <span class="font-osf">2016</span>, and <span class="font-osf">0.129</span> SD after seeing it in both <span class="font-osf">2015</span> and <span class="font-osf">2016</span>.</p>
     </div>
   </li>
   <li>

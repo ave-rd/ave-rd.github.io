@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "Avale la evaluación de seguimiento a largo plazo AVE-RD."
-description: "Aval internacional de apoyo a la evaluación de seguimiento 2025–2027, dirigido a fundaciones, donantes bilaterales y multilaterales, y a la comunidad de investigación en RCT de largo plazo."
-eyebrow: "Compromiso · 2025–2027"
+description: "Aval internacional de apoyo a la evaluación de seguimiento de largo plazo prevista, dirigido a fundaciones, donantes bilaterales y multilaterales, y a la comunidad de investigación en RCT de largo plazo."
+eyebrow: "Compromiso · seguimiento de largo plazo"
 permalink: /es/avale/
 hero-style: gradient
 lang: es
@@ -25,8 +25,8 @@ seo:
 
 <p class="dropcap">
   La primera ola de AVE-RD movi&oacute; una decisi&oacute;n
-  escolar; el seguimiento <span class="font-osf">2025&ndash;2027</span>
-  nos dice si esa decisi&oacute;n movi&oacute; <em>vidas</em>. Este
+  escolar; el seguimiento de largo plazo previsto nos dir&iacute;a si
+  esa decisi&oacute;n movi&oacute; <em>vidas</em>. Este
   aval est&aacute; dirigido a fundaciones, donantes bilaterales y
   multilaterales, y a la comunidad de investigaci&oacute;n en RCT
   de largo plazo. Avalarlo se&ntilde;ala que el proyecto se
@@ -61,11 +61,10 @@ seo:
     </li>
     <li>
       <div>
-        <h3>Apoyar la re-encuesta de cohorte 2025&ndash;2027 y la vinculaci&oacute;n con la TSS.</h3>
+        <h3>Apoyar la encuesta de seguimiento y la vinculaci&oacute;n con registros administrativos de ingresos.</h3>
         <p>
-          Tratamos la re-encuesta de cohorte, la vinculaci&oacute;n
-          intermediada por IDEICE con el panel de ingresos de la
-          Tesorer&iacute;a de la Seguridad Social, y el kit de
+          Tratamos la encuesta de seguimiento, la vinculaci&oacute;n
+          con registros administrativos de ingresos y el kit de
           replicaci&oacute;n abierta como l&iacute;neas
           presupuestarias leg&iacute;timas para nuestras instituciones
           y para nuestros revisores pares.

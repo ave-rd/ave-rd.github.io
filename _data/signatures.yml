@@ -33,53 +33,14 @@
 #   date        : ISO date the signature was approved
 #   verified    : true once the team confirms the signatory's identity
 #
-# Seeded entries below are PLACEHOLDERS that document the schema —
-# replace with real signatures before launch.
+# Publish only real signatures, with statements in the signatory's own
+# words. The seeded placeholder signatories and their invented
+# statements were removed in September 2026, so continue_policy is
+# empty and its wall shows the "no signatures yet" state. The four PI
+# entries under follow_up_pledge are still awaiting confirmation (see
+# BACKLOG.md).
 
-continue_policy:
-  - name: "Carmen Maura Taveras"
-    role: "Senior research collaborator"
-    institution: "IDEICE / World Bank Education Global Practice"
-    country: "DR"
-    tier: "researchers"
-    statement: >-
-      The AVE intervention proved that a small information shift
-      can move a schooling decision. Continuing it is cheap and
-      well-evidenced; replacing it would be neither.
-    date: "2026-05-09"
-    verified: true                                     # TODO: confirm before launch
-  - name: "Director, DOP"                              # TODO: replace
-    role: "Direcci&oacute;n de Orientaci&oacute;n y Psicolog&iacute;a"
-    institution: "MINERD"
-    country: "DR"
-    tier: "policymakers"
-    statement: >-
-      Our regional staff are still using the AVE protocol every
-      semester. The capacity built during the pilot has outlived
-      the grant.
-    date: "2026-05-09"
-    verified: false
-  - name: "School Director — placeholder"              # TODO: replace
-    role: "Director, public secondary school"
-    institution: "Regi&oacute;n educativa 10"
-    country: "DR"
-    tier: "educators"
-    statement: >-
-      We screen the AVE videos every year. Students engage with
-      them; the conversation that follows is the lesson.
-    date: "2026-05-09"
-    verified: false
-  - name: "Alumni signatory — placeholder"             # TODO: replace
-    role: "Former AVE-RD student, 2015 cohort"
-    institution: ""
-    country: "DR"
-    tier: "community"
-    statement: >-
-      I saw the videos in eighth grade. Ten years later I am
-      working in the formal labour market. I want the next cohort
-      to see them too.
-    date: "2026-05-09"
-    verified: false
+continue_policy: []
 
 follow_up_pledge:
   - name: "James Berry"
@@ -111,9 +72,6 @@ follow_up_pledge:
     institution: "Yale University, Economics &amp; Jackson School of Global Affairs"
     country: "US"
     tier: "researchers"
-    statement: >-
-      The follow-up is what turns AVE from a schooling-effect
-      study into an earnings-effect study. That step is the one
-      the field has been missing.
+    statement: ""
     date: "2026-05-09"
     verified: true                                     # TODO: confirm

@@ -18,10 +18,9 @@ hero-style: gradient
   tom&oacute; una parte del proceso &mdash; dise&ntilde;o, entrega,
   medici&oacute;n, financiamiento dom&eacute;stico, donante fundador
   &mdash; y el piloto alcanz&oacute; <span class="font-osf">200,000</span>
-  estudiantes porque las cinco sostuvieron su esquina. La ola de
-  seguimiento mantiene la misma arquitectura de alianza, con un
-  &eacute;nfasis nuevo en el acceso de la agencia de evaluaci&oacute;n
-  a registros administrativos de ingresos.
+  estudiantes porque las cinco sostuvieron su esquina. El seguimiento
+  de largo plazo previsto sumar&iacute;a registros administrativos de
+  ingresos a los datos que produjo el piloto.
 </p>
 
 <dl class="stat-strip reveal">
@@ -95,9 +94,9 @@ hero-style: gradient
   <div class="eyebrow eyebrow--rule">Aliarse con AVE-RD</div>
   <h2>Lo que buscamos en un nuevo socio</h2>
   <p class="lede">
-    La ola de seguimiento est&aacute; abierta a colaboradores de
-    investigaci&oacute;n, equipos de replicaci&oacute;n, y donantes
-    adicionales. La relaci&oacute;n se estructura alrededor de tres
+    El seguimiento de largo plazo previsto est&aacute; abierto a
+    colaboradores de investigaci&oacute;n, equipos de
+    replicaci&oacute;n, y donantes adicionales. La relaci&oacute;n se estructura alrededor de tres
     entregables.
   </p>
 </div>

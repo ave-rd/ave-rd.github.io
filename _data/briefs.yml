@@ -14,7 +14,8 @@ briefs:
     lede: >-
       A two-page summary of the four headline effects from the
       2015–2016 wave: dropout, test scores, belief shifts, and
-      mechanism. Tables, effect sizes, and pre-analysis links.
+      mechanism. Effect sizes and sample sizes, with references to the
+      2017 endline report.
     keywords:
       - "Aprendiendo el Valor de la Educación"
       - "AVE-RD"
@@ -32,10 +33,10 @@ briefs:
     pdf: "/briefs/AVE-RD_brief_why-follow-up.pdf"  # TODO: add the PDF
     pdf_ready: false
     lede: >-
-      The economic case for tracking the original cohort ten years on:
-      what a one-percentage-point change in dropout buys in lifetime
-      earnings, why the answer matters for replication, and what the
-      follow-up budget covers.
+      The case for following the original students ten years on: what
+      the 2017 endline already prices, why the earnings effect has to be
+      measured rather than assumed, and what the follow-up budget would
+      cover.
     keywords:
       - "long-run RCT follow-up"
       - "schooling and earnings"
