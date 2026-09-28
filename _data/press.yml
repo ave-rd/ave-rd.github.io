@@ -1,20 +1,18 @@
-# Press coverage and testimonials.
-# Bracket-marked entries are placeholders awaiting confirmed coverage.
+# Press coverage, testimonials and project milestones.
 
-coverage:
-  - outlet: "Listín Diario"
-    title: "Estudio del MINERD reduce deserción escolar con videos"   # TODO: replace with real headline
-    date: "2017-08-21"
-    url: "#"                                                          # TODO: real URL
-    note: "Coverage of the USAID endline report and the dropout finding."
-  - outlet: "El Caribe"
-    title: "Aprendiendo el Valor de la Educación: ¿qué cambió?"      # TODO: replace
-    date: "2017-09-04"
-    url: "#"                                                          # TODO: real URL
-    note: "Profile of the program implementation."
-# Removed two placeholder entries (J-PAL Newsroom, April 2025; VOA
-# Noticias, June 2025) that described coverage of a follow-up wave that
-# has not started. Add real follow-up coverage here once it exists.
+# Coverage: real articles only, each with its actual headline and a
+# working URL. The "In the press" section on /projects/press/ is hidden
+# while this list is empty. Placeholder items with made-up headlines
+# (Listín Diario and El Caribe, 2017; J-PAL Newsroom and VOA Noticias,
+# 2025) were removed in September 2026.
+#
+# Schema per entry:
+#   - outlet: "Outlet name"
+#     title: "Headline, verbatim"
+#     date: "YYYY-MM-DD"
+#     url: "https://..."
+#     note: "One line on what the piece covers."
+coverage: []
 
 # Testimonials: quotes from interviews, official letters, or partner
 # sites. Add only quotes the speaker has actually given or approved,

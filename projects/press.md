@@ -1,31 +1,35 @@
 ---
-title: Press and milestones
-description: "AVE-RD in the press and on a single timeline from 2014."
-eyebrow: "Press · milestones"
+title: Milestones
+description: "The AVE-RD project on a single timeline, from 2014 to today."
+eyebrow: "Milestones"
 layout: page
 order: 8
 hero-style: gradient
 ---
 
 <p class="dropcap">
-  Two things together on one page: who has covered AVE-RD, and a
-  single timeline that runs from the founding USAID grant in
-  <span class="font-osf">2014</span> to the long-run follow-up now
-  being planned.
+  The milestones below run from the founding USAID grant in
+  <span class="font-osf">2014</span>, through the two randomized waves
+  and the <span class="font-osf">2017</span> endline report, to the
+  long-run follow-up now being planned.
 </p>
 
+{% comment %} The coverage and "Voices" sections stay hidden until
+   _data/press.yml has real entries. When they return, put "Press" back
+   in the page title and in the footer link. {% endcomment %}
+{% assign coverage = site.data.press.coverage %}
+{% if coverage and coverage.size > 0 %}
 <div class="section-header reveal">
   <div class="eyebrow eyebrow--rule">Coverage</div>
   <h2>In the press</h2>
   <p class="lede">
-    A short selection of media coverage and partner write-ups. The
-    bracketed entries are placeholders awaiting confirmed URLs &mdash;
-    please <a href="/projects/contact/">flag any we&rsquo;ve missed</a>.
+    A short selection of media coverage and partner write-ups. Please
+    <a href="/projects/contact/">flag any we&rsquo;ve missed</a>.
   </p>
 </div>
 
 <ul class="press-logos reveal" aria-label="Selected press coverage">
-  {% for c in site.data.press.coverage %}
+  {% for c in coverage %}
   <li>
     {% if c.url and c.url != "" and c.url != "#" %}
     <a href="{{ c.url }}" rel="noopener" title="{{ c.outlet }} &mdash; {{ c.title }}">{{ c.outlet }}</a>
@@ -39,7 +43,7 @@ hero-style: gradient
 <div class="signal-panel reveal">
   <div class="eyebrow">Coverage detail</div>
   <ul class="signal-panel__list">
-    {% for c in site.data.press.coverage %}
+    {% for c in coverage %}
     <li>
       <strong>{{ c.outlet }}</strong> &middot; <span class="font-osf">{{ c.date | date: "%B %Y" }}</span><br />
       {% if c.url and c.url != "" and c.url != "#" %}
@@ -52,9 +56,8 @@ hero-style: gradient
     {% endfor %}
   </ul>
 </div>
+{% endif %}
 
-{% comment %} Hidden until _data/press.yml has real, approved quotes.
-   When it does, put "voices" back in the page title and intro. {% endcomment %}
 {% assign testimonials = site.data.press.testimonials %}
 {% if testimonials and testimonials.size > 0 %}
 <div class="section-header reveal">

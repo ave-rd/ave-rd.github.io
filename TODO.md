@@ -56,12 +56,9 @@ remove the bullet in the same PR).
 ### Unverified claims still on the site
 Found in the same accuracy pass (source of record: the 2017 endline
 report, J-PAL LAC, USAID DIV award AID-F-14-00030). Confirm, source,
-or remove each before funder reviews.
-- **Placeholder press coverage**: the Listín Diario and El Caribe
-  (2017) items in `_data/press.yml` have made-up headlines and no
-  URLs. (Placeholder partner quotes, testimonials and seeded
-  signatures with invented statements were removed in September
-  2026.)
+or remove each before funder reviews. Placeholder quotes, testimonials,
+press items and seeded signature statements were already removed in
+September 2026.
 - **PI endorsements**: the four PI entries on the follow-up pledge
   (`_data/signatures.yml`) are still `verified: true # TODO: confirm`;
   see BACKLOG.md.
@@ -158,6 +155,9 @@ or remove each before funder reviews.
 ### Press kit
 - The `/projects/press/` page exists; consider adding a downloadable
   press kit (logos, headshots, one-pagers) as a zip in `papers/`.
+- It is titled "Milestones" (with a matching footer link) until real
+  coverage or quotes are added to `_data/press.yml`; rename it back
+  to "Press…" then.
 
 ### News authoring guide
 - The `news/` collection is set up. A short `news/README.md`
