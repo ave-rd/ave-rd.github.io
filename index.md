@@ -108,17 +108,16 @@ hero-image: /img/hero-map.jpg
 </div>
 
 <figure class="viz-card reveal">
-  <span class="viz-card__eyebrow">Figure 1 · cumulative dropout</span>
-  <h3 class="viz-card__title">Treatment and control schools track in 2015, then diverge.</h3>
+  <span class="viz-card__eyebrow">Figure 1 · dropout effects</span>
+  <h3 class="viz-card__title">Effects on 2016&ndash;17 dropout, by video and the year it was shown.</h3>
   <p class="viz-card__lede">
-    Cumulative dropout in grade-7&ndash;12 cohorts. The treatment effect emerges with a
-    one-year lag and reaches roughly <span class="font-osf">3</span>&nbsp;pp by 2017.
+    Videos shown in <span class="font-osf">2016</span>, a few months before the <span class="font-osf">2016&ndash;17</span> school year, had no significant effect. Videos shown in <span class="font-osf">2015</span> lowered dropout a year later, by <span class="font-osf">3.0</span>&nbsp;percentage points (informative) and <span class="font-osf">2.8</span>&nbsp;points (persuasive).
   </p>
   <div class="viz-card__figure" aria-hidden="false">
-    {% include viz/dropout-trend.svg %}
+    {% include viz/dropout-effects.svg %}
   </div>
   <p class="viz-card__caption">
-    <strong>Note.</strong> Illustrative trajectory, scaled to the <span class="font-osf">2.5&ndash;3</span>&nbsp;pp average effect reported in Berry, Coffman, Morales &amp; Neilson (<span class="font-osf">2025</span>). Confidence band shown for the treatment series only. Source: AVE-RD working paper (<a href="/projects/download-videos-2/">replication kit</a>).
+    <strong>Note.</strong> Probit estimates from a single regression of dropout in the <span class="font-osf">2016&ndash;17</span> school year on each school&rsquo;s video assignment in <span class="font-osf">2016</span> and in <span class="font-osf">2015</span>, with grade fixed effects (endline Table&nbsp;<span class="font-osf">5</span>, column&nbsp;<span class="font-osf">1</span>; N&nbsp;=&nbsp;<span class="font-osf">428,400</span>). Dropout means not being enrolled in <span class="font-osf">2016&ndash;17</span> after being enrolled the year before. Values are coefficients &times;&nbsp;<span class="font-osf">100</span>, in percentage points; negative values are reductions in dropout. Bars are <span class="font-osf">95</span>% confidence intervals, computed as &plusmn;<span class="font-osf">1.96</span> times the reported school-clustered standard errors. *** <em>p</em>&nbsp;&lt;&nbsp;<span class="font-osf">0.01</span>; hollow markers are not significant. OLS estimates (column&nbsp;<span class="font-osf">2</span>) are similar: &minus;<span class="font-osf">2.79</span> and &minus;<span class="font-osf">2.62</span>&nbsp;pp for the <span class="font-osf">2015</span> videos. The <span class="font-osf">2015</span> videos had no significant effect on <span class="font-osf">2015&ndash;16</span> dropout, the first year after they were shown (Table&nbsp;<span class="font-osf">4</span>). Source: J-PAL LAC, <a href="https://www.christopher-neilson.com/work/documents/AVE/AVE_USAID_EndlineReport.pdf" rel="noopener">Milestone 13 endline report</a> to USAID (<span class="font-osf">2017</span>), pp.&nbsp;<span class="font-osf">15&ndash;16</span>.
   </p>
 </figure>
 
