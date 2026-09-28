@@ -616,7 +616,8 @@ footer {
 // ============================================================
 .person-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  // minmax(0, …): long unbreakable content can't push a track past its share.
+  grid-template-columns: minmax(0, 1fr);
   gap: $space-6;
   margin: $space-7 0;
   padding: 0;
@@ -625,8 +626,10 @@ footer {
   > li { margin: 0; }
 }
 @media (min-width: $bp-sm) {
-  .person-grid { grid-template-columns: repeat(2, 1fr); }
+  .person-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+// Four across (about 170 px cards) only suits the homepage's short cards;
+// cards with a bio stay two across.
 @media (min-width: $bp-md) {
   .person-grid--four { grid-template-columns: repeat(4, 1fr); }
 }
@@ -729,6 +732,27 @@ footer {
     font-size: $text-base;
     line-height: $leading-relaxed;
     color: var(--foreground);
+  }
+
+  // Field tags wrap, unlike the global nowrap .badge: the longest
+  // ("Impact measurement and evaluation", about 330 px) is wider than a
+  // phone or two-across card. On one line they keep the 21 px pill; a
+  // wrapped tag gets 15 px leading, left-aligned text and 12 px corners.
+  // The gap spaces them: the built page has no whitespace between tags.
+  &__fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-2;
+    margin: 0 0 $space-4;
+
+    .badge {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      line-height: 15px;
+      white-space: normal;
+      text-align: left;
+      border-radius: var(--radius-sm);
+    }
   }
 
   &__links {
