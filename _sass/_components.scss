@@ -502,6 +502,25 @@ main li + li { margin-top: $space-3; }
   &--warning    { background: var(--bole-50);                color: var(--bole-700);      border-color: var(--bole-300);               }
   &--neutral    { background: var(--bg-alt);                 color: var(--muted-foreground); border-color: var(--border);              }
 
+  // Sentence-length badges (the briefs' "PDF forthcoming — HTML version
+  // above is canonical for now") wrap instead of pushing a phone-width page
+  // sideways; short tags keep nowrap.
+  &--wrap {
+    white-space: normal;
+    text-wrap: balance;
+  }
+  // On phones it runs to two or three lines: open up the leading, use a tile
+  // corner instead of a pill, and inset it from the column. The side margin
+  // matches the inline 12px margin-left on /briefs/why-follow-up/, so that
+  // badge stays centered under its button.
+  @media (max-width: $bp-sm - 1) {
+    &--wrap {
+      margin: $space-2 $space-3 0;
+      line-height: $leading-normal;
+      border-radius: var(--radius-tile);
+    }
+  }
+
   .font-osf { font-size: 1em; }
 }
 
