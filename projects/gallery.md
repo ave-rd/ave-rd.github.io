@@ -11,10 +11,8 @@ seo:
 
 <p class="lede">
   Twenty-four photographs from the <span class="font-osf">2015</span> and
-  <span class="font-osf">2016</span> implementation rounds &mdash; classroom
-  screenings, field training, and the survey-operations work that produced
-  the panel data behind the impact estimates. Click any image to enlarge,
-  arrow keys to navigate, <kbd>Esc</kbd> to close.
+  <span class="font-osf">2016</span> implementation rounds. Click any image
+  to enlarge, arrow keys to navigate, <kbd>Esc</kbd> to close.
 </p>
 
 <div class="photo-gallery reveal" data-lightbox-gallery>
