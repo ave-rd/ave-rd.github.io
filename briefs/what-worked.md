@@ -181,7 +181,7 @@ brief_pdf_ready: false
   {% if page.brief_pdf_ready %}
   <a class="btn-cta" href="{{ page.brief_pdf }}">Download brief (PDF)</a>
   {% else %}
-  <span class="badge badge--neutral" style="font-size:13px;padding:8px 14px;">PDF forthcoming &mdash; HTML version above is canonical for now</span>
+  <span class="badge badge--neutral badge--note" style="font-size:13px;padding:8px 14px;">PDF forthcoming &mdash; HTML version above is canonical for now</span>
   {% endif %}
 </p>
 
