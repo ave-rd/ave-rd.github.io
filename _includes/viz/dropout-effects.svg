@@ -4,7 +4,9 @@
 
   <!-- Scale: x = 560 + 60 × effect (percentage points); 60 px per pp.
        Estimates are endline Table 5, column 1 (probit), × 100.
-       CIs are coefficient ± 1.96 × SE. -->
+       CIs are coefficient ± 1.96 × SE.
+       dropout-effects-narrow.svg draws the same estimates for phones;
+       change both together. -->
   <g class="forest-grid">
     <line x1="260" y1="26" x2="260" y2="224" />
     <line x1="320" y1="26" x2="320" y2="224" />
