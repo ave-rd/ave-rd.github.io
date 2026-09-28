@@ -26,7 +26,7 @@ hero-style: gradient
   </p>
 </div>
 
-<ul class="person-grid person-grid--four reveal">
+<ul class="person-grid reveal">
   {% for pi in site.data.researchers.pis %}
   <li>
     <article class="person-card" itemscope itemtype="https://schema.org/Person">
@@ -47,7 +47,7 @@ hero-style: gradient
         <p class="person-card__bio" itemprop="description">{{ pi.bio }}</p>
 
         {% if pi.fields %}
-        <p style="margin: 0 0 16px;">
+        <p class="person-card__fields">
           {% for f in pi.fields %}<span class="badge badge--neutral">{{ f }}</span>{% unless forloop.last %} {% endunless %}{% endfor %}
         </p>
         {% endif %}
