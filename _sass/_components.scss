@@ -641,6 +641,10 @@ footer {
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-sm);
   overflow: hidden;
+  // Homepage "Read bio" links jump to #berry etc. The jump is measured
+  // while the .reveal grid is still 12px low, so the card settles one
+  // grid gap below the top of the window.
+  scroll-margin-top: $space-6 + 12px;
   transition: box-shadow var(--duration-normal) var(--ease-out),
               transform var(--duration-normal) var(--ease-out),
               border-color var(--duration-normal) var(--ease-out);
