@@ -1,10 +1,12 @@
-<svg viewBox="0 0 720 289" class="forest-plot" role="img" aria-labelledby="de-title de-desc" preserveAspectRatio="xMidYMid meet">
+<svg viewBox="0 0 720 289" class="forest-plot forest-plot--wide" role="img" aria-labelledby="de-title de-desc" preserveAspectRatio="xMidYMid meet">
   <title id="de-title">AVE-RD effects on school dropout in 2016–17, by video and the year it was shown</title>
   <desc id="de-desc">Probit estimates in percentage points with 95% confidence intervals from Table 5 of the 2017 endline report (N = 428,400, grade fixed effects, standard errors clustered by school). Negative values are reductions in dropout. Videos shown in 2016, the same year: informative video −0.56 pp (95% CI −1.72 to 0.61), not significant; persuasive video −0.36 pp (95% CI −1.58 to 0.85), not significant. Videos shown in 2015, the previous year: informative video −3.03 pp (95% CI −4.20 to −1.86), p &lt; 0.01; persuasive video −2.81 pp (95% CI −4.07 to −1.55), p &lt; 0.01.</desc>
 
   <!-- Scale: x = 560 + 60 × effect (percentage points); 60 px per pp.
        Estimates are endline Table 5, column 1 (probit), × 100.
-       CIs are coefficient ± 1.96 × SE. -->
+       CIs are coefficient ± 1.96 × SE.
+       dropout-effects-narrow.svg draws the same estimates for phones;
+       change both together. -->
   <g class="forest-grid">
     <line x1="260" y1="26" x2="260" y2="224" />
     <line x1="320" y1="26" x2="320" y2="224" />
