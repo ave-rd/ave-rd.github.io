@@ -1,0 +1,62 @@
+<svg viewBox="0 0 320 305" class="forest-plot forest-plot--narrow" role="img" aria-labelledby="de-title de-desc" preserveAspectRatio="xMidYMid meet">
+  <!-- Phone layout of dropout-effects.svg: each label sits above its
+       interval, with the estimate at the right. .viz-card__figure
+       shows one variant or the other; this one borrows the wide
+       chart's <title> and <desc>, so include both together.
+       Scale: x = 220 + 42 × effect (percentage points); 42 px per pp.
+       Estimates are endline Table 5, column 1 (probit), × 100.
+       CIs are coefficient ± 1.96 × SE. -->
+  <g class="forest-grid">
+    <line x1="10" y1="24" x2="10" y2="257" />
+    <line x1="52" y1="24" x2="52" y2="257" />
+    <line x1="94" y1="24" x2="94" y2="257" />
+    <line x1="136" y1="24" x2="136" y2="257" />
+    <line x1="178" y1="24" x2="178" y2="257" />
+    <line x1="262" y1="24" x2="262" y2="257" />
+  </g>
+
+  <line class="forest-zero" x1="220" y1="24" x2="220" y2="257" />
+  <line class="forest-axis" x1="10" y1="257" x2="262" y2="257" />
+
+  <text class="forest-tick" x="212" y="14" text-anchor="end">← less dropout</text>
+  <text class="forest-tick" x="228" y="14">more dropout →</text>
+
+  <text class="forest-tick" x="10" y="273" text-anchor="middle">−5</text>
+  <text class="forest-tick" x="52" y="273" text-anchor="middle">−4</text>
+  <text class="forest-tick" x="94" y="273" text-anchor="middle">−3</text>
+  <text class="forest-tick" x="136" y="273" text-anchor="middle">−2</text>
+  <text class="forest-tick" x="178" y="273" text-anchor="middle">−1</text>
+  <text class="forest-tick" x="220" y="273" text-anchor="middle">0</text>
+  <text class="forest-tick" x="262" y="273" text-anchor="middle">1</text>
+  <text class="forest-tick" x="136" y="297" text-anchor="middle">Effect on 2016–17 dropout (percentage points)</text>
+
+  <!-- Videos shown in 2016, the same year as the outcome -->
+  <text class="forest-group" x="0" y="46">2016 videos · same year</text>
+
+  <!-- Informative video: −0.00558 (SE 0.00594), not significant -->
+  <text class="forest-label" x="0" y="70">Informative video</text>
+  <text class="forest-value" x="320" y="70" text-anchor="end">−0.56 (n.s.)</text>
+  <line class="forest-ci forest-ci--ns" x1="147.7" y1="83" x2="245.5" y2="83" />
+  <circle class="forest-point forest-point--ns" cx="196.6" cy="83" r="6" />
+
+  <!-- Persuasive video: −0.00364 (SE 0.00621), not significant -->
+  <text class="forest-label" x="0" y="112">Persuasive video</text>
+  <text class="forest-value" x="320" y="112" text-anchor="end">−0.36 (n.s.)</text>
+  <line class="forest-ci forest-ci--ns" x1="153.6" y1="125" x2="255.8" y2="125" />
+  <circle class="forest-point forest-point--ns" cx="204.7" cy="125" r="6" />
+
+  <!-- Videos shown in 2015, the year before the outcome -->
+  <text class="forest-group" x="0" y="160">2015 videos · previous year</text>
+
+  <!-- Informative video previous year: −0.0303*** (SE 0.00597) -->
+  <text class="forest-label" x="0" y="184">Informative video</text>
+  <text class="forest-value" x="320" y="184" text-anchor="end">−3.03***</text>
+  <line class="forest-ci" x1="43.6" y1="197" x2="141.9" y2="197" />
+  <circle class="forest-point" cx="92.7" cy="197" r="6" />
+
+  <!-- Persuasive video previous year: −0.0281*** (SE 0.00641) -->
+  <text class="forest-label" x="0" y="226">Persuasive video</text>
+  <text class="forest-value" x="320" y="226" text-anchor="end">−2.81***</text>
+  <line class="forest-ci" x1="49.2" y1="239" x2="154.7" y2="239" />
+  <circle class="forest-point" cx="102.0" cy="239" r="6" />
+</svg>

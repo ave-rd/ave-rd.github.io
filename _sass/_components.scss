@@ -1261,6 +1261,11 @@ footer {
       height: auto;
       max-width: 100%;
     }
+
+    // A chart can ship a stacked phone layout (.forest-plot--narrow)
+    // next to its wide one (.forest-plot--wide); the media query after
+    // this block picks one.
+    .forest-plot--narrow { display: none; }
   }
 
   &__caption {
@@ -1278,10 +1283,33 @@ footer {
     }
   }
 }
+// Below 640 px the 720-unit-wide charts would draw their 11 px tick
+// labels under 9 px (about 4.5 px on a 375 px phone), so show the phone
+// layout instead, at up to 1.125× its 320-unit viewBox. Screen only:
+// print keeps the wide chart.
+@media screen and (max-width: 639px) {
+  .viz-card__figure {
+    .forest-plot--wide { display: none; }
+    .forest-plot--narrow {
+      display: block;
+      max-width: 360px;
+      margin: 0 auto;
+    }
+  }
+}
 
 // ----- Forest-plot SVG primitives -----
 .forest-plot {
   font-family: $font-sans;
+
+  // The phone layout puts labels inside the plot area. A halo in the
+  // card color breaks the grid and zero lines behind the text.
+  &--narrow text {
+    paint-order: stroke;
+    stroke: var(--bg-card);
+    stroke-width: 4px;
+    stroke-linejoin: round;
+  }
 
   .forest-grid line {
     stroke: var(--border);

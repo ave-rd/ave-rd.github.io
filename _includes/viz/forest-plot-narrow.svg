@@ -1,0 +1,72 @@
+<svg viewBox="0 0 320 361" class="forest-plot forest-plot--narrow" role="img" aria-labelledby="fp-title fp-desc" preserveAspectRatio="xMidYMid meet">
+  <!-- Phone layout of forest-plot.svg: each label sits above its
+       interval, with the estimate at the right. .viz-card__figure
+       shows one variant or the other; this one borrows the wide
+       chart's <title> and <desc>, so include both together.
+       Scale: x = 100 + 800 × effect (SD); 40 px per 0.05 SD.
+       CIs are coefficient ± 1.96 × SE from endline Table 6, column 1. -->
+  <g class="forest-grid">
+    <line x1="20" y1="24" x2="20" y2="313" />
+    <line x1="60" y1="24" x2="60" y2="313" />
+    <line x1="140" y1="24" x2="140" y2="313" />
+    <line x1="180" y1="24" x2="180" y2="313" />
+    <line x1="220" y1="24" x2="220" y2="313" />
+    <line x1="260" y1="24" x2="260" y2="313" />
+    <line x1="300" y1="24" x2="300" y2="313" />
+  </g>
+
+  <line class="forest-zero" x1="100" y1="24" x2="100" y2="313" />
+  <line class="forest-axis" x1="20" y1="313" x2="300" y2="313" />
+
+  <text class="forest-tick" x="20" y="329" text-anchor="middle">−0.10</text>
+  <text class="forest-tick" x="60" y="329" text-anchor="middle">−0.05</text>
+  <text class="forest-tick" x="100" y="329" text-anchor="middle">0</text>
+  <text class="forest-tick" x="140" y="329" text-anchor="middle">0.05</text>
+  <text class="forest-tick" x="180" y="329" text-anchor="middle">0.10</text>
+  <text class="forest-tick" x="220" y="329" text-anchor="middle">0.15</text>
+  <text class="forest-tick" x="260" y="329" text-anchor="middle">0.20</text>
+  <text class="forest-tick" x="300" y="329" text-anchor="middle">0.25</text>
+  <text class="forest-tick" x="160" y="353" text-anchor="middle">Effect on overall score (standard deviations)</text>
+
+  <!-- Informative video -->
+  <text class="forest-group" x="0" y="16">Informative video</text>
+
+  <!-- 2015 only: 0.0531 (SE 0.0392), not significant -->
+  <text class="forest-label" x="0" y="40">Once (2015)</text>
+  <text class="forest-value" x="320" y="40" text-anchor="end">0.053 (n.s.)</text>
+  <line class="forest-ci forest-ci--ns" x1="81.0" y1="53" x2="203.9" y2="53" />
+  <circle class="forest-point forest-point--ns" cx="142.5" cy="53" r="6" />
+
+  <!-- 2016 only: 0.0646*** (SE 0.0221) -->
+  <text class="forest-label" x="0" y="82">Once (2016)</text>
+  <text class="forest-value" x="320" y="82" text-anchor="end">0.065***</text>
+  <line class="forest-ci" x1="117.0" y1="95" x2="186.3" y2="95" />
+  <circle class="forest-point" cx="151.7" cy="95" r="6" />
+
+  <!-- 2015 and 2016: 0.129*** (SE 0.0403) -->
+  <text class="forest-label" x="0" y="124">Twice (2015 + 2016)</text>
+  <text class="forest-value" x="320" y="124" text-anchor="end">0.129***</text>
+  <line class="forest-ci" x1="140.0" y1="137" x2="266.4" y2="137" />
+  <circle class="forest-point forest-point--ed" cx="203.2" cy="137" r="7" />
+
+  <!-- Persuasive video -->
+  <text class="forest-group" x="0" y="172">Persuasive video</text>
+
+  <!-- 2015 only: −0.0197 (SE 0.0358), not significant -->
+  <text class="forest-label" x="0" y="196">Once (2015)</text>
+  <text class="forest-value" x="320" y="196" text-anchor="end">−0.020 (n.s.)</text>
+  <line class="forest-ci forest-ci--ns" x1="28.1" y1="209" x2="140.4" y2="209" />
+  <circle class="forest-point forest-point--ns" cx="84.2" cy="209" r="6" />
+
+  <!-- 2016 only: 0.0521** (SE 0.0228) -->
+  <text class="forest-label" x="0" y="238">Once (2016)</text>
+  <text class="forest-value" x="320" y="238" text-anchor="end">0.052**</text>
+  <line class="forest-ci" x1="105.9" y1="251" x2="177.4" y2="251" />
+  <circle class="forest-point" cx="141.7" cy="251" r="6" />
+
+  <!-- 2015 and 2016: 0.0767** (SE 0.0374) -->
+  <text class="forest-label" x="0" y="280">Twice (2015 + 2016)</text>
+  <text class="forest-value" x="320" y="280" text-anchor="end">0.077**</text>
+  <line class="forest-ci" x1="102.7" y1="293" x2="220.0" y2="293" />
+  <circle class="forest-point" cx="161.4" cy="293" r="6" />
+</svg>

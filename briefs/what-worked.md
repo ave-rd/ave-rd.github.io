@@ -60,6 +60,7 @@ brief_pdf_ready: false
   </p>
   <div class="viz-card__figure">
     {% include viz/forest-plot.svg %}
+    {% include viz/forest-plot-narrow.svg %}
   </div>
   <p class="viz-card__caption">
     <strong>Note.</strong> Effects on the overall eighth-grade Pruebas Nacionales score, in standard deviations, from a single regression (endline Table&nbsp;<span class="font-osf">6</span>: <span class="font-osf">2015</span> and <span class="font-osf">2016</span> tests pooled, N&nbsp;=&nbsp;<span class="font-osf">120,092</span>, with grade, baseline-score and gender fixed effects). <em>Once (2015)</em>: saw the videos in eighth grade in <span class="font-osf">2015</span>. <em>Once (2016)</em>: saw them in eighth grade in <span class="font-osf">2016</span> only. <em>Twice</em>: saw them in seventh grade in <span class="font-osf">2015</span> and again in eighth grade in <span class="font-osf">2016</span>. Bars are <span class="font-osf">95</span>% confidence intervals, computed as &plusmn;<span class="font-osf">1.96</span> times the reported school-clustered standard errors. *** <em>p</em>&nbsp;&lt;&nbsp;<span class="font-osf">0.01</span>, ** <em>p</em>&nbsp;&lt;&nbsp;<span class="font-osf">0.05</span>; hollow markers are not significant. Source: J-PAL LAC, <a href="https://www.christopher-neilson.com/work/documents/AVE/AVE_USAID_EndlineReport.pdf" rel="noopener">Milestone 13 endline report</a> to USAID (<span class="font-osf">2017</span>), p.&nbsp;<span class="font-osf">19</span>.
