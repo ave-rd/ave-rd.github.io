@@ -29,7 +29,7 @@ hero-style: gradient
 <ul class="person-grid person-grid--four reveal">
   {% for pi in site.data.researchers.pis %}
   <li>
-    <article class="person-card" itemscope itemtype="https://schema.org/Person">
+    <article class="person-card" id="{{ pi.id }}" itemscope itemtype="https://schema.org/Person">
       <meta itemprop="affiliation" content="{{ pi.affiliation | strip_html }}" />
       <div class="person-card__portrait{% unless pi.photo and pi.photo != "" %} person-card__portrait--initials{% endunless %}">
         {% if pi.photo and pi.photo != "" %}
