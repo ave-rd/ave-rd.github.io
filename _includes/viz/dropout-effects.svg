@@ -1,0 +1,61 @@
+<svg viewBox="0 0 720 289" class="forest-plot" role="img" aria-labelledby="de-title de-desc" preserveAspectRatio="xMidYMid meet">
+  <title id="de-title">AVE-RD effects on school dropout in 2016–17, by video and the year it was shown</title>
+  <desc id="de-desc">Probit estimates in percentage points with 95% confidence intervals from Table 5 of the 2017 endline report (N = 428,400, grade fixed effects, standard errors clustered by school). Negative values are reductions in dropout. Videos shown in 2016, the same year: informative video −0.56 pp (95% CI −1.72 to 0.61), not significant; persuasive video −0.36 pp (95% CI −1.58 to 0.85), not significant. Videos shown in 2015, the previous year: informative video −3.03 pp (95% CI −4.20 to −1.86), p &lt; 0.01; persuasive video −2.81 pp (95% CI −4.07 to −1.55), p &lt; 0.01.</desc>
+
+  <!-- Scale: x = 560 + 60 × effect (percentage points); 60 px per pp.
+       Estimates are endline Table 5, column 1 (probit), × 100.
+       CIs are coefficient ± 1.96 × SE. -->
+  <g class="forest-grid">
+    <line x1="260" y1="26" x2="260" y2="224" />
+    <line x1="320" y1="26" x2="320" y2="224" />
+    <line x1="380" y1="26" x2="380" y2="224" />
+    <line x1="440" y1="26" x2="440" y2="224" />
+    <line x1="500" y1="26" x2="500" y2="224" />
+    <line x1="620" y1="26" x2="620" y2="224" />
+  </g>
+
+  <line class="forest-zero" x1="560" y1="26" x2="560" y2="224" />
+  <line class="forest-axis" x1="260" y1="224" x2="620" y2="224" />
+
+  <text class="forest-tick" x="552" y="16" text-anchor="end">← less dropout</text>
+  <text class="forest-tick" x="568" y="16">more dropout →</text>
+
+  <text class="forest-tick" x="260" y="242" text-anchor="middle">−5</text>
+  <text class="forest-tick" x="320" y="242" text-anchor="middle">−4</text>
+  <text class="forest-tick" x="380" y="242" text-anchor="middle">−3</text>
+  <text class="forest-tick" x="440" y="242" text-anchor="middle">−2</text>
+  <text class="forest-tick" x="500" y="242" text-anchor="middle">−1</text>
+  <text class="forest-tick" x="560" y="242" text-anchor="middle">0</text>
+  <text class="forest-tick" x="620" y="242" text-anchor="middle">1</text>
+  <text class="forest-tick" x="440" y="270" text-anchor="middle">Effect on 2016–17 dropout (percentage points)</text>
+
+  <!-- Videos shown in 2016, the same year as the outcome -->
+  <text class="forest-group" x="20" y="44">2016 videos · same year</text>
+
+  <!-- Informative video: −0.00558 (SE 0.00594), not significant -->
+  <text class="forest-label" x="245" y="72" text-anchor="end">Informative video</text>
+  <line class="forest-ci forest-ci--ns" x1="456.7" y1="68" x2="596.4" y2="68" />
+  <circle class="forest-point forest-point--ns" cx="526.5" cy="68" r="6" />
+  <text class="forest-value" x="636" y="72">−0.56 (n.s.)</text>
+
+  <!-- Persuasive video: −0.00364 (SE 0.00621), not significant -->
+  <text class="forest-label" x="245" y="102" text-anchor="end">Persuasive video</text>
+  <line class="forest-ci forest-ci--ns" x1="465.1" y1="98" x2="611.2" y2="98" />
+  <circle class="forest-point forest-point--ns" cx="538.2" cy="98" r="6" />
+  <text class="forest-value" x="636" y="102">−0.36 (n.s.)</text>
+
+  <!-- Videos shown in 2015, the year before the outcome -->
+  <text class="forest-group" x="20" y="144">2015 videos · previous year</text>
+
+  <!-- Informative video previous year: −0.0303*** (SE 0.00597) -->
+  <text class="forest-label" x="245" y="172" text-anchor="end">Informative video</text>
+  <line class="forest-ci" x1="308.0" y1="168" x2="448.4" y2="168" />
+  <circle class="forest-point" cx="378.2" cy="168" r="6" />
+  <text class="forest-value" x="636" y="172">−3.03***</text>
+
+  <!-- Persuasive video previous year: −0.0281*** (SE 0.00641) -->
+  <text class="forest-label" x="245" y="202" text-anchor="end">Persuasive video</text>
+  <line class="forest-ci" x1="316.0" y1="198" x2="466.8" y2="198" />
+  <circle class="forest-point" cx="391.4" cy="198" r="6" />
+  <text class="forest-value" x="636" y="202">−2.81***</text>
+</svg>

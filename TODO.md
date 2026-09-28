@@ -78,9 +78,6 @@ September 2026.
   "strongest in students re-exposed in the second wave" (what-worked).
   The significant effect is the one-year-lagged effect of 2015
   exposure (Table 5); same-year 2016 effects are not significant.
-- **Homepage Figure 1** (`_includes/viz/dropout-trend.svg`) is an
-  illustrative trajectory with invented levels and an invented
-  confidence band; replace with a Table 5 coefficient plot or remove.
 - **Dates**: briefs (Sept–Nov 2025) and the funder-brief news post
   (4 Nov 2025) are dated before the files existed (May 2026).
 - **Sister projects**: "each implementation pre-registered an
@@ -120,12 +117,13 @@ September 2026.
 
 ### Headline-finding charts
 - Homepage states `2.5–3pp dropout`, `0.05–0.13σ test scores` as
-  numbers in the stat strip. The what-worked brief's forest plot now
-  plots endline Table 6; the homepage dropout figure is still
-  illustrative (see "Unverified claims" above).
-- **Build small inline SVG bar charts** — one per finding, showing
-  effect size + confidence interval from the endline tables. Drop
-  into `figures/` + embed in the relevant section. Static, no JS.
+  numbers in the stat strip. Both now have coefficient plots built
+  from the endline tables: dropout (Table 5) is homepage Figure 1
+  (`_includes/viz/dropout-effects.svg`), and test scores (Table 6)
+  are in the what-worked brief (`_includes/viz/forest-plot.svg`).
+- **Left to do:** the homepage has no test-score figure yet (the
+  brief's forest plot could be reused), and neither plot has been
+  exported to `figures/` for the Replication Kit.
 
 ### Province-level deployment map
 - Beyond the decorative homepage hero, build a more rigorous
