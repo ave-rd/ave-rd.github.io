@@ -397,6 +397,9 @@ main li + li { margin-top: $space-3; }
 // ----- Stat strip -----
 .stat-strip {
   display: grid;
+  // Two by two at every width. The text column is at most 778 px, and
+  // four 60 px values that can't wrap (e.g. "428,400") plus the gaps
+  // need about 800 px.
   grid-template-columns: repeat(2, 1fr);
   gap: $space-7 $space-8;
   margin: $space-8 0;
@@ -432,15 +435,6 @@ main li + li { margin-top: $space-3; }
 }
 @media (min-width: $bp-sm) {
   .stat-strip__value { font-size: $text-4xl; }
-}
-// Four across from $bp-md; two by two below it. At $bp-sm the text
-// column is 720 px, and four 60 px values that can't wrap (e.g.
-// "428,400") plus the gaps need about 800 px, which pushed the page
-// sideways.
-@media (min-width: $bp-md) {
-  .stat-strip {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 // ----- Numbered editorial list -----
